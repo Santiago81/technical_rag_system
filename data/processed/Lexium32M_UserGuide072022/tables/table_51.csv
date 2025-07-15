@@ -1,0 +1,3 @@
+Signal,Value,Function
+PULSE,0 -> 1,Motor movement
+DIR,0 / open,Positive direction

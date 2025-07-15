@@ -1,0 +1,6 @@
+Display,Description
+,"1 = ""M"" indicates that the ""menu mode"" is activated."
+,"2 = The ""Set Device ID"" menu is active."
+,"3 = Indicates which digit ""X"" of the Device ID is currently editable;"
+,"in this example it is the last digit, i.e. ""nine""."
+,4 = Device ID

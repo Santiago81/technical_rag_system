@@ -1,0 +1,3 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+JOGstep,"Distance for step movement.Modified settings become active the next time themotor moves.","usr_p1202147483647","INT32R/Wper.-","CANopen 3029:7hModbus 10510Profibus 10510CIP 141.1.7ModbusTCP 10510EtherCAT 3029:7hPROFINET 10510"
+JOGtime,"Wait time for step movement.Modified settings become active the next time themotor moves.","ms150032767","UINT16R/Wper.-","CANopen 3029:8hModbus 10512Profibus 10512CIP 141.1.8ModbusTCP 10512EtherCAT 3029:8hPROFINET 10512"

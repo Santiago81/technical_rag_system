@@ -1,0 +1,9 @@
+Message,Description
+Card,"Data on the memory card differs from data in the product. See MemoryCard, page 174 for information on how to proceed."
+disp,An external HMI is connected. The integrated HMI has no function.
+fsu,"Perform a First Setup. See Powering on the Device for the First Time, page141."
+mot,"A new motor was detected. See section Acknowledging a Motor Change,page 394 for replacing a motor."
+prot,Parts of the integrated HMI were locked with the parameter HMIlocked.
+slt1 ...slt3,"The device has detected a different equipment with modules. See sectionAcknowledging a Module Replacement, page 394 for replacing modules."
+ulow,24 Vdc control supply during initialization not high enough.
+8888,Undervoltage 24 Vdc control supply.

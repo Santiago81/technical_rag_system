@@ -1,0 +1,8 @@
+Step,Action
+1,"Identify necessary safety functions that are executed via SRP/CS (Safety-Related Partsof the Control System)."
+2,Determine required properties for each safety function.
+3,Determine the required performance level PLr.
+4,Identify safety-related parts executing the safety function.
+5,Determine the performance level PL of the afore-mentioned safety-related parts.
+6,Verify the performance level PL for the safety function (PL ≥ PLr).
+7,Verify that all requirements have been met (validation).

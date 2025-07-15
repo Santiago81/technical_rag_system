@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL1_KPn,Velocity controller P gain.,A/RPM,UINT16,CANopen 3012:1h
+ConF→drC-,The default value is calculated on the basis of the,0.0001,R/W,Modbus 4610
+,motor parameters.,,,
+Pn1,,-,per.,Profibus 4610
+,In the case of switching between the two control,,,
+,"loop parameter sets, the values are changed",2.5400,-,CIP 118.1.1
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,,,ModbusTCP 4610
+,In increments of 0.0001 A/RPM.,,,EtherCAT 3012:1h
+,Modified settings become active immediately.,,,PROFINET 4610
+CTRL2_KPn,Velocity controller P gain.,A/RPM,UINT16,CANopen 3013:1h
+ConF→drC-,The default value is calculated on the basis of the,0.0001,R/W,Modbus 4866
+,motor parameters.,,,
+Pn2,,-,per.,Profibus 4866
+,In the case of switching between the two control,,,
+,"loop parameter sets, the values are changed",2.5400,-,CIP 119.1.1
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,,,ModbusTCP 4866
+,In increments of 0.0001 A/RPM.,,,EtherCAT 3013:1h
+,Modified settings become active immediately.,,,PROFINET 4866
+CTRL1_TNn,Velocity controller integral action time.,ms,UINT16,CANopen 3012:2h
+ConF→drC-,The default value is calculated.,0.00,R/W,Modbus 4612
+tin1,In the case of switching between the two control,-,per.,Profibus 4612
+,"loop parameter sets, the values are changed",,,
+,linearly over the time defined in the parameter,327.67,-,CIP 118.1.2
+,CTRL_ParChgTime.,,,
+,,,,ModbusTCP 4612
+,In increments of 0.01 ms.,,,
+,,,,EtherCAT 3012:2h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 4612
+CTRL2_TNn,Velocity controller integral action time.,ms,UINT16,CANopen 3013:2h
+ConF→drC-,The default value is calculated.,0.00,R/W,Modbus 4868
+tin2,In the case of switching between the two control,-,per.,Profibus 4868
+,"loop parameter sets, the values are changed",,,
+,linearly over the time defined in the parameter,327.67,-,CIP 119.1.2
+,CTRL_ParChgTime.,,,
+,,,,ModbusTCP 4868
+,In increments of 0.01 ms.,,,
+,,,,EtherCAT 3013:2h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 4868

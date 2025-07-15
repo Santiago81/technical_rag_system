@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthMode,Protocol.,-,UINT16,CANopen 3044:1h
+ConF→CoM-,0 / Modbus TCP /MtCP: Modbus TCP I/O,0,R/W,Modbus 17410
+,scanning is enabled,,,
+EtMd,,1,per.,Profibus 17410
+,1 / EtherNet/IP /EtiP: EtherNet/IP,,,
+,communication is enabled,1,-,CIP 168.1.1
+,Modbus TCP parameter access is possible,,,ModbusTCP 17410
+,irrespective of the selected setting.,,,
+,,,,EtherCAT 3044:1h
+,Modified settings become active the next time the,,,
+,product is powered on.,,,PROFINET 17410
+EthOptMapInp1,Optionally mapped input parameter 1 (drive to,-,UINT16,CANopen 3044:34h
+,controller).,,,
+,,-,R/W,Modbus 17512
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17512
+,I/O scanner data (drive to controller).,,,
+,,-,-,CIP 168.1.52
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17512
+,,,,EtherCAT 3044:34h
+,,,,PROFINET 17512
+EthOptMapInp2,Optionally mapped input parameter 2 (drive to,-,UINT16,CANopen 3044:35h
+,controller).,,,
+,,-,R/W,Modbus 17514
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17514
+,I/O scanner data (drive to controller).,,,
+,,-,-,CIP 168.1.53
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17514
+,,,,EtherCAT 3044:35h
+,,,,PROFINET 17514
+EthOptMapInp3,Optionally mapped input parameter 3 (drive to,-,UINT16,CANopen 3044:36h
+,controller).,,,
+,,-,R/W,Modbus 17516
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17516
+,I/O scanner data (drive to controller).,,,
+,,-,-,CIP 168.1.54
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17516
+,,,,EtherCAT 3044:36h
+,,,,PROFINET 17516
+EthOptMapOut1,Optionally mapped output parameter 1 (controller,-,UINT16,CANopen 3044:2Eh
+,to drive).,,,
+,,-,R/W,Modbus 17500
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17500
+,I/O scanner data (controller to drive).,,,
+,,-,-,CIP 168.1.46
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17500
+,,,,EtherCAT 3044:2Eh
+,,,,PROFINET 17500

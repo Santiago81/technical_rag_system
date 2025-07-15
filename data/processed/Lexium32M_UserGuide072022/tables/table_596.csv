@@ -1,0 +1,48 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMmethod,Homing method.,-,INT16*,CANopen 6098:0h
+,1: LIMN with index pulse,1,R/W,Modbus 6936
+,2: LIMP with index pulse,18,-,Profibus 6936
+,"7: REF+ with index pulse, inv., outside",35,-,CIP 127.1.12
+,"8: REF+ with index pulse, inv., inside",,,ModbusTCP 6936
+,"9: REF+ with index pulse, not inv., inside",,,EtherCAT 6098:0h
+,"10: REF+ with index pulse, not inv., outside",,,PROFINET 6936
+,"11: REF- with index pulse, inv., outside",,,
+,"12: REF- with index pulse, inv., inside",,,
+,"13: REF- with index pulse, not inv., inside",,,
+,"14: REF- with index pulse, not inv., outside",,,
+,17: LIMN,,,
+,18: LIMP,,,
+,"23: REF+, inv., outside",,,
+,"24: REF+, inv., inside",,,
+,"25: REF+, not inv., inside",,,
+,"26: REF+, not inv., outside",,,
+,"27: REF-, inv., outside",,,
+,"28: REF-, inv., inside",,,
+,"29: REF-, not inv., inside",,,
+,"30: REF-, not inv., outside",,,
+,33: Index pulse negative direction,,,
+,34: Index pulse positive direction,,,
+,35: Position setting,,,
+,Abbreviations:,,,
+,REF+: Search movement in positive direction,,,
+,REF-: Search movement in negative direction,,,
+,inv.: Invert direction in switch,,,
+,not inv.: Direction not inverted in switch,,,
+,outside: Index pulse / distance outside switch,,,
+,inside: Index pulse / distance inside switch,,,
+,Modified settings become active immediately.,,,
+,* Datatype for CANopen: INT8,,,
+HMoutdis,Maximum distance for search for switching point.,usr_p,INT32,CANopen 3028:6h
+,0: Monitoring of distance inactive,0,R/W,Modbus 10252
+,>0: Maximum distance,0,per.,Profibus 10252
+,"After detection of the switch, the drive starts to",2147483647,-,CIP 140.1.6
+,search for the defined switching point. If the,,,
+,defined switching point is not found within the,,,ModbusTCP 10252
+,"distance defined here, the reference movement is",,,
+,canceled and an error is detected.,,,EtherCAT 3028:6h
+,Modified settings become active the next time the,,,PROFINET 10252
+,motor moves.,,,

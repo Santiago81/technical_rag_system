@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSMendNumSe-,Selection of the data set number after the end of a,-,UINT16,CANopen 302D:9h
+quence,sequence.,,,
+,,0,R/W,Modbus 11538
+,0 / DataSetSelect: Data set is set via the signal,,,
+,"input function ""Data Set Select""",0,per.,Profibus 11538
+,1 / Automatic: Data set is set automatically,1,-,CIP 145.1.9
+,"Value 0: After the end of a sequence, the selected",,,ModbusTCP 11538
+,data set must be set via the signal input function,,,
+,"""Data Set Select"".",,,EtherCAT 302D:9h
+,"Value 1: After the end of a sequence, the selected",,,PROFINET 11538
+,data set is set automatically.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.09.,,,
+MSMstartSignal,Response to falling edge at signal input for 'Start,-,UINT16,CANopen 302D:Ch
+,Signal Data Set'.,,,
+,,0,R/W,Modbus 11544
+,0 / No Reaction: No response,,,
+,,0,per.,Profibus 11544
+,1 / Cancel Movement: Cancel active movement,,,
+,,1,-,CIP 145.1.12
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 11544
+,Modified settings become active immediately.,,,EtherCAT 302D:Ch
+,Available with firmware version ≥V01.09.,,,PROFINET 11544
+MT_dismax,Maximum permissible distance.,revolution,UINT16,CANopen 302E:3h
+,If the reference value is active and the maximum,0.0,R/W,Modbus 11782
+,"permissible distance is exceeded, an error of error",,,
+,class 1 is detected.,1.0,-,Profibus 11782
+,The value 0 switches off monitoring.,999.9,-,CIP 146.1.3
+,The parameter MT_dismax_usr allows you to,,,ModbusTCP 11782
+,enter the value in user-defined units.,,,
+,,,,EtherCAT 302E:3h
+,In increments of 0.1 revolution.,,,
+,,,,PROFINET 11782
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+MT_dismax_usr,Maximum permissible distance.,usr_p,INT32,CANopen 302E:Ah
+,If the reference value is active and the maximum,0,R/W,Modbus 11796
+,"permissible distance is exceeded, an error of error",,,
+,class 1 is detected.,16384,-,Profibus 11796
+,The value 0 switches off monitoring.,2147483647,-,CIP 146.1.10
+,"The minimum value, the factory setting and the",,,ModbusTCP 11796
+,maximum value depend on the scaling factor.,,,
+,,,,EtherCAT 302E:Ah
+,Modified settings become active the next time the,,,
+,motor moves.,,,PROFINET 11796
+,Available with firmware version ≥V01.03.,,,

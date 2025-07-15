@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthIPgate4,"IP address gateway, byte 4.",-,UINT16,CANopen 3044:12h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17444
+,product is powered on.,,,
+iPG4,,0,per.,Profibus 17444
+,,255,-,CIP 168.1.18
+,,,,ModbusTCP 17444
+,,,,EtherCAT 3044:12h
+,,,,PROFINET 17444
+EthIPmask1,"IP address subnet mask, byte 1.",-,UINT16,CANopen 3044:Bh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17430
+,product is powered on.,,,
+iPM1,,255,per.,Profibus 17430
+,,255,-,CIP 168.1.11
+,,,,ModbusTCP 17430
+,,,,EtherCAT 3044:Bh
+,,,,PROFINET 17430
+EthIPmask2,"IP address subnet mask, byte 2.",-,UINT16,CANopen 3044:Ch
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17432
+,product is powered on.,,,
+iPM2,,255,per.,Profibus 17432
+,,255,-,CIP 168.1.12
+,,,,ModbusTCP 17432
+,,,,EtherCAT 3044:Ch
+,,,,PROFINET 17432
+EthIPmask3,"IP address subnet mask, byte 3.",-,UINT16,CANopen 3044:Dh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17434
+,product is powered on.,,,
+iPM3,,255,per.,Profibus 17434
+,,255,-,CIP 168.1.13
+,,,,ModbusTCP 17434
+,,,,EtherCAT 3044:Dh
+,,,,PROFINET 17434
+EthIPmask4,"IP address subnet mask, byte 4.",-,UINT16,CANopen 3044:Eh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17436
+,product is powered on.,,,
+iPM4,,0,per.,Profibus 17436
+,,255,-,CIP 168.1.14
+,,,,ModbusTCP 17436
+,,,,EtherCAT 3044:Eh
+,,,,PROFINET 17436

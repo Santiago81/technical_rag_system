@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+1113,0,"System not locked for configurationtransfer","An external tool has tried to transferthe configuration without locking thedrive.",-
+1114,4,"Configuration download abortedParameter _SigLatched Bit 5","During a configuration download, acommunication error or an error inthe external tool was detected. Theconfiguration was only partiallytransferred to the drive and might beinconsistent now.","Power the drive off/on and retry todownload the configuration or restorethe factory settings."
+1115,0,"Incorrect configuration file formatParameter _WarnLatched Bit 5","An external tool has downloaded aconfiguration which has an incorrectformat.",-
+1116,0,"Request is processedasynchronously",-,-
+1117,0,Asynchronous request blocked,"Request to a module is blockedbecause the module is currentlyprocessing another request.",-
+1118,0,"Configuration data incompatible withdevice","The configuration data contains datafrom a different device.","Verify device type including type ofpower stage."
+1119,0,"Incorrect data length, too many bytes",-,-
+111A,0,"Incorrect data length, insufficientnumber of bytes",-,-
+111B,4,"Configuration download errordetected. Additional information inthe error memory indicates theModbus register address.","During a configuration download, oneor more configuration values werenot accepted by the drive.","Verify that the configuration file isvalid and matches the type andversion of the drive. The value in theadditional error info shows theModbus register address of theparameter where the initializationerror was detected."
+111C,1,"Not possible to initialize recalculationfor scaling",A parameter could not be initialized.,"The address of the parameter thatcaused the detected error can beread via the parameter _PAR_ScalingError."
+111D,3,"Original state of a parameter cannotbe restored after an error wasdetected during recalculation ofparameters with user-defined units.","The drive contained an invalidconfiguration before the recalculationwas started. An error was detectedduring the recalculation.","Power the drive off and on again.This may help you to identify theaffected parameter(s). Change theparameters as required. Verify thatthe parameter configuration is validbefore starting the recalculationprocedure."
+111E,1,Not possible to recalculate data set,"A data set of the operating modeMotion Sequence could not berecalculated.","The address of the parameter andthe number of the data set thatcaused this condition can be read viathe parameter _PAR_ScalingError."
+111F,1,Recalculation not possible.,Invalid scaling factor.,"Verify that you really want theselected scaling factor. Try a differentscaling factor. Before triggeringscaling, reset the parameters withuser-defined units."
+1120,1,Recalculation for scaling not possible,"A parameter could not berecalculated.","The address of the parameter thatcaused this condition can be read viathe parameter _PAR_ScalingError."
+1121,0,"Incorrect sequence of steps forscaling (fieldbus)","The recalculation has been startedprior to the initialization.","The recalculation must be startedafter the initialization."
+1122,0,Recalculation for scaling not possible,"Recalculation for scaling is alreadyrunning.","Wait for the running recalculation forscaling to finish."
+1123,0,Parameter cannot be changed,Recalculation for scaling is running.,"Wait for the running recalculation forscaling to finish."
+1124,1,"Timeout during recalculation forscaling","The time between the initialization ofthe recalculation and the start of therecalculation has been exceeded (30seconds).","Recalculation must be started within30 seconds after initialization."

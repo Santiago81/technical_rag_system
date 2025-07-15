@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_DPL_motionStat,Drive Profile Lexium motionStat.,-,UINT16,CANopen 301B:27h
+,,-,R/-,Modbus 6990
+,,-,-,Profibus 6990
+,,-,-,CIP 127.1.39
+,,,,ModbusTCP 6990
+,,,,EtherCAT 301B:27h
+,,,,PROFINET 6990
+_ECATaddress,EtherCAT address used.,-,UINT16,CANopen 3045:7h
+ConF→CoM-,EtherCAT slave address set by the master.,-,R/-,Modbus 17678
+EcAA,,1,-,Profibus 17678
+,,-,-,CIP 169.1.7
+,,,,ModbusTCP 17678
+,,,,EtherCAT 3045:7h
+,,,,PROFINET 17678
+_ECATslavestate,EtherCAT slave state.,-,UINT16,CANopen 3045:2h
+ConF→CoM-,1 / Init /init: Init,-,R/-,Modbus 17668
+EcSS,2 / PreOp /ProP: Pre-Operational,1,-,Profibus 17668
+,3 / Boot /boot: Bootstrap,-,-,CIP 169.1.2
+,4 / SafeOp /SFoP: Safe-Operational,,,ModbusTCP 17668
+,8 / Op /oP: Operational,,,EtherCAT 3045:2h
+,,,,PROFINET 17668
+_ENC_AmplMax,Maximum value of the SinCos amplitude.,mV,UINT16,CANopen 303F:60h
+,This value is only available if monitoring of the,-,R/-,Modbus 16320
+,SinCos amplitude has been activated.,,,
+,,-,-,Profibus 16320
+,Available with firmware version ≥V01.26.,,,
+,,-,-,CIP 163.1.96
+,,,,ModbusTCP 16320
+,,,,EtherCAT 303F:60h
+,,,,PROFINET 16320
+_ENC_AmplMean,Mean value of the SinCos amplitude.,mV,UINT16,CANopen 303F:5Eh
+,This value is only available if monitoring of the,-,R/-,Modbus 16316
+,SinCos amplitude has been activated.,,,
+,,-,-,Profibus 16316
+,Available with firmware version ≥V01.26.,,,
+,,-,-,CIP 163.1.94
+,,,,ModbusTCP 16316
+,,,,EtherCAT 303F:5Eh
+,,,,PROFINET 16316

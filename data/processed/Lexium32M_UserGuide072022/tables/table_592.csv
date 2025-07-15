@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+FTOF_Password,File transfer over fieldbus: Password.,-,UINT32,CANopen 3004:20h
+,Value 0: File transfer over fieldbus disabled,-,R/W,Modbus 1088
+,Value >0: File transfer over fieldbus enabled;,0,per.,Profibus 1088
+,password (numbers only),,,
+,,4294967295,-,CIP 104.1.32
+,Parameter is only accessible via the following,,,
+,access channels:,,,ModbusTCP 1088
+,- Fieldbus main channel,,,EtherCAT 3004:20h
+,- Modbus RTU,,,PROFINET 1088
+,If the parameter is read via a different access,,,
+,"channel, the value 0 is returned.",,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.34.,,,
+GEARdenom,Denominator of gear ratio.,-,INT32,CANopen 3026:3h
+,See description GEARnum,1,R/W,Modbus 9734
+,,1,per.,Profibus 9734
+,,2147483647,-,CIP 138.1.3
+,,,,ModbusTCP 9734
+,,,,EtherCAT 3026:3h
+,,,,PROFINET 9734
+GEARdenom2,Denominator of gear ratio number 2.,-,INT32,CANopen 3026:Ch
+,See description GEARnum,1,R/W,Modbus 9752
+,,1,per.,Profibus 9752
+,,2147483647,-,CIP 138.1.12
+,,,,ModbusTCP 9752
+,,,,EtherCAT 3026:Ch
+,,,,PROFINET 9752
+GEARdir_enabl,Enabled direction of movement for operating,-,UINT16,CANopen 3026:5h
+,mode Electronic Gear.,,,
+,,1,R/W,Modbus 9738
+,1 / Positive: Positive direction,,,
+,,3,per.,Profibus 9738
+,2 / Negative: Negative direction,,,
+,,3,-,CIP 138.1.5
+,3 / Both: Both directions,,,
+,,,,ModbusTCP 9738
+,This allows you to activate a return movement lock,,,
+,function.,,,EtherCAT 3026:5h
+,Modified settings become active immediately.,,,PROFINET 9738
+GEARjerklim,Activation of jerk limitation.,-,UINT16,CANopen 3026:7h
+ConF→i-o-,0 / Off /oFF: Jerk limitation deactivated.,0,R/W,Modbus 9742
+GFiL,1 / PosSyncOn /P_on: Jerk limitation active,0,per.,Profibus 9742
+,(only with position synchronization).,,,
+,,1,-,CIP 138.1.7
+,The time for jerk limitation must be set via,,,
+,parameter RAMP_v_jerk.,,,ModbusTCP 9742
+,Setting can only be modified if power stage is,,,EtherCAT 3026:7h
+,disabled.,,,
+,,,,PROFINET 9742
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.02.,,,

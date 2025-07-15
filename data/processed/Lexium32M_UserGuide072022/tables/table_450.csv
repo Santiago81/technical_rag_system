@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+712F,0,"No data segment of the electronicmotor nameplate",-,-
+7132,0,"System error detected: Motorconfiguration cannot be written",-,-
+7133,0,"Not possible to write motorconfiguration",-,-
+7134,4,"Incomplete motor configurationParameter _SigLatched Bit 16",-,-
+7135,4,"Format is not supportedParameter _SigLatched Bit 16",-,-
+7136,4,"Incorrect encoder type selected withparameter MotEnctypeParameter _SigLatched Bit 16",-,-
+7137,4,"Error detected during the internalconversion of the motor configurationParameter _SigLatched Bit 16",-,-
+7138,4,"Parameter of the motor configurationout of permissible rangeParameter _SigLatched Bit 16",-,-
+7139,0,"Encoder offset: Data segment inencoder is incorrect.",-,-
+713A,3,"Adjustment value of the encoder ofthe third party motor has not yet beendetermined.Parameter _SigLatched Bit 16",-,-
+7200,4,"System error detected: Calibrationanalog/digital converter duringmanufacturing / incorrect BLE fileParameter _SigLatched Bit 30",-,-
+7320,4,"System error detected: Invalidencoder parameterParameter _SigLatched Bit 16","Communication channel (Hiperface)to encoder is subject to interference,motor encoder has not been factory-parameterized.","Contact your Schneider Electricservice representative."
+7321,3,"Timeout reading the absoluteposition from the encoderParameter _SigLatched Bit 16","Communication channel (Hiperface)to encoder is subject to interferenceor motor encoder is inoperative.",Verify EMC measures.
+7327,0,"Error bit set in Hiperface answerParameter _WarnLatched Bit 16",EMI.,Verify wiring (shield).
+7328,4,"Motor encoder: Position evaluationerror detectedParameter _SigLatched Bit 16","Encoder has detected incorrectposition evaluation.","Contact your Schneider Electricservice representative or replace themotor."
+7329,0,"Motor encoder Warn signalParameter _WarnLatched Bit 16",EMI.,"Contact your Schneider Electricservice representative or replace themotor."
+7330,4,"System error detected: Motorencoder (Hiperface)Parameter _SigLatched Bit 16",-,"Verify EMC measures.Contact your Schneider Electricservice representative."
+7331,4,"System error detected: Motorencoder initializationParameter _SigLatched Bit 30",-,"Verify EMC measures.Contact your Schneider Electricservice representative."

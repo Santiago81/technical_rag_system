@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENC2_adjustment,Adjustment of absolute position of encoder 2.,usr_p,INT32,CANopen 3005:24h
+,The value range depends on the encoder type at,-,R/W,Modbus 1352
+,the physical port ENC2.,,,
+,,-,-,Profibus 1352
+,This parameter can only be changed if the,,,
+,parameter ENC_abs_source is set to 'Encoder 2'.,-,-,CIP 105.1.36
+,Singleturn encoder:,,,ModbusTCP 1352
+,0 ... x-1,,,EtherCAT 3005:24h
+,Multiturn encoder:,,,PROFINET 1352
+,0 ... (y*x)-1,,,
+,Singleturn encoder (shifted with parameter,,,
+,ShiftEncWorkRang):,,,
+,-(x/2) ... (x/2)-1,,,
+,Multiturn encoder (shifted with parameter,,,
+,ShiftEncWorkRang):,,,
+,-(y/2)*x ... ((y/2)*x)-1,,,
+,Definition of 'x': Maximum position for one encoder,,,
+,turn in user-defined units. This value is 16384 with,,,
+,the default scaling.,,,
+,Definition of 'y': Revolutions of the multiturn,,,
+,encoder.,,,
+,If processing is to be performed with inversion of,,,
+,"the direction of movement, this must be set before",,,
+,the encoder position is adjusted.,,,
+,"After the write access, a wait time of at least 1",,,
+,second is required before the drive can be,,,
+,powered off.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENC2_type,Type of encoder at encoder 2 (module).,-,UINT16,CANopen 3050:3h
+,0 / None: Undefined,0,R/W,Modbus 20486
+,1 / SinCos Hiperface (rotary): SinCos Hiperface,0,per.,Profibus 20486
+,(rotary),,,
+,,266,-,CIP 180.1.3
+,2 / SinCos 1Vpp (rotary): SinCos 1Vpp (rotary),,,
+,,,,ModbusTCP 20486
+,3 / Sincos 1Vpp Hall (rotary): SinCos 1Vpp Hall,,,
+,(rotary),,,EtherCAT 3050:3h
+,5 / EnDat 2.2 (rotary): EnDat 2.2 (rotary),,,PROFINET 20486
+,6 / Resolver: Resolver,,,
+,8 / BiSS: BiSS,,,
+,9 / A/B/I (rotary): A/B/I (rotary),,,
+,10 / SSI (rotary): SSI (rotary),,,
+,257 / SinCos Hiperface (linear): SinCos,,,
+,Hiperface (linear),,,
+,258 / SinCos 1Vpp (linear): SinCos 1Vpp (linear),,,
+,259 / SinCos 1Vpp Hall (linear): SinCos 1Vpp,,,
+,Hall (linear),,,
+,261 / EnDat 2.2 (linear): EnDat 2.2 (linear),,,
+,265 / A/B/I (linear): A/B/I (linear),,,

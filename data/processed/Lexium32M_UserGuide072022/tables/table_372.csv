@@ -1,0 +1,16 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+BLSH_Time,Processing time for backlash compensation.,ms,UINT16,CANopen 3006:44h
+,Value 0: Immediate backlash compensation,0,R/W,Modbus 1672
+,Value >0: Processing time for backlash,0,per.,Profibus 1672
+,compensation,,,
+,,16383,-,CIP 106.1.68
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1672
+,Modified settings become active the next time the,,,EtherCAT 3006:44h
+,power stage is enabled.,,,
+,,,,PROFINET 1672
+,Available with firmware version ≥V01.14.,,,

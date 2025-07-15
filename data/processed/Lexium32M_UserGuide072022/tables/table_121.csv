@@ -1,0 +1,9 @@
+Pin,Signal,Pair,Meaning
+1,ESIM_A,2,ESIM channel A
+2,ESIM_A,2,"ESIM channel A, inverted"
+4,ESIM_B,1,ESIM channel B
+5,ESIM_B,1,"ESIM channel B, inverted"
+3,ESIM_I,3,ESIM index pulse
+6,ESIM_I,3,"ESIM index pulse, inverted"
+7,PTO_0V,4,Reference potential
+8,PTO_0V,4,Reference potential

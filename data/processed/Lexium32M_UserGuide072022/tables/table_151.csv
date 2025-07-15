@@ -1,0 +1,5 @@
+HMI menutun-,Description
+tun-,Autotuning
+tust,Start autotuning
+gain,Global gain factor (affects parameter set 1)
+stin,Direction of movement for Autotuning

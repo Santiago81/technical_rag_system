@@ -1,0 +1,61 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_IO_SelWar1,Signal output function Selected Warning (error,-,UINT16,CANopen 303B:8h
+,class 0): First error code.,,,
+,,0,R/W,Modbus 15120
+,This parameter specifies the error code of an error,,,
+,of error class 0 which is to activate the signal,0,per.,Profibus 15120
+,output function.,,,
+,,65535,-,CIP 159.1.8
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 15120
+,,,,EtherCAT 303B:8h
+,,,,PROFINET 15120
+MON_IO_SelWar2,Signal output function Selected Warning (error,-,UINT16,CANopen 303B:9h
+,class 0): Second error code.,,,
+,,0,R/W,Modbus 15122
+,This parameter specifies the error code of an error,,,
+,of error class 0 which is to activate the signal,0,per.,Profibus 15122
+,output function.,,,
+,,65535,-,CIP 159.1.9
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 15122
+,,,,EtherCAT 303B:9h
+,,,,PROFINET 15122
+MON_MainsVolt,Detection and monitoring of mains phases.,-,UINT16,CANopen 3005:Fh
+,0 / Automatic Mains Detection: Automatic,0,R/W,Modbus 1310
+,detection and monitoring of mains voltage,,,
+,,0,per.,Profibus 1310
+,1 / DC-Bus Only (Mains 1~230 V / 3~480 V): DC,,,
+,"bus supply only, corresponding to mains voltage",5,expert,CIP 105.1.15
+,230 V (single-phase) or 480 V (three phases),,,
+,,,,ModbusTCP 1310
+,2 / DC-Bus Only (Mains 1~115 V / 3~208 V): DC,,,
+,"bus supply only, corresponding to mains voltage",,,EtherCAT 3005:Fh
+,115 V (single-phase) or 208 V (three phases),,,
+,,,,PROFINET 1310
+,3 / Mains 1~230 V / 3~480 V: Mains voltage 230 V,,,
+,(single-phase) or 480 V (three phases),,,
+,4 / Mains 1~115 V / 3~208 V: Mains voltage 115 V,,,
+,(single-phase) or 208 V (three phases),,,
+,5 / Reserved: Reserved,,,
+,"Value 0: As soon as mains voltage detected, the",,,
+,device automatically verifies whether the mains,,,
+,voltage is 115 V or 230 V in the case of single-,,,
+,phase devices or 208 V or 400/480 V in the case,,,
+,of three-phase devices.,,,
+,Values 1 ... 2: If the device is supplied only via the,,,
+,"DC bus, the parameter has to be set to the voltage",,,
+,value corresponding to the mains voltage of the,,,
+,supplying device. There is no mains voltage,,,
+,monitoring.,,,
+,Values 3 ... 4: If the mains voltage is not detected,,,
+,"properly during start-up, the mains voltage to be",,,
+,used can be selected manually.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

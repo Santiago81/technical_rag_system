@@ -1,0 +1,7 @@
+Pin,Signal,Meaning
+1 ... 3,-,Reserved
+4,MOD_D1,"RS485, Bidirectional transmit/receive signal"
+5,MOD_D0,"RS485, Bidirectional transmit/receive signal, inverted"
+6,-,Reserved
+7,MOD+10V_OUT,"10 V supply, maximum 100 mA"
+8,MOD_0V,Reference potential toMOD+10V_OUT

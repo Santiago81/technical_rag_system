@@ -1,0 +1,15 @@
+Connection,Assignment
+CN1,Power stage supply
+CN2,24 Vdc control supply and safety-related function STO
+CN3,Motor encoder (encoder 1)
+CN4,PTO (encoder simulation ESIM)
+CN5,"PTI (A/B signals, P/D signals, CW/CCW signals)"
+CN6,Digital inputs/outputs
+CN7,Modbus (commissioning interface)
+CN8,External braking resistor
+CN9,DC bus connection for parallel operation
+CN10,Motor phases
+CN11,Holding brake
+Slot 1,Safety module or I/O module
+Slot 2,Encoder module (encoder 2)
+Slot 3,Fieldbus module

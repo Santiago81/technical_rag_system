@@ -1,0 +1,15 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7
+,,"VW3-A7601Rx-x","VW3-A7602Rx-x","VW3-A7603Rx-x",,"VW3-A7604Rx-x","VW3-A7605Rx-x","VW3-A7606Rx-x","VW3-A7607Rx-x","VW3-A7608Rx-x"
+Resistance,Ω,10,27,27,,27,72,72,72,100
+Continuous power,W,400,100,200,,400,100,200,400,100
+"Maximum time inbraking at 115 V",s,3,1.8,4.2,,10.8,6.36,16.8,42,10.8
+Peak power at 115 V,kW,5.6,2.1,2.1,,2.1,0.8,0.8,0.8,0.6
+"Maximum peak energyat 115 V",kWs,16.7,3.7,8.7,,22.3,4.9,13,32.5,6
+"Maximum time inbraking at 230 V",s,0.72,0.55,1.08,,2.64,1.44,3.72,9.6,2.4
+Peak power at 230 V,kW,18.5,6.8,6.8,,6.8,2.6,2.6,2.6,1.8
+"Maximum peak energyat 230 V",kWs,13.3,3.8,7.4,,18.1,3.7,9.6,24.7,4.4
+"Maximum time inbraking at 400 V and480 V",s,0.12,0.084,0.216,,0.504,0.3,0.78,1.92,0.48
+"Peak power at 400 Vand 480 V",kW,60.8,22.5,22.5,,22.5,8.5,8.5,8.5,6.1
+"Maximum peak energyat 400 V and 480 V",kWs,7.3,1.9,4.9,,11.4,2.5,6.6,16.2,2.9
+Degree of protection,,IP65,IP65,IP65,,IP65,IP65,IP65,IP65,IP65
+UL approval (file no.),,-,E233422,E233422,,-,E233422,E233422,-,E233422

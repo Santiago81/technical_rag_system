@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+RMAC_Edge,"Edge of capture signal for relative movement aftercapture.0 / Falling edge: Falling edge1 / Rising edge: Rising edgeAvailable with firmware version ≥V01.10.","-001","UINT16R/Wper.-","CANopen 3023:10hModbus 8992Profibus 8992CIP 135.1.16ModbusTCP 8992EtherCAT 3023:10hPROFINET 8992"

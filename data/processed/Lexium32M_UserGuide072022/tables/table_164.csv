@@ -1,0 +1,15 @@
+HMI menuCom-,Description
+ipg1,"IP address gateway, byte 1"
+ipg2,"IP address gateway, byte 2"
+ipg3,"IP address gateway, byte 3"
+ipg4,"IP address gateway, byte 4"
+ipa1,"Currently used IP address Ethernet module, byte 1"
+ipa2,"Currently used IP address Ethernet module, byte 2"
+ipa3,"Currently used IP address Ethernet module, byte 3"
+ipa4,"Currently used IP address Ethernet module, byte 4"
+etMd,Protocol
+dhcn,"User application name HMI, part 4"
+dnEA,Value for device name extension
+ecsa,Second EtherCAT address
+ecaa,EtherCAT address
+ecss,EtherCAT slave state

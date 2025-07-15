@@ -1,0 +1,6 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+_ERR_temp_dev,"Temperature of device at the time the error wasdetected.","°C---","INT16R/---","CANopen 303C:BhModbus 15382Profibus 15382CIP 160.1.11ModbusTCP 15382EtherCAT 303C:BhPROFINET 15382"
+_ERR_temp_ps,"Temperature of power stage at the time the errorwas detected.","°C---","INT16R/---","CANopen 303C:AhModbus 15380Profibus 15380CIP 160.1.10ModbusTCP 15380EtherCAT 303C:AhPROFINET 15380"
+_ERR_time,"Time of detection of error.With reference to operating hours counter","s0-536870911","UINT32R/---","CANopen 303C:3hModbus 15366Profibus 15366CIP 160.1.3ModbusTCP 15366EtherCAT 303C:3hPROFINET 15366"
+_ERR_DCbus,"DC bus voltage at the time the error was detected.In increments of 0.1 V.","V---","UINT16R/---","CANopen 303C:7hModbus 15374Profibus 15374CIP 160.1.7ModbusTCP 15374EtherCAT 303C:7hPROFINET 15374"
+_ERR_motor_v,Motor velocity at the time the error was detected.,"usr_v---","INT32R/---","CANopen 303C:8hModbus 15376Profibus 15376CIP 160.1.8ModbusTCP 15376EtherCAT 303C:8hPROFINET 15376"

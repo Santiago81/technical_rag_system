@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PTI_pulse_filter,Filter time for input signals at the PTI interface.,μs,UINT16,CANopen 3005:2Fh
+,A signal at the PTI interface is only evaluated if it,0.00,R/W,Modbus 1374
+,is available for a time that is longer than the set,,,
+,filter time.,0.25,per.,Profibus 1374
+,"For example, if an interference pulse is available",13.00,expert,CIP 105.1.47
+,"for a period shorter than the set filter time, the",,,
+,interference pulse is not evaluated.,,,ModbusTCP 1374
+,The interval between 2 signals must also be,,,EtherCAT 3005:2Fh
+,greater than the set filter time.,,,
+,,,,PROFINET 1374
+,Available with hardware version ≥RS03.,,,
+,In increments of 0.01 μs.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+PTI_signal_type,Type of reference value signal for PTI interface.,-,UINT16,CANopen 3005:2h
+ConF→i-o-,0 / A/B Signals /Ab: Signals ENC_A and ENC_,0,R/W,Modbus 1284
+,B (quadruple evaluation),,,
+ioPi,,0,per.,Profibus 1284
+,1 / P/D Signals /Pd: Signals PULSE and DIR,,,
+,,2,-,CIP 105.1.2
+,2 / CW/CCW Signals /cWcc: Signals,,,
+,clockwise and counterclockwise,,,ModbusTCP 1284
+,Setting can only be modified if power stage is,,,EtherCAT 3005:2h
+,disabled.,,,
+,,,,PROFINET 1284
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+PTO_mode,Type of usage of PTO interface.,-,UINT16,CANopen 3005:1Fh
+ConF→ACG-,0 / Off /oFF: PTO interface disabled,0,R/W,Modbus 1342
+PtoM,1 / Esim pAct Enc 1 /PEn1: Encoder,0,per.,Profibus 1342
+,simulation based on actual position of encoder 1,,,
+,,6,-,CIP 105.1.31
+,2 / Esim pRef /PrEF: Encoder simulation,,,
+,based on reference position (_p_ref),,,ModbusTCP 1342
+,3 / PTI Signal /Pti: Directly the signal from PTI,,,EtherCAT 3005:1Fh
+,interface,,,
+,,,,PROFINET 1342
+,4 / Esim pAct Enc 2 /PEn2: Encoder,,,
+,simulation based on actual position of encoder 2,,,
+,(module),,,
+,5 / Esim iqRef /irEF: Encoder simulation,,,
+,based on reference current,,,
+,6 / Esim pActRaw Enc2 /Enc2: Encoder,,,
+,simulation based on raw position value of encoder,,,
+,2 (module),,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CLSET_ParSwiCond,Condition for parameter set switching.,-,UINT16,CANopen 3011:1Ah
+,0 / None Or Digital Input: None or digital input,0,R/W,Modbus 4404
+,function selected,,,
+,,0,per.,Profibus 4404
+,1 / Inside Position Deviation: Inside position,,,
+,deviation (value definition in parameter CLSET_,4,-,CIP 117.1.26
+,p_DiffWin),,,
+,,,,ModbusTCP 4404
+,2 / Below Reference Velocity: Below reference,,,
+,velocity (value definition in parameter CLSET_v_,,,EtherCAT 3011:1Ah
+,Threshol),,,
+,,,,PROFINET 4404
+,3 / Below Actual Velocity: Below actual velocity,,,
+,(value definition in parameter CLSET_v_Threshol),,,
+,4 / Reserved: Reserved,,,
+,"In the case of parameter set switching, the values",,,
+,of the following parameters are changed,,,
+,gradually:,,,
+,- CTRL_KPn,,,
+,- CTRL_TNn,,,
+,- CTRL_KPp,,,
+,- CTRL_TAUnref,,,
+,- CTRL_TAUiref,,,
+,- CTRL_KFPp,,,
+,The following parameters are changed,,,
+,immediately after the time for parameter set,,,
+,switching (CTRL_ParChgTime):,,,
+,- CTRL_Nf1damp,,,
+,- CTRL_Nf1freq,,,
+,- CTRL_Nf1bandw,,,
+,- CTRL_Nf2damp,,,
+,- CTRL_Nf2freq,,,
+,- CTRL_Nf2bandw,,,
+,- CTRL_Osupdamp,,,
+,- CTRL_Osupdelay,,,
+,- CTRL_Kfric,,,
+,Modified settings become active immediately.,,,
+CLSET_p_DiffWin_,Position deviation for control loop parameter set,usr_p,INT32,CANopen 3011:25h
+usr,switching.,,,
+,,0,R/W,Modbus 4426
+,If the position deviation of the position controller is,,,
+,"less than the value of this parameter, control loop",164,per.,Profibus 4426
+,"parameter set 2 is used. Otherwise, control loop",,,
+,parameter set 1 is used.,2147483647,-,CIP 117.1.37
+,"The minimum value, the factory setting and the",,,ModbusTCP 4426
+,maximum value depend on the scaling factor.,,,
+,,,,EtherCAT 3011:25h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 4426
+,Available with firmware version ≥V01.03.,,,

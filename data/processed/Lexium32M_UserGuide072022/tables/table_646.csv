@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSM_ds_setC,Setting C.,-,INT32,CANopen 302D:14h
+,The value depends on the type of data set as,-2147483648,R/W,Modbus 11560
+,selected with parameter MSM_ds_type:,,,
+,,0,per.,Profibus 11560
+,- Move Absolute: Absolute position,,,
+,,2147483647,-,CIP 145.1.20
+,- Move Relative: Relative position,,,
+,,,,ModbusTCP 11560
+,- Reference Movement: -,,,
+,,,,EtherCAT 302D:14h
+,- Position Setting: -,,,
+,,,,PROFINET 11560
+,- Repeat: -,,,
+,- Move Additive: Relative position,,,
+,- Move Velocity: Selection of direction,,,
+,Value 0: Positive,,,
+,Value 1: Negative,,,
+,Value 2: Active direction,,,
+,- Gear: Denominator,,,
+,- Write Parameter: -,,,
+,Modified settings become active immediately.,,,
+MSM_ds_setD,Setting D.,-,INT32,CANopen 302D:15h
+,The value depends on the type of data set as,-2147483648,R/W,Modbus 11562
+,selected with parameter MSM_ds_type:,,,
+,,0,per.,Profibus 11562
+,- Move Absolute: Decelaration,,,
+,,2147483647,-,CIP 145.1.21
+,- Move Relative: Decelaration,,,
+,,,,ModbusTCP 11562
+,- Reference Movement: -,,,
+,,,,EtherCAT 302D:15h
+,- Position Setting: -,,,
+,,,,PROFINET 11562
+,- Repeat: -,,,
+,- Move Additive: Decelaration,,,
+,- Move Velocity: Deceleration,,,
+,- Gear: -,,,
+,- Write Parameter: -,,,
+,Modified settings become active immediately.,,,
+MSM_ds_sub_ds,Subsequent data set.,-,UINT16,CANopen 302D:17h
+,Number of the next data set to be started.,0,R/W,Modbus 11566
+,Modified settings become active immediately.,0,per.,Profibus 11566
+,,127,-,CIP 145.1.23
+,,,,ModbusTCP 11566
+,,,,EtherCAT 302D:17h
+,,,,PROFINET 11566

@@ -1,0 +1,20 @@
+Description,Reference
+"CANopen cable, 0.3 m (0.98 ft), 2 x RJ45",VW3CANCARR03
+"CANopen cable, 1 m (3.28 ft), 2 x RJ45",VW3CANCARR1
+"CANopen cable, 2 m (6.56 ft), 2 x RJ45, shielded twisted pair cable",490NTW00002
+"CANopen cable, 5 m (16.4 ft), 2 x RJ45, shielded twisted pair cable",490NTW00005
+"CANopen cable, 12 m (39.4 ft), 2 x RJ45, shielded twisted pair cable",490NTW00012
+"CANopen cable, 2 m (6.56 ft), 2 x RJ45, shielded twisted pair cable with UL and CSA 22.1 certification",490NTW00002U
+"CANopen cable, 5 m (16.4 ft), 2 x RJ45, shielded twisted pair cable with UL and CSA 22.1 certification",490NTW00005U
+"CANopen cable, 12 m (39.4 ft), 2 x RJ45, shielded twisted pair cable with UL and CSA 22.1 certification",490NTW00012U
+"CANopen cable, 1 m (3.28 ft), D9-SUB (female) to RJ45",TCSCCN4F3M1T
+"CANopen cable, 1 m (3.28 ft), D9-SUB (female) with integrated terminating resistor to RJ45",VW3M3805R010
+"CANopen cable, 3 m (9.84 ft), D9-SUB (female) with integrated terminating resistor to RJ45",VW3M3805R030
+"CANopen cable, 0.3 m (0.98 ft), 2 x D9-SUB (female), LSZH standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1)",TSXCANCADD03
+"CANopen cable, 1 m (3.28 ft), 2 x D9-SUB (female), LSZH standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1)",TSXCANCADD1
+"CANopen cable, 3 m (9.84 ft), 2 x D9-SUB (female), LSZH standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1)",TSXCANCADD3
+"CANopen cable, 5 m (16.4 ft), 2 x D9-SUB (female), LSZH standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1)",TSXCANCADD5
+"CANopen cable, 0.3 m (0.98 ft), 2 x D9-SUB (female), flame-retardant, tested as per IEC 60332-2, ULcertification",TSXCANCBDD03
+"CANopen cable, 1 m (3.28 ft), 2 x D9-SUB (female), flame-retardant, tested as per IEC 60332-2, ULcertification",TSXCANCBDD1
+"CANopen cable, 3 m (9.84 ft), 2 x D9-SUB (female), flame-retardant, tested as per IEC 60332-2, ULcertification",TSXCANCBDD3
+"CANopen cable, 5 m (16.4 ft), 2 x D9-SUB (female), flame-retardant, tested as per IEC 60332-2, ULcertification",TSXCANCBDD5

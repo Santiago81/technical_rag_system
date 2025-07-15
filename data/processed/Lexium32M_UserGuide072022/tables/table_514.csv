@@ -1,0 +1,41 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_HoldingBrake,Holding brake identification.,-,UINT16,CANopen 300D:20h
+,Value 0: Motor without holding brake,-,R/-,Modbus 3392
+,Value 1: Motor with holding brake,-,-,Profibus 3392
+,,-,-,CIP 113.1.32
+,,,,ModbusTCP 3392
+,,,,EtherCAT 300D:20h
+,,,,PROFINET 3392
+_M_I_0,Continuous stall current of motor.,Arms,UINT16,CANopen 300D:13h
+,In increments of 0.01 Arms.,-,R/-,Modbus 3366
+,,-,-,Profibus 3366
+,,-,-,CIP 113.1.19
+,,,,ModbusTCP 3366
+,,,,EtherCAT 300D:13h
+,,,,PROFINET 3366
+_M_I_max,Maximum current of motor.,Arms,UINT16,CANopen 300D:6h
+ConF→inF-,In increments of 0.01 Arms.,-,R/-,Modbus 3340
+MiMA,,-,-,Profibus 3340
+,,-,-,CIP 113.1.6
+,,,,ModbusTCP 3340
+,,,,EtherCAT 300D:6h
+,,,,PROFINET 3340
+_M_I_nom,Nominal current of motor.,Arms,UINT16,CANopen 300D:7h
+ConF→inF-,In increments of 0.01 Arms.,-,R/-,Modbus 3342
+Mino,,-,-,Profibus 3342
+,,-,-,CIP 113.1.7
+,,,,ModbusTCP 3342
+,,,,EtherCAT 300D:7h
+,,,,PROFINET 3342
+_M_I2t,Maximum permissible time for maximum current,ms,UINT16,CANopen 300D:11h
+,of motor.,,,
+,,-,R/-,Modbus 3362
+,,-,-,Profibus 3362
+,,-,-,CIP 113.1.17
+,,,,ModbusTCP 3362
+,,,,EtherCAT 300D:11h
+,,,,PROFINET 3362

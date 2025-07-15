@@ -1,0 +1,13 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+,LXM32•-,LXM32•-,,LXM32•-,LXM32•-,LXM32•-,LXM32•-,LXM32•-
+,U60N4,D12N4,,D18N4,D30N4,D72N4,D85N4,C10N4
+Capacitance of internal capacitor μF,110,195,,390,560,1120,1230,1230
+Energy absorption of internal capacitors Evar at Ws,4,8,,16,22,45,49,49
+nominal voltage 208 V +10%,,,,,,,,
+Energy absorption of internal capacitors Evar at Ws,14,25,,50,73,145,159,159
+nominal voltage 380 V +10%,,,,,,,,
+Energy absorption of internal capacitors Evar at Ws,12,22,,43,62,124,136,136
+nominal voltage 400 V +10%,,,,,,,,
+Energy absorption of internal capacitors Evar at Ws,3,5,,10,14,28,31,31
+nominal voltage 480 V +10%,,,,,,,,
+Parameter DCbus_compat has no effect in the case of three-phase devices,,,,,,,,

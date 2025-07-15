@@ -1,0 +1,13 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+AT_wait,Waiting time between Autotuning steps.,ms,UINT16,CANopen 302F:9h
+,Modified settings become active the next time the,300,R/W,Modbus 12050
+,motor moves.,,,
+,,500,-,Profibus 12050
+,,10000,-,CIP 147.1.9
+,,,,ModbusTCP 12050
+,,,,EtherCAT 302F:9h
+,,,,PROFINET 12050

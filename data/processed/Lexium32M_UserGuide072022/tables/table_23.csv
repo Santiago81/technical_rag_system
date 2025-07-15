@@ -1,0 +1,10 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1
+,"LXM32•U45,",,"LXM32•D85,"
+,"LXM32•U60,",,LXM32•C10
+,"LXM32•U90,",,
+,"LXM32•D12,",,
+,"LXM32•D18,",,
+,"LXM32•D30,",,
+,LXM32•D72,,
+PWM frequency power stage kHz,8,,4 or 8(1)
+(1) Factory setting: 4 kHz. Adjustable via parameter.,,,

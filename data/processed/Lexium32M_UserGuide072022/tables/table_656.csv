@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PntIPmask4,"IP address subnet mask, byte 4.",-,UINT16,CANopen 3048:Eh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18460
+,product is powered on.,,,
+iPM4,,0,per.,Profibus 18460
+,,255,-,CIP 172.1.14
+,,,,ModbusTCP 18460
+,,,,EtherCAT 3048:Eh
+,,,,PROFINET 18460
+PntIpMode,Method of obtaining IP address.,-,UINT16,CANopen 3048:2h
+ConF→CoM-,0 / Manual /MAnu: Manual,0,R/W,Modbus 18436
+iPMd,3 / DCP /dcP: DCP,3,per.,Profibus 18436
+,,3,-,CIP 172.1.2
+,,,,ModbusTCP 18436
+,,,,EtherCAT 3048:2h
+,,,,PROFINET 18436
+PosReg1Mode,Selection of comparison criterion for position,-,UINT16,CANopen 300B:4h
+,register channel 1.,,,
+,,0,R/W,Modbus 2824
+,0 / Pact greater equal A: Actual position is,,,
+,greater than or equal to comparison value A for,0,per.,Profibus 2824
+,position register channel 1,,,
+,,5,-,CIP 111.1.4
+,1 / Pact less equal A: Actual position is less than,,,
+,or equal to comparison value A for position,,,ModbusTCP 2824
+,register channel 1,,,
+,,,,EtherCAT 300B:4h
+,2 / Pact in [A-B] (basic): Actual position is in the,,,
+,range A-B including limits (basic),,,PROFINET 2824
+,3 / Pact out [A-B] (basic): Actual position is out of,,,
+,the range A-B excluding limits (basic),,,
+,4 / Pact in [A-B] (extended): Actual position is in,,,
+,the range A-B including limits (extended),,,
+,5 / Pact out [A-B] (extended): Actual position is,,,
+,out of the range A-B excluding limits (extended),,,
+,Modified settings become active immediately.,,,
+PosReg1Source,Selection of source for position register channel 1.,-,UINT16,CANopen 300B:6h
+,0 / Pact Encoder 1: Source for position register,0,R/W,Modbus 2828
+,channel 1 is Pact of encoder 1,,,
+,,0,per.,Profibus 2828
+,1 / Pact Encoder 2: Source for position register,,,
+,channel 1 is Pact of encoder 2 (module),1,-,CIP 111.1.6
+,Modified settings become active immediately.,,,ModbusTCP 2828
+,,,,EtherCAT 300B:6h
+,,,,PROFINET 2828

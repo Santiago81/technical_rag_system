@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSM_ds_tranval2,Value for transition condition 2.,-,INT32,CANopen 302D:1Dh
+,The value depends on the type of data set as,0,R/W,Modbus 11578
+,selected with parameter MSM_ds_trancon2:,,,
+,,0,per.,Profibus 11578
+,- Continue Without Condition: No transition,,,
+,condition value,4,-,CIP 145.1.29
+,- Start Request Edge: Start request edge,,,ModbusTCP 11578
+,Value 0: Rising edge,,,EtherCAT 302D:1Dh
+,Value 1: Falling edge,,,PROFINET 11578
+,Value 4: Rising or falling edge,,,
+,- Start Request Level: Start request level,,,
+,Value 2: 1 level,,,
+,Value 3: 0 level,,,
+,Modified settings become active immediately.,,,
+MSM_ds_type,Data set type.,-,UINT16,CANopen 302D:11h
+,0 / None: None,0,R/W,Modbus 11554
+,1 / Move Absolute: Absolute movement,0,per.,Profibus 11554
+,2 / Move Additive: Additive movement,9,-,CIP 145.1.17
+,3 / Reference Movement: Reference movement,,,ModbusTCP 11554
+,4 / Position Setting: Position setting,,,EtherCAT 302D:11h
+,5 / Repeat: Repeat,,,PROFINET 11554
+,6 / Move Relative: Relative movement,,,
+,7 / Move Velocity: Movement with a defined,,,
+,velocity,,,
+,8 / Gear: Movement with a defined gear factor,,,
+,9 / Write Parameter: Write a parameter,,,
+,The values for the selected data set type are,,,
+,specified by means of the parameters MSM_ds_,,,
+,set1 to MSM_ds_set4.,,,
+,Modified settings become active immediately.,,,
+MSM_start_ds,Selection of a data set to be started for operating,-,UINT16,CANopen 301B:Ah
+,mode Motion Sequence.,,,
+,,0,R/W,Modbus 6932
+,Modified settings become active immediately.,,,
+,,0,-,Profibus 6932
+,,127,-,CIP 127.1.10
+,,,,ModbusTCP 6932
+,,,,EtherCAT 301B:Ah
+,,,,PROFINET 6932

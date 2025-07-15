@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CLSET_winTime,Time window for parameter set switching.,ms,UINT16,CANopen 3011:1Bh
+,Value 0: Window monitoring deactivated.,0,R/W,Modbus 4406
+,Value >0: Window time for the parameters,0,per.,Profibus 4406
+,CLSET_v_Threshol and CLSET_p_DiffWin.,,,
+,,1000,-,CIP 117.1.27
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 4406
+,,,,EtherCAT 3011:1Bh
+,,,,PROFINET 4406
+CommutCntCred,Value for increased threshold for commutation,-,INT16,CANopen 3005:3Eh
+,monitoring.,,,
+,,0,R/W,Modbus 1404
+,This parameter contains the value which is added,,,
+,to the threshold value for commutation monitoring.,0,per.,Profibus 1404
+,Setting can only be modified if power stage is,1000,expert,CIP 105.1.62
+,disabled.,,,
+,,,,ModbusTCP 1404
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3005:3Eh
+,Available with firmware version ≥V01.30.,,,
+,,,,PROFINET 1404
+CommutCntMax,Maximum value the commutation monitoring,-,INT16,CANopen 303F:63h
+,counter has reached.,,,
+,,-,R/W,Modbus 16326
+,This parameter contains the maximum value the,,,
+,commutation monitoring counter has reached,-,-,Profibus 16326
+,since power on or reset. The maximum value can,,,
+,be reset by writing the value 0.,-,expert,CIP 163.1.99
+,Available with firmware version ≥V01.30.,,,ModbusTCP 16326
+,,,,EtherCAT 303F:63h
+,,,,PROFINET 16326
+CTRL_GlobGain,Global gain factor (affects control loop parameter,%,UINT16,CANopen 3011:15h
+,set 1).,,,
+oP →tun-,,5.0,R/W,Modbus 4394
+,The global gain factor affects the following,,,
+GAin,parameters of control loop parameter set 1:,100.0,per.,Profibus 4394
+,- CTRL_KPn,1000.0,-,CIP 117.1.21
+,- CTRL_TNn,,,ModbusTCP 4394
+,- CTRL_KPp,,,EtherCAT 3011:15h
+,- CTRL_TAUnref,,,PROFINET 4394
+,The global gain factor is set to 100%,,,
+,- if the control loop parameters are set to default,,,
+,- at the end of the Autotuning process,,,
+,- if control loop parameter set 2 is copied to set 1,,,
+,via the parameter CTRL_ParSetCopy,,,
+,"If a full configuration is transmitted via the fieldbus,",,,
+,the value for CTRL_GlobGain must be transmitted,,,
+,prior to the values of the control loop parameters,,,
+,"CTRL_KPn, CTRL_TNn, CTRL_KPp and CTRL_",,,
+,TAUnref. If CTRL_GlobGain is changed during a,,,
+,"configuration transmission, CTRL_KPn, CTRL_",,,
+,"TNn, CTRL_KPp and CTRL_TAUnref must also",,,
+,be part of the configuration.,,,
+,In increments of 0.1 %.,,,
+,Modified settings become active immediately.,,,

@@ -1,0 +1,19 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+GEARposChgMode,Treatment of position changes with inactive power,-,UINT16,CANopen 3026:Bh
+,stage.,,,
+,,0,R/W,Modbus 9750
+,0 / Off: Position changes in states with disabled,,,
+,power stage are ignored.,0,per.,Profibus 9750
+,1 / On: Position changes in states with disabled,1,-,CIP 138.1.11
+,power stage are taken into account.,,,
+,,,,ModbusTCP 9750
+,This setting has an effect only if gear processing is,,,
+,started in the mode 'Synchronization with,,,EtherCAT 3026:Bh
+,compensation movement'.,,,
+,,,,PROFINET 9750
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

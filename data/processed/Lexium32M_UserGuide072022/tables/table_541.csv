@@ -1,0 +1,21 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_VoltUtil,Degree of utilization of DC bus voltage.,%,INT16,CANopen 301E:13h
+Mon,"With a value of 100%, the drive operates at the",-,R/-,Modbus 7718
+,voltage limit.,,,
+udcr,,-,-,Profibus 7718
+,,-,-,CIP 130.1.19
+,,,,ModbusTCP 7718
+,,,,EtherCAT 301E:13h
+,,,,PROFINET 7718
+_WarnActive,"Active errors of error class 0, bit-coded.",-,UINT32,CANopen 301C:Bh
+,See parameter _WarnLatched for more details on,-,R/-,Modbus 7190
+,the bits.,,,
+,,-,-,Profibus 7190
+,,-,-,CIP 128.1.11
+,,,,ModbusTCP 7190
+,,,,EtherCAT 301C:Bh
+,,,,PROFINET 7190

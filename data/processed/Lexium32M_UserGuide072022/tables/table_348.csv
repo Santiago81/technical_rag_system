@@ -1,0 +1,13 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_v_zeroclamp,Velocity limit for Zero Clamp.,usr_v,UINT32,CANopen 3006:28h
+,A Zero Clamp operation is only possible if the,0,R/W,Modbus 1616
+,reference velocity is below the Zero Clamp,,,
+,velocity limit.,10,per.,Profibus 1616
+,Modified settings become active immediately.,2147483647,-,CIP 106.1.40
+,,,,ModbusTCP 1616
+,,,,EtherCAT 3006:28h
+,,,,PROFINET 1616

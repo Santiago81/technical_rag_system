@@ -1,0 +1,18 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IO_ModeSwitch,Operating mode for signal input function,-,UINT16,CANopen 3006:2Fh
+,Operating Mode Switch.,,,
+ConF→ACG-,,0,R/W,Modbus 1630
+,0 / None /nonE: None,,,
+ioMS,,0,per.,Profibus 1630
+,1 / Profile Torque /torq: Profile Torque,,,
+,,3,-,CIP 106.1.47
+,2 / Profile Velocity /VELP: Profile Velocity,,,
+,,,,ModbusTCP 1630
+,3 / Electronic Gear /GEAr: Electronic Gear,,,
+,,,,EtherCAT 3006:2Fh
+,Modified settings become active immediately.,,,
+,,,,PROFINET 1630

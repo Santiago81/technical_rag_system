@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_TAUnact,Filter time constant to smooth velocity of motor.,ms,UINT16,CANopen 3011:8h
+,The default value is calculated on the basis of the,0.00,R/W,Modbus 4368
+,motor data.,,,
+,,-,per.,Profibus 4368
+,In increments of 0.01 ms.,,,
+,,30.00,expert,CIP 117.1.8
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 4368
+,,,,EtherCAT 3011:8h
+,,,,PROFINET 4368
+CTRL_v_max,Velocity limitation.,usr_v,UINT32,CANopen 3011:10h
+ConF→drC-,"During operation, the velocity limit is one of the",1,R/W,Modbus 4384
+,following values (whichever is lowest):,,,
+nMAX,,13200,per.,Profibus 4384
+,- CTRL_v_max,,,
+,,2147483647,-,CIP 117.1.16
+,- M_n_max,,,
+,,,,ModbusTCP 4384
+,- Velocity limitation via analog input (module,,,
+,IOM1),,,EtherCAT 3011:10h
+,- Velocity limitation via digital input,,,PROFINET 4384
+,Modified settings become active immediately.,,,
+CTRL_VelObsActiv,Activation of velocity observer.,-,UINT16,CANopen 3011:22h
+,0 / Velocity Observer Off: Velocity observer is off,0,R/W,Modbus 4420
+,1 / Velocity Observer Passive: Velocity observer,0,per.,Profibus 4420
+,"is on, but not used for motor control",,,
+,,2,expert,CIP 117.1.34
+,2 / Velocity Observer Active: Velocity observer is,,,
+,on and used for motor control,,,ModbusTCP 4420
+,Velocity observer control reduces velocity ripple,,,EtherCAT 3011:22h
+,and enhances controller bandwidth.,,,
+,,,,PROFINET 4420
+,Set the correct dynamics and inertia values before,,,
+,activation.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.01.,,,
+CTRL_VelObsDyn,Dynamics of velocity observer.,ms,UINT16,CANopen 3011:23h
+,The value of this parameter must be less than (for,0.03,R/W,Modbus 4422
+,"example, between 5 % and 20 %) the integral",,,
+,action time of the velocity controller (parameter,0.25,per.,Profibus 4422
+,CTRL1_TNn und CTRL2_TNn).,,,
+,,200.00,expert,CIP 117.1.35
+,In increments of 0.01 ms.,,,
+,,,,ModbusTCP 4422
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3011:23h
+,Modified settings become active immediately.,,,PROFINET 4422
+,Available with firmware version ≥V01.01.,,,

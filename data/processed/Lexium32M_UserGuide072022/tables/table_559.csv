@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL1_TAUiref,Filter time constant of the reference current value,ms,UINT16,CANopen 3012:5h
+,filter.,,,
+,,0.00,R/W,Modbus 4618
+,In the case of switching between the two control,,,
+,"loop parameter sets, the values are changed",0.50,per.,Profibus 4618
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,4.00,-,CIP 118.1.5
+,In increments of 0.01 ms.,,,ModbusTCP 4618
+,Modified settings become active immediately.,,,EtherCAT 3012:5h
+,,,,PROFINET 4618
+CTRL1_TAUnref,Filter time constant of the reference velocity value,ms,UINT16,CANopen 3012:4h
+,filter.,,,
+ConF→drC-,,0.00,R/W,Modbus 4616
+,In the case of switching between the two control,,,
+tAu1,"loop parameter sets, the values are changed",9.00,per.,Profibus 4616
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,327.67,-,CIP 118.1.4
+,In increments of 0.01 ms.,,,ModbusTCP 4616
+,Modified settings become active immediately.,,,EtherCAT 3012:4h
+,,,,PROFINET 4616
+CTRL1_TNn,Velocity controller integral action time.,ms,UINT16,CANopen 3012:2h
+ConF→drC-,The default value is calculated.,0.00,R/W,Modbus 4612
+tin1,In the case of switching between the two control,-,per.,Profibus 4612
+,"loop parameter sets, the values are changed",,,
+,linearly over the time defined in the parameter,327.67,-,CIP 118.1.2
+,CTRL_ParChgTime.,,,
+,,,,ModbusTCP 4612
+,In increments of 0.01 ms.,,,
+,,,,EtherCAT 3012:2h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 4612
+CTRL2_KFPp,Velocity feed-forward control.,%,UINT16,CANopen 3013:6h
+ConF→drC-,In the case of switching between the two control,0.0,R/W,Modbus 4876
+,"loop parameter sets, the values are changed",,,
+FPP2,linearly over the time defined in the parameter,0.0,per.,Profibus 4876
+,CTRL_ParChgTime.,,,
+,,200.0,-,CIP 119.1.6
+,In increments of 0.1 %.,,,
+,,,,ModbusTCP 4876
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3013:6h
+,,,,PROFINET 4876
+CTRL2_Kfric,Friction compensation: Gain.,Arms,UINT16,CANopen 3013:10h
+,In increments of 0.01 Arms.,0.00,R/W,Modbus 4896
+,Modified settings become active immediately.,0.00,per.,Profibus 4896
+,,10.00,expert,CIP 119.1.16
+,,,,ModbusTCP 4896
+,,,,EtherCAT 3013:10h
+,,,,PROFINET 4896

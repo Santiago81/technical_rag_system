@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+GEARdir_enabl,Enabled direction of movement for operating,-,UINT16,CANopen 3026:5h
+,mode Electronic Gear.,,,
+,,1,R/W,Modbus 9738
+,1 / Positive: Positive direction,,,
+,,3,per.,Profibus 9738
+,2 / Negative: Negative direction,,,
+,,3,-,CIP 138.1.5
+,3 / Both: Both directions,,,
+,,,,ModbusTCP 9738
+,This allows you to activate a return movement lock,,,
+,function.,,,EtherCAT 3026:5h
+,Modified settings become active immediately.,,,PROFINET 9738

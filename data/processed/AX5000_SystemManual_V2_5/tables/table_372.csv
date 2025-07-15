@@ -1,0 +1,36 @@
+Z K 4 t u v - w w x y - z z z z,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+t,Servo drive series,5,=,AX5000
+u,Function,0,=,Motor cable
+,,1,=,"Encoder cable EnDat, Hiperface, BiSS"
+,,2,=,Encoder cable Sin/Cos with zero pulse
+,,3,=,Resolver cable
+,,4,=,Temperature cable AL2000
+,,5,=,Hall cable for AL2000
+v,Function,0,=,Motor - drive
+,,1,=,Extension cable
+,,2,=,Motor – choke (only AM3000 cable)
+,,4,=,"Motor - other sideThe free end is fitted with wire end sleeves"
+,,5,=,"Drive - other sideThe free end is fitted with wire end sleeves"
+,,9,=,Raw material
+ww,Motor series,0 0,=,AL2000/AM2000/AM3000/AM3500
+,,01 to 19,=,Beckhoff
+,,80 to 89,=,Beckhoff
+,,20 to 29,=,Alpha EnDat / Alpha resolver
+,,30 to 39,=,Lenze
+,,40 to 49,=,SEW
+,,50 to 59,=,Siemens
+,,60 to 79,=,Further
+x,Quality,90 to 99,=,Further
+,,0,=,fixed installation / no motion
+,,1,=,dynamic / drag chain
+,,2,=,high dynamic / high-speed chain
+,,6,=,high torsion cable
+y,Cross-section [mm2],0,=,Feedback
+,,1 to 8,=,0.75=1 / 1.0=2 / 1.5=3 / 2.5=4 / 4.0=5 / 6.0=6 / 10=7 / 16=8
+,,9,=,special
+,,90,=,25
+,,91,=,35
+,,92,=,50
+z z z z,Length in dm,,,
+applies only if Y ≠ 9,0001 to 9999,=,1 to 1000 m,
+applies only if Y > 9,_001 to _999,=,1 to 100 m,

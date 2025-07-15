@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+"MOD_EnableConF→ACG-AtyP","Activation of Modulo function.0 / Modulo Off /oFF: Modulo is off1 / Modulo On /on: Modulo is onSetting can only be modified if power stage isdisabled.Modified settings become active immediately.Available with firmware version ≥V01.01.","-001","UINT16R/Wper.-","CANopen 3006:38hModbus 1648Profibus 1648CIP 106.1.56ModbusTCP 1648EtherCAT 3006:38hPROFINET 1648"

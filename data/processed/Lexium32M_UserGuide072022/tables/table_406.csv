@@ -1,0 +1,30 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_DCOMstatus,DriveCom status word.,-,UINT16,CANopen 6041:0h
+,Bit assignments:,-,R/-,Modbus 6916
+,Bit 0: Operating state Ready To Switch On,-,-,Profibus 6916
+,Bit 1: Operating state Switched On,-,-,CIP 127.1.2
+,Bit 2: Operating state Operation Enabled,,,ModbusTCP 6916
+,Bit 3: Operating state Fault,,,EtherCAT 6041:0h
+,Bit 4: Voltage Enabled,,,PROFINET 6916
+,Bit 5: Operating state Quick Stop,,,
+,Bit 6: Operating state Switch On Disabled,,,
+,Bit 7: Error of error class 0,,,
+,Bit 8: HALT request active,,,
+,Bit 9: Remote,,,
+,Bit 10: Target Reached,,,
+,Bit 11: Internal Limit Active,,,
+,Bit 12: Operating mode-specific,,,
+,Bit 13: x_err,,,
+,Bit 14: x_end,,,
+,Bit 15: ref_ok,,,
+_DPL_motionStat,Drive Profile Lexium motionStat.,-,UINT16,CANopen 301B:27h
+,,-,R/-,Modbus 6990
+,,-,-,Profibus 6990
+,,-,-,CIP 127.1.39
+,,,,ModbusTCP 6990
+,,,,EtherCAT 301B:27h
+,,,,PROFINET 6990

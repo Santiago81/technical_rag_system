@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL1_Nf1freq,Notch filter 1: Frequency.,Hz,UINT16,CANopen 3012:9h
+,The filter is deactivated at a value of 15000.,50.0,R/W,Modbus 4626
+,In increments of 0.1 Hz.,1500.0,per.,Profibus 4626
+,Modified settings become active immediately.,1500.0,expert,CIP 118.1.9
+,,,,ModbusTCP 4626
+,,,,EtherCAT 3012:9h
+,,,,PROFINET 4626
+CTRL1_Nf1bandw,Notch filter 1: Bandwidth.,%,UINT16,CANopen 3012:Ah
+,Definition of bandwidth: 1 - Fb/F0,1.0,R/W,Modbus 4628
+,In increments of 0.1 %.,70.0,per.,Profibus 4628
+,Modified settings become active immediately.,90.0,expert,CIP 118.1.10
+,,,,ModbusTCP 4628
+,,,,EtherCAT 3012:Ah
+,,,,PROFINET 4628
+CTRL1_Nf2damp,Notch filter 2: Damping.,%,UINT16,CANopen 3012:Bh
+,In increments of 0.1 %.,55.0,R/W,Modbus 4630
+,Modified settings become active immediately.,90.0,per.,Profibus 4630
+,,99.0,expert,CIP 118.1.11
+,,,,ModbusTCP 4630
+,,,,EtherCAT 3012:Bh
+,,,,PROFINET 4630
+CTRL1_Nf2freq,Notch filter 2: Frequency.,Hz,UINT16,CANopen 3012:Ch
+,The filter is deactivated at a value of 15000.,50.0,R/W,Modbus 4632
+,In increments of 0.1 Hz.,1500.0,per.,Profibus 4632
+,Modified settings become active immediately.,1500.0,expert,CIP 118.1.12
+,,,,ModbusTCP 4632
+,,,,EtherCAT 3012:Ch
+,,,,PROFINET 4632
+CTRL1_Nf2bandw,Notch filter 2: Bandwidth.,%,UINT16,CANopen 3012:Dh
+,Definition of bandwidth: 1 - Fb/F0,1.0,R/W,Modbus 4634
+,In increments of 0.1 %.,70.0,per.,Profibus 4634
+,Modified settings become active immediately.,90.0,expert,CIP 118.1.13
+,,,,ModbusTCP 4634
+,,,,EtherCAT 3012:Dh
+,,,,PROFINET 4634

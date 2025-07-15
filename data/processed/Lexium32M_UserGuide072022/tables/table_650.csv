@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+OFS_PosActivate,Offset movement with relative offset position.,-,UINT16,CANopen 3027:Bh
+,This parameter starts an offset movement with,0,R/W,Modbus 10006
+,one of the relative offset positions specified by,,,
+,means of the parameters OFSp_RelPos1 and,0,-,Profibus 10006
+,OFSp_RelPos2.,,,
+,,3,-,CIP 139.1.11
+,Value 0: No offset movement,,,
+,,,,ModbusTCP 10006
+,Value 1: Start offset movement with relative offset,,,
+,position 1 (OFSp_RelPos1),,,EtherCAT 3027:Bh
+,Value 2: Start offset movement with relative offset,,,PROFINET 10006
+,position 2 (OFSp_RelPos2),,,
+,Modified settings become active immediately.,,,
+OFS_Ramp,Acceleration and deceleration for offset,usr_a,UINT32,CANopen 3027:6h
+,movement.,,,
+,,1,R/W,Modbus 9996
+,Setting can only be modified if power stage is,,,
+,disabled.,600,per.,Profibus 9996
+,Modified settings become active the next time the,2147483647,-,CIP 139.1.6
+,power stage is enabled.,,,
+,,,,ModbusTCP 9996
+,,,,EtherCAT 3027:6h
+,,,,PROFINET 9996
+OFSp_abs,Start absolute offset movement.,Inc,INT32,CANopen 3027:1h
+,Modified settings become active immediately.,-2147483648,R/W,Modbus 9986
+,,-,-,Profibus 9986
+,,2147483647,-,CIP 139.1.1
+,,,,ModbusTCP 9986
+,,,,EtherCAT 3027:1h
+,,,,PROFINET 9986
+OFSp_rel,Start relative offset movement.,Inc,INT32,CANopen 3027:3h
+,Modified settings become active immediately.,-2147483648,R/W,Modbus 9990
+,,0,-,Profibus 9990
+,,2147483647,-,CIP 139.1.3
+,,,,ModbusTCP 9990
+,,,,EtherCAT 3027:3h
+,,,,PROFINET 9990
+OFSp_RelPos1,Relative offset position 1 for offset movement.,Inc,INT32,CANopen 3027:8h
+,Modified settings become active immediately.,-2147483648,R/W,Modbus 10000
+,,0,per.,Profibus 10000
+,,2147483647,-,CIP 139.1.8
+,,,,ModbusTCP 10000
+,,,,EtherCAT 3027:8h
+,,,,PROFINET 10000

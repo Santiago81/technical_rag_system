@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+PPv_target,"Target velocity for operating mode Profile Position.The target velocity is limited to the setting inCTRL_v_max and RAMP_v_max.Modified settings become active the next time themotor moves.","usr_v1604294967295","UINT32R/W--","CANopen 6081:0hModbus 6942Profibus 6942CIP 127.1.15ModbusTCP 6942EtherCAT 6081:0hPROFINET 6942"

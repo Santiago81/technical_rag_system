@@ -1,0 +1,3 @@
+Characteristic,Unit,Value
+"Leakage current (as per IEC 60990, figure3)",mA,<30(1)
+"(1) Measured on mains with grounded neutral point and without external mains filter. Take intoaccount that a 30 mA RCD can already trigger at 15 mA. In addition, there is a high-frequencyleakage current which is not considered in the measurement. The response to this depends on thetype of residual current device.",,

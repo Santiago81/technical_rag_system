@@ -1,0 +1,8 @@
+Parameter,Description
+Reference Velocity,"The reference velocity must be set to a value ≥ the ""maximum"
+,"velocity""."
+Maximum Velocity,Maximum velocity (= max. velocity of the NC motion command)
+Manual Velocity (Fast),Velocity in the manual test menu (F1 and F4)
+Manual Velocity (Slow),Velocity in the manual test menu (F2 and F3)
+Calibration Velocity (towards plc cam),Homing velocity
+Calibration Velocity (off plc cam),Homing velocity

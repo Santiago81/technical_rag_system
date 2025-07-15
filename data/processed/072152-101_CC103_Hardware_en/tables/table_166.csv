@@ -1,0 +1,8 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F105F106F107","FAULT MP201FAULTMP360–379FAULT MP100,400","The measuringsystem selectionis not correctThe definitions inMP360–379 arenot correctThe designationsof the auxiliaryfunctions or axesare not correct","The hardware is not designedfor absolute measuringsystemsDamping of preset setpoint ofone or more stages notcorrectThe designations of theauxiliary functions and axesoverlap or are identical","Replace hardwareSet again inaccordance withinstructions in MPPdescriptionChange designations",
+,,,,,
+,,,,,
+"ÁÁF109ÁÁÁÁ","ÁÁÁÁÁFEP.DEL FAULTÁÁÁÁÁÁÁÁÁÁ","ÁÁÁÁÁFLASH-EPROMnÁotÁÁÁÁcÁorrÁectlÁy deÁletÁed","ÁÁÁÁÁÁÁÁFLASH-EPROM defectiveÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ","ÁÁÁÁÁÁÁReplace hardwareÁÁÁÁÁÁÁÁÁÁÁÁÁÁ",
+"FÁ11Á0ÁÁ","FÁEPÁ.PRÁG FÁAUÁLTÁÁÁÁÁ","FÁLAÁSHÁ-EPÁROÁMnÁot ÁwritÁten Áin cÁor-rectly","FÁLAÁSH-ÁEPÁROÁM dÁefeÁctivÁeÁÁÁÁÁÁÁÁ","ÁRepÁlacÁe hÁardwÁarÁe ÁÁÁÁÁÁÁÁ",
+"FÁ111ÁÁÁÁÁÁÁ","PÁRGÁ ERÁROÁRÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ","CÁheÁcksÁumÁ errÁordetected duringrÁun-ÁupÁÁÁÁÁÁÁÁÁÁÁÁÁ","PÁartÁ proÁgraÁm fÁile sÁystÁem ÁinFLASH has been destroyedÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ","ÁCheÁck Áif pÁrogrÁamÁminÁgprocedure was inter-ÁrupÁted Áby ÁpowÁer fÁail-ÁÁureÁ. If yÁes:Á relÁoadÁ paÁrtÁproÁgramÁ. IÁf noÁ: reÁplaÁcehardware.",
+"FÁ11Á2ÁÁ","DÁATÁA EÁRRÁORÁÁÁÁÁÁ","EÁrroÁr duÁrinÁg daÁtatransfer to theVÁ24Á intÁerfaÁceÁ","FÁauÁlts inÁ wÁiringÁ. ÁÁÁInterface configurator mal-fÁuncÁtionÁal ÁÁÁÁÁ","ÁCheÁck ÁleaÁds, ÁinstÁallÁscreen, check inter-ÁfaceÁ coÁnfigÁuraÁtionÁ. Á",

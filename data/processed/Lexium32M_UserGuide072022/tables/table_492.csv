@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_ERR_class,Error class.,-,UINT16,CANopen 303C:2h
+,Value 0: Error class 0,0,R/-,Modbus 15364
+,Value 1: Error class 1,-,-,Profibus 15364
+,Value 2: Error class 2,4,-,CIP 160.1.2
+,Value 3: Error class 3,,,ModbusTCP 15364
+,Value 4: Error class 4,,,EtherCAT 303C:2h
+,,,,PROFINET 15364
+_ERR_DCbus,DC bus voltage at the time the error was detected.,V,UINT16,CANopen 303C:7h
+,In increments of 0.1 V.,-,R/-,Modbus 15374
+,,-,-,Profibus 15374
+,,-,-,CIP 160.1.7
+,,,,ModbusTCP 15374
+,,,,EtherCAT 303C:7h
+,,,,PROFINET 15374
+_ERR_enable_cycl,Number of cycles of enabling the power stage at,-,UINT16,CANopen 303C:5h
+,error time.,,,
+,,-,R/-,Modbus 15370
+,Number of cycles of enabling the power stage,,,
+,from the time the control voltage was applied to,-,-,Profibus 15370
+,the time the error was detected.,,,
+,,-,-,CIP 160.1.5
+,,,,ModbusTCP 15370
+,,,,EtherCAT 303C:5h
+,,,,PROFINET 15370
+_ERR_enable_time,Time between enabling of power stage and,s,UINT16,CANopen 303C:6h
+,detection of the error.,,,
+,,-,R/-,Modbus 15372
+,,-,-,Profibus 15372
+,,-,-,CIP 160.1.6
+,,,,ModbusTCP 15372
+,,,,EtherCAT 303C:6h
+,,,,PROFINET 15372
+_ERR_motor_I,Motor current at the time the error was detected.,Arms,UINT16,CANopen 303C:9h
+,In increments of 0.01 Arms.,-,R/-,Modbus 15378
+,,-,-,Profibus 15378
+,,-,-,CIP 160.1.9
+,,,,ModbusTCP 15378
+,,,,EtherCAT 303C:9h
+,,,,PROFINET 15378

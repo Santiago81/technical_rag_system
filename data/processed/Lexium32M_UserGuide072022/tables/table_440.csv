@@ -1,0 +1,23 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+1310,2,"Frequency of the external referencevalue signal too highParameter _SigLatched Bit 28","The frequency of the externalreference value signals (A/B signals,P/D signals or CW/CCW signals) ishigher than the permissible value.","Verify the frequency of the externalreference values. Verify the gear ratioin the operating mode ElectronicGear."
+1311,0,"The selected signal input function orsignal output function cannot beconfigured","The selected signal input function orsignal output function cannot be usedin the selected operating mode.","Select another function or change theoperating mode."
+1312,0,"Limit switch or reference switchsignal not defined for signal inputfunction","Reference movements require limitswitches. These limit switches arenot assigned to inputs.","Assign the signal input functionsPositive Limit Switch, Negative LimitSwitch and Reference Switch."
+1313,0,"Configured debounce time notpossible for this signal input function","The signal input function does notsupport the selected debounce time.","Set the debounce time to a validvalue."
+1314,4,"At least two inputs have the samesignal input function.","The same signal input function hasbeen assigned to at least two inputs.",Reconfigure the inputs.
+1315,0,"Frequency of reference value signalis too high.Parameter _WarnLatched Bit 28","The frequency of the pulse signal (A/B, Pulse/Direction, CW/CCW)exceeds the specified range.Received pulses may be lost.","Adapt the frequency of the referencevalue signal to match the inputspecification of the drive. Also adaptthe gear ratio in the operating modeElectronic Gear to the applicationrequirements (position accuracy andvelocity)."
+1316,1,"Position capture via signal inputcurrently not possibleParameter _SigLatched Bit 28","Position capture is already beingused.",-
+1317,0,"Interference at PTI inputParameter _WarnLatched Bit 28","Interfering pulses or impermissibleedge transitions (A and B signalsimultaneously) have been detected.","Verify cable specifications, shieldconnection and EMC."
+1318,0,"The selected type of usage of theanalog inputs is not possible.","At least two analog inputs areconfigured with the same type ofusage.",Reconfigure the analog inputs.
+1501,4,"System error detected: DriveComstate machine indeterminable state",-,-
+1502,4,"System error detected: HWL low-level state machine indeterminablestate",-,-
+1503,1,Quick Stop triggered via fieldbus,"A Quick Stop has been triggered viathe fieldbus. The Quick Stop optioncode has been set to -1 or -2 whichcauses the drive to transition to theoperating state 9 Fault instead of theoperating state 7 Quick Stop Active.",-
+1600,0,"Oscilloscope: No additional dataavailable",-,-
+1601,0,"Oscilloscope: Parameterizationincomplete",-,-
+1602,0,"Oscilloscope: Trigger variable notdefined",-,-
+1606,0,Logging still active,-,-
+1607,0,Logging: No trigger defined,-,-
+1608,0,Logging: Invalid trigger option,-,-
+1609,0,Logging: No channel selected,-,-
+160A,0,Logging: No data available,-,-
+160B,0,Parameter cannot be logged,-,-
+160C,1,"Autotuning: Moment of inertia outsidepermissible range",The load inertia is too high.,"Verify that the system can easily bemoved.Verify the load.Use a differently rated drive."

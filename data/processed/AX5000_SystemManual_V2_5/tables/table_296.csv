@@ -1,0 +1,9 @@
+No.,Name,Unnamed: 0
+1,"T- = input of the temperature measurement sensor of the ex-ternal brake resistor",
+2,"T+ = input of the temperature measurement sensor of the ex-ternal brake resistor",
+3,PE = protective conductor,
+4,"F- = output to the fan controllerof the external brake resistor",
+5,"F+ = output to the fan controllerof the external brake resistor",
+6,PE = protective conductor,
+7,"B- = output to the controller ofthe external brake resistor",
+8,"B+ = output to the controller ofthe external brake resistor",

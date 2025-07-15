@@ -1,0 +1,4 @@
+Unnamed: 0,"Right-click on Axes within the axis configuration.Select Add New Item...."
+,"Select the axis type from the list.Confirm the selection with OK.In the Solution Explorer the new axis appears with itsname within the CNC axis configuration. Link theindividual CNC axes with the drive, in order to enablecontrol."
+,"Open Axis_1 in the Solution Explorer.Open the Configuration tab (1).Link the CNC axis with the hardware axis via Link toI/O... (2)."
+,"Select the drive to be linked from the list.You can filter the list based on the axis link status.The filter Unused (3) only shows axes that are notlinked. The setting All (3) shows all axes, irrespectiveof their link status.Confirm the selection with OK."

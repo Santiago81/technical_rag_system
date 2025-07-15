@@ -1,0 +1,7 @@
+Pos.,Name,Unnamed: 0,Pos..1,Name.1
+1,PC with TwinCAT and PLC,,6,Patch cable
+2,Output terminal,,7,Control cable from the output terminal
+2A,"Output ""8"" of the servo drive digital I/Os",,7A,"Control cable from output ‘8’ of the servo drive digital I/Os"
+3,Brake module,,8,Mains fuses
+4,Servo drive (with the greatest brake energy),,9,Mains contactor
+5,Servo Drives,,,

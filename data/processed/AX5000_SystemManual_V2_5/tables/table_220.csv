@@ -1,0 +1,4 @@
+Unnamed: 0,Press the “Scan motor and feedback 1*” button.
+,"Wait until the loading process is complete and thewindow closes.A window opens, in which the feedback type that wasdetermined is displayed."
+,Confirm the display with OK.
+,"If this error message appears, instead of themessage about the determined feedback type, thismay be because your scanned motor has noelectronic name plate.In this case, proceed as described under Determinethe motor without electronic type plate [} 119]."

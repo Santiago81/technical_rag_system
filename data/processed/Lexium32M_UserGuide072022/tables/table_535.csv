@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_RES_load,Load of braking resistor.,%,INT16,CANopen 301C:14h
+Mon,The braking resistor set via parameter RESint_ext,-,R/-,Modbus 7208
+,is monitored.,,,
+LdFb,,-,-,Profibus 7208
+,,-,-,CIP 128.1.20
+,,,,ModbusTCP 7208
+,,,,EtherCAT 301C:14h
+,,,,PROFINET 7208
+_RES_maxoverload,Maximum value of overload of braking resistor.,%,INT16,CANopen 301C:15h
+,Maximum overload of braking resistor during the,-,R/-,Modbus 7210
+,last 10 seconds.,,,
+,,-,-,Profibus 7210
+,The braking resistor set via parameter RESint_ext,,,
+,is monitored.,-,-,CIP 128.1.21
+,,,,ModbusTCP 7210
+,,,,EtherCAT 301C:15h
+,,,,PROFINET 7210
+_RES_overload,Overload of braking resistor (I2t).,%,INT16,CANopen 301C:13h
+,The braking resistor set via parameter RESint_ext,-,R/-,Modbus 7206
+,is monitored.,,,
+,,-,-,Profibus 7206
+,,-,-,CIP 128.1.19
+,,,,ModbusTCP 7206
+,,,,EtherCAT 301C:13h
+,,,,PROFINET 7206
+_RESint_P,Nominal power of internal braking resistor.,W,UINT16,CANopen 3010:9h
+,,-,R/-,Modbus 4114
+,,-,per.,Profibus 4114
+,,-,-,CIP 116.1.9
+,,,,ModbusTCP 4114
+,,,,EtherCAT 3010:9h
+,,,,PROFINET 4114
+_RESint_R,Resistance value of internal braking resistor.,Ω,UINT16,CANopen 3010:8h
+,In increments of 0.01 Ω.,-,R/-,Modbus 4112
+,,-,per.,Profibus 4112
+,,-,-,CIP 116.1.8
+,,,,ModbusTCP 4112
+,,,,EtherCAT 3010:8h
+,,,,PROFINET 4112

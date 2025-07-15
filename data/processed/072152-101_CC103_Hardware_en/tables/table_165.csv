@@ -1,0 +1,11 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F095F096F097F098F099F100F101F102F103F104","ILLEGAL PLANEILLEGAL RADIUSILLEGAL RISEILLEGAL CIRCLEPLC CYCLETIME?ILLEGAL RTCFAULT MP300FAULT MP200FAULT MP110,201FAULT MP210,220","Wrong planeselectionProgrammedradius notpermittedThe pitch of theinfeed axis is toolarge (forinterpolation of  ahelical line)A full circle hasbeen programmedThe PLC cycletime is too shortThe servo–loopsampling time  istoo shortMachineparameter P300 isincorrectly definedMachineparameter P200 isincorrectly definedThe selectedmeasuring systemis not permittedfor the  definedaxisThe definitions forthe software  limitswitches areincorrect","The axes defined for G18 orG19  do not exist in thecontrolThe programmed radius isless  than half the distancefrom  the start point to theend pointThe travel of the infeed axismust not be greater than thetravel on the circular pathThe start point and end pointare identicalThe PLC cycle time must be> 5 msThe internal limit values inMPP21 are not observedThe max. speed is too highThe cut–off frequency for themeasuring system input isexceededA revolution–coded,incremental measuringsystem is on the  rotary axis–The reference point isoutside the traversingrange–The traversing range of therevolution–coded,incremental rotary encoderis exceeded–P210 or P220P200 > 231","Program the correctplane in  the partprogramCorrect the radius inthe  part programCorrect the pitch in thepart programProgram two circlesegmentsExtend the PLC cycletimeSet a longerservo–loop  samplingtime in MPP21Reduce the max.speedCheck parametersP300 and P200Replace the measuringsystem  by a ”purely”incrementalmeasuring system andredefine  MP201correspondinglyReduce the values forthe  software limitswitchescorrespondingly",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

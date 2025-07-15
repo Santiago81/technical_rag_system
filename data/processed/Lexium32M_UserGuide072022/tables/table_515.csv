@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_Jrot,Moment of inertia of motor.,motor_f,UINT32,CANopen 300D:Ch
+,Units:,-,R/-,Modbus 3352
+,Rotary motors: kgcm2,-,-,Profibus 3352
+,Linear motors: kg,-,-,CIP 113.1.12
+,In increments of 0.001 motor_f.,,,ModbusTCP 3352
+,,,,EtherCAT 300D:Ch
+,,,,PROFINET 3352
+_M_kE,Voltage constant kE of motor.,motor_u,UINT32,CANopen 300D:Bh
+,Voltage constant in Vrms at 1000 RPM.,-,R/-,Modbus 3350
+,Units:,-,-,Profibus 3350
+,Rotary motors: Vrms/RPM,-,-,CIP 113.1.11
+,Linear motors: Vrms/(m/s),,,ModbusTCP 3350
+,In increments of 0.1 motor_u.,,,EtherCAT 300D:Bh
+,,,,PROFINET 3350
+_M_L_d,Inductance d component of motor.,mH,UINT16,CANopen 300D:Fh
+,In increments of 0.01 mH.,-,R/-,Modbus 3358
+,,-,-,Profibus 3358
+,,-,-,CIP 113.1.15
+,,,,ModbusTCP 3358
+,,,,EtherCAT 300D:Fh
+,,,,PROFINET 3358
+_M_L_q,Inductance q component of motor.,mH,UINT16,CANopen 300D:Eh
+,In increments of 0.01 mH.,-,R/-,Modbus 3356
+,,-,-,Profibus 3356
+,,-,-,CIP 113.1.14
+,,,,ModbusTCP 3356
+,,,,EtherCAT 300D:Eh
+,,,,PROFINET 3356
+_M_load,Load of motor.,%,INT16,CANopen 301C:1Ah
+Mon,,-,R/-,Modbus 7220
+LdFM,,-,-,Profibus 7220
+,,-,-,CIP 128.1.26
+,,,,ModbusTCP 7220
+,,,,EtherCAT 301C:1Ah
+,,,,PROFINET 7220

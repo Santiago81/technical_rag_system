@@ -1,0 +1,43 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_UDC_act,Voltage at DC bus.,V,UINT16,CANopen 301C:Fh
+Mon,In increments of 0.1 V.,-,R/-,Modbus 7198
+udcA,,-,-,Profibus 7198
+,,-,-,CIP 128.1.15
+,,,,ModbusTCP 7198
+,,,,EtherCAT 301C:Fh
+,,,,PROFINET 7198
+_Udq_ref,Total motor voltage (vector sum d components,V,INT16,CANopen 301E:6h
+,and q components).,,,
+,,-,R/-,Modbus 7692
+,Square root of ( _Uq_ref2 + _Ud_ref2),,,
+,,-,-,Profibus 7692
+,In increments of 0.1 V.,,,
+,,-,-,CIP 130.1.6
+,,,,ModbusTCP 7692
+,,,,EtherCAT 301E:6h
+,,,,PROFINET 7692
+_Uq_ref,Reference motor voltage q component.,V,INT16,CANopen 301E:4h
+,In increments of 0.1 V.,-,R/-,Modbus 7688
+,,-,-,Profibus 7688
+,,-,-,CIP 130.1.4
+,,,,ModbusTCP 7688
+,,,,EtherCAT 301E:4h
+,,,,PROFINET 7688
+_v_act,Actual velocity.,usr_v,INT32,CANopen 606C:0h
+Mon,,-,R/-,Modbus 7744
+VAct,,-,-,Profibus 7744
+,,-,-,CIP 130.1.32
+,,,,ModbusTCP 7744
+,,,,EtherCAT 606C:0h
+,,,,PROFINET 7744
+_v_act_ENC1,Actual velocity of encoder 1.,usr_v,INT32,CANopen 301E:29h
+,Available with firmware version ≥V01.01.,-,R/-,Modbus 7762
+,,-,-,Profibus 7762
+,,-,-,CIP 130.1.41
+,,,,ModbusTCP 7762
+,,,,EtherCAT 301E:29h
+,,,,PROFINET 7762

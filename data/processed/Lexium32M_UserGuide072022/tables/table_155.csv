@@ -1,0 +1,9 @@
+HMI menuConf,Description
+Conf,Configuration (Configuration)
+inf-,Information/Identification (INFormation / Identification)
+acg-,Axis configuration (Axis Configuration)
+drc-,Device configuration (DRive Configuration)
+i-o-,Configurable inputs/outputs (In Out)
+flt-,Indication of detected error
+Com-,Communication (COMmunication)
+fcs-,Restore factory settings (default values) (Factory Settings)

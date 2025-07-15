@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_n_act,Actual speed of rotation.,RPM,INT16,CANopen 301E:8h
+Mon,,-,R/-,Modbus 7696
+nAct,,-,-,Profibus 7696
+,,-,-,CIP 130.1.8
+,,,,ModbusTCP 7696
+,,,,EtherCAT 301E:8h
+,,,,PROFINET 7696
+_n_act_ENC1,Actual speed of rotation of encoder 1.,RPM,INT16,CANopen 301E:28h
+,Available with firmware version ≥V01.01.,-,R/-,Modbus 7760
+,,-,-,Profibus 7760
+,,-,-,CIP 130.1.40
+,,,,ModbusTCP 7760
+,,,,EtherCAT 301E:28h
+,,,,PROFINET 7760
+_n_act_ENC2,Actual speed of rotation of encoder 2 (module).,RPM,INT16,CANopen 301E:1Eh
+,,-,R/-,Modbus 7740
+,,-,-,Profibus 7740
+,,-,-,CIP 130.1.30
+,,,,ModbusTCP 7740
+,,,,EtherCAT 301E:1Eh
+,,,,PROFINET 7740
+_n_ref,Reference speed of rotation.,RPM,INT16,CANopen 301E:7h
+Mon,,-,R/-,Modbus 7694
+nrEF,,-,-,Profibus 7694
+,,-,-,CIP 130.1.7
+,,,,ModbusTCP 7694
+,,,,EtherCAT 301E:7h
+,,,,PROFINET 7694
+_OFSp_act,Actual position of offset movement.,Inc,INT32,CANopen 3027:Ch
+,,-,R/-,Modbus 10008
+,,-,-,Profibus 10008
+,,-,-,CIP 139.1.12
+,,,,ModbusTCP 10008
+,,,,EtherCAT 3027:Ch
+,,,,PROFINET 10008

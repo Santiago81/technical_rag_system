@@ -1,0 +1,7 @@
+Characteristic,Unit,Value
+Output voltage(1),V,Voltage at 24 Vdc control supply CN2
+,,minus 0.8 V
+Maximum switching current,A,1.7
+Energy inductive load(2),Ws,1.5
+"(1) See 24 Vdc Control Supply, page 40",,
+(2) Time between switch off procedures: > 1 s,,

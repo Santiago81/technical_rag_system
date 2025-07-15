@@ -1,0 +1,403 @@
+2025-07-13 23:15:52,308 - __main__ - INFO - Total chunks: 4558, Unprocessed: 3674
+2025-07-13 23:15:52,308 - __main__ - INFO - Memory usage at start: 95.31 MB
+2025-07-13 23:15:52,311 - __main__ - INFO - Skipping batch 1 - no valid chunks
+2025-07-13 23:15:52,313 - __main__ - INFO - Skipping batch 2 - no valid chunks
+2025-07-13 23:15:52,315 - __main__ - INFO - Skipping batch 3 - no valid chunks
+2025-07-13 23:15:52,317 - __main__ - INFO - Skipping batch 4 - no valid chunks
+2025-07-13 23:15:52,318 - __main__ - INFO - Skipping batch 5 - no valid chunks
+2025-07-13 23:15:52,320 - __main__ - INFO - Skipping batch 6 - no valid chunks
+2025-07-13 23:15:52,322 - __main__ - INFO - Skipping batch 7 - no valid chunks
+2025-07-13 23:15:52,324 - __main__ - INFO - Skipping batch 8 - no valid chunks
+2025-07-13 23:15:52,326 - __main__ - INFO - Skipping batch 9 - no valid chunks
+2025-07-13 23:15:52,327 - __main__ - INFO - Skipping batch 10 - no valid chunks
+2025-07-13 23:15:52,329 - __main__ - INFO - Skipping batch 11 - no valid chunks
+2025-07-13 23:15:52,331 - __main__ - INFO - Skipping batch 12 - no valid chunks
+2025-07-13 23:15:52,332 - __main__ - INFO - Skipping batch 13 - no valid chunks
+2025-07-13 23:15:52,335 - __main__ - INFO - Skipping batch 14 - no valid chunks
+2025-07-13 23:15:52,336 - __main__ - INFO - Skipping batch 15 - no valid chunks
+2025-07-13 23:15:52,338 - __main__ - INFO - Skipping batch 16 - no valid chunks
+2025-07-13 23:15:52,340 - __main__ - INFO - Skipping batch 17 - no valid chunks
+2025-07-13 23:15:52,341 - __main__ - INFO - Skipping batch 18 - no valid chunks
+2025-07-13 23:15:52,343 - __main__ - INFO - Skipping batch 19 - no valid chunks
+2025-07-13 23:15:52,345 - __main__ - INFO - Skipping batch 20 - no valid chunks
+2025-07-13 23:15:52,347 - __main__ - INFO - Skipping batch 21 - no valid chunks
+2025-07-13 23:15:52,348 - __main__ - INFO - Skipping batch 22 - no valid chunks
+2025-07-13 23:15:52,350 - __main__ - INFO - Skipping batch 23 - no valid chunks
+2025-07-13 23:15:52,351 - __main__ - INFO - Skipping batch 24 - no valid chunks
+2025-07-13 23:15:52,353 - __main__ - INFO - Skipping batch 25 - no valid chunks
+2025-07-13 23:15:52,354 - __main__ - INFO - Skipping batch 26 - no valid chunks
+2025-07-13 23:15:52,356 - __main__ - INFO - Skipping batch 27 - no valid chunks
+2025-07-13 23:15:52,357 - __main__ - INFO - Skipping batch 28 - no valid chunks
+2025-07-13 23:15:52,359 - __main__ - INFO - Skipping batch 29 - no valid chunks
+2025-07-13 23:15:52,360 - __main__ - INFO - Skipping batch 30 - no valid chunks
+2025-07-13 23:15:52,362 - __main__ - INFO - Skipping batch 31 - no valid chunks
+2025-07-13 23:15:52,364 - __main__ - INFO - Skipping batch 32 - no valid chunks
+2025-07-13 23:15:52,366 - __main__ - INFO - Skipping batch 33 - no valid chunks
+2025-07-13 23:15:52,367 - __main__ - INFO - Skipping batch 34 - no valid chunks
+2025-07-13 23:15:52,368 - __main__ - INFO - Skipping batch 35 - no valid chunks
+2025-07-13 23:15:52,370 - __main__ - INFO - Skipping batch 36 - no valid chunks
+2025-07-13 23:15:52,372 - __main__ - INFO - Skipping batch 37 - no valid chunks
+2025-07-13 23:15:52,373 - __main__ - INFO - Skipping batch 38 - no valid chunks
+2025-07-13 23:15:52,374 - __main__ - INFO - Skipping batch 39 - no valid chunks
+2025-07-13 23:15:52,376 - __main__ - INFO - Skipping batch 40 - no valid chunks
+2025-07-13 23:15:52,378 - __main__ - INFO - Skipping batch 41 - no valid chunks
+2025-07-13 23:15:52,380 - __main__ - INFO - Skipping batch 42 - no valid chunks
+2025-07-13 23:15:52,382 - __main__ - INFO - Skipping batch 43 - no valid chunks
+2025-07-13 23:15:52,384 - __main__ - INFO - Skipping batch 44 - no valid chunks
+2025-07-13 23:15:52,386 - __main__ - INFO - Skipping batch 45 - no valid chunks
+2025-07-13 23:15:52,387 - __main__ - INFO - Skipping batch 46 - no valid chunks
+2025-07-13 23:15:52,389 - __main__ - INFO - Skipping batch 47 - no valid chunks
+2025-07-13 23:15:52,390 - __main__ - INFO - Skipping batch 48 - no valid chunks
+2025-07-13 23:15:52,392 - __main__ - INFO - Skipping batch 49 - no valid chunks
+2025-07-13 23:15:52,393 - __main__ - INFO - Skipping batch 50 - no valid chunks
+2025-07-13 23:15:52,395 - __main__ - INFO - Skipping batch 51 - no valid chunks
+2025-07-13 23:15:52,396 - __main__ - INFO - Skipping batch 52 - no valid chunks
+2025-07-13 23:15:52,398 - __main__ - INFO - Skipping batch 53 - no valid chunks
+2025-07-13 23:15:52,400 - __main__ - INFO - Skipping batch 54 - no valid chunks
+2025-07-13 23:15:52,401 - __main__ - INFO - Skipping batch 55 - no valid chunks
+2025-07-13 23:15:52,403 - __main__ - INFO - Skipping batch 56 - no valid chunks
+2025-07-13 23:15:52,405 - __main__ - INFO - Skipping batch 57 - no valid chunks
+2025-07-13 23:15:52,406 - __main__ - INFO - Skipping batch 58 - no valid chunks
+2025-07-13 23:15:52,408 - __main__ - INFO - Skipping batch 59 - no valid chunks
+2025-07-13 23:15:52,409 - __main__ - INFO - Skipping batch 60 - no valid chunks
+2025-07-13 23:15:52,411 - __main__ - INFO - Skipping batch 61 - no valid chunks
+2025-07-13 23:15:52,413 - __main__ - INFO - Skipping batch 62 - no valid chunks
+2025-07-13 23:15:52,415 - __main__ - INFO - Skipping batch 63 - no valid chunks
+2025-07-13 23:15:52,416 - __main__ - INFO - Skipping batch 64 - no valid chunks
+2025-07-13 23:15:52,418 - __main__ - INFO - Skipping batch 65 - no valid chunks
+2025-07-13 23:15:52,420 - __main__ - INFO - Skipping batch 66 - no valid chunks
+2025-07-13 23:15:52,421 - __main__ - INFO - Skipping batch 67 - no valid chunks
+2025-07-13 23:15:52,423 - __main__ - INFO - Skipping batch 68 - no valid chunks
+2025-07-13 23:15:52,424 - __main__ - INFO - Skipping batch 69 - no valid chunks
+2025-07-13 23:15:52,426 - __main__ - INFO - Skipping batch 70 - no valid chunks
+2025-07-13 23:15:52,427 - __main__ - INFO - Skipping batch 71 - no valid chunks
+2025-07-13 23:15:52,429 - __main__ - INFO - Skipping batch 72 - no valid chunks
+2025-07-13 23:15:52,430 - __main__ - INFO - Skipping batch 73 - no valid chunks
+2025-07-13 23:15:52,432 - __main__ - INFO - Skipping batch 74 - no valid chunks
+2025-07-13 23:15:52,433 - __main__ - INFO - Skipping batch 75 - no valid chunks
+2025-07-13 23:15:52,435 - __main__ - INFO - Skipping batch 76 - no valid chunks
+2025-07-13 23:15:52,436 - __main__ - INFO - Skipping batch 77 - no valid chunks
+2025-07-13 23:15:52,437 - __main__ - INFO - Skipping batch 78 - no valid chunks
+2025-07-13 23:15:52,440 - __main__ - INFO - Processing 2 valid chunks from batch of 3
+2025-07-13 23:15:56,512 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:15:57,513 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:00,277 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:02,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:06,114 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:08,259 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:10,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:12,249 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:16,222 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:16,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:16,960 - __main__ - INFO - Progress: 237/4558 chunks (5.2%)
+2025-07-13 23:16:16,960 - __main__ - INFO - Examples generated: 10 (Single: 10, Multi: 0)
+2025-07-13 23:16:16,960 - __main__ - INFO - Batch processed in 24.52s
+2025-07-13 23:16:16,960 - __main__ - INFO - Chunks skipped (too short): 235
+2025-07-13 23:16:16,960 - __main__ - INFO - Memory usage after batch 79: 98.50 MB
+2025-07-13 23:16:18,976 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:16:22,365 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:23,113 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:23,979 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:25,953 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:27,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:27,413 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:32,021 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:32,328 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:32,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:36,925 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:37,346 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:37,448 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:41,231 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:43,594 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:43,795 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:43,799 - __main__ - INFO - Performing aggregated analysis on 5 chunks
+2025-07-13 23:16:43,799 - __main__ - INFO - Memory usage before aggregated analysis: 81.80 MB
+2025-07-13 23:16:50,968 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:50,971 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:16:59,498 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:16:59,503 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:17:09,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:09,088 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:17:09,089 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:17:09,089 - __main__ - INFO - Progress: 240/4558 chunks (5.3%)
+2025-07-13 23:17:09,089 - __main__ - INFO - Examples generated: 28 (Single: 25, Multi: 3)
+2025-07-13 23:17:09,089 - __main__ - INFO - Batch processed in 50.13s
+2025-07-13 23:17:09,089 - __main__ - INFO - Chunks skipped (too short): 235
+2025-07-13 23:17:09,089 - __main__ - INFO - Memory usage after batch 80: 79.75 MB
+2025-07-13 23:17:11,100 - __main__ - INFO - Processing 2 valid chunks from batch of 3
+2025-07-13 23:17:14,254 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:15,747 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:17,278 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:21,174 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:21,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:25,582 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:27,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:28,752 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:31,003 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:36,225 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:36,229 - __main__ - INFO - Progress: 243/4558 chunks (5.3%)
+2025-07-13 23:17:36,229 - __main__ - INFO - Examples generated: 38 (Single: 35, Multi: 3)
+2025-07-13 23:17:36,229 - __main__ - INFO - Batch processed in 25.14s
+2025-07-13 23:17:36,230 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:17:36,230 - __main__ - INFO - Memory usage after batch 81: 79.77 MB
+2025-07-13 23:17:38,240 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:17:42,405 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:42,594 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:43,147 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:45,544 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:46,465 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:47,061 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:49,010 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:51,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:51,556 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:52,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:54,640 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:56,087 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:17:56,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:00,494 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:00,577 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:00,585 - __main__ - INFO - Performing aggregated analysis on 5 chunks
+2025-07-13 23:18:00,585 - __main__ - INFO - Memory usage before aggregated analysis: 73.41 MB
+2025-07-13 23:18:09,709 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:09,713 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:18:17,391 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:17,396 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:18:26,853 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:26,857 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:18:26,857 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:18:26,858 - __main__ - INFO - Progress: 246/4558 chunks (5.4%)
+2025-07-13 23:18:26,858 - __main__ - INFO - Examples generated: 53 (Single: 47, Multi: 6)
+2025-07-13 23:18:26,858 - __main__ - INFO - Batch processed in 48.63s
+2025-07-13 23:18:26,858 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:18:26,858 - __main__ - INFO - Memory usage after batch 82: 45.84 MB
+2025-07-13 23:18:28,870 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:18:32,134 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:32,196 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:33,463 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:37,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:37,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:39,100 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:41,453 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:42,582 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:43,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:45,423 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:47,087 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:47,901 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:49,954 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:51,673 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:52,844 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:52,854 - __main__ - INFO - Progress: 249/4558 chunks (5.5%)
+2025-07-13 23:18:52,855 - __main__ - INFO - Examples generated: 67 (Single: 61, Multi: 6)
+2025-07-13 23:18:52,855 - __main__ - INFO - Batch processed in 24.00s
+2025-07-13 23:18:52,855 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:18:52,855 - __main__ - INFO - Memory usage after batch 83: 50.56 MB
+2025-07-13 23:18:54,862 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:18:58,379 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:18:59,149 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:01,094 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:03,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:03,571 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:06,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:08,098 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:10,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:11,660 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:13,196 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:15,039 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:15,927 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:19,170 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:19,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:20,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:20,785 - __main__ - INFO - Performing aggregated analysis on 6 chunks
+2025-07-13 23:19:20,788 - __main__ - INFO - Memory usage before aggregated analysis: 47.23 MB
+2025-07-13 23:19:30,295 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:30,297 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:19:40,029 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:40,034 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:19:44,445 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:44,450 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:19:44,451 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:19:44,451 - __main__ - INFO - Progress: 252/4558 chunks (5.5%)
+2025-07-13 23:19:44,451 - __main__ - INFO - Examples generated: 84 (Single: 75, Multi: 9)
+2025-07-13 23:19:44,451 - __main__ - INFO - Batch processed in 49.60s
+2025-07-13 23:19:44,451 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:19:44,451 - __main__ - INFO - Memory usage after batch 84: 47.58 MB
+2025-07-13 23:19:46,464 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:19:49,649 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:51,492 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:51,992 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:52,820 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:55,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:57,840 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:19:58,026 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:00,311 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:02,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:03,267 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:05,215 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:05,624 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:07,749 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:08,642 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:16,838 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:16,846 - __main__ - INFO - Progress: 255/4558 chunks (5.6%)
+2025-07-13 23:20:16,846 - __main__ - INFO - Examples generated: 99 (Single: 90, Multi: 9)
+2025-07-13 23:20:16,846 - __main__ - INFO - Batch processed in 30.39s
+2025-07-13 23:20:16,846 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:20:16,846 - __main__ - INFO - Memory usage after batch 85: 51.02 MB
+2025-07-13 23:20:18,858 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:20:22,207 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:22,485 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:24,211 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:26,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:26,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:27,381 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:31,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:31,479 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:32,097 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:35,985 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:36,499 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:36,690 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:39,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:40,220 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:43,667 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:43,674 - __main__ - INFO - Performing aggregated analysis on 6 chunks
+2025-07-13 23:20:43,674 - __main__ - INFO - Memory usage before aggregated analysis: 51.39 MB
+2025-07-13 23:20:53,699 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:53,702 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:20:59,573 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:20:59,578 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:21:09,435 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:09,437 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:21:09,437 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:21:09,438 - __main__ - INFO - Progress: 258/4558 chunks (5.7%)
+2025-07-13 23:21:09,438 - __main__ - INFO - Examples generated: 115 (Single: 103, Multi: 12)
+2025-07-13 23:21:09,438 - __main__ - INFO - Batch processed in 50.59s
+2025-07-13 23:21:09,438 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:21:09,438 - __main__ - INFO - Memory usage after batch 86: 51.44 MB
+2025-07-13 23:21:11,450 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:21:14,388 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:15,101 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:15,103 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:19,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:20,016 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:20,780 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:23,607 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:28,517 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:29,952 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:30,213 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:35,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:35,726 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:37,752 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:40,232 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:41,834 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:41,840 - __main__ - INFO - Progress: 261/4558 chunks (5.7%)
+2025-07-13 23:21:41,840 - __main__ - INFO - Examples generated: 130 (Single: 118, Multi: 12)
+2025-07-13 23:21:41,840 - __main__ - INFO - Batch processed in 30.40s
+2025-07-13 23:21:41,840 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:21:41,840 - __main__ - INFO - Memory usage after batch 87: 52.19 MB
+2025-07-13 23:21:43,853 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:21:46,949 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:47,516 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:48,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:50,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:51,863 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:51,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:54,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:56,060 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:57,084 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:21:59,849 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:01,595 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:06,713 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:06,719 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:11,730 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:12,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:12,960 - __main__ - INFO - Performing aggregated analysis on 6 chunks
+2025-07-13 23:22:12,960 - __main__ - INFO - Memory usage before aggregated analysis: 52.44 MB
+2025-07-13 23:22:21,254 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:21,258 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:22:30,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:30,061 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:22:39,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:39,895 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:22:39,897 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:22:39,897 - __main__ - INFO - Progress: 264/4558 chunks (5.8%)
+2025-07-13 23:22:39,897 - __main__ - INFO - Examples generated: 146 (Single: 132, Multi: 14)
+2025-07-13 23:22:39,897 - __main__ - INFO - Batch processed in 56.05s
+2025-07-13 23:22:39,897 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:22:39,897 - __main__ - INFO - Memory usage after batch 88: 48.16 MB
+2025-07-13 23:22:41,909 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:22:45,320 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:45,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:48,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:49,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:52,219 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:54,226 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:56,993 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:58,015 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:22:58,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:01,679 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:02,739 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:06,449 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:07,029 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:07,741 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:13,377 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:13,382 - __main__ - INFO - Progress: 267/4558 chunks (5.9%)
+2025-07-13 23:23:13,382 - __main__ - INFO - Examples generated: 160 (Single: 146, Multi: 14)
+2025-07-13 23:23:13,382 - __main__ - INFO - Batch processed in 31.48s
+2025-07-13 23:23:13,382 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:23:13,382 - __main__ - INFO - Memory usage after batch 89: 51.86 MB
+2025-07-13 23:23:15,393 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:23:18,907 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:19,010 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:19,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:23,820 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:24,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:24,740 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:28,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:28,844 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:29,875 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:34,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:34,471 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:36,518 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:40,620 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:42,048 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:42,867 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:42,873 - __main__ - INFO - Performing aggregated analysis on 6 chunks
+2025-07-13 23:23:42,873 - __main__ - INFO - Memory usage before aggregated analysis: 52.23 MB
+2025-07-13 23:23:51,466 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:23:51,470 - __main__ - INFO - Generated synthesis question successfully
+2025-07-13 23:24:00,786 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:00,789 - __main__ - INFO - Generated comparison question successfully
+2025-07-13 23:24:04,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:04,986 - __main__ - INFO - Generated analysis question successfully
+2025-07-13 23:24:04,986 - __main__ - INFO - Generated 3 multi-chunk QA pairs
+2025-07-13 23:24:04,987 - __main__ - INFO - Progress: 270/4558 chunks (5.9%)
+2025-07-13 23:24:04,987 - __main__ - INFO - Examples generated: 176 (Single: 159, Multi: 17)
+2025-07-13 23:24:04,987 - __main__ - INFO - Batch processed in 49.60s
+2025-07-13 23:24:04,987 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:24:04,987 - __main__ - INFO - Memory usage after batch 90: 52.23 MB
+2025-07-13 23:24:06,999 - __main__ - INFO - Processing 3 valid chunks from batch of 3
+2025-07-13 23:24:10,618 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:10,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:12,460 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:14,302 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:14,527 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:15,942 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:18,707 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:18,750 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:20,859 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:23,520 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:25,017 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:25,399 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:27,391 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:31,607 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:31,609 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:31,617 - __main__ - INFO - Progress: 273/4558 chunks (6.0%)
+2025-07-13 23:24:31,617 - __main__ - INFO - Examples generated: 191 (Single: 174, Multi: 17)
+2025-07-13 23:24:31,617 - __main__ - INFO - Batch processed in 24.63s
+2025-07-13 23:24:31,617 - __main__ - INFO - Chunks skipped (too short): 236
+2025-07-13 23:24:31,617 - __main__ - INFO - Memory usage after batch 91: 52.03 MB
+2025-07-13 23:24:33,621 - __main__ - INFO - Processing 2 valid chunks from batch of 3
+2025-07-13 23:24:35,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:39,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:41,870 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:44,410 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-13 23:24:46,105 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

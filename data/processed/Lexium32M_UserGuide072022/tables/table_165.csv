@@ -1,0 +1,5 @@
+HMI menufcs-,Description
+fcs-,Restore factory settings (default values) (Factory Settings)
+resc,Reset control loop parameters
+resu,Resetting the user parameters
+rstf,Restore factory settings (default values)

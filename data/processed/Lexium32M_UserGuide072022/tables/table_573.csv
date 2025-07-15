@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENCDigABImaxIx,ABI maximum distance for index pulse search.,EncInc,INT32,CANopen 3052:7h
+,In the case of a reference movement to the index,1,R/W,Modbus 21006
+,"pulse, ENCDigABImaxIx contains the maximum",,,
+,distance within which the index pulse must be,10000,per.,Profibus 21006
+,found. If no physical index pulse is found over this,,,
+,"range, an error message is generated.",2147483647,-,CIP 182.1.7
+,Example: A rotary ABI encoder with one index,,,ModbusTCP 21006
+,pulse per revolution is connected. The resolution,,,
+,of the encoder is 8000 encoder increments per,,,EtherCAT 3052:7h
+,revolution (this value can be determined using,,,
+,parameter _Inc_Enc2Raw. _Inc_Enc2Raw and,,,PROFINET 21006
+,ENCDigABImaxIx have the same scaling). The,,,
+,maximum distance necessary for a reference,,,
+,movement to the index pulse is one revolution.,,,
+,This means that ENCDigABImaxIx should be set,,,
+,"to 8000. Internally, a tolerance of 10% is added.",,,
+,This means that during a reference movement to,,,
+,"the index pulse, an index pulse must be found",,,
+,within 8800 encoder increments.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigBISSCoding,Position coding of BiSS encoder.,-,UINT16,CANopen 3052:Ah
+,0 / binary: Binary coding,0,R/W,Modbus 21012
+,1 / gray: Gray coding,0,per.,Profibus 21012
+,This parameter defines the type of position coding,1,-,CIP 182.1.10
+,of the BiSS encoder.,,,
+,,,,ModbusTCP 21012
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3052:Ah
+,Modified settings become active the next time the,,,PROFINET 21012
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigBISSResMul,BiSS multiturn resolution.,bit,UINT16,CANopen 3052:9h
+,This parameter is only relevant for BiSS encoders,0,R/W,Modbus 21010
+,(singleturn and multiturn). If a singleturn BiSS,,,
+,"encoder is used, ENCDigBISSResMult must be",0,per.,Profibus 21010
+,set to 0.,,,
+,,24,-,CIP 182.1.9
+,"Example: If ENCDigBISSResMult is set to 12, the",,,
+,number of turns of the encoder used must be 2^12,,,ModbusTCP 21010
+,= 4096.,,,
+,,,,EtherCAT 3052:9h
+,The sum of ENCDigBISSResMult +,,,
+,ENCDigBISSResSgl must be less than or equal to,,,PROFINET 21010
+,46 bits.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,

@@ -1,0 +1,27 @@
+Standard,Description
+IEC 61131-2:2007,"Programmable controllers, part 2: Equipment requirements and tests."
+ISO 13849-1:2015,Safety of machinery: Safety related parts of control systems.
+,General principles for design.
+EN 61496-1:2013,Safety of machinery: Electro-sensitive protective equipment.
+,Part 1: General requirements and tests.
+ISO 12100:2010,Safety of machinery - General principles for design - Risk assessment
+,and risk reduction
+EN 60204-1:2006,Safety of machinery - Electrical equipment of machines - Part 1: General
+,requirements
+ISO 14119:2013,Safety of machinery - Interlocking devices associated with guards -
+,Principles for design and selection
+ISO 13850:2015,Safety of machinery - Emergency stop - Principles for design
+IEC 62061:2015,"Safety of machinery - Functional safety of safety-related electrical,"
+,"electronic, and electronic programmable control systems"
+IEC 61508-1:2010,Functional safety of electrical/electronic/programmable electronic safety-
+,related systems: General requirements.
+IEC 61508-2:2010,Functional safety of electrical/electronic/programmable electronic safety-
+,related systems: Requirements for electrical/electronic/programmable
+,electronic safety-related systems.
+IEC 61508-3:2010,Functional safety of electrical/electronic/programmable electronic safety-
+,related systems: Software requirements.
+IEC 61784-3:2016,Industrial communication networks - Profiles - Part 3: Functional safety
+,fieldbuses - General rules and profile definitions.
+2006/42/EC,Machinery Directive
+2014/30/EU,Electromagnetic Compatibility Directive
+2014/35/EU,Low Voltage Directive

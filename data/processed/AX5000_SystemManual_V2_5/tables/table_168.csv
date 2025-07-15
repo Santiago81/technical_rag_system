@@ -1,0 +1,28 @@
+Sample,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,"1 x AX5000 (enabled) without DC linkILCtotal = ILCvar + ILCfix",,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,"2 x AX5000 (not enabled) in DC linkIABtotal = IABfix_1 + IABfix_2",,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,"1 x AX5000 (enabled) + 1 x AX5000 (not enabled) in DC linkIABtotal = IABvar_1 + IABfix_1 + IABfix_2If the AX5000_2 is also enabled the equation is as follows:IABtotal = IABvar_1 + IABvar_2 + IABfix_1 + IABfix_2",,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

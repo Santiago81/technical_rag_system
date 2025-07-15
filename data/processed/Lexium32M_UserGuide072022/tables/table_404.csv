@@ -1,0 +1,27 @@
+Parameter name,Description Unit,Data type,Parameter address
+,,,via fieldbus
+HMI menu,Minimum value,R/W,
+HMI name,Factory setting,Persistent,
+,Maximum value,Expert,
+MON_I_Threshold,Monitoring of current threshold. Arms,UINT16,CANopen 3006:1Ch
+ConF→i-o-,The system monitors whether the drive is below 0.00,R/W,Modbus 1592
+,the defined value during the period set with MON_,,
+ithr,ChkTime. 0.20,per.,Profibus 1592
+,The status can be output via a parameterizable 300.00,-,CIP 106.1.28
+,output.,,
+,,,ModbusTCP 1592
+,The parameter _Iq_act_rms is used as,,
+,comparison value.,,EtherCAT 3006:1Ch
+,In increments of 0.01 A PROFINET 1592rms.,,
+,Modified settings become active immediately.,,
+MON_ChkTime,Monitoring of time window. ms,UINT16,CANopen 3006:1Dh
+ConF→i-o-,Adjustment of a time for monitoring of position 0,R/W,Modbus 1594
+,"deviation, velocity deviation, velocity value and",,
+tthr,current value. If the monitored value is in the 0,per.,Profibus 1594
+,"permissible range during the adjusted time, the",,
+,monitoring function delivers a positive result. 9999,-,CIP 106.1.29
+,The status can be output via a parameterizable,,ModbusTCP 1594
+,output.,,
+,,,EtherCAT 3006:1Dh
+,Modified settings become active immediately.,,
+,,,PROFINET 1594

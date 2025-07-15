@@ -1,0 +1,64 @@
+Parameter name,Description,Unit,Data,Parameter
+,,,type,address via
+HMI menu,,Minimum value,,fieldbus
+,,,R/W,
+HMI name,,Factory setting,,
+,,,Persis-,
+,,Maximum,tent,
+,,value,,
+,,,Expert,
+,23 / Negative Limit Switch (LIMN) /LiMn: Negative limit,,,
+,switch,,,
+,24 / Switch Controller Parameter Set /CPAr: Switches,,,
+,control loop parameter set,,,
+,27 / Operating Mode Switch /MSWt: Switches operating,,,
+,mode,,,
+,28 / Velocity Controller Integral Off /tnoF: Switches off,,,
+,velocity controller integral term,,,
+,29 / Start Motion Sequence /StMS: Motion Sequence: Starts,,,
+,a motion sequence,,,
+,30 / Start Signal Of RMAC /SrMc: Start signal of relative,,,
+,movement after capture (RMAC),,,
+,31 / Activate RMAC /ArMc: Activates the relative movement,,,
+,after capture (RMAC),,,
+,32 / Activate Operating Mode /AcoP: Activates operating,,,
+,mode,,,
+,35 / Data Set Bit 4 /dSb4: Motion Sequence: Data set bit 4,,,
+,36 / Data Set Bit 5 /dSb5: Motion Sequence: Data set bit 5,,,
+,37 / Data Set Bit 6 /dSb6: Motion Sequence: Data set bit 6,,,
+,38 / Inversion AI11 (IO Module) /A11i: Inverts analog input,,,
+,AI11 (I/O module),,,
+,39 / Inversion AI12 (IO Module) /A12i: Inverts analog input,,,
+,AI12 (I/O module),,,
+,40 / Release Holding Brake /rEhb: Releases the holding,,,
+,brake,,,
+,Setting can only be modified if power stage is disabled.,,,
+,Modified settings become active the next time the product is,,,
+,powered on.,,,
+IOfunct_DI2,Function Input DI2.,-,UINT16,CANopen
+,,,,3007:3h
+ConF→i-,1 / Freely Available /nonE: Available as required,-,R/W,
+o-,,,,Modbus 1798
+,2 / Fault Reset /FrES: Fault reset after error,-,per.,
+di2,,,,Profibus 1798
+,3 / Enable /EnAb: Enables the power stage,-,-,
+,,,,CIP 107.1.3
+,4 / Halt /hALt: Halt,,,
+,,,,ModbusTCP
+,5 / Start Profile Positioning /SPtP: Start request for,,,1798
+,movement,,,
+,,,,EtherCAT
+,6 / Current Limitation /iLiM: Limits the current to parameter,,,3007:3h
+,value,,,
+,,,,PROFINET 1798
+,7 / Zero Clamp /CLMP: Zero clamping,,,
+,8 / Velocity Limitation /VLiM: Limits the velocity to,,,
+,parameter value,,,
+,9 / Jog Positive /JoGP: Jog: Moves in positive direction,,,
+,10 / Jog Negative /JoGn: Jog: Moves in negative direction,,,
+,11 / Jog Fast/Slow /JoGF: Jog: Switches between slow and,,,
+,fast movement,,,
+,12 / Gear Ratio Switch /GrAt: Electronic Gear: Switches,,,
+,between two gear ratios,,,
+,13 / Start Single Data Set /dStA: Motion Sequence: Starts a,,,
+,single data set,,,

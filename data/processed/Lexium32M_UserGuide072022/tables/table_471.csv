@@ -1,0 +1,18 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+A34B,0,Ramp setting exceeds system limits,"The ramp scaling of'RAMPscaleDenom' and'RAMPscaleNum' results in a scalingfactor that is too small.","Change of 'RAMPscaleDenom' and'RAMPscaleNum' in such a way as toincrease the resulting scaling factor."
+A34C,0,"Resolution of scaling too high (rangeexceeded)",-,-
+A34D,0,"Function not available when Modulois active","The function cannot be executedwhen Modulo is active.","Deactivate Modulo to use thefunction."
+A34E,0,"Target value for absolute movementnot possible with defined modulorange and modulo handling.","If parameter 'MOD_Absolute' is setto:Shortest Distance: Target value is notin defined modulo range.Positive Direction: Target value isless than parameter 'MOD_Min'.Negative Direction: Target value isgreater than parameter 'MOD_Max'.","Set a correct target value for absolutemovement."
+A34F,0,"Target position outside of modulorange. Corresponding movementwithin range performed instead.","The setting of parameter 'MOD_AbsMultiRng' only allows for amovement within the modulo range.","Change the parameter 'MOD_AbsMultiRng' to allow for movementsbeyond the modulo range."
+A350,1,"Change for jerk filter input positiontoo greatParameter _SigLatched Bit 4","Operating mode Electronic Gear withprocessing method 'Positionsynchronization with compensationmovement' has been activated whichresulted in a position change greaterthan 0.25 revolutions.","Deactivate jerk filter processing forElectronic Gear or use processingmethod 'Position synchronizationwithout compensation movement'."
+A351,1,"Function cannot be executed withthis position scaling factorParameter _SigLatched Bit 4","The positions scaling factor is set to avalue less than 1rev/131072usr_p,which is less than the internalresolution.In the operating mode CyclicSynchronous Position, the resolutionis not set to 1rev/131072usr_p.","Use a different position scaling factoror deactivate the selected function."
+A352,0,Position list active,-,-
+A353,0,Position list not sorted,-,-
+A354,0,"Position list does not match theconfiguration of the Modulo range",-,-
+A355,1,"Error detected during relativemovement after capture. Additionalinformation in the error memoryindicates the detailed error code.Parameter _SigLatched Bit 4",Movement was stopped by error.,Verify the error memory.
+A356,0,"Function Relative Movement AfterCapture not assigned to a digitalinput",-,"Assign the function RelativeMovement After Capture to a digitalinput."
+A357,0,Deceleration still running,"Command is not permissible duringdeceleration.","Wait until motor has come to acomplete standstill."
+A358,1,"Target position overtraveled withfunction Relative Movement AfterCaptureParameter _SigLatched Bit 4","Stopping distance too small orvelocity too high at the point in time ofthe capture event.",Reduce the velocity.
+A359,0,"Request cannot be processed sincethe relative movement after captureis still active",-,-
+A35A,1,"Selected data set cannot be startedParameter _SigLatched Bit 4","The data set with the selectednumber is not available.",Verify the number of the data set.
+A35B,0,"Modulo cannot be activatedParameter _WarnLatched Bit 4","The set operating mode does notsupport Modulo.",-

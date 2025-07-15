@@ -1,0 +1,21 @@
+EMC measures,Objective
+Do not route fieldbus cables and signal wires in a single cable duct,Reduces mutual interference
+together with lines with DC and AC voltages of more than 60 V.,
+"(Fieldbus cables, signal lines and analog lines may be in the same",
+cable duct),
+Use separate cable ducts at least 20 cm (7.87 in) apart.,
+Keep cables as short as possible. Do not install unnecessary,Reduces capacitive and
+"cable loops, use short cables from the central grounding point in",inductive interference.
+the control cabinet to the external ground connection.,
+Use equipotential bonding conductors in the following cases:,Reduces current in the cable
+"wide-area installations, different voltage supplies and installation","shield, reduces emissions."
+across several buildings.,
+Use fine stranded equipotential bonding conductors.,Diverts high-frequency
+,interference currents.
+"If motor and machine are not conductively connected, for example","Reduces emissions, increases"
+"by an insulated flange or a connection without surface contact,",immunity.
+you must ground the motor with a ground strap or a ground wire.,
+The conductor cross section must be at least 10 mm2 (AWG 6).,
+Use twisted pair for the DC supply.,Reduces interference affecting
+,"the signal cables, reduces"
+,emissions.

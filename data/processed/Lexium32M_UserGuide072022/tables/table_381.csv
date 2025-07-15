@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+MON_p_dif_warn,"Advisory limit of the load-dependent positiondeviation (error class 0).100.0 % correspond to the maximum positiondeviation (following error) as specified by meansof parameter MON_p_dif_load.Modified settings become active immediately.","%075100","UINT16R/Wper.-","CANopen 3006:29hModbus 1618Profibus 1618CIP 106.1.41ModbusTCP 1618EtherCAT 3006:29hPROFINET 1618"

@@ -1,0 +1,18 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+82A1,0,"CANopen: Overflow internal transmitqueue (message lost)Parameter _WarnLatched Bit 21",-,-
+82B1,0,"CANopen: The data tunnelingprotocol is not Modbus RTUParameter _WarnLatched Bit 21",-,-
+82B2,0,"CANopen: Data frame is still beingprocessedParameter _WarnLatched Bit 21","A new data frame was written but theprevious data frame is still beingprocessed.",Write the data frame again later on.
+A060,2,"Calculated velocity too high foroperating mode Electronic GearParameter _SigLatched Bit 4","Gear ratio or reference velocity valuetoo high","Reduce the gear ratio or referencevelocity."
+A061,2,"Position change in reference valuefor operating mode Electronic Geartoo highParameter _SigLatched Bit 4","Position reference change is toohigh.Error detected at signal input forreference value.","Reduce the resolution of the master.Verify signal input for reference valuesignal."
+A065,0,"Parameters cannot be writtenParameter _WarnLatched Bit 4",A data set is still active.,"Wait until the currently active data sethas been terminated."
+A066,0,"Teach-in position cannot be acceptedParameter _WarnLatched Bit 4",Data set type is not 'MoveAbsolute',"Set the data set type to'MoveAbsolute'"
+A067,1,"Invalid value in data set. Additionalinformation in the error memoryindicates the data set number (lowbyte) and entry (high byte).Parameter _SigLatched Bit 4",Value not possible in data set.,"See also parameters _MSM_error_num and _MSM_error_entry foradditional information."
+A068,0,"Offset positioning not possibleParameter _WarnLatched Bit 4","Operating mode Electronic Gearinactive or no gear method selected.","Start operating mode Electronic Gearand/or select a gear method."
+A069,0,"Setting the offset position is notpossibleParameter _WarnLatched Bit 4","If offset positioning is active, it is notpossible to set the position offset.","Wait until ongoing offset positioninghas finished."
+A06B,2,"Position deviation in operating modeElectronic Gear too highParameter _SigLatched Bit 4","The position deviation has becomeexcessively high due to a velocitylimitation or the release of direction.","Verify the velocity of the externalreference values and the velocitylimitation. Verify release of direction."
+A300,0,"Deceleration after HALT request stillrunning","HALT was removed too soon.New command was sent beforemotor standstill was reached after aHALT request.","Wait for complete stop beforeremoving HALT signal.Wait until motor has come to acomplete standstill."
+A301,0,"Drive in operating state Quick StopActive","Error with error class 1 detected.Drive stopped with Quick Stop.",-
+A302,1,"Stop by positive limit switchParameter _SigLatched Bit 1","The positive limit switch wasactivated because movement rangewas exceeded, incorrect operation oflimit switch or signal disturbance.","Verify application.Verify limit switch function andconnection."
+A303,1,"Stop by negative limit switchParameter _SigLatched Bit 1","The negative limit switch wasactivated because movement rangewas exceeded, incorrect operation oflimit switch or signal disturbance.","Verify application.Verify limit switch function andconnection."
+A304,1,"Stop by reference switchParameter _SigLatched Bit 1",-,-
+A305,0,"Power stage cannot be enabled inthe operating state Not Ready ToSwitch On","Fieldbus: An attempt was made toenable the power stage in theoperating state Not Ready To SwitchOn.",Refer to the state diagram.

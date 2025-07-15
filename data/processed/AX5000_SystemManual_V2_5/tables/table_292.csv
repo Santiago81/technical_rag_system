@@ -1,0 +1,9 @@
+Electrcal data,AX5021
+int. Resistance1) [W],150
+int. Resistance2) [W],14.000
+ext. Resistance min. [Ω],22
+ext. Resistance3) [W],6.000
+ext. Resistance4) [W],max. 32.000
+Power loss P [W],max. 250
+Charging rate 24 VDC [A],0.3 – 0.4
+DC link capacity [μF],705

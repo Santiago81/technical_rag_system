@@ -1,0 +1,2 @@
+DANGER
+"Serious risk of injury!Due to the DC link capacitors dangerous voltage (> 890VDC) may persist at the DC link contacts “ZK+ andZK-“and “RB+ and RB-“ after the servo drive has been disconnected from the mains supply. After discon-necting the servo drive wait at AX5160/AX5172; 15 minutes, at AX5190/AX5191; 30 minutes and atAX5192/AX5193; 45 minutes and measure the voltage at the DC link contacts ZK+ and ZK-. The device issafe once the voltage has fallen below 50 V."

@@ -1,0 +1,37 @@
+Unnamed: 0,Bit,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8
+,,7 6,5 4,,3,2,1,,0
+Byte,,,,,,,,,
+I8.,,,Setpoint  value axis  1,,,,,,
+,,2 7 2 6,2 5 2 4,,2 3,2 2,2 1,,2 0
+I9.,,,,,,,,,
+,,2 15 2 14,2 13 2 12,,2 11,2 10,2 9,,2 8
+I10.,,,,,,,,,
+,,2 23 2 22,2 21 2 20,,2 19,2 18,2 17,,2 16
+,Sign,,,,,1. axis -,,,
+I11.,0: positive 2 241: negative,,F e e dc o d e,,,setpoint entry inactive,-,,
+I12.,,,Setpoint value axis  2,,,,,,
+,,2 7 2 6,2 5 2 4,,2 3,2 2,2 1,,2 0
+I13.,,,,,,,,,
+,,2 15 2 14,2 13 2 12,,2 11,2 10,2 9,,2 8
+I14.,,,,,,,,,
+,,2 23 2 22,2 21 2 20,,2 19,2 18,2 17,,2 16
+,Sign,,,,,2. axis -,,,
+I15.,0: positive,,F e e dc o d e,,,setpoint,-,,24
+,1: negative,,,,,entry inactive,,,2
+I16.,,,Setpoint value axis  3,,,,,,
+,,2 7 2 6,2 5 2 4,,2 3,2 2,2 1,,2 0
+I17.,,,,,,,,,
+,,2 15 2 14,2 13 2 12,,2 11,2 10,2 9,,2 8
+I18.,,,,,,,,,
+,,2 23 2 22,2 21 2 20,,2 19,2 18,2 17,,2 16
+,Sign,,,,,3. axis -,,,
+I19.,0: positive 2 241: negative,,F e e dc o d e,,,setpoint entry inactive,-,,
+,Required,Ackn.ledge,,,,,,,
+,,,,Actual value,,Setpoint,,,
+,,,,,,,,,Set  position
+0: G91I20.,data input,for required,- -,display,,display,1: G90,,per  interface
+,Strobe,data  output,,,,,,,(PLC)  MDI
+I21.,,,U s e ri n p u t s,,,,,,
+,,12 11,10 9,,8,7,6,,5
+I22.,,- -,- -,,-,-,-,,-
+I23.,,- -,- -,,-,-,-,,-

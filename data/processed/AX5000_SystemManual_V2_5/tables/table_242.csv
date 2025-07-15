@@ -1,0 +1,8 @@
+Error code,Error description
+F152,"Channel ErrorsIf only this error is displayed, it is probably a two-channel device and the error cause islocated in the other channel. Otherwise, observe the other error messages!"
+F702,Superordinate message. Please observe the other error messages!
+F70E,Superordinate message. Please observe the other error messages!
+F707,"No feedback voltage•The power supply is not correctly connected.•The sense line is not correctly connected.•No sense connection exists."
+FA01,"Initialization error•Incorrect setting in parameter P-0-0150.•Wiring error"
+FA49,"Feedback process channel error (1Vss)The amplitude of the analog signal is too small -> check the connection."
+F4A5,SoE Communication Parameter Error (see section “Error F4A5 [} 165]”)

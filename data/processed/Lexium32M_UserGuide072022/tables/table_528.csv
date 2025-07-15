@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PBprofile,Profibus drive profile.,-,UINT16,CANopen 3043:3h
+ConF→inF-,0 / None /nonE: No connection,-,R/-,Modbus 17158
+PbPr,1 / Profidrive Telegram 1 /Pd_1: Profidrive,-,-,Profibus 17158
+,standard telegram 1 (not yet supported),,,
+,,-,-,CIP 167.1.3
+,2 / Profidrive Telegram 2 /Pd_2: Profidrive,,,
+,standard telegram 2 (not yet supported),,,ModbusTCP 17158
+,7 / Profidrive Telegram 7 /Pd_7: Profidrive,,,EtherCAT 3043:3h
+,standard telegram 7 (not yet supported),,,
+,,,,PROFINET 17158
+,9 / Profidrive Telegram 9 /Pd_9: Profidrive,,,
+,standard telegram 9 (not yet supported),,,
+,103 / Profidrive Manufact /Pd_M: Profidrive,,,
+,manufacturer-specific (not yet supported),,,
+,104 / Drive Profile Lexium 1 /dPL1: Drive,,,
+,Profile Lexium telegram 1 (library),,,
+,105 / Drive Profile Lexium 2 /dPL2: Drive,,,
+,Profile Lexium telegram 2,,,
+_PntMAC1,"MAC address PROFINET module, byte 1.",-,UINT16,CANopen 3048:25h
+,,-,R/-,Modbus 18506
+,,-,-,Profibus 18506
+,,-,-,CIP 172.1.37
+,,,,ModbusTCP 18506
+,,,,EtherCAT 3048:25h
+,,,,PROFINET 18506
+_PntMAC2,"MAC address PROFINET module, byte 2.",-,UINT16,CANopen 3048:26h
+,,-,R/-,Modbus 18508
+,,-,-,Profibus 18508
+,,-,-,CIP 172.1.38
+,,,,ModbusTCP 18508
+,,,,EtherCAT 3048:26h
+,,,,PROFINET 18508
+_PntMAC3,"MAC address PROFINET module, byte 3.",-,UINT16,CANopen 3048:27h
+,,-,R/-,Modbus 18510
+,,-,-,Profibus 18510
+,,-,-,CIP 172.1.39
+,,,,ModbusTCP 18510
+,,,,EtherCAT 3048:27h
+,,,,PROFINET 18510
+_PntMAC4,"MAC address PROFINET module, byte 4.",-,UINT16,CANopen 3048:28h
+,,-,R/-,Modbus 18512
+,,-,-,Profibus 18512
+,,-,-,CIP 172.1.40
+,,,,ModbusTCP 18512
+,,,,EtherCAT 3048:28h
+,,,,PROFINET 18512

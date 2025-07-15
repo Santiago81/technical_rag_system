@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+BRK_AddT_release,Additional time delay for releasing the holding,ms,INT16,CANopen 3005:7h
+,brake.,,,
+,,0,R/W,Modbus 1294
+,The overall time delay for releasing the holding,,,
+,brake is the time delay from the electronic,0,per.,Profibus 1294
+,nameplate of the motor and the additional time,,,
+,delay in this parameter.,400,-,CIP 105.1.7
+,Setting can only be modified if power stage is,,,ModbusTCP 1294
+,disabled.,,,
+,,,,EtherCAT 3005:7h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1294

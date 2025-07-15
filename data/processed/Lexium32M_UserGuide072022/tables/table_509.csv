@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IOmappingMtoS01,I/O parameter mapping Master to Slave -,-,UINT16,CANopen 3040:11h
+,parameter 01.,,,
+,,0,R/-,Modbus 16418
+,Mapping of the cyclic communication between the,,,
+,master and slave.,FFFFhex,-,Profibus 16418
+,This parameter contains the mapping of the first,65535,-,CIP 164.1.17
+,parameter mapped from the master to the slave.,,,
+,,,,ModbusTCP 16418
+,The parameters _IOmappingMtoS02 to,,,
+,_IOmappingMtoS16 contain the mapping of the,,,EtherCAT 3040:11h
+,remaining mapped parameters.,,,
+,,,,PROFINET 16418
+_IOmappingStoM01,I/O parameter mapping Slave to Master -,-,UINT16,CANopen 3040:31h
+,parameter 01.,,,
+,,0,R/-,Modbus 16482
+,Mapping of the cyclic communication between the,,,
+,master and slave.,FFFFhex,-,Profibus 16482
+,This parameter contains the mapping of the first,65535,-,CIP 164.1.49
+,parameter mapped from the slave to the master.,,,
+,,,,ModbusTCP 16482
+,The parameters _IOmappingStoM02 to,,,
+,_IOmappingStoM16 contain the mapping of the,,,EtherCAT 3040:31h
+,remaining mapped parameters.,,,
+,,,,PROFINET 16482
+_IPAddressAct1,"Currently used IP address, byte 1.",-,UINT16,CANopen 303E:4h
+ConF→CoM-,Byte 1 (x.0.0.0) of the IP address.,0,R/-,Modbus 15880
+iPA1,Available with firmware version ≥V01.26.,0,-,Profibus 15880
+,,255,-,CIP 162.1.4
+,,,,ModbusTCP 15880
+,,,,EtherCAT 303E:4h
+,,,,PROFINET 15880
+_IPAddressAct2,"Currently used IP address, byte 2.",-,UINT16,CANopen 303E:5h
+ConF→CoM-,Byte 2 (0.x.0.0) of the IP address.,0,R/-,Modbus 15882
+iPA2,Available with firmware version ≥V01.26.,0,-,Profibus 15882
+,,255,-,CIP 162.1.5
+,,,,ModbusTCP 15882
+,,,,EtherCAT 303E:5h
+,,,,PROFINET 15882
+_IPAddressAct3,"Currently used IP address, byte 3.",-,UINT16,CANopen 303E:6h
+ConF→CoM-,Byte 3 (0.0.x.0) of the IP address.,0,R/-,Modbus 15884
+iPA3,Available with firmware version ≥V01.26.,0,-,Profibus 15884
+,,255,-,CIP 162.1.6
+,,,,ModbusTCP 15884
+,,,,EtherCAT 303E:6h
+,,,,PROFINET 15884

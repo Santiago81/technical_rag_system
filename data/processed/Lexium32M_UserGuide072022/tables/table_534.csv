@@ -1,0 +1,43 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PT_max_val,Maximum possible value for operating mode,%,INT16,CANopen 301C:1Eh
+,Profile Torque.,,,
+,,-,R/-,Modbus 7228
+,100.0 % correspond to the continuous stall torque,,,
+,_M_M_0.,-,-,Profibus 7228
+,In increments of 0.1 %.,-,-,CIP 128.1.30
+,,,,ModbusTCP 7228
+,,,,EtherCAT 301C:1Eh
+,,,,PROFINET 7228
+_RAMP_p_act,Actual position of profile generator.,usr_p,INT32,CANopen 301F:2h
+,,-,R/-,Modbus 7940
+,,-,-,Profibus 7940
+,,-,-,CIP 131.1.2
+,,,,ModbusTCP 7940
+,,,,EtherCAT 301F:2h
+,,,,PROFINET 7940
+_RAMP_p_target,Target position of profile generator.,usr_p,INT32,CANopen 301F:1h
+,"Absolute position value of the profile generator,",-,R/-,Modbus 7938
+,calculated on the basis of the relative and,,,
+,absolute position values received.,-,-,Profibus 7938
+,,-,-,CIP 131.1.1
+,,,,ModbusTCP 7938
+,,,,EtherCAT 301F:1h
+,,,,PROFINET 7938
+_RAMP_v_act,Actual velocity of profile generator.,usr_v,INT32,CANopen 606B:0h
+,,-,R/-,Modbus 7948
+,,-,-,Profibus 7948
+,,-,-,CIP 131.1.6
+,,,,ModbusTCP 7948
+,,,,EtherCAT 606B:0h
+,,,,PROFINET 7948
+_RAMP_v_target,Target velocity of profile generator.,usr_v,INT32,CANopen 301F:5h
+,,-,R/-,Modbus 7946
+,,-,-,Profibus 7946
+,,-,-,CIP 131.1.5
+,,,,ModbusTCP 7946
+,,,,EtherCAT 301F:5h
+,,,,PROFINET 7946

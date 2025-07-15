@@ -1,0 +1,33 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+eSM_dec_NC,eSM deceleration ramp.,RPM/s,UINT32,-
+,Deceleration ramp for monitored deceleration,0,R/W,
+,"Value 0: Disabled, no monitoring of deceleration",0,per.,
+,ramp,,,
+,,32786009,-,
+,Value >0: Deceleration ramp in RPM/s,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.01.,,,
+eSM_dec_Qstop,eSM deceleration ramp for Quick Stop.,RPM/s,UINT32,-
+,Deceleration ramp for monitored Quick Stop. This,0,R/W,
+,value must be greater than 0.,,,
+,,0,per.,
+,Value 0: eSM module is not configured,,,
+,,32786009,-,
+,Value >0: Deceleration ramp in RPM/s,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.01.,,,
+eSM_disable,eSM disable.,-,UINT16,CANopen 304C:1Ah
+,Value 0: No action,-,R/W,Modbus 19508
+,Value 1: Force a change of eSM state 6 to eSM,-,-,Profibus 19508
+,state 3,,,
+,,-,-,CIP 176.1.26
+,Available with firmware version ≥V01.01.,,,
+,,,,ModbusTCP 19508
+,,,,EtherCAT 304C:1Ah
+,,,,PROFINET 19508

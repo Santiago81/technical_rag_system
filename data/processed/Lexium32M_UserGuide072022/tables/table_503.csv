@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_fwVersSlot3,Firmware version of slot 3.,-,UINT16,CANopen 3002:22h
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 580
+,Part XX.YY is contained in this parameter.,-,-,Profibus 580
+,Part ZZ is contained in parameter _fwRevSlot3.,-,-,CIP 102.1.34
+,"If no module is installed, the value 0 is returned.",,,ModbusTCP 580
+,Example: V01.23.45,,,EtherCAT 3002:22h
+,The value is provided as a decimal value: 123,,,PROFINET 580
+_fwVersSlot3Boot,Firmware version of slot 3 (Bootloader).,-,UINT16,CANopen 3002:28h
+ConF→inF-,The version format is XX.YY.ZZ.BB.,-,R/-,Modbus 592
+bVEr,Part XX.YY is contained in this parameter.,-,-,Profibus 592
+,Part ZZ.BB is contained in parameter,-,-,CIP 102.1.40
+,_fwRevSlot3Boot.,,,
+,,,,ModbusTCP 592
+,"If no module is installed, the value 0 is returned.",,,
+,,,,EtherCAT 3002:28h
+,Example: V01.23.45.67,,,
+,,,,PROFINET 592
+,The value is provided as a decimal value: 123,,,
+_fwVersSlot3FPGA,Firmware version of slot 3 (FPGA).,-,UINT16,CANopen 3002:25h
+ConF→inF-,The version format is XX.YY.ZZ.,-,R/-,Modbus 586
+FVEr,Part XX.YY is contained in this parameter.,-,-,Profibus 586
+,Part ZZ is contained in parameter,-,-,CIP 102.1.37
+,_fwRevSlot3FPGA.,,,
+,,,,ModbusTCP 586
+,"If no module is installed, the value 0 is returned.",,,
+,,,,EtherCAT 3002:25h
+,Example: V01.23.45,,,
+,,,,PROFINET 586
+,The value is provided as a decimal value: 123,,,
+_GEAR_p_diff,Position deviation in operating mode Electronic,Inc,INT32,CANopen 301F:Dh
+,Gear.,,,
+,,-,R/-,Modbus 7962
+,Position deviation between reference position and,,,
+,"actual position with the methods ""Position",-,-,Profibus 7962
+,Synchronization Without Compensation,,,
+,"Movement"" and ""Position Synchronization With",-,-,CIP 131.1.13
+,"Compensation Movement"".",,,
+,,,,ModbusTCP 7962
+,A position deviation can be caused by a,,,
+,movement in a blocked direction (parameter,,,EtherCAT 301F:Dh
+,GEARdir_enabl) or by a velocity limitation,,,
+,(parameter GEARpos_v_max).,,,PROFINET 7962
+,Available with firmware version ≥V01.10.,,,
+_HMdisREFtoIDX,Distance from switching point to index pulse.,revolution,INT32,CANopen 3028:Ch
+,Allows you to verify the distance between the,-,R/-,Modbus 10264
+,index pulse and the switching point and serves as,,,
+,a criterion for determining whether the reference,-,-,Profibus 10264
+,movement with index pulse can be reproduced.,,,
+,,-,-,CIP 140.1.12
+,The parameter _HMdisREFtoIDX_usr allows you,,,
+,to enter the value in user-defined units.,,,ModbusTCP 10264
+,In increments of 0.0001 revolution.,,,EtherCAT 3028:Ch
+,,,,PROFINET 10264

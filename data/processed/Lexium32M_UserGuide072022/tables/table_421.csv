@@ -1,0 +1,9 @@
+Message,Description
+INIT,Operating state 1 Start
+nrdy,Operating state 2 Not Ready To Switch On
+dis,Operating state 3 Switch On Disabled
+rdy,Operating state 4 Ready To Switch On
+son,Operating state 5 Switched On
+run andhalt,Operating state 6 Operation Enabled
+stop,Operating state 7 Quick Stop Active
+flt,Operating state 8 Fault Reaction Active and 9 Fault

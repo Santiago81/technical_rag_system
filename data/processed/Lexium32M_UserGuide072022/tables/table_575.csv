@@ -1,0 +1,59 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENCDigPowSupply,Power supply encoder module DIG (digital,-,UINT16,CANopen 3052:4h
+,interface).,,,
+,,5,R/W,Modbus 21000
+,5 / 5V: 5 V supply voltage,,,
+,,5,per.,Profibus 21000
+,12 / 12V: 12 V supply voltage,,,
+,,12,-,CIP 182.1.4
+,Power supply of the digital encoder.,,,
+,,,,ModbusTCP 21000
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3052:4h
+,Modified settings become active the next time the,,,PROFINET 21000
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigResMulUsed,Number of bits of the multiturn resolution used,bit,UINT16,CANopen 3052:Bh
+,from the encoder.,,,
+,,0,R/W,Modbus 21014
+,Specifies the number of bits of the multiturn,,,
+,resolution used for position evaluation.,0,per.,Profibus 21014
+,"If ENCDigResMulUsed = 0, all bits of the multiturn",24,-,CIP 182.1.11
+,resolution of the encoder are used.,,,
+,,,,ModbusTCP 21014
+,Example:,,,
+,,,,EtherCAT 3052:Bh
+,"If ENCDigResMulUsed = 11, only 11 bits of the",,,
+,multiturn resolution of the encoder are used.,,,PROFINET 21014
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.03.,,,
+ENCDigSSICoding,Position coding of SSI encoder.,-,UINT16,CANopen 3052:3h
+,0 / binary: Binary coding,0,R/W,Modbus 20998
+,1 / gray: Gray coding,0,per.,Profibus 20998
+,This parameter defines the type of position coding,1,-,CIP 182.1.3
+,of the SSI encoder.,,,
+,,,,ModbusTCP 20998
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3052:3h
+,Modified settings become active the next time the,,,PROFINET 20998
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigSSILinAdd,SSI encoder additional bits (linear).,bit,UINT16,CANopen 3052:Dh
+,This parameter is used to set the number of,0,R/W,Modbus 21018
+,resolution bits of a linear SSI encoder. The total,,,
+,number of resolution bits (ENCDigSSILinRes) and,0,per.,Profibus 21018
+,additional bits (ENCDigSSILinAdd) is limited to 32.,,,
+,,3,-,CIP 182.1.13
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 21018
+,Modified settings become active the next time the,,,EtherCAT 3052:Dh
+,product is powered on.,,,
+,,,,PROFINET 21018
+,Available with firmware version ≥V01.26.,,,

@@ -1,0 +1,5 @@
+Logic type,Active state
+(1) Positive logic,Output supplies current (source output)
+,Current flows to the input (sink input)
+(2) Negative logic,Output draws current (sink output)
+,Current flows from the input (source input)

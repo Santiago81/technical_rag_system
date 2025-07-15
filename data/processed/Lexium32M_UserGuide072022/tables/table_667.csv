@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+RAMP_v_max,Maximum velocity of the motion profile for velocity.,usr_v,UINT32,CANopen 607F:0h
+ConF→ACG-,If a greater reference velocity is set in one of these,1,R/W,Modbus 1554
+,"operating modes, it is automatically limited to",,,
+nrMP,RAMP_v_max.,13200,per.,Profibus 1554
+,"This way, commissioning at limited velocity is",2147483647,-,CIP 106.1.9
+,easier to perform.,,,
+,,,,ModbusTCP 1554
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 607F:0h
+,Modified settings become active the next time the,,,PROFINET 1554
+,motor moves.,,,
+RAMP_v_sym,Acceleration and deceleration of the motion profile,-,UINT16,CANopen 3006:1h
+,for velocity.,,,
+,,-,R/W,Modbus 1538
+,The values are internally multiplied by 10,,,
+,(example: 1 = 10 RPM/s).,-,-,Profibus 1538
+,Write access changes the values of RAMP_v_acc,-,-,CIP 106.1.1
+,and RAMP_v_dec. The limit values are verified on,,,
+,the basis of the values indicated for these,,,ModbusTCP 1538
+,parameters.,,,
+,,,,EtherCAT 3006:1h
+,Read access returns the greater value from,,,
+,RAMP_v_acc/RAMP_v_dec.,,,PROFINET 1538
+,If the value cannot be represented as a 16 bit,,,
+,"value, the value is set to 65535 (maximum",,,
+,UINT16 value),,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+RAMPaccdec,Acceleration and deceleration for the Drive Profile,-,UINT32,CANopen 3006:2h
+,Lexium.,,,
+,,-,R/W,Modbus 1540
+,High word: Acceleration,,,
+,,-,-,Profibus 1540
+,Low word: Deceleration,,,
+,,-,-,CIP 106.1.2
+,The values are internally multiplied by 10,,,
+,(example: 1 = 10 RPM/s).,,,ModbusTCP 1540
+,Write access changes the values of RAMP_v_acc,,,EtherCAT 3006:2h
+,and RAMP_v_dec. The limit values are verified on,,,
+,the basis of the values indicated for these,,,PROFINET 1540
+,parameters.,,,
+,If the value cannot be represented as a 16 bit,,,
+,"value, the value is set to 65535 (maximum",,,
+,UINT16 value).,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+RAMPquickstop,Deceleration ramp for Quick Stop.,usr_a,UINT32,CANopen 3006:12h
+,Deceleration ramp for a software stop or an error,1,R/W,Modbus 1572
+,with error class 1 or 2.,,,
+,,6000,per.,Profibus 1572
+,Modified settings become active the next time the,,,
+,motor moves.,2147483647,-,CIP 106.1.18
+,,,,ModbusTCP 1572
+,,,,EtherCAT 3006:12h
+,,,,PROFINET 1572

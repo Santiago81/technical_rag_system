@@ -1,0 +1,7 @@
+Characteristic Unit,Value
+Input voltage Vdc,24 (-15/+20 %)(1)
+Input current (without load) A,≤1(2)
+Residual ripple %,<5
+Inrush current,Charging current for capacitor C= 1.8 mF
+(1) For connection of motors without holding brake. See figure below for motors with holding brake,
+(2) Input current: holding brake not considered.,

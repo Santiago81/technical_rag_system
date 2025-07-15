@@ -1,0 +1,16 @@
+Technical data,AX5101 AX5103,AX5106
+Rated output current,1.5 A 3 A,4.5 A
+Minimum rated channel current at full current resolution,0.35 A 1 A,1 A
+Peak output current 1),4.5 A 7.5 A,13 A
+Rated supply voltage,1 x 100-10% - 240+10% VAC,
+Max. DC link voltage,875 VDC,
+Rated apparent power S1 operation (selection),,
+120 V,0.3 kVA 0.6 kVA,1.2 kVA
+230 V,0.6 kVA 1.2 kVA,2.4 kVA
+Power loss 2),35 W 50 W,85 W
+Continuous braking power (internal brake resistor),50 W 50 W,150 W
+Max. braking power (internal brake resistor),14 kW,
+Min. brake resistance (external brake resistor),47 Ω,
+Max. braking power (external brake resistor),15 kW,
+DC link capacity,235 μF,
+SCCR value,18 kA,

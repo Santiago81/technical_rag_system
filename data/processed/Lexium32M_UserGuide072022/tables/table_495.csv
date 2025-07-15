@@ -1,0 +1,38 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_eSM_LI_act,eSM digital inputs channel B.,-,UINT16,CANopen 304C:12h
+,Signal state:,-,R/-,Modbus 19492
+,0: 0 level,-,-,Profibus 19492
+,1: 1 level,-,-,CIP 176.1.18
+,Bit assignments:,,,ModbusTCP 19492
+,Bit 0: /ESTOP_B,,,EtherCAT 304C:12h
+,Bit 1: GUARD_B,,,PROFINET 19492
+,Bit 3: SETUPMODE_B,,,
+,Bit 4: SETUPENABLE_B,,,
+,Bit 6: GUARD_ACK,,,
+,Bit 8: ESMSTART,,,
+,Bit 9: /INTERLOCK_IN,,,
+,Available with firmware version ≥V01.01.,,,
+_eSM_LI_mask,eSM digital inputs channel B mask.,-,UINT16,CANopen 304C:13h
+,Mask of active digital inputs,-,R/-,Modbus 19494
+,0: Digital input is not active,-,-,Profibus 19494
+,1: Digital input is active,-,-,CIP 176.1.19
+,Bit assignments:,,,ModbusTCP 19494
+,See digital inputs channel.,,,EtherCAT 304C:13h
+,Available with firmware version ≥V01.01.,,,PROFINET 19494
+_eSM_LO_act,eSM digital outputs channel B.,-,UINT16,CANopen 304C:14h
+,Signal state:,-,R/-,Modbus 19496
+,0: 0 level,-,-,Profibus 19496
+,1: 1 level,-,-,CIP 176.1.20
+,Bit assignments:,,,ModbusTCP 19496
+,Bit 0: CCM24V_OUT_B,,,EtherCAT 304C:14h
+,Bit 1: Drive operating state 6 Operation Enabled,,,PROFINET 19496
+,(B),,,
+,Bit 2: RELAY_OUT_B,,,
+,Bit 3: AUXOUT2,,,
+,Bit 4: /INTERLOCK_OUT,,,
+,Bits 5 ... 15: Reserved,,,
+,Available with firmware version ≥V01.01.,,,

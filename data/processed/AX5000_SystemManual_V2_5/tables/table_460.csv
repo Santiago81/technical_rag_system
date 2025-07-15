@@ -1,0 +1,2 @@
+Allocation of servo drives to a Sync Unit,Unnamed: 0
+,"Start the TwinCAT System Manager and left-click onthe associated EtherCAT strand (1). Select the""EtherCAT"" tab (2) and left-click on ""Sync UnitAssignment"" (3). The ""Sync Unit Assignment""submenu appears. Section (4) shows the servodrives and their allocation to the Sync Units. Servodrives AX5203 and AX5118 belong to Sync Unit""Cycle Process"", 5206 belongs to Sync Unit""Transport""."

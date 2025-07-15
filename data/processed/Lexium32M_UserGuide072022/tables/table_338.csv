@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+RAMPquickstop,"Deceleration ramp for Quick Stop.Deceleration ramp for a software stop or an errorwith error class 1 or 2.Modified settings become active the next time themotor moves.","usr_a160002147483647","UINT32R/Wper.-","CANopen 3006:12hModbus 1572Profibus 1572CIP 106.1.18ModbusTCP 1572EtherCAT 3006:12hPROFINET 1572"

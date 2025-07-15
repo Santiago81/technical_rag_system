@@ -1,0 +1,6 @@
+EMC measures,Objective
+"Do not install switching elements in motor cables or encodercables.",Reduces interference.
+"Route the motor cable at a distance of at least 20 cm (7.87 in)from the signal cable or use shielding plates between the motorcable and signal cable.",Reduces mutual interference
+"For long lines, use equipotential bonding conductors.","Reduces current in the cableshield."
+Route the motor cable and encoder cable without cutting them.(1),Reduces emission.
+"(1) If a cable has to be cut for the installation, it has to be connected with shield connections and ametal housing at the point of the cut.",

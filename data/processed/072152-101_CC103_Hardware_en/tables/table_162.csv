@@ -1,0 +1,11 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"- F055**NOMZ–PARAM.The number ofParameter incorrectly1 Arevolutionsprogrammedencoded in the- F056**NOMZ–PARAM.coded marker is2 Ahigher than theprogrammed-F057**NOMZ–PARAM.number of3 ArevolutionsF058NO REF. POINTNo reference pointThe reference point has notapproachedyet been approached in oneor more axes. Programcannot be started.F059ILLEGAL FEEDFeed illegalPreset feed lies outside themachine parameter valueF060ILLEGAL PARAM.Parameter illegalAcceleration value does notcorrespond to the speed(division by 0)F061DATA LOCKEDInterlock betweenEditing and reading–inread–in of thesimultaneouslycompensationtables and  editingof thecompensationtableF062LOFFSETLengthCall of length compensationIGNOREDcompensation isHxx for rotary axesnot activeF063Z–SHIFTZero shift notCall of zero shift for rotaryIGNOREDactiveaxes if the position data arepreset in revolutionsF064ILLEGALCompensationSelected H group > 24H–GROUPgroup illegalor > 72-F065PLC STOPPEDPLC hasHardware PLC defective,executed an I/Ocycle time of PLC programcycle for longertoo longthan 2 s** Occurs only in conjunction with revolution–coded rotary encoder","Check the parameter”Revolutions”Travel the axes tothe reference pointProgram the feedcorrespondinglyReduce accelerationor increase speedEither only editing oronly read–inDelete the call in thepart programDelete the call in thepart programModify the partprogram accordinglyEnsure that the I/Ocycle  occurs within2 s",,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

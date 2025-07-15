@@ -1,0 +1,3 @@
+RJ45,Signal
+X04 (IN),incoming EtherCAT line
+X05 (OUT),outgoing EtherCAT line

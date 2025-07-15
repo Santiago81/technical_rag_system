@@ -1,0 +1,20 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1
+,,VW3M8100R••• VW3M8102R•••,,VW3M8222R•••
+Number of contacts (shielded),-,(3 x 2 x 0.14 mm2 + 2 x 0.34 mm2),,
+Connector motor side,-,12-pin circular Y-TEC 12-pin circular M23,,Open
+Connector drive side,-,10-pin RJ45 10-pin RJ45,,Open
+Cable diameter,mm,6.8 ± 0.2,,
+,(in),(0.27 ± 0.1),,
+Minimum bend radius,mm,68,,
+,(in),(2.68),,
+Nominal voltage,V,300,,
+Maximum orderable length,m,25 75,,100
+,(ft),(82) (246),,(328)
+Permissible temperature range,°C (°F),-40 ... 80 (-40 ... 176),,
+during operation with fixed,,,,
+installation,,,,
+Permissible temperature range,°C (°F),-20 ... 80 (-4 ... 176),,
+during operation with moving,,,,
+installation,,,,
+Certifications / declaration of,-,DESINA,,"c-UR-us, DESINA"
+conformity,,,,

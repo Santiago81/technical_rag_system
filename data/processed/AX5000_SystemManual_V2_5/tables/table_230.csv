@@ -1,0 +1,4 @@
+Unnamed: 0,"In the Solution Explorer select I/O → Devices.Press the Scan in the toolbar or right-click onDevices and select Scan.In both cases, the following sequence starts:",Unnamed: 1
+,Close the information window with OK.,
+,"Select the devices to be automatically added tothe TwinCAT project.As a minimum, select the device ending with(EtherCAT).Complete the selection with OK.The Solution Explorer shows all selecteddevices.",
+,.,"Confirm the following query withYes. If you answer No, the scan isaborted. The message regarding afound servo drive or servo terminalcan trigger a special scan formotors. This would read theelectronic name plates of themotors and enter the data directlyin the TCDriveManager."

@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+"IO_I_limitConF→i-o-iLiM","Current limitation via input.A current limit can be activated via a digital input.In increments of 0.01 Arms.Modified settings become active immediately.","Arms0.000.20300.00","UINT16R/Wper.-","CANopen 3006:27hModbus 1614Profibus 1614CIP 106.1.39ModbusTCP 1614EtherCAT 3006:27hPROFINET 1614"

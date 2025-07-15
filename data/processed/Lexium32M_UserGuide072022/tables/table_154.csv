@@ -1,0 +1,28 @@
+HMI menuMon,Description
+Mon,Monitoring (Monitoring)
+Supu,HMI display when motor moves
+nact,Actual speed of rotation
+Vact,Actual velocity
+nref,Reference speed of rotation
+Vref,Reference velocity
+Qref,"Reference motor current (q component, generating torque)"
+qact,"Actual motor current (q component, generating torque)"
+iact,Total motor current
+ana1,Analog 1: Value of input voltage
+ana2,Analog 2: Value of input voltage
+dimo,Status of digital inputs
+domo,Status of digital outputs
+sto,Status of the inputs for the safety-related function STO
+udca,Voltage at DC bus
+udcr,Degree of utilization of DC bus voltage
+ldfp,Load of power stage
+ldfm,Load of motor
+ldfb,Load of braking resistor
+tdeV,Device temperature
+tps,Temperature of power stage
+oph,Operating hours counter
+Polo,Number of power on cycles
+lwrn,Detected error not causing a stop (error class 0)
+wrns,"Detected error of error class 0, bit-coded (parameter _WarnLatched)"
+lflt,Detected error causing a stop (error classes 1 to 4)
+sigs,Saved status of monitoring signals

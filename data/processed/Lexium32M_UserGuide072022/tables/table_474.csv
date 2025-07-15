@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+B406,0,"Baud rate is not supportedParameter _WarnLatched Bit 21","The configured baud rate is notsupported.","Choose one of the following baudrates: 250 kB, 500 kB, 1000 kB."
+B407,0,"Drive is not synchronous with mastercycleParameter _WarnLatched Bit 21","The operating mode 'CyclicSynchronous Mode' cannot beactivated as long as the drive is notsynchronized.","Verify motion controller. To besynchronized, the motion controllermust cyclically send SYNC signals."
+B500,0,"DeviceNet: IO data could not beprocessedParameter _WarnLatched Bit 21","Error detected while processing I/Odata: Output data contains invalidvalue.","Verify output data content(application)."
+B501,2,"DeviceNet: Duplicate MAC IDParameter _SigLatched Bit 21","There is a device with the same MACID on the DeviceNet bus.","Use another MAC ID for this deviceor for the other device."
+B502,2,"DeviceNet: Receive queue overrunParameter _SigLatched Bit 21",-,-
+B503,2,"DeviceNet: Transmit queue overrunParameter _SigLatched Bit 21",-,-
+B504,2,"DeviceNet: Error detected whilesending an I/O messageParameter _SigLatched Bit 21",-,-
+B505,2,"DeviceNet: CAN controller in statebus-offParameter _SigLatched Bit 21","Too many error frames have beendetected, CAN devices with differentbaudrates.",Verify CAN bus installation.
+B506,2,"DeviceNet: CAN overflow (messagelost)Parameter _SigLatched Bit 21","Two short DeviceNet messages havebeen sent too fast.",-
+B507,2,"DeviceNet: Reset request, change ofbaud rate or MAC IDParameter _SigLatched Bit 21","Master sent DeviceNet reset requestwhile the power stage was enabled.","Reset the device only while thepower stage is disabled."
+B508,2,"DeviceNet: Power supply disabledParameter _SigLatched Bit 21","DeviceNet bus power supply waspowered off while the power stagewas enabled.","Disable the power stage beforepowering off the DeviceNet master."
+B509,2,"DeviceNet: Timeout explicitconnectionParameter _SigLatched Bit 21",-,-
+B50A,2,"DeviceNet: Timeout I/O connectionParameter _SigLatched Bit 21",-,-
+B50B,2,"DeviceNet: Explicit connectionterminated while operating state wasOperation EnabledParameter _SigLatched Bit 21","An explicit connection wasterminated while no I/O channel wasopen and the power stage wasenabled.","If you use explicit connections only,disable the power stage beforeterminating the connection."
+B50C,2,"DeviceNet: I/O connectionterminated while operating state wasOperation EnabledParameter _SigLatched Bit 21","An I/O connection was terminatedwhile the power stage was enabled.","Disable the power stage beforeterminating the I/O connection."
+B600,2,"Ethernet: Network overloadParameter _SigLatched Bit 21",-,-
+B601,2,"Ethernet: Loss of Ethernet carrierParameter _SigLatched Bit 21",-,-
+B602,2,"Ethernet: Duplicate IP addressParameter _SigLatched Bit 21",-,-

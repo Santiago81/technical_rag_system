@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_DEV_T_current,Temperature of device.,°C,INT16,CANopen 301C:12h
+Mon,,-,R/-,Modbus 7204
+tdEV,,-,-,Profibus 7204
+,,-,-,CIP 128.1.18
+,,,,ModbusTCP 7204
+,,,,EtherCAT 301C:12h
+,,,,PROFINET 7204
+_DPL_BitShiftRefA16,Bit shift for RefA16 for Drive Profile Lexium.,-,UINT16,CANopen 301B:5h
+,Velocity scaling may lead to values that cannot be,0,R/-,Modbus 6922
+,"represented as 16 bit values. If RefA16 is used,",,,
+,this parameter indicates the number of bits by,0,-,Profibus 6922
+,which the value is shifted so that transmission is,,,
+,possible. The master must take into account this,12,-,CIP 127.1.5
+,value prior to transmission and shift the bits to the,,,
+,right accordingly. The number of bits is,,,ModbusTCP 6922
+,recalculated each time the power stage is,,,
+,enabled.,,,EtherCAT 301B:5h
+,,,,PROFINET 6922
+_DPL_driveInput,Drive Profile Lexium driveInput.,-,UINT16,CANopen 301B:28h
+,,-,R/-,Modbus 6992
+,,-,-,Profibus 6992
+,,-,-,CIP 127.1.40
+,,,,ModbusTCP 6992
+,,,,EtherCAT 301B:28h
+,,,,PROFINET 6992
+_DPL_driveStat,Drive Profile Lexium driveStat.,-,UINT16,CANopen 301B:25h
+,,-,R/-,Modbus 6986
+,,-,-,Profibus 6986
+,,-,-,CIP 127.1.37
+,,,,ModbusTCP 6986
+,,,,EtherCAT 301B:25h
+,,,,PROFINET 6986
+_DPL_mfStat,Drive Profile Lexium mfStat.,-,UINT16,CANopen 301B:26h
+,,-,R/-,Modbus 6988
+,,-,-,Profibus 6988
+,,-,-,CIP 127.1.38
+,,,,ModbusTCP 6988
+,,,,EtherCAT 301B:26h
+,,,,PROFINET 6988

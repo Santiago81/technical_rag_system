@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PntIPAddress2,"IP address, byte 2.",-,UINT16,CANopen 3048:8h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18448
+,product is powered on.,,,
+iPc2,,0,per.,Profibus 18448
+,,255,-,CIP 172.1.8
+,,,,ModbusTCP 18448
+,,,,EtherCAT 3048:8h
+,,,,PROFINET 18448
+PntIPAddress3,"IP address, byte 3.",-,UINT16,CANopen 3048:9h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18450
+,product is powered on.,,,
+iPc3,,0,per.,Profibus 18450
+,,255,-,CIP 172.1.9
+,,,,ModbusTCP 18450
+,,,,EtherCAT 3048:9h
+,,,,PROFINET 18450
+PntIPAddress4,"IP address, byte 4.",-,UINT16,CANopen 3048:Ah
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18452
+,product is powered on.,,,
+iPc4,,0,per.,Profibus 18452
+,,255,-,CIP 172.1.10
+,,,,ModbusTCP 18452
+,,,,EtherCAT 3048:Ah
+,,,,PROFINET 18452
+PntIPgate1,"IP address gateway, byte 1.",-,UINT16,CANopen 3048:Fh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18462
+,product is powered on.,,,
+iPG1,,0,per.,Profibus 18462
+,,255,-,CIP 172.1.15
+,,,,ModbusTCP 18462
+,,,,EtherCAT 3048:Fh
+,,,,PROFINET 18462
+PntIPgate2,"IP address gateway, byte 2.",-,UINT16,CANopen 3048:10h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18464
+,product is powered on.,,,
+iPG2,,0,per.,Profibus 18464
+,,255,-,CIP 172.1.16
+,,,,ModbusTCP 18464
+,,,,EtherCAT 3048:10h
+,,,,PROFINET 18464

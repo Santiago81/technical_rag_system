@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PARuserReset,Reset user parameters.,-,UINT16,CANopen 3004:8h
+ConF→FCS-,0 / No /no: No,0,R/W,Modbus 1040
+rESu,65535 / Yes /yES: Yes,-,-,Profibus 1040
+,Bit 0: Reset persistent user parameters and,65535,-,CIP 104.1.8
+,control loop parameters to default values,,,
+,,,,ModbusTCP 1040
+,Bit 1: Reset Motion Sequence parameters to,,,
+,default values,,,EtherCAT 3004:8h
+,Bits 2 ... 15: Reserved,,,PROFINET 1040
+,The parameters are reset with the exception of:,,,
+,- Communication parameters,,,
+,- Inversion of direction of movement,,,
+,- Type of reference value signal for PTI interface,,,
+,- Settings of encoder simulation,,,
+,- Functions of digital inputs and outputs,,,
+,- Safety module eSM,,,
+,The new settings are not saved to the nonvolatile,,,
+,memory.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+PBaddress,Profibus address.,-,UINT16,CANopen 3043:2h
+ConF→CoM-,Setting can only be modified if power stage is,1,R/W,Modbus 17156
+,disabled.,,,
+PbAd,,126,per.,Profibus 17156
+,Modified settings become active the next time the,,,
+,product is powered on.,126,-,CIP 167.1.2
+,,,,ModbusTCP 17156
+,,,,EtherCAT 3043:2h
+,,,,PROFINET 17156
+PDOmask,Deactivate receive PDO.,-,UINT16,CANopen 3040:42h
+,Value 0: Activate receive PDO,0,R/W,Modbus 16516
+,Value 1: Deactivate receive PDO,0,-,Profibus 16516
+,Modified settings become active immediately.,1,-,CIP 164.1.66
+,,,,ModbusTCP 16516
+,,,,EtherCAT 3040:42h
+,,,,PROFINET 16516
+PntIPAddress1,"IP address, byte 1.",-,UINT16,CANopen 3048:7h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 18446
+,product is powered on.,,,
+iPc1,,0,per.,Profibus 18446
+,,255,-,CIP 172.1.7
+,,,,ModbusTCP 18446
+,,,,EtherCAT 3048:7h
+,,,,PROFINET 18446

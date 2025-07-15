@@ -1,0 +1,10 @@
+Function,Description
+F1,Reverse travel with Manual Velocity (Fast)
+F2,Reverse travel with Manual Velocity (Slow)
+F3,Forward travel with Manual Velocity (Slow)
+F4,Forward travel with Manual Velocity (Fast)
+F5,"Start a direct travel command•Enter the Target Position•Enter the Target Velocity•Start the travel command with F5"
+F6,Stop a direct travel command
+,
+F8,NC reset; the current motion command is aborted.
+F9,Initiate homing (see TwinCAT documentation)

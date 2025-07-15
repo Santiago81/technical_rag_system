@@ -1,0 +1,14 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7608,4,"Encoder module power supplyovercurrentParameter _SigLatched Bit 22","- Short circuit at connector orencoder cable.- Incorrect or inoperative encoder.",-
+7609,4,"Encoder not connected to encodermoduleParameter _SigLatched Bit 22","Connector not connected to moduleor not connected to motor/encoder.Incorrect or inoperative encodercable.",-
+760A,3,"Encoder module in slot 2 missing.Parameter _SigLatched Bit 22","Module has been removed or moduleis inoperative.",-
+760C,2,"Maximum encoder frequencyexceededParameter _SigLatched Bit 22",Velocity too high for the encoder.,-
+760D,4,"Configuration error detected:Incorrect use of encoder moduleParameter _SigLatched Bit 22","Incorrect value in parameter ENC2_usage.",-
+760E,2,"Position evaluation error detected(signal tracking error detected)Parameter _SigLatched Bit 22",Encoder signals subject to EMI.,Verify wiring and cable shield.
+760F,0,"Incorrect position evaluation(interference detected)Parameter _WarnLatched Bit 22",Encoder signals subject to EMI.,"Verify wiring, cable shield."
+7610,0,"Resolver: Loss of position tracking,position is inaccurateParameter _WarnLatched Bit 22","- Motor velocity is too high.- Motor acceleration is too fast.","- Reduce velocity.- Reduce acceleration.- Reduce resolver resolution.- Adapt resolver excitation frequency."
+7611,2,"Resolver: Signal degradation,position is inaccurateParameter _SigLatched Bit 22","Resolver is inoperative.Resolver signals are subject tointerference.Resolver cable is too long.","Replace resolver.Verify resolver cable: wiring andshield connection.Additional info bits:D5: Sine/cosine inputs exceed DOSout of range threshold.D4: Sine/cosine inputs exceed DOSmismatch threshold."
+7612,3,"Resolver: Loss of signal, positionunreliableParameter _SigLatched Bit 22","Resolver is inoperative.Resolver wiring is incorrect.Resolver signals are subject toexcessive interference.Resolver is unsuitable for drive.Incorrect parameter transformationratio.","Verify resolver cable: wiring andshield connection.Replace resolver.Additional info bits:D7: Sine/cosine inputs clipped.D6: Sine/cosine inputs below LOSthreshold."
+7613,3,"Resolver: Signal communicationsubject to interferenceParameter _SigLatched Bit 22","Resolver signals are subject tointerference.","Verify resolver cable: wiring andshield connection."
+7614,3,"Error detected at resolver powersupply.Parameter _SigLatched Bit 22",Resolver is not properly connected.,Verify resolver cable.
+7615,3,"System error detected: Encodermodule RES is not ready for positionevaluationParameter _SigLatched Bit 22",EMI.,Verify resolver cable.

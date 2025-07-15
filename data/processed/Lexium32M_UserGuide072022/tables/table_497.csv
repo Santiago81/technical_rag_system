@@ -1,0 +1,41 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_EthIPgateAct3,"Currently used IP address gateway, byte 3.",-,UINT16,CANopen 3044:1Dh
+,,-,R/-,Modbus 17466
+,,-,-,Profibus 17466
+,,-,-,CIP 168.1.29
+,,,,ModbusTCP 17466
+,,,,EtherCAT 3044:1Dh
+,,,,PROFINET 17466
+_EthIPgateAct4,"Currently used IP address gateway, byte 4.",-,UINT16,CANopen 3044:1Eh
+,,-,R/-,Modbus 17468
+,,-,-,Profibus 17468
+,,-,-,CIP 168.1.30
+,,,,ModbusTCP 17468
+,,,,EtherCAT 3044:1Eh
+,,,,PROFINET 17468
+_EthIPmaskAct1,"Currently used IP address subnet mask, byte 1.",-,UINT16,CANopen 3044:17h
+,Byte 1 (x.0.0.0) of the IP address of the subnet,-,R/-,Modbus 17454
+,mask.,,,
+,,-,-,Profibus 17454
+,,-,-,CIP 168.1.23
+,,,,ModbusTCP 17454
+,,,,EtherCAT 3044:17h
+,,,,PROFINET 17454
+_EthIPmaskAct2,"Currently used IP address subnet mask, byte 2.",-,UINT16,CANopen 3044:18h
+,,-,R/-,Modbus 17456
+,,-,-,Profibus 17456
+,,-,-,CIP 168.1.24
+,,,,ModbusTCP 17456
+,,,,EtherCAT 3044:18h
+,,,,PROFINET 17456
+_EthIPmaskAct3,"Currently used IP address subnet mask, byte 3.",-,UINT16,CANopen 3044:19h
+,,-,R/-,Modbus 17458
+,,-,-,Profibus 17458
+,,-,-,CIP 168.1.25
+,,,,ModbusTCP 17458
+,,,,EtherCAT 3044:19h
+,,,,PROFINET 17458

@@ -1,0 +1,26 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ScalePOSnum,Position scaling: Numerator.,revolution,INT32,CANopen 3006:8h
+,Specification of the scaling factor:,1,R/W,Modbus 1552
+,Motor revolutions,1,per.,Profibus 1552
+,-------------------------------------------,2147483647,-,CIP 106.1.8
+,User-defined units [usr_p],,,ModbusTCP 1552
+,A new scaling is activated when the numerator,,,EtherCAT 3006:8h
+,value is supplied.,,,
+,,,,PROFINET 1552
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+ScalePOSdenom,Position scaling: Denominator.,usr_p,INT32,CANopen 3006:7h
+,Refer to numerator (ScalePOSnum) for a,1,R/W,Modbus 1550
+,description.,,,
+,,16384,per.,Profibus 1550
+,A new scaling is activated when the numerator,,,
+,value is supplied.,2147483647,-,CIP 106.1.7
+,Setting can only be modified if power stage is,,,ModbusTCP 1550
+,disabled.,,,
+,,,,EtherCAT 3006:7h
+,,,,PROFINET 1550

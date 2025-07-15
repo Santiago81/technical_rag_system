@@ -1,0 +1,22 @@
+5.2.1,General . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-3
+5.2.2,Technical data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-3
+5.2.3,Connecting servo-amplifiers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-4
+5.2.3.1,Connecting servo-amplifiers with differential input . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-4
+5.2.3.2,Connecting servo-amplifiers with differential input and GND in drive amplifier,
+,permanently connected with housing (e.g. Servodyn-TC) . . . . . . . . . . . . . . . . . . . . . .,5-5
+5.2.3.3,Connecting servo-amplifiers with GND input . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-6
+5.2.3.4,Special features . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-6
+5.3,Measuring systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-7
+5.3.1,General . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-7
+5.3.2,Technical data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-7
+,Incremental measuring system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-7
+,General . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-7
+5.3.3,Direct connection of measuring systems from Messrs. Heidenhain . . . . . . . . . . . . . . .,5-9
+,Cable from Servo to Measuring System (ROD) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-9
+5.3.4,Direct connection of measuring systems from Messrs. Stegmann . . . . . . . . . . . . . . . .,5-11
+5.3.5,Connecting measuring systems from Messrs. Heidenhain with EXE unit . . . . . . . . . .,5-12
+5.3.6,Shorting plug for measuring system input,
+,(applies only to incremental measuring system) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-13
+5.3.7,Permissible digital measuring systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-13
+5.3.8,Recommended pulse-shaper electronics (EXE) and encoder . . . . . . . . . . . . . . . . . . .,5-14
+5.3.9,Revolution-coded incremental encoder to TE60 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,5-15

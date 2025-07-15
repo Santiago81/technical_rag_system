@@ -1,0 +1,25 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ScaleVELnum,Velocity scaling: Numerator.,RPM,INT32,CANopen 3006:22h
+,Specification of the scaling factor:,1,R/W,Modbus 1604
+,Speed of rotation of motor [RPM],1,per.,Profibus 1604
+,--------------------------------------------------,2147483647,-,CIP 106.1.34
+,User-defined units [usr_v],,,ModbusTCP 1604
+,A new scaling is activated when the numerator,,,EtherCAT 3006:22h
+,value is supplied.,,,
+,,,,PROFINET 1604
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+ScaleVELdenom,Velocity scaling: Denominator.,usr_v,INT32,CANopen 3006:21h
+,See numerator (ScaleVELnum) for a description.,1,R/W,Modbus 1602
+,A new scaling is activated when the numerator,1,per.,Profibus 1602
+,value is supplied.,,,
+,,2147483647,-,CIP 106.1.33
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1602
+,,,,EtherCAT 3006:21h
+,,,,PROFINET 1602

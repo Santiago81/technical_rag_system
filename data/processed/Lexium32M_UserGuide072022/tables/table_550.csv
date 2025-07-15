@@ -1,0 +1,31 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CLSET_p_DiffWin,Position deviation for control loop parameter set,revolution,UINT16,CANopen 3011:1Ch
+,switching.,,,
+,,0.0000,R/W,Modbus 4408
+,If the position deviation of the position controller is,,,
+,"less than the value of this parameter, control loop",0.0100,per.,Profibus 4408
+,"parameter set 2 is used. Otherwise, control loop",,,
+,parameter set 1 is used.,2.0000,-,CIP 117.1.28
+,The parameter CLSET_p_DiffWin_usr allows you,,,ModbusTCP 4408
+,to enter the value in user-defined units.,,,
+,,,,EtherCAT 3011:1Ch
+,In increments of 0.0001 revolution.,,,
+,,,,PROFINET 4408
+,Modified settings become active immediately.,,,
+CLSET_p_DiffWin_,Position deviation for control loop parameter set,usr_p,INT32,CANopen 3011:25h
+usr,switching.,,,
+,,0,R/W,Modbus 4426
+,If the position deviation of the position controller is,,,
+,"less than the value of this parameter, control loop",164,per.,Profibus 4426
+,"parameter set 2 is used. Otherwise, control loop",,,
+,parameter set 1 is used.,2147483647,-,CIP 117.1.37
+,"The minimum value, the factory setting and the",,,ModbusTCP 4426
+,maximum value depend on the scaling factor.,,,
+,,,,EtherCAT 3011:25h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 4426
+,Available with firmware version ≥V01.03.,,,

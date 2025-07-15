@@ -1,0 +1,5 @@
+Fault,Edit,Value,Unit,Meaning
+Red,-,-,-,Operating state Fault
+-,Yellow,Yellow,-,Parameter value can be edited
+-,-,Yellow,-,Value of the parameter
+-,-,-,Yellow,Unit of the selected parameter

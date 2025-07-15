@@ -1,0 +1,7 @@
+Signal input,Signal input function
+DI0,"""Enable""Enable and disable the power stage"
+DI1,"""Fault Reset""Resetting an error message"
+DI2,"""Positive Limit Switch (LIMP)""See Limit Switches, page 350"
+DI3,"""Negative Limit Switch (LIMN)""See Limit Switches, page 350"
+DI4,"""Jog Negative""Operating mode Jog: Movement in negative direction"
+DI5,"""Jog Positive""Operating mode Jog: Movement in positive direction"

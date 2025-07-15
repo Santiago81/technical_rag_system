@@ -1,0 +1,18 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7616,3,"System error detected: ResolvertimeoutParameter _SigLatched Bit 22",-,Replace encoder module.
+7617,1,"Resolver velocity is too highParameter _SigLatched Bit 22",Motor velocity is too high.,Reduce motor velocity.
+7618,4,"Encoder 2 Hall sensor error detectedParameter _SigLatched Bit 22","Incorrect wiring or inoperative cablefor Hall signals of encoder 2.",Verify encoder cable.
+7619,4,"Incorrect communication betweenmodule and encoderParameter _SigLatched Bit 22","Incorrect encoder wiring/adjustmentor incorrect encoder parametersettings (example: parameterENCDigSSICoding is set for SSIencoder).","Verify encoder cable: wiring andshield connection.. Verify encoderparameter settings. Verify encoderadjustment."
+761A,0,"Incorrect communication betweenmodule and encoderParameter _WarnLatched Bit 22",Incorrect encoder wiring.,"Verify encoder cable: wiring andshield connection."
+761B,4,"Connected type of EnDat encoder isnot supportedParameter _SigLatched Bit 22",-,Use a supported EnDat encoder.
+761C,4,"Configuration error detected: InvalidSSI encoder parameter settingParameter _SigLatched Bit 22","Incorrect values in parameterENCDigSSIResSgl orENCDigSSIResMult.",-
+761D,2,"Maximum velocity of the encoder isexceededParameter _SigLatched Bit 22","Velocity too high for the encoder. Inthe case of SSI or EnDat2.2, thereason may also be a detectedencoder communication error.",-
+761E,2,"Encoder module overtemperatureParameter _SigLatched Bit 22",The ambient temperature is too high.,"Improve the heat dissipation in thecontrol cabinet."
+761F,2,"Position evaluation error detected(AB encoder signals)Parameter _SigLatched Bit 22",No sync signal available.,-
+7620,4,"Checksum error detected in EnDatencoder dataParameter _SigLatched Bit 22",-,-
+7621,1,"Runtime compensation was notsuccessfulParameter _SigLatched Bit 22",-,"Verify encoder cable: wiring andshield connection."
+7622,0,"Resolver timeoutParameter _WarnLatched Bit 22",System error detected.,Replace encoder module
+7623,0,"Absolute encoder signal is notavailableParameter _WarnLatched Bit 22","There is no encoder available at theinput specified via the parameterENC_abs_source.","Verify wiring, verify encoder. Changethe value of the parameter ENC_abs_source."
+7624,0,"Absolute position for encoder 2cannot be setParameter _WarnLatched Bit 22","No encoder connected or encoderdoes not support setting of absolutepositions.","Use an encoder that supports directsetting of the absolute position viaENC2_setpabs."
+7625,0,"Not possible to set the absoluteposition for encoder 1.Parameter _WarnLatched Bit 22","There is no encoder connected to theinput for encoder 1.","Connect an encoder to the input forencoder 1 before trying to set theabsolute position directly via ENC1_abs_pos."
+7626,4,"Overflow error detected duringencoder scalingParameter _SigLatched Bit 22","The multiturn resolution of themachine encoder with reference tothe motor shaft exceeds the systemlimits, for example, due to themechanical gear ratio betweenmachine encoder and motor encoder.","Reduce the number of bits of themultitun resolution that are used forposition evaluation via the parameterENCDigResMulUsed."

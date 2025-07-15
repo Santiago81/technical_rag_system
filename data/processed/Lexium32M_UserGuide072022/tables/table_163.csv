@@ -1,0 +1,18 @@
+HMI menuCom-,Description
+Com-,Communication (COMmunication)
+mbad,Modbus address
+mbbd,Modbus baud rate
+Coad,CANopen address (node number)
+Cobd,CANopen baud rate
+dnad,DeviceNet node address (MAC ID)
+dnbd,DeviceNet baud rate
+pbad,Profibus address
+ipMd,Method of obtaining IP address
+ipc1,"IP address Ethernet module, byte 1"
+ipc2,"IP address Ethernet module, byte 2"
+ipc3,"IP address Ethernet module, byte 3"
+ipc4,"IP address Ethernet module, byte 4"
+ipm1,"IP address subnet mask, byte 1"
+ipm2,"IP address subnet mask, byte 2"
+ipm3,"IP address subnet mask, byte 3"
+ipm4,"IP address subnet mask, byte 4"

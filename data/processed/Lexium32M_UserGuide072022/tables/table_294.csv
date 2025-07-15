@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+PTtq_target,"Target torque.100.0 % correspond to the continuous stall torque_M_M_0.In increments of 0.1 %.Modified settings become active immediately.","%-3000.00.03000.0","INT16R/W--","CANopen 6071:0hModbus 6944Profibus 6944CIP 127.1.16ModbusTCP 6944EtherCAT 6071:0hPROFINET 6944"

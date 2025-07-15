@@ -1,0 +1,30 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+UsrAppDataMem2,User-specific data 2.,-,UINT32,CANopen 3001:44h
+,This parameter can be used to store user-specific,-,R/W,Modbus 392
+,data.,,,
+,,0,per.,Profibus 392
+,Modified settings become active immediately.,,,
+,,-,-,CIP 101.1.68
+,Available with firmware version ≥V01.20.,,,
+,,,,ModbusTCP 392
+,,,,EtherCAT 3001:44h
+,,,,PROFINET 392
+WakesAndShake-,Gain for wake and shake.,%,UINT16,CANopen 3050:Eh
+Gain,,,,
+,"If wake and shake does not work properly, this",1.0,R/W,Modbus 20508
+,parameter can be used to adapt the dynamics of,,,
+,the wake and shake procedure.,100.0,per.,Profibus 20508
+,Value >100 %: Increases dynamics which leads to,400.0,-,CIP 180.1.14
+,less motor movement.,,,
+,,,,ModbusTCP 20508
+,Value <100 %: Reduces dynamics which leads to,,,
+,more motor movement.,,,EtherCAT 3050:Eh
+,In increments of 0.1 %.,,,PROFINET 20508
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.10.,,,

@@ -1,0 +1,121 @@
+{
+  "timestamp": "2025-07-13T18:36:32.383684",
+  "configuration": {
+    "model": "gpt-4o-mini",
+    "chunks_processed": 15,
+    "aggregate_interval": 5
+  },
+  "statistics": {
+    "total_chunks": 15,
+    "single_chunk_qa": 41,
+    "multi_chunk_qa": 9,
+    "aggregations_performed": 3,
+    "examples_by_type": {
+      "factual_basic": 13,
+      "factual_intermediate": 14,
+      "application_intermediate": 14,
+      "multi_chunk_synthesis": 3,
+      "multi_chunk_comparison": 3,
+      "multi_chunk_comprehensive_analysis": 3
+    },
+    "processing_time": 168.01375102996826,
+    "chunks_by_pdf": {
+      "AX5000_SystemManual_V2_5.pdf": 15
+    },
+    "total_examples": 50,
+    "examples_per_chunk": 3.3333333333333335
+  },
+  "sample_single_chunk_qa": [
+    {
+      "question": "What is the version number of the Servo Drives AX5000 documentation?",
+      "answer": "The version number of the Servo Drives AX5000 documentation is 2.5....",
+      "metadata": {
+        "chunk_id": 2,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What is the version number of the Servo Drives AX5000 documentation, and where can I find notes on the documentation?",
+      "answer": "The version number of the Servo Drives AX5000 documentation is 2.5. You can find the notes on the documentation in section 1.1, which is located on page 9 of the document....",
+      "metadata": {
+        "chunk_id": 2,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What are the key considerations outlined in the 'Notes on the documentation' section for effectively utilizing the AX5000 Servo Drives?",
+      "answer": "The 'Notes on the documentation' section emphasizes the importance of understanding the operational parameters and safety guidelines specific to the AX5000 Servo Drives. Key considerations include ens...",
+      "metadata": {
+        "chunk_id": 2,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "application"
+      }
+    },
+    {
+      "question": "What section of the documentation addresses the scope of the documentation?",
+      "answer": "The scope of the documentation is addressed in section 1.2.1 of the technical documentation, which is located on page 10....",
+      "metadata": {
+        "chunk_id": 3,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What are the specific guidelines outlined in the documentation regarding the scope and appropriate use of the material, particularly in relation to Dual Use under EU regulations?",
+      "answer": "The documentation specifies that the scope encompasses both intended and unintended applications of the material, emphasizing the necessity for compliance with EU regulations on Dual Use. It details t...",
+      "metadata": {
+        "chunk_id": 3,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What considerations must be taken into account regarding the scope of documentation under section 1.2.1 in relation to dual use as described in section 1.3.1?",
+      "answer": "Section 1.2.1 specifies the boundaries and the content that the documentation must cover, ensuring that all necessary information is included while avoiding extraneous details. When considering dual u...",
+      "metadata": {
+        "chunk_id": 3,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "application"
+      }
+    },
+    {
+      "question": "What is the purpose of the EC declaration of conformity as outlined in the technical documentation?",
+      "answer": "The EC declaration of conformity serves as a formal statement by the manufacturer indicating that a product complies with all relevant European Union legislation and standards. It is required for prod...",
+      "metadata": {
+        "chunk_id": 4,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What are the requirements for EC declaration of conformity as outlined in section 2.1 of the documentation?",
+      "answer": "The EC declaration of conformity, as outlined in section 2.1, requires manufacturers to ensure that their products comply with all relevant EU legislation. This includes conducting appropriate conform...",
+      "metadata": {
+        "chunk_id": 4,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What are the specific UL approval requirements for devices designed to operate at a maximum current of 40 A in the US and Canada?",
+      "answer": "Devices designed for operation at up to 40 A must comply with UL standards specific to safety and performance, which include rigorous testing and certification processes. This includes adherence to UL...",
+      "metadata": {
+        "chunk_id": 5,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "factual"
+      }
+    },
+    {
+      "question": "What are the key UL-specific chapter changes that affect devices rated up to 40 A for UL approval in the US and Canada?",
+      "answer": "The key UL-specific chapter changes for devices rated up to 40 A include modifications to safety standards and testing procedures that ensure compliance with updated electrical codes. These changes ma...",
+      "metadata": {
+        "chunk_id": 5,
+        "pdf": "AX5000_SystemManual_V2_5.pdf",
+        "type": "application"
+      }
+    }
+  ],
+  "sample_multi_chunk_qa": []
+}

@@ -1,0 +1,24 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_tq_win,"Torque window, permissible deviation.",%,UINT16,CANopen 3006:2Dh
+,The torque window can only be activated in,0.0,R/W,Modbus 1626
+,operating mode Profile Torque.,,,
+,,3.0,per.,Profibus 1626
+,In increments of 0.1 %.,,,
+,,3000.0,-,CIP 106.1.45
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1626
+,,,,EtherCAT 3006:2Dh
+,,,,PROFINET 1626
+MON_tq_winTime,"Torque window, time.",ms,UINT16,CANopen 3006:2Eh
+,Value 0: Torque window monitoring deactivated,0,R/W,Modbus 1628
+,Changing the value causes a restart of torque,0,per.,Profibus 1628
+,monitoring.,,,
+,,16383,-,CIP 106.1.46
+,Torque window is only used in operating mode,,,
+,Profile Torque.,,,ModbusTCP 1628
+,Modified settings become active immediately.,,,EtherCAT 3006:2Eh
+,,,,PROFINET 1628

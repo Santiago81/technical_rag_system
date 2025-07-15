@@ -1,0 +1,7 @@
+Characteristic,Unit,Value
+Nominal supply voltage,Vdc,24
+Voltage range for supply voltage,Vdc,19.2 ... 30
+Nominal output voltage - sourcing outputs,Vdc,24
+Nominal output voltage - sinking outputs,Vdc,0
+Voltage drop at 100 mA load,Vdc,≤3
+Maximum current per output,mA,100

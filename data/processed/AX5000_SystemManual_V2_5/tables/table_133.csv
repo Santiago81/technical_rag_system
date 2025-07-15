@@ -1,0 +1,11 @@
+Terminal,Connection,Current consump-,Tightening torque
+point,,tion,
+Up,24 VDC ±10% (depending on the,Depending on the,
+,motor holding brake) -,connected,
+,peripheral voltage,consumers (see X06,
+,(e.g. separate brake,"and X14, X24)",0.5 – 0.6 Nm
+,supply),,
+Us,24 VDC-15% + 20% -,-12 A = 0.4 A – 0.8 A,
+,system supply,18 A - 25 A = 1.1 A,
+,voltage,40 A = 1.6 A,
+GND,GND,,

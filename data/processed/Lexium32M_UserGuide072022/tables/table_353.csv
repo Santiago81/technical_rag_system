@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+_CapStatus,"Status of the capture inputs.Read access:Bit 0: Position captured via input CAP1Bit 1: Position captured via input CAP2Bit 2: Position captured via input CAP3","----","UINT16R/---","CANopen 300A:1hModbus 2562Profibus 2562CIP 110.1.1ModbusTCP 2562EtherCAT 300A:1hPROFINET 2562"

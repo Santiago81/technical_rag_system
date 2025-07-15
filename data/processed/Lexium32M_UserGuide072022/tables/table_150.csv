@@ -1,0 +1,5 @@
+HMI menuJog-,Description
+Jog-,Operating mode Jog
+jgst,Start operating mode Jog
+jghi,Velocity for fast movement
+jglo,Velocity for slow movement

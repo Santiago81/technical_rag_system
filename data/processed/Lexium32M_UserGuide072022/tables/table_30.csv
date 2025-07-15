@@ -1,0 +1,20 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+,"LXM32•-U60N4","LXM32•-D12N4","LXM32•-D18N4","LXM32•-D30N4","LXM32•-D72N4","LXM32•-D85N4","LXM32•-C10N4",
+Maximum fuse to be connected upstream(1),A,32,32,32,32,32,63,63
+"Continuous output currentPWM frequency = 4 kHzPWM frequency = 8 kHz",Arms,"-1.5","-3","-6","-10","-24","3224","4024"
+"Peak output currentPWM frequency = 4 kHzPWM frequency = 8 kHz",Arms,"-6","-12","-18","-30","-72","8582","10082"
+Minimum inductance motor (phase/phase),mH,8.5,4.5,3,1.7,0.7,0.6,0.51
+Values without mains reactor(2),,,,,,,,
+"Nominal powerPWM frequency = 4 kHzPWM frequency = 8 kHz",kW,"-0.4","-0.9","-1.8","-3.0","-7","99","1111"
+"Input current(3)PWM frequency = 4 kHzPWM frequency = 8 kHz",Arms,"-1.4","-2.9","-5.2","-8.3","-17.3","23.323.3","27.827.8"
+"THD (total harmonic distortion)(4)PWM frequency = 4 kHzPWM frequency = 8 kHz",%,"-191","-177","-161","-148","-126","139139","133133"
+"Power dissipation(5)PWM frequency = 4 kHzPWM frequency = 8 kHz",W,"-17","-37","-68","-115","-283","303429","375522"
+Maximum inrush current(6),A,90,131,201,248,359,520,520
+Time for maximum inrush current,ms,0.5,0.7,0.9,1.1,1.4,1.0,1.0
+Values with mains reactor,,,,,,,,
+Mains reactor,mH,2,2,1,1,1,1,0.5
+"Nominal powerPWM frequency = 4 kHzPWM frequency = 8 kHz",kW,"-0.8","-1.6","-3.3","-5.6","-13","1513","2213"
+"Input current(3)PWM frequency = 4 kHzPWM frequency = 8 kHz",Arms,"-1.8","-3.4","-6.9","-11.1","-22.5","25.021.9","38.124.5"
+"THD (total harmonic distortion)(4)PWM frequency = 4 kHzPWM frequency = 8 kHz",%,"-108","-90","-90","-77","-45","4245","5170"
+"Power dissipation(5)PWM frequency = 4 kHzPWM frequency = 8 kHz",W,"-19","-40","-74","-125","-308","306433","416563"
+Maximum inrush current(6),A,28,36,75,87,112,138,185

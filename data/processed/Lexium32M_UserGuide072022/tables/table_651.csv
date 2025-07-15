@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+OFSp_RelPos2,Relative offset position 2 for offset movement.,Inc,INT32,CANopen 3027:Ah
+,Modified settings become active immediately.,-2147483648,R/W,Modbus 10004
+,,0,per.,Profibus 10004
+,,2147483647,-,CIP 139.1.10
+,,,,ModbusTCP 10004
+,,,,EtherCAT 3027:Ah
+,,,,PROFINET 10004
+OFSp_SetPos,Set offset position.,Inc,INT32,CANopen 3027:5h
+,Modified settings become active immediately.,-2147483648,R/W,Modbus 9994
+,,0,-,Profibus 9994
+,,2147483647,-,CIP 139.1.5
+,,,,ModbusTCP 9994
+,,,,EtherCAT 3027:5h
+,,,,PROFINET 9994
+OFSv_target,Target velocity for offset movement.,usr_v,UINT32,CANopen 3027:4h
+,The maximum value is 5000 if the user-defined,1,R/W,Modbus 9992
+,scaling factor of the velocity scaling is 1.,,,
+,,60,per.,Profibus 9992
+,This applies to the user-defined scaling factors.,,,
+,Example: If the user-defined scaling factor of the,2147483647,-,CIP 139.1.4
+,"velocity scaling is 2 (ScaleVELnum = 2,",,,
+,"ScaleVELdenom = 1), the maximum value is",,,ModbusTCP 9992
+,2500.,,,
+,,,,EtherCAT 3027:4h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 9992
+p_MaxDifToENC2,Maximum permissible deviation of encoder,Inc,INT32,CANopen 3050:7h
+,positions.,,,
+,,1,R/W,Modbus 20494
+,The maximum permissible position deviation,,,
+,between the encoder positions is cyclically,65536,per.,Profibus 20494
+,"monitored. If the limit is exceeded, an error is",,,
+,detected.,13107200,-,CIP 180.1.7
+,The position deviation is available via the,,,ModbusTCP 20494
+,parameter '_p_DifEnc1ToEnc2'.,,,
+,,,,EtherCAT 3050:7h
+,The default value corresponds to 1/2 motor,,,
+,revolution.,,,PROFINET 20494
+,The maximum value corresponds to 100 motor,,,
+,revolutions.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+p_PTI_act_set,Position value at PTI interface.,Inc,INT32,CANopen 3008:29h
+,Available with firmware version ≥V01.26.,-2147483648,R/W,Modbus 2130
+,,-,-,Profibus 2130
+,,2147483647,-,CIP 108.1.41
+,,,,ModbusTCP 2130
+,,,,EtherCAT 3008:29h
+,,,,PROFINET 2130

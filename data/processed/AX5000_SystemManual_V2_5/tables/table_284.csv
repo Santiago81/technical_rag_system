@@ -1,0 +1,7 @@
+Data,Values
+Relay operating voltage (terminal 1-4),24 VDC -15% +20%
+Feedback contacts operating voltage (5-6),24 VDC -15% +20%
+Max. switching current of the feedback contacts (5-6),0.35 A
+Conductor cross-section of terminals 1-6,0.2 - 1.5 mm2
+Conductor strip length of terminals 1-6,10 mm
+Current consumption,50 mA

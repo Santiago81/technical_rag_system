@@ -1,0 +1,41 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CANbaud,CANopen baud rate.,-,UINT16,-
+ConF→CoM-,50 kBaud /50: 50 kBaud,50,R/W,
+Cobd,125 kBaud /125: 125 kBaud,250,per.,
+,250 kBaud /250: 250 kBaud,1000,-,
+,500 kBaud /500: 500 kBaud,,,
+,1 MBaud /1000: 1 MBaud,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+CANpdo1Event,PDO 1 event mask.,-,UINT16,CANopen 3041:Bh
+,Changes of values in the object trigger an event:,0,R/W,Modbus 16662
+,Bit 0: First PDO object,1,-,Profibus 16662
+,Bit 1: Second PDO object,15,-,CIP 165.1.11
+,Bit 2: Third PDO object,,,ModbusTCP 16662
+,Bit 3: Fourth PDO object,,,EtherCAT 3041:Bh
+,Modified settings become active immediately.,,,PROFINET 16662
+CANpdo2Event,PDO 2 event mask.,-,UINT16,CANopen 3041:Ch
+,Changes of values in the object trigger an event:,0,R/W,Modbus 16664
+,Bit 0: First PDO object,1,-,Profibus 16664
+,Bit 1: Second PDO object,15,-,CIP 165.1.12
+,Bit 2: Third PDO object,,,ModbusTCP 16664
+,Bit 3: Fourth PDO object,,,EtherCAT 3041:Ch
+,Modified settings become active immediately.,,,PROFINET 16664
+CANpdo3Event,PDO 3 event mask.,-,UINT16,CANopen 3041:Dh
+,Changes of values in the object trigger an event:,0,R/W,Modbus 16666
+,Bit 0: First PDO object,1,-,Profibus 16666
+,Bit 1: Second PDO object,15,-,CIP 165.1.13
+,Bit 2: Third PDO object,,,ModbusTCP 16666
+,Bit 3: Fourth PDO object,,,EtherCAT 3041:Dh
+,Modified settings become active immediately.,,,PROFINET 16666
+CANpdo4Event,PDO 4 event mask.,-,UINT16,CANopen 3041:Eh
+,Changes of values in the object trigger an event:,0,R/W,Modbus 16668
+,Bit 0: First PDO object,15,-,Profibus 16668
+,Bit 1: Second PDO object,15,-,CIP 165.1.14
+,Bit 2: Third PDO object,,,ModbusTCP 16668
+,Bit 3: Fourth PDO object,,,EtherCAT 3041:Eh
+,Modified settings become active immediately.,,,PROFINET 16668

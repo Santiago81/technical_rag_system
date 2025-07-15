@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthMbIPswap2,"IP address of master for Modbus word swap, byte",-,UINT16,CANopen 3044:51h
+,2.,,,
+,,0,R/W,Modbus 17570
+,Modified settings become active immediately.,,,
+,,0,per.,Profibus 17570
+,,255,-,CIP 168.1.81
+,,,,ModbusTCP 17570
+,,,,EtherCAT 3044:51h
+,,,,PROFINET 17570
+EthMbIPswap3,"IP address of master for Modbus word swap, byte",-,UINT16,CANopen 3044:52h
+,3.,,,
+,,0,R/W,Modbus 17572
+,Modified settings become active immediately.,,,
+,,0,per.,Profibus 17572
+,,255,-,CIP 168.1.82
+,,,,ModbusTCP 17572
+,,,,EtherCAT 3044:52h
+,,,,PROFINET 17572
+EthMbIPswap4,"IP address of master for Modbus word swap, byte",-,UINT16,CANopen 3044:53h
+,4.,,,
+,,0,R/W,Modbus 17574
+,Modified settings become active immediately.,,,
+,,0,per.,Profibus 17574
+,,255,-,CIP 168.1.83
+,,,,ModbusTCP 17574
+,,,,EtherCAT 3044:53h
+,,,,PROFINET 17574
+EthMbScanner,Modbus TCP I/O scanning.,-,UINT16,CANopen 3044:28h
+,0 / Off: Modbus TCP I/O scanning off,0,R/W,Modbus 17488
+,1 / On: Modbus TCP I/O scanning on,1,per.,Profibus 17488
+,I/O scanning only works if the parameter EthMode,1,-,CIP 168.1.40
+,is set to Modbus TCP.,,,
+,,,,ModbusTCP 17488
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3044:28h
+,,,,PROFINET 17488
+EthMbScanTimeout,Modbus TCP I/O scanning timeout.,s,UINT16,CANopen 3044:2Dh
+,Communication monitoring timeout for Modbus,0.0,R/W,Modbus 17498
+,TCP.,,,
+,,2.0,per.,Profibus 17498
+,Value 0: Timeout monitoring disabled,,,
+,,60.0,-,CIP 168.1.45
+,In increments of 0.1 s.,,,
+,,,,ModbusTCP 17498
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3044:2Dh
+,,,,PROFINET 17498

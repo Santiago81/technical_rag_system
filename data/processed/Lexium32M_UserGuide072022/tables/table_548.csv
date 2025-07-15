@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+Cap1Activate,Capture input 1 start/stop.,-,UINT16,CANopen 300A:4h
+,0 / Capture Stop: Cancel capture function,0,R/W,Modbus 2568
+,1 / Capture Once: Start one-time capture,-,-,Profibus 2568
+,2 / Capture Continuous: Start continuous,4,-,CIP 110.1.4
+,capture,,,
+,,,,ModbusTCP 2568
+,3 / Reserved: Reserved,,,
+,,,,EtherCAT 300A:4h
+,4 / Reserved: Reserved,,,
+,,,,PROFINET 2568
+,"In the case of one-time capture, the function is",,,
+,terminated when the first value is captured.,,,
+,"In the case of continuous capture, the function",,,
+,continues to run.,,,
+,Modified settings become active immediately.,,,
+Cap1Config,Capture input 1 configuration.,-,UINT16,CANopen 300A:2h
+,0 / Falling Edge: Position capture at falling edge,0,R/W,Modbus 2564
+,1 / Rising Edge: Position capture at rising edge,0,-,Profibus 2564
+,2 / Both Edges: Position capture at both edges,2,-,CIP 110.1.2
+,Modified settings become active immediately.,,,ModbusTCP 2564
+,,,,EtherCAT 300A:2h
+,,,,PROFINET 2564
+Cap1Source,Capture input 1 encoder source.,-,UINT16,CANopen 300A:Ah
+,0 / Pact Encoder 1: Source for capture input 1 is,0,R/W,Modbus 2580
+,Pact of encoder 1,,,
+,,0,-,Profibus 2580
+,1 / Pact Encoder 2: Source for capture input 1 is,,,
+,Pact of encoder 2 (module),1,-,CIP 110.1.10
+,Modified settings become active immediately.,,,ModbusTCP 2580
+,Available with firmware version ≥V01.01.,,,EtherCAT 300A:Ah
+,,,,PROFINET 2580
+Cap2Activate,Capture input 2 start/stop.,-,UINT16,CANopen 300A:5h
+,0 / Capture Stop: Cancel capture function,0,R/W,Modbus 2570
+,1 / Capture Once: Start one-time capture,-,-,Profibus 2570
+,2 / Capture Continuous: Start continuous,4,-,CIP 110.1.5
+,capture,,,
+,,,,ModbusTCP 2570
+,3 / Reserved: Reserved,,,
+,,,,EtherCAT 300A:5h
+,4 / Reserved: Reserved,,,
+,,,,PROFINET 2570
+,"In the case of one-time capture, the function is",,,
+,terminated when the first value is captured.,,,
+,"In the case of continuous capture, the function",,,
+,continues to run.,,,
+,Modified settings become active immediately.,,,

@@ -1,0 +1,36 @@
+Technical data,AX5000
+Ambient temperature during operation,0 °C to +50 °C (1.5 A – 40 A devices)
+,"0 °C to +40 °C (60 A – 170 A devices), up to 55 °C with power"
+,derating (2% / °C)
+Ambient temperature during transport,-25 °C to +70 °C
+Ambient temperature during storage,-25 °C to +70 °C (1.5 A – 40 A devices)
+,-25 °C to +55 °C (60 A – 170 A devices)
+Air humidity,"5% to 95%, non-condensing (1.5 A – 40 A units)"
+,"5% to 85 %, non-condensing (60 A – 170 A units)"
+Level of contamination,Contamination level 2 according to EN 60204 / EN 50178
+Corrosion protection,Normally not required.
+,"Under extreme operating conditions, special measures must be"
+,"agreed with the manufacturer, and implemented by the user."
+Operating altitude,up to 1000 m above sea level without restrictions
+,60 A to 170 A devices – from 1000 m up to 3000 m above sea
+,level with power derating (1.5% per 100 m)
+Permissible installation position,vertical
+Ventilation,"Total rated device current ≤3 A: free convection,"
+,Total rated device current >3 A: built-in temperature-controlled fan
+Protection class,IP20
+Vibration test (EN 60068-2-6),Frequency range: 10 - 500 Hz
+,Amplitude: 10 - 58 Hz = 0.075mm pk-pk
+,59 - 500 Hz = 1 g
+Shock test (EN 60068-2-27),Half sine wave amplitude: 5 g
+,Duration: 30 ms
+,Number of shocks: 3 per axis and direction (total 18)
+Shock test (EN 60068-2-27),Half sine wave amplitude: 5 g
+,Duration: 30 ms
+,Number of shocks: 1000 per axis and direction (total 6000)
+EMC,Category C3 - standard
+,"Category C1, C2 - auxiliary filter required"
+Approvals,CE
+Special operating conditions,The usability of Beckhoff servo drives from the AX5000 series
+,under harsh operating conditions or other unfavorable conditions
+,must be ascertained individually in consultation between the
+,manufacturer and the user.

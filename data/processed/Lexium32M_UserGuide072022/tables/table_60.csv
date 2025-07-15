@@ -1,0 +1,17 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2
+,LXM32•U45M2,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Minimum resistance value of external braking Ω,68,36,20,10
+resistor,,,,
+Maximum resistance value of external braking Ω,110,55,27,16
+resistor(1),,,,
+Maximum continuous power of external W,200,400,600,800
+braking resistor,,,,
+Parameter DCbus_compat = 0 (default value),,,,
+Switch-on voltage of braking resistor at V,236,236,236,236
+nominal voltage 115 V,,,,
+Switch-on voltage of braking resistor at V,430,430,430,430
+nominal voltage 200 V and 230 V,,,,
+Parameter DCbus_compat = 1 (reduced switch-on voltage),,,,
+Switch-on voltage of braking resistor V,395,395,395,395
+"(1) The maximum specified braking resistor can derate the peak power of the device. Depending on the application, it is possible to use a",,,,
+higher ohm resistor.,,,,

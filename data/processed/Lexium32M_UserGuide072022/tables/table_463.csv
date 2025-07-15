@@ -1,0 +1,15 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7889,2,"eSM module: Order of speed limitsfor multiple SLS in positive directionis incorrectParameter _SigLatched Bit 23","The values for the speed limits formultiple SLS are not in ascendingorder.","Set correct speed limits for multipleSLS."
+788A,2,"eSM module: Order of speed limitsfor multiple SLS in negative directionis incorrectParameter _SigLatched Bit 23","The values for the speed limits formultiple SLS are not in ascendingorder.","Set correct speed limits for multipleSLS."
+788B,2,"eSM module: Invalid speed limit formultiple SLS in positive directionParameter _SigLatched Bit 23","Speed limit for multiple SLS inpositive direction has a value of zero.","Set a speed limit not equal to zero formultiple SLS."
+788C,2,"eSM module: Invalid speed limit formultiple SLS in negative directionhas a value of zeroParameter _SigLatched Bit 23","Speed limit for multiple SLS innegative direction has a value ofzero.","Set a speed limit not equal to zero formultiple SLS."
+788D,2,"eSM module: Two types of multipleSLS selected at the same timeParameter _SigLatched Bit 23","eSM module: Two types of multipleSLS selected at the same time.",Select a single type of multiple SLS.
+7900,4,"Module in fieldbus slot not correctlydetectedParameter _SigLatched Bit 21","Fieldbus module not correctlymounted in the slot.Unsupported fieldbus moduleinserted.Fieldbus module inoperative.EMI.","Replace fieldbus module.Improve EMC."
+7901,4,"Indeterminable type of fieldbusmodule detected in fieldbus slotParameter _SigLatched Bit 21","The type of module detected infieldbus slot is not supported by thedrive.","Use supported type of fieldbusmodule. Refer to manual or catalog."
+7903,3,"Fieldbus module in slot 3 missingParameter _SigLatched Bit 21","Fieldbus module has been removedor fieldbus module is inoperative.","Confirm or cancel HMI dialog box forfieldbus module replacement.Install a new fieldbus module."
+7904,0,"Parameter access error detected infieldbus module","Fieldbus module parameter does notexist or cannot be written.",-
+7905,3,"Fieldbus module in slot 3 has beenchangedParameter _SigLatched Bit 21","The fieldbus module has beenreplaced by another type of fieldbusmodule.","Confirm the new fieldbus module viathe HMI dialog."
+7906,0,"Internal timeout in communicationwith fieldbus module","Internal communication with fieldbusmodule not correct.Fieldbus module inoperative.EMI.","Replace fieldbus module.Improve EMC."
+7907,4,"The module detected in the slot forfieldbus modules slot is notsupported.Parameter _SigLatched Bit 21","The module detected in the slot forfieldbus modules is not supported byolder drive hardware revisions.",-
+7A05,3,"Module IOM1: System errordetected: Calibration analog/digitalconverter during manufacturingParameter _SigLatched Bit 23",-,-
+7A06,3,"Module IOM1: System errordetected: InitializationParameter _SigLatched Bit 23",-,-

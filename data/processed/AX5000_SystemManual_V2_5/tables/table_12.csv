@@ -1,0 +1,10 @@
+No.,Name,No. Name
+1.0,X4x - optional slot for expansion cards,9 X14 - sensor for motor temperature and brake
+2.0,X3x - optional slot for safety card,"10 DC link output (875 V DC voltage), connection for"
+,,the external brake resistor
+3.0,"X12 - feedback connection, encoder","11 Motor connection (U, V, W, PE)"
+4.0,X06 - connection for digital inputs and outputs,12 X04 - socket for EtherCAT input
+5.0,Navigation rocker,13 Labelling field
+6.0,Labelling field,14 Display
+7.0,X05 - socket for EtherCAT output,"15 X11 - feedback connection, resolver"
+8.0,X03 - power supply 24 V DC input,16 X01 - mains supply

@@ -1,0 +1,52 @@
+Signal input function,Jog,Electronic,Profile,Profile.1,Motion,Description in section
+,,Gear,Torque,Velocity,Sequence,
+Freely Available,•,•,•,•,•,Setting a Signal Output via
+,,,,,,"Parameter, page 331"
+Fault Reset,•,•,•,•,•,Changing the Operating State
+,,,,,,"via Signal Inputs, page 243"
+Enable,•,•,•,•,•,Changing the Operating State
+,,,,,,"via Signal Inputs, page 243"
+Halt,•,•,•,•,•,"Stopping Movement with Halt,"
+,,,,,,page 320
+Current Limitation,•,•,•,•,•,Limitation of the Current via
+,,,,,,"Signal Inputs, page 327"
+Zero Clamp,•,•,•,•,•,"Zero Clamp, page 330"
+Velocity Limitation,•,•,•,•,•,Limitation of the Velocity via
+,,,,,,"Signal Inputs, page 324"
+Jog Positive,•,,,,,"Operating Mode Jog, page"
+,,,,,,248
+Jog Negative,•,,,,,"Operating Mode Jog, page"
+,,,,,,248
+Jog Fast/Slow,•,,,,,"Operating Mode Jog, page"
+,,,,,,248
+Gear Ratio Switch,,•,,,,Operating Mode Electronic
+,,,,,,"Gear, page 256"
+Start Single Data Set,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Data Set Select,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Data Set Bit 0,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Data Set Bit 1,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Data Set Bit 2,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Data Set Bit 3,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Gear Offset 1,,•,,,,Operating Mode Electronic
+,,,,,,"Gear, page 256"
+Gear Offset 2,,•,,,,Operating Mode Electronic
+,,,,,,"Gear, page 256"
+Reference Switch (REF),•,•,•,•,•,"Reference Switch, page 351"
+Positive Limit Switch (LIMP),•,•,•,•,•,"Limit Switches, page 350"
+Negative Limit Switch (LIMN),•,•,•,•,•,"Limit Switches, page 350"
+Switch Controller Parameter Set,•,•,•,•,•,Switching Between Control
+,,,,,,"Loop Parameter Sets, page"
+,,,,,,222
+Operating Mode Switch,,•,•,•,,Starting and Changing an
+,,,,,,"Operating Mode, page 245"
+Velocity Controller Integral Off,•,•,•,•,•,Switching Between Control
+,,,,,,"Loop Parameter Sets, page"
+,,,,,,222
+Start Motion Sequence,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"

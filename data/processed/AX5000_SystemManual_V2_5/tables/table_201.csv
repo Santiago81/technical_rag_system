@@ -1,0 +1,13 @@
+Terminal,Signal,Current,Tightening,Conductor cross-
+point,,load,torque,section
+T -,OCT and temp.,,,
+,- *,,,
+T+,OCT + and,,,
+,temp. + *,,,
+PE,Protective,,,
+,conductors and,,,
+,inner shields of,,,
+,,,max. 0.25 Nm,0.2 – 1.5 mm2
+,the signal pairs,,,
+B -,"Brake, GND",,,
+B+,Brake (Up) +,max. 2.2 A,,

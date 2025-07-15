@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_SigActive,Status of monitoring signals.,-,UINT32,CANopen 301C:7h
+,See _SigLatched for more details on the bit,-,R/-,Modbus 7182
+,codes.,,,
+,,-,-,Profibus 7182
+,,-,-,CIP 128.1.7
+,,,,ModbusTCP 7182
+,,,,EtherCAT 301C:7h
+,,,,PROFINET 7182
+_SigLatched,Saved status of monitoring signals.,-,UINT32,CANopen 301C:8h
+Mon,Signal state:,-,R/-,Modbus 7184
+SiGS,0: Not activated,-,-,Profibus 7184
+,1: Activated,-,-,CIP 128.1.8
+,Bit assignments:,,,ModbusTCP 7184
+,Bit 0: General error,,,EtherCAT 301C:8h
+,Bit 1: Hardware limit switches (LIMP/LIMN/REF),,,PROFINET 7184
+,"Bit 2: Out of range (software limit switches, tuning)",,,
+,Bit 3: Quick Stop via fieldbus,,,
+,Bit 4: Error in active operating mode,,,
+,Bit 5: Commissioning interface (RS485),,,
+,Bit 6: Integrated fieldbus,,,
+,Bit 7: Reserved,,,
+,Bit 8: Following error,,,
+,Bit 9: Reserved,,,
+,Bit 10: Inputs STO are 0,,,
+,Bit 11: Inputs STO different,,,
+,Bit 12: Reserved,,,
+,Bit 13: DC bus voltage low,,,
+,Bit 14: DC bus voltage high,,,
+,Bit 15: Mains phase missing,,,
+,Bit 16: Integrated encoder interface,,,
+,Bit 17: Overtemperature motor,,,
+,Bit 18: Overtemperature power stage,,,
+,Bit 19: Reserved,,,
+,Bit 20: Memory card,,,
+,Bit 21: Fieldbus module,,,
+,Bit 22: Encoder module,,,
+,Bit 23: Safety module eSM or module IOM1,,,
+,Bit 24: Reserved,,,
+,Bit 25: Reserved,,,
+,Bit 26: Motor connection,,,
+,Bit 27: Motor overcurrent/short circuit,,,
+,Bit 28: Frequency of reference signal too high,,,

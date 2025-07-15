@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Iq_ref_rms,"Reference motor current (q component,",Arms,INT16,CANopen 301E:10h
+,generating torque).,,,
+Mon,,-,R/-,Modbus 7712
+,In increments of 0.01 Arms.,,,
+qrEF,,-,-,Profibus 7712
+,,-,-,CIP 130.1.16
+,,,,ModbusTCP 7712
+,,,,EtherCAT 301E:10h
+,,,,PROFINET 7712
+_LastError,Detected error causing a stop (error classes 1 to,-,UINT16,CANopen 603F:0h
+,4).,,,
+Mon,,-,R/-,Modbus 7178
+,Error code of the most recent detected error.,,,
+LFLt,Consecutive detected errors do not overwrite this,-,-,Profibus 7178
+,error code.,,,
+,,-,-,CIP 128.1.5
+,Example: If an error response to a detected limit,,,
+,"switch error causes overvoltage, this parameter",,,ModbusTCP 7178
+,contains the code of the detected limit switch,,,
+,error.,,,EtherCAT 603F:0h
+,Exception: Detected errors of error class 4,,,PROFINET 7178
+,overwrite existing entries.,,,
+_LastError_Qual,Additional info on most recent error.,-,UINT16,CANopen 301C:1Fh
+,This parameter contains additional information on,-,R/-,Modbus 7230
+,"the most recent detected error, depending on the",,,
+,error code. For example: a parameter address.,0,-,Profibus 7230
+,,-,-,CIP 128.1.31
+,,,,ModbusTCP 7230
+,,,,EtherCAT 301C:1Fh
+,,,,PROFINET 7230
+_LastWarning,Code of most recent error of error class 0.,-,UINT16,CANopen 301C:9h
+Mon,"If the error is no longer active, the code is stored",-,R/-,Modbus 7186
+,until the next Fault Reset.,,,
+LWrn,,-,-,Profibus 7186
+,Value 0: No error of error class 0,,,
+,,-,-,CIP 128.1.9
+,,,,ModbusTCP 7186
+,,,,EtherCAT 301C:9h
+,,,,PROFINET 7186
+_M_BRK_T_apply,Holding brake application time.,ms,UINT16,CANopen 300D:21h
+,,-,R/-,Modbus 3394
+,,-,-,Profibus 3394
+,,-,-,CIP 113.1.33
+,,,,ModbusTCP 3394
+,,,,EtherCAT 300D:21h
+,,,,PROFINET 3394

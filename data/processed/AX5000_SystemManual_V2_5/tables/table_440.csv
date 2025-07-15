@@ -1,0 +1,14 @@
+Unnamed: 0,AX2090-NF-50-,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+Data,0014,0032,0063,0100,0150,0180
+Rated voltage [VAC],480,,,,,
+Rated frequency [Hz],50 / 60,,,,,
+Rated current [A],14.6,32.8,63,100,150,180
+"Voltage cable/cable for 2 sec.[VDC]",2236,--,--,--,--,
+"Voltage cable/housing for 2 sec.[VDC]",2720,--,--,--,--,
+Rated temperature [°C],50,40,,,,
+Climate category (IEC 60068-1),25/100/21,--,--,--,--,
+Resistance [mΩ],9,4,--,--,--,--
+Leakage current [mA],15,6.8,9.8,,,
+Overload capability (thermal),"1.5 x Rated current for 3 min per hour or2.5 x Rated current for 30 s per hour",,,,,
+Weight [kg],0.9,1.75,5.0,6.0,6.8,7.0
+Approvals,"EN 133200, UL 1283, CSA C22.2 No.8",--,--,--,--,

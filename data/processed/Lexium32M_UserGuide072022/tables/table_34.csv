@@ -1,0 +1,11 @@
+Characteristic Unit,Unnamed: 0,Value,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,,LXM32•U45M2,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Nominal voltage V,,115 230,115 230,115 230,115 230
+Nominal voltage DC bus V,,163 325,163 325,163 325,163 325
+Undervoltage limit V,,55 130,55 130,55 130,55 130
+Voltage limit: activation of Quick Stop V,,60 140,60 140,60 140,60 140
+Overvoltage limit V,,260(1) / 450,260(1) / 450,260(1) / 450,260(1) / 450
+,,450,450,450,450
+Maximum continuous power via DC bus kW,,0.2 0.5,0.4 0.9,0.8 1.6,0.8 2.2
+Maximum continuous current via DC bus A,,1.5 1.5,3.2 3.2,6.0 6.0,10.0 10.0
+(1) Can be set via parameter MON_DCbusVdcThresh.,,,,,

@@ -1,0 +1,25 @@
+
+{
+  "analysis_date": "2025-07-12T20:14:28.621533",
+  "total_files": 3,
+  "type_distribution": {
+    "technical_diagram_heavy": 3
+  },
+  "file_analyses": [
+    {
+      "filename": "AX5000_SystemManual_V2_5.pdf",
+      "type": "technical_diagram_heavy",
+      "pages": 272
+    },
+    {
+      "filename": "072152-101_CC103_Hardware_en.pdf",
+      "type": "technical_diagram_heavy",
+      "pages": 177
+    },
+    {
+      "filename": "Lexium32M_UserGuide072022.pdf",
+      "type": "technical_diagram_heavy",
+      "pages": 672
+    }
+  ]
+}

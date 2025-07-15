@@ -1,0 +1,21 @@
+Electrical data,AX5201 AX5203,AX5206
+Rated output current / channel,1.5 A 3 A,6 A
+Minimum rated channel current at full current resolution,0.35 A 1 A,1 A
+Maximum rated channel current at full current resolution,3 A 6 A,9 A
+Total rated current with full current resolution,3 A 6 A,12 A
+Max. peak output current (1)/channel,5 A 10 A,13 A
+Peak output current (1) total device current,10 A 20 A,26 A
+Rated supply voltage,3 x 100-10% - 480+10% VAC,
+Max. DC link voltage,875 VDC,
+Rated apparent power S1 operation (selection),,
+120 V,0.6 kVA 1.2 kVA,2.5 kVA
+230 V,1.2 kVA 2.4 kVA,4.8 kVA
+400 V,2.1 kVA 4.2 kVA,8.3 kVA
+480 V,2.5 kVA 5.0 kVA,10.0 kVA
+Power loss (2),55 W 85 W,160 W
+Max. continuous braking power (internal brake resistor),50 W 150 W,90 W
+Max. braking power (internal brake resistor),14 kW,
+Min. brake resistance (external brake resistor),47 Ω,
+Max. braking power (external brake resistor),15 kW,
+DC link capacity,235 μF,470 μF
+SCCR value,18 kA,

@@ -1,0 +1,42 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PosReg1Start,Start/stop of position register channel 1.,-,UINT16,CANopen 300B:2h
+,0 / Off (keep last state): Position Register,0,R/W,Modbus 2820
+,channel 1 is off and status bit keeps last state,,,
+,,0,-,Profibus 2820
+,1 / On: Position Register channel 1 is on,,,
+,,3,-,CIP 111.1.2
+,2 / Off (set state 0): Position Register channel 1 is,,,
+,off and status bit is set to 0,,,ModbusTCP 2820
+,3 / Off (set state 1): Position Register channel 1 is,,,EtherCAT 300B:2h
+,off and status bit is set to 1,,,
+,,,,PROFINET 2820
+,Modified settings become active immediately.,,,
+PosReg2Start,Start/stop of position register channel 2.,-,UINT16,CANopen 300B:3h
+,0 / Off (keep last state): Position Register,0,R/W,Modbus 2822
+,channel 2 is off and status bit keeps last state,,,
+,,0,-,Profibus 2822
+,1 / On: Position Register channel 2 is on,,,
+,,3,-,CIP 111.1.3
+,2 / Off (set state 0): Position Register channel 2 is,,,
+,off and status bit is set to 0,,,ModbusTCP 2822
+,3 / Off (set state 1): Position Register channel 2 is,,,EtherCAT 300B:3h
+,off and status bit is set to 1,,,
+,,,,PROFINET 2822
+,Modified settings become active immediately.,,,
+PosReg3Start,Start/stop of position register channel 3.,-,UINT16,CANopen 300B:Ch
+,0 / Off (keep last state): Position Register,0,R/W,Modbus 2840
+,channel 3 is off and status bit keeps last state,,,
+,,0,-,Profibus 2840
+,1 / On: Position Register channel 3 is on,,,
+,,3,-,CIP 111.1.12
+,2 / Off (set state 0): Position Register channel 3 is,,,
+,off and status bit is set to 0,,,ModbusTCP 2840
+,3 / Off (set state 1): Position Register channel 3 is,,,EtherCAT 300B:Ch
+,off and status bit is set to 1,,,
+,,,,PROFINET 2840
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.04.,,,

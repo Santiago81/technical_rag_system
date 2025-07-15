@@ -1,0 +1,66 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENCDigBISSResSgl,BiSS singleturn resolution.,bit,UINT16,CANopen 3052:8h
+,This parameter is only relevant for BiSS encoders,8,R/W,Modbus 21008
+,(singleturn and multiturn).,,,
+,,13,per.,Profibus 21008
+,"Example: If ENCDigBISSResSgl is set to 13, an",,,
+,BiSS encoder with a singleturn resolution of 2^13,25,-,CIP 182.1.8
+,= 8192 increments must be used.,,,
+,,,,ModbusTCP 21008
+,"If a multiturn encoder is used, the sum of",,,
+,ENCDigBISSResMult + ENCDigBISSResSgl must,,,EtherCAT 3052:8h
+,be less than or equal to 46 bits.,,,
+,,,,PROFINET 21008
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigEnDatBits,Evaluation of bits of EnDat 2.2 encoders with,-,UINT16,CANopen 3052:Fh
+,more than 32 bits.,,,
+,,0,R/W,Modbus 21022
+,0 / Evaluate32MostSignificantBits: Evaluate the,,,
+,32 most significant bits (MSB),0,per.,Profibus 21022
+,1 / Evaluate32LeastSignificantBits: Evaluate,1,-,CIP 182.1.15
+,the 32 least significant bits (LSB),,,
+,,,,ModbusTCP 21022
+,This parameter specifies the way the bits provided,,,
+,by EnDat 2.2 encoders with more than 32 bits are,,,EtherCAT 3052:Fh
+,evaluated. The parameter specifies whether the,,,
+,32 most significant bits (MSB) or the 32 least,,,PROFINET 21022
+,significant bits (LSB) are evaluated.,,,
+,"If the 32 most significant bits are evaluated, the",,,
+,entire working range of the encoder is available.,,,
+,The resolution is reduced.,,,
+,"If the 32 least significant bits are evaluated, the",,,
+,entire resolution of the encoder is available. The,,,
+,working range is reduced.,,,
+,Example for an EnDat 2.2 encoder with 36 bits:,,,
+,Value 0: Bits 4 to 35 are evaluated.,,,
+,Value 1: Bits 0 to 31 are evaluated.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.32.,,,
+ENCDigLinBitsUsed,Linear encoder: Number of bits of the position,bit,UINT16,CANopen 3052:Eh
+,resolution used.,,,
+,,0,R/W,Modbus 21020
+,Specifies the number of bits of the position,,,
+,resolution used for position evaluation.,0,per.,Profibus 21020
+,"If ENCDigLinBitsUsed = 0, all position bits of the",31,-,CIP 182.1.14
+,position resolution of the encoder are used.,,,
+,,,,ModbusTCP 21020
+,Example:,,,
+,,,,EtherCAT 3052:Eh
+,"If ENCDigLinBitsUsed = 22, only 22 bits of the",,,
+,position resolution of the encoder are used.,,,PROFINET 21020
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.26.,,,

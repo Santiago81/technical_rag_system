@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+8110,0,"CANopen: Overflow internal receivequeue (message lost)Parameter _WarnLatched Bit 21","Two short CAN messages have beensent too fast (at 1 Mbits only).",-
+8120,0,"CANopen: CAN Controller in stateError PassiveParameter _WarnLatched Bit 21","Too many error frames have beendetected.",Verify CAN bus installation.
+8130,par.,"CANopen: Detected Heartbeat or LifeGuard errorParameter _SigLatched Bit 21","The bus cycle time of the CANopenmaster is longer than theprogrammed heartbeat or nodeguarding time.","Verify the CANopen configuration,increase the heartbeat or nodeguarding time."
+8131,0,"CANopen: Detected Heartbeat or LifeGuard errorParameter _WarnLatched Bit 21",-,-
+8140,0,"CANopen: CAN controller was instate 'bus-off', communication ispossible againParameter _WarnLatched Bit 21",-,-
+8141,2,"CANopen: CAN controller is in state'bus-off'Parameter _SigLatched Bit 21","Too many error frames have beendetected, CAN devices with differentbaud rates.",Verify CAN bus installation.
+8142,0,"CANopen: CAN controller is in state'bus-off'Parameter _WarnLatched Bit 21","Too many error frames have beendetected, CAN devices with differentbaud rates.",Verify CAN bus installation.
+8281,0,"CANopen: RxPDO1 could not beprocessedParameter _WarnLatched Bit 21","Error detected while processingReceive PDO1: PDO1 containsinvalid value.",Verify RxPDO1 content (application).
+8282,0,"CANopen: RxPDO2 could not beprocessedParameter _WarnLatched Bit 21","Error detected while processingReceive PDO2: PDO2 containsinvalid value.",Verify RxPDO2 content (application).
+8283,0,"CANopen: RxPDO3 could not beprocessedParameter _WarnLatched Bit 21","Error detected while processingReceive PDO3: PDO3 containsinvalid value.",Verify RxPDO3 content (application).
+8284,0,"CANopen: RxPDO4 could not beprocessedParameter _WarnLatched Bit 21","Error detected while processingReceive PDO4: PDO4 containsinvalid value.",Verify RxPDO4 content (application)
+8291,0,"CANopen: TxPdo could not beprocessedParameter _WarnLatched Bit 21",-,-
+8292,0,"CANopen: TxPdo could not beprocessedParameter _WarnLatched Bit 21",-,-
+8293,0,"CANopen: TxPdo could not beprocessedParameter _WarnLatched Bit 21",-,-
+8294,0,"CANopen: TxPdo could not beprocessedParameter _WarnLatched Bit 21",-,-
+82A0,0,"CANopen: Initialization CANopenstackParameter _WarnLatched Bit 21",-,-

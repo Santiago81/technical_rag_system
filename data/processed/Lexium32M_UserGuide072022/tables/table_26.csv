@@ -1,0 +1,19 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2
+,,LXM32•U45M2,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Minimum inductance motor (phase/phase),mH,5.5,3,1.4,0.8
+Values without mains reactor(2),,,,,
+Nominal power,kW,0.3,0.5,1.0,1.6
+Input current(3),Arms,2.9,4.5,8.4,12.7
+THD (total harmonic distortion)(4),%,181,166,148,135
+Power dissipation(5),W,10,18,34,38
+Maximum inrush current(6),A,142,197,240,270
+Time for maximum inrush current,ms,1.1,1.5,1.8,2.1
+Values with mains reactor,,,,,
+Mains reactor,mH,5,2,2,2
+Nominal power,kW,0.5,0.9,1.6,2.2
+Input current(3),Arms,3.4,6.3,10.6,14.1
+THD (total harmonic distortion)(4),%,100,107,93,86
+Power dissipation(5),W,11,20,38,42
+Maximum inrush current(6),A,42,90,106,116
+Time for maximum inrush current,ms,3.5,3.2,3.6,4.0
+"(1) As per IEC 60269. Circuit breakers with B or C characteristic. See Conditions for UL 508C and CSA, page 56. Lower ratings arepermissible. The fuse must be rated in such a way that the fuse does not trip at the specified input current.(2) At a mains impedance corresponding to a short-circuit current of the supply mains of 1 kA.(3) At nominal power and nominal voltage.(4) With reference to the input current.(5) Condition: internal braking resistor not active. Value at nominal current, nominal voltage and nominal power. Value approximatelyproportional with output current.(6) Extreme case, off/on pulse before the inrush current limitation responds, see next line for maximum time.",,,,,

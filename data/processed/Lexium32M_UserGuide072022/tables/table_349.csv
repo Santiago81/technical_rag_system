@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IO_DQ_set,Setting the digital outputs directly.,-,UINT16,CANopen 3008:11h
+,Digital outputs can only be set directly if the signal,-,R/W,Modbus 2082
+,output function has been set to 'Freely Available'.,,,
+,,-,-,Profibus 2082
+,Bit assignments:,,,
+,,-,-,CIP 108.1.17
+,Bit 0: DQ0,,,
+,,,,ModbusTCP 2082
+,Bit 1: DQ1,,,
+,,,,EtherCAT 3008:11h
+,Bit 2: DQ2,,,
+,,,,PROFINET 2082

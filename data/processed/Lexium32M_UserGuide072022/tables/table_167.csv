@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_v_max,Velocity limitation.,usr_v,UINT32,CANopen 3011:10h
+ConF→drC-,"During operation, the velocity limit is one of the",1,R/W,Modbus 4384
+,following values (whichever is lowest):,,,
+nMAX,,13200,per.,Profibus 4384
+,- CTRL_v_max,,,
+,,2147483647,-,CIP 117.1.16
+,- M_n_max,,,
+,,,,ModbusTCP 4384
+,- Velocity limitation via analog input (module,,,
+,IOM1),,,EtherCAT 3011:10h
+,- Velocity limitation via digital input,,,PROFINET 4384
+,Modified settings become active immediately.,,,

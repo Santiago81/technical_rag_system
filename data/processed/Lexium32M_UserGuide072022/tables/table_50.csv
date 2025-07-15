@@ -1,0 +1,4 @@
+Times for pulse/direction,Minimum value
+"(1) Cycle duration A, B",1 μs
+(2) Pulse duration,0.4 μs
+"(3) Lead time (A, B)",200 ns

@@ -1,0 +1,7 @@
+Signal input,Signal input function
+DI0,"""Enable""Enable and disable the power stage"
+DI1,"""Reference Switch (REF)""See Reference Switch, page 351"
+DI2,"""Positive Limit Switch (LIMP)""See Limit Switches, page 350"
+DI3,"""Negative Limit Switch (LIMN)""See Limit Switches, page 350"
+DI4,"""Start Motion Sequence""Start sequence"
+DI5,"""Data Set Select""Select data set number"

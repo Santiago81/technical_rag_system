@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+DCOMcontrol,DriveCom control word.,-,UINT16,CANopen 6040:0h
+,"See Operation, Operating States, for bit",-,R/W,Modbus 6914
+,assignment information.,,,
+,,-,-,Profibus 6914
+,Bit 0: Operating state Switch On,,,
+,,-,-,CIP 127.1.1
+,Bit 1: Enable Voltage,,,
+,,,,ModbusTCP 6914
+,Bit 2: Operating state Quick Stop,,,
+,,,,EtherCAT 6040:0h
+,Bit 3: Enable Operation,,,
+,,,,PROFINET 6914
+,Bits 4 ... 6: Operating mode-specific,,,
+,Bit 7: Fault Reset,,,
+,Bit 8: Halt,,,
+,Bit 9: Operating mode-specific,,,
+,Bits 10 ... 15: Reserved (must be 0),,,
+,Modified settings become active immediately.,,,
+DCOMopmode,Operating mode.,-,INT16*,CANopen 6060:0h
+,-6 / Manual Tuning / Autotuning: Manual Tuning,-6,R/W,Modbus 6918
+,or Autotuning,,,
+,,-,-,Profibus 6918
+,-3 / Motion Sequence: Motion Sequence,,,
+,,10,-,CIP 127.1.3
+,-2 / Electronic Gear: Electronic Gear,,,
+,,,,ModbusTCP 6918
+,-1 / Jog: Jog,,,
+,,,,EtherCAT 6060:0h
+,0 / Reserved: Reserved,,,
+,,,,PROFINET 6918
+,1 / Profile Position: Profile Position,,,
+,3 / Profile Velocity: Profile Velocity,,,
+,4 / Profile Torque: Profile Torque,,,
+,6 / Homing: Homing,,,
+,7 / Interpolated Position: Interpolated Position,,,
+,8 / Cyclic Synchronous Position: Cyclic,,,
+,Synchronous Position,,,
+,9 / Cyclic Synchronous Velocity: Cyclic,,,
+,Synchronous Velocity,,,
+,10 / Cyclic Synchronous Torque: Cyclic,,,
+,Synchronous Torque,,,
+,Modified settings become active immediately.,,,
+,* Datatype for CANopen: INT8,,,
+DEVcmdinterf,Control mode.,-,UINT16,CANopen 3005:1h
+ConF→ACG-,1 / Local Control Mode /io: Local control mode,-,R/W,Modbus 1282
+nonE,2 / Fieldbus Control Mode /FbuS: Fieldbus,-,per.,Profibus 1282
+,control mode,,,
+dEVC,,-,-,CIP 105.1.1
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1282
+,Modified settings become active the next time the,,,EtherCAT 3005:1h
+,product is powered on.,,,
+,,,,PROFINET 1282

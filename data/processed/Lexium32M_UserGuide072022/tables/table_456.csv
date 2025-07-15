@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7802,3,"eSM module: System error detected:Error of class 3 forcedParameter _SigLatched Bit 23",-,-
+7803,4,"eSM module: System error detected:Error of class 4 forcedParameter _SigLatched Bit 23",-,-
+7804,3,"eSM module: Insufficientdeceleration for Quick StopParameter _SigLatched Bit 23","Quick Stop ramp of drive lower thanQuick Stop ramp configured for eSM.",Change ramp in eSM or drive.
+7805,1,"eSM module: Error detected duringSafe Operating Stop (SOS)Parameter _SigLatched Bit 23","Motor movement during SafeOperating Stop (SOS).","Keep motor from moving while SafeOperating Stop is active (externalforces, loads)."
+7806,1,"eSM module: Safely Limited Speed(SLS) exceeded in machineoperating mode Setup ModeParameter _SigLatched Bit 23","Delay for reaching Safely LimitedSpeed (SLS) too low or eSMdeceleration ramp too high.","Increase delay for eSM control ofSafely Limited Speed (SLS) ordecrease eSM deceleration ramp forreaching Safely Limited Speed(SLS)."
+780A,2,"eSM module: /ESTOP signal forEMERGENCY STOP triggeredParameter _SigLatched Bit 23",EMERGENCY STOP is active.,Reset EMERGENCY STOP.
+780B,0,"eSM module: Not ready for FaultResetParameter _WarnLatched Bit 23","eSM is in state Quick Stop Active orFault Reaction Active or Fault.","Wait until eSM is no longer in stateQuick Stop Active or Fault ReactionActive or Fault or reboot the drive."
+780C,0,"eSM module: Not ready for eSMDisableParameter _WarnLatched Bit 23","Safety module eSM is not inoperating state Operation Enabled.","eSM Disable requires the safetymodule eSM to be in operating stateOperation Enabled."
+780F,0,"eSM module: Parameter cannot bewritten in this operating stateParameter _WarnLatched Bit 23","Parameter cannot be written in thiseSM state.","Change eSM state to write thisparameter."
+7810,0,"eSM module: Incorrect passwordParameter _WarnLatched Bit 23","The password that was sent by theconfiguration tool is not identical tothe password stored in the device.",Send the stored password.
+7811,0,"eSM module: Timeout duringparameter download (default valuesloaded)Parameter _WarnLatched Bit 23",Incorrect connection or EMI.,Verify wiring (shield).
+7813,0,"eSM module: Parameter checksumcannot be written in this operatingstateParameter _WarnLatched Bit 23",eSM is not ready to be configured.,"Use correct password. Reconfiguresafety module eSM. Contact yourSchneider Electric servicerepresentative."
+7814,0,"eSM module: Parameter checksumincorrect (default values loaded)Parameter _WarnLatched Bit 23","EMI.The commissioning software isoutdated and not compatible with thesafety module eSM.","Verify wiring (shield).Install latest commissioning softwareversion."
+7815,0,"eSM module: UndertemperatureParameter _WarnLatched Bit 23",Temperature too low.,-
+7816,0,"eSM module: OvertemperatureParameter _WarnLatched Bit 23",Temperature too high.,"Verify the ambient conditions. Verifythat the flow of air is sufficient(pollution, objects)."
+7818,2,"eSM module: System error detected:ESM5VDC undervoltageParameter _SigLatched Bit 23",Error detected in eSM 5V supply.,-

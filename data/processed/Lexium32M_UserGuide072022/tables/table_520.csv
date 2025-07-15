@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_ModuleSlot3,Module in slot 3.,-,UINT16,CANopen 3002:1Fh
+,0 / None: No module,-,R/-,Modbus 574
+,513 / CANopen (D-SUB): Fieldbus CANopen (D-,-,-,Profibus 574
+,SUB),,,
+,,-,-,CIP 102.1.31
+,514 / CANopen (RJ45): Fieldbus CANopen,,,
+,(RJ45),,,ModbusTCP 574
+,515 / DeviceNet (Open-Style): Fieldbus,,,EtherCAT 3002:1Fh
+,DeviceNet (Open-Style),,,
+,,,,PROFINET 574
+,517 / CANopen (Open-Style): Fieldbus CANopen,,,
+,(Open-Style),,,
+,528 / ProfibusDP: Fieldbus Profibus DP,,,
+,529 / EtherNetIP: Fieldbus EtherNetIP,,,
+,530 / EtherCAT: Fieldbus EtherCAT,,,
+,531 / SercosII: Fieldbus Sercos II,,,
+,532 / PROFINET: Fieldbus PROFINET,,,
+,533 / SercosIII: Fieldbus Sercos III,,,
+_MSM_avail_ds,Number of available data sets.,-,UINT16,CANopen 302D:Fh
+,Number of data sets that are available.,-,R/-,Modbus 11550
+,,-,-,Profibus 11550
+,,-,-,CIP 145.1.15
+,,,,ModbusTCP 11550
+,,,,EtherCAT 302D:Fh
+,,,,PROFINET 11550
+_MSM_error_field,Field of the data set in which an error has been,-,INT16,CANopen 302D:Eh
+,detected.,,,
+,,-1,R/-,Modbus 11548
+,Value -1: No error,,,
+,,-1,-,Profibus 11548
+,Value 0: Data set type,,,
+,,11,-,CIP 145.1.14
+,Value 1: Setting A,,,
+,,,,ModbusTCP 11548
+,Value 2: Setting B,,,
+,,,,EtherCAT 302D:Eh
+,Value 3: Setting C,,,
+,,,,PROFINET 11548
+,Value 4: Setting D,,,
+,Value 5: Transition type,,,
+,Value 6: Subsequent data set,,,
+,Value 7: Transition condition 1,,,
+,Value 8: Transition value 1,,,
+,Value 9: Logical operator,,,
+,Value 10: Transition condition 2,,,
+,Value 11: Transition value 2,,,
+,Available with firmware version ≥V01.09.,,,

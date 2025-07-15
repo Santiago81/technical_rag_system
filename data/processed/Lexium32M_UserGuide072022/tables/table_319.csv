@@ -1,0 +1,12 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMp_setP,Position for Position Setting.,usr_p,INT32,CANopen 301B:16h
+,"Position for operating mode Homing, method 35.",-,R/W,Modbus 6956
+,Modified settings become active immediately.,0,-,Profibus 6956
+,,-,-,CIP 127.1.22
+,,,,ModbusTCP 6956
+,,,,EtherCAT 301B:16h
+,,,,PROFINET 6956

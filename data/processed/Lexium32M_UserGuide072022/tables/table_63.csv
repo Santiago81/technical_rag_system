@@ -1,0 +1,8 @@
+Characteristic,Unit,Value,Unnamed: 0
+,VW3A7733,VW3A7734,
+Resistance,Ω,16,10.0
+Continuous power,W,960,960.0
+Maximum time in braking at 115 V,s,20,10.0
+Peak power at 115 V,kW,3.5,5.6
+Maximum peak energy at 115 V,kWs,70,59.0
+Maximum time in braking at 230 V,s,3.8,1.98

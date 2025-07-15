@@ -1,0 +1,21 @@
+Electrical data,AX5160 AX5172,Unnamed: 0,AX5190 AX5191,AX5192,Unnamed: 1,AX5193
+Rated output current1),60 A 72 A,,90 A 110 A,143 A,,170 A
+Minimum rated motor current at,16 A 20 A,,25 A 30 A,,35 A,40 A
+full current resolution,,,,,,
+Peak output current2),1202) A 1442) A,,1802) A 1802) A,2152) A,,2212) A
+Rated supply voltage,,,3x 400-10% – 480+10% VAC,,,
+Max. DC link voltage,,,875 VDC,,,
+Rated apparent power S1 operation,,,,,,
+(selection),,,,,,
+400 V,42 kVA 50 kVA,,62 kVA 76 kVA,99 kVA,,118 kVA
+480 V,45 kVA 54 kVA,,67 kVA 82 kVA,107 kVA,,127 kVA
+Power loss3),830 W 1010 W,,1300 W 1600 W,2100 W,,2500 W
+Min. brake resistor,13 Ω 13 Ω,,10 Ω 10 Ω,,6.5 Ω,6.5 Ω
+(external brake resistor),,,,,,
+Max. braking power,52 kW 52 kW,,67 kW 67 kW,103 kW,,103 kW
+(external brake resistor),,,,,,
+Continuous braking power5),37 kW 52 kW,,56 kW 65 kW,65 kW,,65 kW
+Mains chokes4) AX2090-ND50,---,---,0090 0110,,0143,0170
+Mains filters4) AX2090-NF50,integrated integrated,,0100 0150,,0150,0180
+DC link capacity,900 μF,,1060 μF 2120 μF,3180 μF,,4240 μF
+SCCR value,5 kA,,10 kA,,,

@@ -1,0 +1,7 @@
+Parameter,Description
+Reference Velocity,Reference velocity of an analog servo drive
+Maximum Velocity,Maximum velocity (= maximum value of the field Target Velocity)
+Manual Velocity (Fast),Velocity in the manual test menu (F1 and F4)
+Manual Velocity (Slow),Velocity in the manual test menu (F2 and F3)
+Calibration Velocity (towards plc cam),Homing velocity
+Calibration Velocity (off plc cam),Homing velocity

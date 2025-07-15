@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MBnode_guard,Modbus Node Guarding.,ms,UINT16,CANopen 3016:6h
+,Value 0: Node Guarding inactive,0,R/W,Modbus 5644
+,Value >0: Monitoring time,0,-,Profibus 5644
+,A read request or a write request must be,10000,-,CIP 122.1.6
+,performed during the monitoring time.,,,
+,,,,ModbusTCP 5644
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3016:6h
+,,,,PROFINET 5644
+Mfb_HallOffset,Hall offset (electrical angle).,°,UINT16,CANopen 3060:4h
+,This parameter specifies the Hall offset of a Hall,0.0,R/W,Modbus 24584
+,sensor (analog encoder module) as an electrical,,,
+,angle.,0.0,-,Profibus 24584
+,In increments of 0.1 °.,360.0,-,CIP 196.1.4
+,Setting can only be modified if power stage is,,,ModbusTCP 24584
+,disabled.,,,
+,,,,EtherCAT 3060:4h
+,Modified settings become active the next time the,,,
+,product is powered on.,,,PROFINET 24584
+Mfb_lines_lin,Number of encoder signal periods per pole pair,-,UINT16,CANopen 305C:18h
+,"pitch, numerator.",,,
+,,-,R/W,Modbus 23600
+,Calculation:,,,
+,,-,-,Profibus 23600
+,Mfb_lines_lin = Pole pair pitch / length of one,,,
+,signal period of analog encoder,-,-,CIP 192.1.24
+,,,,ModbusTCP 23600
+,"If the value required for your encoder is an integer,",,,EtherCAT 305C:18h
+,you can write this value to this parameter. The,,,
+,parameter Mfb_polepairs_lin does not need to be,,,PROFINET 23600
+,adjusted.,,,
+,Example:,,,
+,Pole pair pitch: 32000 μm,,,
+,Length of one signal period of analog encoder: 0.5,,,
+,μm,,,
+,Result: 32000 / 0.5 = 64000,,,
+,Mfb_lines_lin: 64000,,,
+,Mfb_polepairs_lin: 1 (default value),,,
+,If the value required for your encoder is not an,,,
+,"integer, you can use this parameter as the",,,
+,numerator and the parameter Mfb_polepairs_lin,,,
+,as the denominator to obtain an integer value.,,,
+,Example:,,,
+,Pole pair pitch: 28.2 mm,,,
+,Length of one signal period of analog encoder: 0.5,,,
+,mm,,,
+,Result: 28.2 / 0.5 = 56.4,,,
+,Mfb_lines_lin: 564,,,
+,Mfb_polepairs_lin: 10,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

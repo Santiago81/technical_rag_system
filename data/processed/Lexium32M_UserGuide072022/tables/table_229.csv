@@ -1,0 +1,38 @@
+Signal output function,Jog,Electronic,Profile,Profile.1,Motion,Description in section
+,,Gear,Torque,Velocity,Sequence,
+Freely Available,•,•,•,•,•,Setting a Signal Output via
+,,,,,,"Parameter, page 331"
+No Fault,•,•,•,•,•,Indication of the Operating
+,,,,,,"State via Signal Inputs, page"
+,,,,,,242
+Active,•,•,•,•,•,Indication of the Operating
+,,,,,,"State via Signal Inputs, page"
+,,,,,,242
+RMAC Active Or Finished,•,•,•,•,•,Relative Movement After
+,,,,,,"Capture (RMAC), page 343"
+In Position Deviation Window,•,•,,,•,"Position Deviation Window,"
+,,,,,,page 371
+In Velocity Deviation Window,•,•,,•,•,"Velocity Deviation Window,"
+,,,,,,page 373
+Velocity Below Threshold,•,•,•,•,•,"Velocity Threshold Value,"
+,,,,,,page 375
+Current Below Threshold,•,•,•,•,•,"Current Threshold Value,"
+,,,,,,page 376
+Halt Acknowledge,•,•,•,•,•,"Stopping Movement with Halt,"
+,,,,,,page 320
+Motion Sequence: Start,,,,,•,Operating Mode Motion
+Acknowledge,,,,,,"Sequence, page 305"
+Motor Standstill,•,•,•,•,•,Motor Standstill and Direction
+,,,,,,"of Movement, page 358"
+Selected Error,•,•,•,•,•,"Indicating Error Messages,"
+,,,,,,page 397
+Drive Referenced (ref_ok),,,,,•,"Operating Mode Homing,"
+,,,,,,page 293
+Selected Warning,•,•,•,•,•,"Indicating Error Messages,"
+,,,,,,page 397
+Motion Sequence: Done,,,,,•,Operating Mode Motion
+,,,,,,"Sequence, page 305"
+Motor Moves Positive,•,•,•,•,•,Motor Standstill and Direction
+,,,,,,"of Movement, page 358"
+Motor Moves Negative,•,•,•,•,•,Motor Standstill and Direction
+,,,,,,"of Movement, page 358"

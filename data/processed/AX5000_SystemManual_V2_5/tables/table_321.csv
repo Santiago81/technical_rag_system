@@ -1,0 +1,17 @@
+Pin,EnDAT /,Hiperface,Sin / Cos 1Vpp,TTL1),Unnamed: 0,"In ""A""","In ""B""","In ""C""","In ""D""","In ""E""","In ""F"""
+,BiSS,,,,,,,,,,
+1.0,SIN +,SIN +,SIN +,n.c.,,X,,,,X (+),
+2.0,GND_5 V,GND_9 V,GND_5 V,GND_5 V,,,,,,,
+3.0,COS +,COS +,COS +,n.c.,,,,X,,,X (+)
+4.0,Us_5 V,n.c.,Us_5 V,Us_5 V,,,,,,,
+5.0,DX+ (Data),DX+ (Data),n.c.,B+,,,,Y,,,
+6.0,n.c.,Us_9 V,n.c.,n.c.,,,,,,,
+7.0,n.c.,n.c.,REF Z,REF Z,,,,,,,
+8.0,CLK+ (Clock),n.c.,n.c.,A+,,Y,,,,,
+9.0,REF SIN,REF SIN,REF SIN,n.c.,,,X,,,X (-),
+10.0,GND_Sense,n.c.,n.c.,GND_Sense,,,,,,,
+11.0,REF COS,REF COS,REF COS,n.c.,,,,,X,,X (-)
+12.0,Us_5 V Sense,n.c.,Us_5 V Sense,Us_5 V Sense,,,,,,,
+13.0,DX - (Data),DX - (Data),n.c.,n.c.,,,,,Y,,
+14.0,n.c.,n.c.,Z +,Z +,,,,,,,
+15.0,CLK - (Clock),n.c.,n.c.,n.c.,,,Y,,,,

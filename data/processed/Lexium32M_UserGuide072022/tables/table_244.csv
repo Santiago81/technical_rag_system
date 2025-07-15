@@ -1,0 +1,18 @@
+Control loop parameter set 1,Control loop parameter set 2
+Freely accessible parameters:,Freely accessible parameters:
+CTRL1_KPn,CTRL2_KPn
+CTRL1_TNn,CTRL2_TNn
+CTRL1_KPp,CTRL2_KPp
+CTRL1_TAUiref,CTRL2_TAUiref
+CTRL1_TAUnref,CTRL2_TAUnref
+CTRL1_KFPp,CTRL2_KFPp
+Parameters only accessible in expert mode:,Parameters only accessible in expert mode:
+CTRL1_Nf1damp,CTRL2_Nf1damp
+CTRL1_Nf1freq,CTRL2_Nf1freq
+CTRL1_Nf1bandw,CTRL2_Nf1bandw
+CTRL1_Nf2damp,CTRL2_Nf2damp
+CTRL1_Nf2freq,CTRL2_Nf2freq
+CTRL1_Nf2bandw,CTRL2_Nf2bandw
+CTRL1_Osupdamp,CTRL2_Osupdamp
+CTRL1_Osupdelay,CTRL2_Osupdelay
+CTRL1_Kfric,CTRL2_Kfric

@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_tq_winTime,"Torque window, time.",ms,UINT16,CANopen 3006:2Eh
+,Value 0: Torque window monitoring deactivated,0,R/W,Modbus 1628
+,Changing the value causes a restart of torque,0,per.,Profibus 1628
+,monitoring.,,,
+,,16383,-,CIP 106.1.46
+,Torque window is only used in operating mode,,,
+,Profile Torque.,,,ModbusTCP 1628
+,Modified settings become active immediately.,,,EtherCAT 3006:2Eh
+,,,,PROFINET 1628
+MON_v_DiffWin,Monitoring of velocity deviation.,usr_v,UINT32,CANopen 3006:1Ah
+,The system monitors whether the drive is within,1,R/W,Modbus 1588
+,the defined deviation during the period set with,,,
+,MON_ChkTime.,10,per.,Profibus 1588
+,The status can be output via a parameterizable,2147483647,-,CIP 106.1.26
+,output.,,,
+,,,,ModbusTCP 1588
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:1Ah
+,,,,PROFINET 1588
+MON_v_Threshold,Monitoring of velocity threshold.,usr_v,UINT32,CANopen 3006:1Bh
+,The system monitors whether the drive is below,1,R/W,Modbus 1590
+,the defined value during the period set with MON_,,,
+,ChkTime.,10,per.,Profibus 1590
+,The status can be output via a parameterizable,2147483647,-,CIP 106.1.27
+,output.,,,
+,,,,ModbusTCP 1590
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:1Bh
+,,,,PROFINET 1590
+MON_v_win,"Velocity window, permissible deviation.",usr_v,UINT32*,CANopen 606D:0h
+,Modified settings become active immediately.,1,R/W,Modbus 1576
+,* Datatype for CANopen: UINT16,10,per.,Profibus 1576
+,,2147483647,-,CIP 106.1.20
+,,,,ModbusTCP 1576
+,,,,EtherCAT 606D:0h
+,,,,PROFINET 1576
+MON_v_winTime,"Velocity window, time.",ms,UINT16,CANopen 606E:0h
+,Value 0: Velocity window monitoring deactivated,0,R/W,Modbus 1578
+,Changing the value causes a restart of velocity,0,per.,Profibus 1578
+,monitoring.,,,
+,,16383,-,CIP 106.1.21
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1578
+,,,,EtherCAT 606E:0h
+,,,,PROFINET 1578

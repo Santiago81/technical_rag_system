@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_RMAC_DetailStatus,Detailed status of relative movement after capture,-,UINT16,CANopen 3023:12h
+,(RMAC).,,,
+,,-,R/-,Modbus 8996
+,0 / Not Activated: Not activated,,,
+,,-,-,Profibus 8996
+,1 / Waiting: Waiting for capture signal,,,
+,,-,-,CIP 135.1.18
+,2 / Moving: Relative movement after capture,,,
+,running,,,ModbusTCP 8996
+,3 / Interrupted: Relative movement after capture,,,EtherCAT 3023:12h
+,interrupted,,,
+,,,,PROFINET 8996
+,4 / Finished: Relative movement after capture,,,
+,terminated,,,
+,Available with firmware version ≥V01.16.,,,
+_RMAC_Status,Status of relative movement after capture.,-,UINT16,CANopen 3023:11h
+,0 / Not Active: Not active,0,R/-,Modbus 8994
+,1 / Active Or Finished: Relative movement after,-,-,Profibus 8994
+,capture is active or finished,,,
+,,1,-,CIP 135.1.17
+,Available with firmware version ≥V01.10.,,,
+,,,,ModbusTCP 8994
+,,,,EtherCAT 3023:11h
+,,,,PROFINET 8994
+_ScalePOSmax,Maximum user-defined value for positions.,usr_p,INT32,CANopen 301F:Ah
+,This value depends on ScalePOSdenom and,-,R/-,Modbus 7956
+,ScalePOSnum.,,,
+,,-,-,Profibus 7956
+,,-,-,CIP 131.1.10
+,,,,ModbusTCP 7956
+,,,,EtherCAT 301F:Ah
+,,,,PROFINET 7956
+_ScaleRAMPmax,Maximum user-defined value for acceleration and,usr_a,INT32,CANopen 301F:Ch
+,deceleration.,,,
+,,-,R/-,Modbus 7960
+,This value depends on ScaleRAMPdenom and,,,
+,ScaleRAMPnum.,-,-,Profibus 7960
+,,-,-,CIP 131.1.12
+,,,,ModbusTCP 7960
+,,,,EtherCAT 301F:Ch
+,,,,PROFINET 7960
+_ScaleVELmax,Maximum user-defined value for velocity.,usr_v,INT32,CANopen 301F:Bh
+,This value depends on ScaleVELdenom and,-,R/-,Modbus 7958
+,ScaleVELnum.,,,
+,,-,-,Profibus 7958
+,,-,-,CIP 131.1.11
+,,,,ModbusTCP 7958
+,,,,EtherCAT 301F:Bh
+,,,,PROFINET 7958

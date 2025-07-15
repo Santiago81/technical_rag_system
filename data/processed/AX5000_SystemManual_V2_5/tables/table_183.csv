@@ -1,0 +1,22 @@
+Type,System,"Sin/Cos perrevolution","Supplyvoltage",Interface,Sampling
+ECI 1118,Singleturn,16,5 V,"EnDat 2.1 + 1Vpp",Inductive
+ECI 1319,Singleturn,32,"5 V or7 - 10 V","EnDat 2.1 + 1Vpp",Inductive
+ECN 413,Singleturn,512,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+ECN 413,Singleturn,2048,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+ECN 1113,Singleturn,512,5 V,"EnDat 2.1 + 1Vpp",Optical
+ECN 1313,Singleturn,2048,5 V,"EnDat 2.1 + 1Vpp",Optical
+EQI 1130,Multiturn,16,5 V,"EnDat 2.1 + 1Vpp",Inductive
+EQI 1331,Multiturn,32,"5 V or7 - 10 V","EnDat 2.1 + 1Vpp",Inductive
+EQN 425,Multiturn,512,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+EQN 425,Multiturn,2048,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+EQN 1125,Multiturn,512,5 V,"EnDat 2.1 + 1Vpp",Optical
+EQN 1325,Multiturn,512,5 V,"EnDat 2.1 + 1Vpp",Optical
+EQN 1325,Multiturn,2048,5 V,"EnDat 2.1 + 1Vpp",Optical
+RCN 829,Singleturn,32768,3.6 – 5.25 V,"EnDat 2.2 + 1Vpp",Optical
+ROQ 425,Multiturn,512,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+ROQ 425,Multiturn,2048,3.6 V - 14 V,"EnDat 2.1 + 1Vpp",Optical
+ERN 180,incremental,1024,5 V,1 Vpp,Optical
+ERN 180,incremental,2048,5 V,1 Vpp,Optical
+ERN 180,incremental,5000,5 V,1 Vpp,Optical
+ERN 480,incremental,2048,5 V,1 Vpp,Optical
+ERM 280,incremental,1200,5 V,1 Vpp,Magnetic

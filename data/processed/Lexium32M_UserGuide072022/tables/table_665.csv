@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PWM_fChop,PWM frequency of power stage.,-,UINT16,CANopen 3005:Eh
+,4 / 4 kHz: 4 kHz,4,R/W,Modbus 1308
+,8 / 8 kHz: 8 kHz,-,per.,Profibus 1308
+,16 / 16 kHz: 16 kHz,16,expert,CIP 105.1.14
+,Factory setting:,,,ModbusTCP 1308
+,Peak output current ≤72 Arms: 8 kHz,,,EtherCAT 3005:Eh
+,Peak output current >72 Arms: 4 kHz,,,PROFINET 1308
+,Changing this setting is only possible in the case,,,
+,of devices with a peak output current >72 Arms.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+RAMP_tq_enable,Activation of the motion profile for torque.,-,UINT16,CANopen 3006:2Ch
+,0 / Profile Off: Profile off,0,R/W,Modbus 1624
+,1 / Profile On: Profile on,1,per.,Profibus 1624
+,"In the operating mode Profile Torque, the motion",1,-,CIP 106.1.44
+,profile for torque can be activated or deactivated.,,,
+,,,,ModbusTCP 1624
+,"In the other operating modes, the motion profile",,,
+,for torque is inactive.,,,EtherCAT 3006:2Ch
+,Setting can only be modified if power stage is,,,PROFINET 1624
+,disabled.,,,
+,Modified settings become active immediately.,,,
+RAMP_tq_slope,Slope setting of the motion profile for torque.,%/s,UINT32,CANopen 6087:0h
+,100.00 % of the torque setting correspond to the,0.1,R/W,Modbus 1620
+,continuous stall torque _M_M_0.,,,
+,,10000.0,per.,Profibus 1620
+,Example:,,,
+,,3000000.0,-,CIP 106.1.42
+,A ramp setting of 10000.00 %/s results in a torque,,,
+,change of 100.0% of _M_M_0 in 0.01s.,,,ModbusTCP 1620
+,In increments of 0.1 %/s.,,,EtherCAT 6087:0h
+,Modified settings become active immediately.,,,PROFINET 1620
+RAMP_v_acc,Acceleration of the motion profile for velocity.,usr_a,UINT32,CANopen 6083:0h
+,Writing the value 0 has no effect on the parameter.,1,R/W,Modbus 1556
+,Modified settings become active the next time the,600,per.,Profibus 1556
+,motor moves.,,,
+,,2147483647,-,CIP 106.1.10
+,,,,ModbusTCP 1556
+,,,,EtherCAT 6083:0h
+,,,,PROFINET 1556

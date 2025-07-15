@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthIPmodule1,"IP address Ethernet module, byte 1.",-,UINT16,CANopen 3044:7h
+ConF→CoM-,Byte 1 (x.0.0.0) of the IP address of the Ethernet,0,R/W,Modbus 17422
+,module.,,,
+iPc1,,0,per.,Profibus 17422
+,Modified settings become active the next time the,,,
+,product is powered on.,255,-,CIP 168.1.7
+,,,,ModbusTCP 17422
+,,,,EtherCAT 3044:7h
+,,,,PROFINET 17422
+EthIPmodule2,"IP address Ethernet module, byte 2.",-,UINT16,CANopen 3044:8h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17424
+,product is powered on.,,,
+iPc2,,0,per.,Profibus 17424
+,,255,-,CIP 168.1.8
+,,,,ModbusTCP 17424
+,,,,EtherCAT 3044:8h
+,,,,PROFINET 17424
+EthIPmodule3,"IP address Ethernet module, byte 3.",-,UINT16,CANopen 3044:9h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17426
+,product is powered on.,,,
+iPc3,,0,per.,Profibus 17426
+,,255,-,CIP 168.1.9
+,,,,ModbusTCP 17426
+,,,,EtherCAT 3044:9h
+,,,,PROFINET 17426
+EthIPmodule4,"IP address Ethernet module, byte 4.",-,UINT16,CANopen 3044:Ah
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17428
+,product is powered on.,,,
+iPc4,,0,per.,Profibus 17428
+,,255,-,CIP 168.1.10
+,,,,ModbusTCP 17428
+,,,,EtherCAT 3044:Ah
+,,,,PROFINET 17428
+EthMbIPswap1,"IP address of master for Modbus word swap, byte",-,UINT16,CANopen 3044:50h
+,1.,,,
+,,0,R/W,Modbus 17568
+,IP address of a Modbus master device. For this,,,
+,"master, the word order is swapped to ""Low word",0,per.,Profibus 17568
+,"first"", instead of the default ""High word first"".",,,
+,,255,-,CIP 168.1.80
+,High word first: Modicon Quantum,,,
+,,,,ModbusTCP 17568
+,"Low word first: Premium, HMI (Schneider Electric)",,,
+,,,,EtherCAT 3044:50h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 17568

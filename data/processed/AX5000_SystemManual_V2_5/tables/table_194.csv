@@ -1,0 +1,5 @@
+Type,System,"Measuringsteps","Supplyvoltage",Interface,Sampling
+1,incremental,20 μm,5 V,1 Vpp,
+2,incremental,1 mm,5 V,1 Vpp,
+3,incremental,20 μm,"5 V -uncontrolled",1 Vpp,
+4,incremental,1 mm,"5 V -uncontrolled",1 Vpp,

@@ -1,0 +1,31 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2
+,LXM32•U45M2,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Nominal voltage (single-phase) Vac,115,115,115,115
+Inrush current limitation A,1.7,3.5,8,16
+Maximum fuse to be connected upstream(1) A,25,25,25,25
+Continuous output current Arms,1.5,3,6,10
+Peak output current Arms,3,6,10,15
+Minimum inductance motor (phase/phase) mH,5.5,3,1.4,0.8
+Values without mains reactor(2),,,,
+Nominal power kW,0.15,0.3,0.5,0.8
+Input current(3) Arms,2.9,5.4,8.5,12.9
+THD (total harmonic distortion)(4) %,173,159,147,135
+Power dissipation(5) W,7,15,28,33
+Maximum inrush current(6) A,111,161,203,231
+Time for maximum inrush current ms,0.8,1.0,1.2,1.4
+Values with mains reactor,,,,
+Mains reactor mH,5,2,2,2
+Nominal power kW,0.2,0.4,0.8,0.8
+Input current(3) Arms,2.6,5.2,9.9,9.9
+THD (total harmonic distortion)(4) %,85,90,74,72
+Power dissipation(5) W,8,16,32,33
+Maximum inrush current(6) A,22,48,56,61
+Time for maximum inrush current ms,3.3,3.1,3.5,3.7
+"(1) As per IEC 60269. Circuit breakers with B or C characteristic. See Conditions for UL 508C and CSA, page 56. Lower ratings are",,,,
+permissible. The fuse must be rated in such a way that the fuse does not trip at the specified input current.,,,,
+(2) At a mains impedance corresponding to a short-circuit current of the supply mains of 1 kA.,,,,
+(3) At nominal power and nominal voltage.,,,,
+(4) With reference to the input current.,,,,
+"(5) Condition: internal braking resistor not active. Value at nominal current, nominal voltage and nominal power. Value approximately",,,,
+proportional with output current.,,,,
+"(6) Extreme case, off/on pulse before the inrush current limitation responds, see next line for maximum time.",,,,

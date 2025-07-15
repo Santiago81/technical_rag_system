@@ -1,0 +1,17 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,LXM32•U45M2,,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Capacitance of internal capacitor μF,390,,780,1170,1560
+Parameter DCbus_compat = 0 (default value),,,,,
+Energy absorption of internal capacitors Evar at Ws,5,,9,14,18
+nominal voltage 115 V +10%,,,,,
+Energy absorption of internal capacitors Evar at Ws,17,,34,52,69
+nominal voltage 200 V +10%,,,,,
+Energy absorption of internal capacitors Evar at Ws,11,,22,33,44
+nominal voltage 230 V +10%,,,,,
+Parameter DCbus_compat = 1 (reduced switch-on voltage),,,,,
+Energy absorption of internal capacitors Evar at Ws,24,,48,73,97
+nominal voltage 115 V +10%,,,,,
+Energy absorption of internal capacitors Evar at Ws,12,,23,35,46
+nominal voltage 200 V +10%,,,,,
+Energy absorption of internal capacitors Evar at Ws,5,,11,16,22
+nominal voltage 230 V +10%,,,,,

@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+LIM_QStopReact,Quick Stop option code.,-,INT16,CANopen 3006:18h
+,-2 / Torque ramp (Fault): Use torque ramp and,-2,R/W,Modbus 1584
+,transit to operating state 9 Fault,,,
+,,6,per.,Profibus 1584
+,-1 / Deceleration Ramp (Fault): Use deceleration,,,
+,ramp and transit to operating state 9 Fault,7,-,CIP 106.1.24
+,6 / Deceleration ramp (Quick Stop): Use,,,ModbusTCP 1584
+,deceleration ramp and remain in operating state 7,,,
+,Quick Stop,,,EtherCAT 3006:18h
+,7 / Torque ramp (Quick Stop): Use torque ramp,,,PROFINET 1584
+,and remain in operating state 7 Quick Stop,,,
+,Type of deceleration for Quick Stop.,,,
+,Setting of deceleration ramp with parameter,,,
+,RAMPquickstop.,,,
+,Setting of torque ramp with parameter LIM_I_,,,
+,maxQSTP.,,,
+,"If a deceleration ramp is already active, the",,,
+,parameter cannot be written.,,,
+,Modified settings become active immediately.,,,
+Mains_reactor,Mains reactor.,-,UINT16,CANopen 3005:20h
+,0 / No: No,0,R/W,Modbus 1344
+,1 / Yes: Yes,0,per.,Profibus 1344
+,Value 0: No mains reactor connected. The,1,-,CIP 105.1.32
+,nominal power of the power stage is reduced.,,,
+,,,,ModbusTCP 1344
+,Value 1: A mains reactor is connected.,,,
+,,,,EtherCAT 3005:20h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 1344
+,Modified settings become active immediately.,,,
+MBaddress,Modbus address.,-,UINT16,CANopen 3016:4h
+ConF→CoM-,Valid addresses: 1 to 247,1,R/W,Modbus 5640
+MbAd,Modified settings become active the next time the,1,per.,Profibus 5640
+,product is powered on.,,,
+,,247,-,CIP 122.1.4
+,,,,ModbusTCP 5640
+,,,,EtherCAT 3016:4h
+,,,,PROFINET 5640
+MBbaud,Modbus baud rate.,-,UINT32,CANopen 3016:3h
+ConF→CoM-,9600 / 9600 Baud /9.6: 9600 Baud,9600,R/W,Modbus 5638
+Mbbd,19200 / 19200 Baud /19.2: 19200 Baud,19200,per.,Profibus 5638
+,38400 / 38400 Baud /38.4: 38400 Baud,38400,-,CIP 122.1.3
+,Modified settings become active the next time the,,,ModbusTCP 5638
+,product is powered on.,,,
+,,,,EtherCAT 3016:3h
+,,,,PROFINET 5638

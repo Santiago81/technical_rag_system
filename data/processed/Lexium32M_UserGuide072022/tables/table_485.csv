@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Cap3CountCons,Capture input 3 event counter (continuous).,-,UINT16,CANopen 300A:1Bh
+,Counts the capture events.,-,R/-,Modbus 2614
+,The event counter is reset when capture input 3 is,-,-,Profibus 2614
+,activated.,,,
+,,-,-,CIP 110.1.27
+,"By reading this parameter, the parameter",,,
+,"""_Cap3PosCons"" is updated and locked so it",,,ModbusTCP 2614
+,cannot be changed. Both parameter values,,,
+,remain consistent.,,,EtherCAT 300A:1Bh
+,Available with hardware version ≥RS03.,,,PROFINET 2614
+,Available with firmware version ≥V01.12.,,,
+_Cap3Pos,Capture input 3 captured position (one-time).,usr_p,INT32,CANopen 300A:13h
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2598
+,"signal"".",,,
+,,-,-,Profibus 2598
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.19
+,Available with hardware version ≥RS03.,,,ModbusTCP 2598
+,,,,EtherCAT 300A:13h
+,,,,PROFINET 2598
+_Cap3PosCons,Capture input 3 captured position (continuous).,usr_p,INT32,CANopen 300A:1Ch
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2616
+,"signal"".",,,
+,,-,-,Profibus 2616
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.28
+,"By reading the parameter ""_Cap3CountCons"",",,,ModbusTCP 2616
+,this parameter is updated and locked so it cannot,,,
+,be changed. Both parameter values remain,,,EtherCAT 300A:1Ch
+,consistent.,,,
+,,,,PROFINET 2616
+,Available with hardware version ≥RS03.,,,
+,Available with firmware version ≥V01.12.,,,
+_CapEventCounters,Capture inputs 1 and 2 summary of event,-,UINT16,CANopen 300A:2Fh
+,counters (DS402).,,,
+,,-,R/-,Modbus 2654
+,This parameter contains the counted capture,,,
+,events.,-,-,Profibus 2654
+,Bits 0 ... 3: _Cap1CntRise (lowest 4 bits),-,-,CIP 110.1.47
+,Bits 4 ... 7: _Cap1CntFall (lowest 4 bits),,,ModbusTCP 2654
+,Bits 8 ... 11: _Cap2CntRise (lowest 4 bits),,,EtherCAT 300A:2Fh
+,Bits 12 ... 15: _Cap2CntFall (lowest 4 bits),,,PROFINET 2654
+,Available with firmware version ≥V01.16.,,,
+_CapStatus,Status of the capture inputs.,-,UINT16,CANopen 300A:1h
+,Read access:,-,R/-,Modbus 2562
+,Bit 0: Position captured via input CAP1,-,-,Profibus 2562
+,Bit 1: Position captured via input CAP2,-,-,CIP 110.1.1
+,Bit 2: Position captured via input CAP3,,,ModbusTCP 2562
+,,,,EtherCAT 300A:1h
+,,,,PROFINET 2562

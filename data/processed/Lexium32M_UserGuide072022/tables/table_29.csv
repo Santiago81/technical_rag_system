@@ -1,0 +1,4 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+,,"LXM32•-U60N4","LXM32•-D12N4","LXM32•-D18N4","LXM32•-D30N4","LXM32•-D72N4","LXM32•-D85N4","LXM32•-C10N4"
+Nominal voltage (three-phase),Vac,400,400,400,400,400,400,400
+Inrush current limitation,A,4.3,9.4,19,19,57,57,57

@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_EthMAC6,"MAC address Ethernet module, byte 6.",-,UINT16,CANopen 3044:24h
+,,-,R/-,Modbus 17480
+,,-,-,Profibus 17480
+,,-,-,CIP 168.1.36
+,,,,ModbusTCP 17480
+,,,,EtherCAT 3044:24h
+,,,,PROFINET 17480
+_FTOF_ErrorCode,File transfer over fieldbus: Oldest and most recent,-,UINT32,CANopen 3004:21h
+,error code.,,,
+,,-,R/-,Modbus 1090
+,Low word: Oldest error code,,,
+,,-,-,Profibus 1090
+,High word: Most recent error code,,,
+,,-,-,CIP 104.1.33
+,Available with firmware version ≥V01.34.,,,
+,,,,ModbusTCP 1090
+,,,,EtherCAT 3004:21h
+,,,,PROFINET 1090
+_FTOF_Status,File transfer over fieldbus: Status information for,-,UINT32,CANopen 3004:1Fh
+,file download.,,,
+,,-,R/-,Modbus 1086
+,Bit assignments:,,,
+,,-,-,Profibus 1086
+,Bits 0 ... 15: General status information,,,
+,,-,-,CIP 104.1.31
+,Bits 16 ... 25: Reserved,,,
+,,,,ModbusTCP 1086
+,Bit 26: XML file not valid,,,
+,,,,EtherCAT 3004:1Fh
+,Bit 27: CRC invalid,,,
+,,,,PROFINET 1086
+,Bit 28: Configuration data incompatible with drive,,,
+,Bit 29: Drive locked for file transfer,,,
+,Bit 30: Error detected during parsing of file,,,
+,Bit 31: Parsing of file completed,,,
+,Available with firmware version ≥V01.34.,,,
+_fwNoSlot1,Firmware number of slot 1.,-,UINT32,CANopen 3002:17h
+,Example: PR0912.00,-,R/-,Modbus 558
+,The value is provided as a decimal value: 91200.,-,-,Profibus 558
+,"If no module is installed, the value 0 is returned.",-,-,CIP 102.1.23
+,,,,ModbusTCP 558
+,,,,EtherCAT 3002:17h
+,,,,PROFINET 558
+_fwNoSlot2,Firmware number of slot 2.,-,UINT32,CANopen 3002:1Ch
+,Example: PR0912.00,-,R/-,Modbus 568
+,The value is provided as a decimal value: 91200.,-,-,Profibus 568
+,"If no module is installed, the value 0 is returned.",-,-,CIP 102.1.28
+,,,,ModbusTCP 568
+,,,,EtherCAT 3002:1Ch
+,,,,PROFINET 568

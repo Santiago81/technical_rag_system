@@ -1,0 +1,53 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthOptMapOut2,Optionally mapped output parameter 2 (controller,-,UINT16,CANopen 3044:2Fh
+,to drive).,,,
+,,-,R/W,Modbus 17502
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17502
+,I/O scanner data (controller to drive).,,,
+,,-,-,CIP 168.1.47
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17502
+,,,,EtherCAT 3044:2Fh
+,,,,PROFINET 17502
+EthOptMapOut3,Optionally mapped output parameter 3 (controller,-,UINT16,CANopen 3044:30h
+,to drive).,,,
+,,-,R/W,Modbus 17504
+,Modbus address of parameter which is optionally,,,
+,mapped to Ethernet/IP assembly or Modbus TCP,0,per.,Profibus 17504
+,I/O scanner data (controller to drive).,,,
+,,-,-,CIP 168.1.48
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 17504
+,,,,EtherCAT 3044:30h
+,,,,PROFINET 17504
+EthRateSet,Transmission rate setting.,-,UINT16,CANopen 3044:2h
+,0 / Autodetect: Autodetect,0,R/W,Modbus 17412
+,1 / 10 Mbps Full: 10 Mbps full duplex,0,per.,Profibus 17412
+,2 / 10 Mbps Half: 10 Mbps half duplex,4,-,CIP 168.1.2
+,3 / 100 Mbps Full: 100 Mbps full duplex,,,ModbusTCP 17412
+,4 / 100 Mbps Half: 100 Mbps half duplex,,,EtherCAT 3044:2h
+,Modified settings become active immediately.,,,PROFINET 17412
+FTOF_CreateFile,File transfer over fieldbus: Create file for upload.,-,UINT16,CANopen 3004:1Eh
+,Value 1: Create file for upload,0,R/W,Modbus 1084
+,Parameter is only accessible via the following,0,-,Profibus 1084
+,access channels:,,,
+,,1,-,CIP 104.1.30
+,- Fieldbus main channel,,,
+,,,,ModbusTCP 1084
+,- Modbus RTU,,,
+,,,,EtherCAT 3004:1Eh
+,The creation process is complete when the,,,
+,,,,PROFINET 1084
+,parameter is read and 1 is returned.,,,
+,If the parameter is read via a different access,,,
+,"channel, the value 0 is returned.",,,
+,"If a file has been created, a new file can only be",,,
+,created after a power cycle of the drive.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.34.,,,

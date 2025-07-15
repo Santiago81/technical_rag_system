@@ -1,0 +1,39 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+LIM_I_maxHalt,Current for Halt.,Arms,UINT16,CANopen 3011:Eh
+ConF→ACG-,This value is only limited by the minimum/,-,R/W,Modbus 4380
+,maximum value range (no limitation of this value,,,
+hcur,by motor/power stage).,-,per.,Profibus 4380
+,"In the case of a Halt, the current limit (_Imax_act)",-,-,CIP 117.1.14
+,is one of the following values (whichever is,,,
+,lowest):,,,ModbusTCP 4380
+,- LIM_I_maxHalt,,,EtherCAT 3011:Eh
+,- _M_I_max,,,PROFINET 4380
+,- _PS_I_max,,,
+,Further current limitations caused by I2t,,,
+,monitoring are also taken into account during a,,,
+,Halt.,,,
+,Default: _PS_I_max at 8 kHz PWM frequency and,,,
+,230/480 V mains voltage,,,
+,In increments of 0.01 Arms.,,,
+,Modified settings become active immediately.,,,
+LIM_I_maxQSTP,Current for Quick Stop.,Arms,UINT16,CANopen 3011:Dh
+ConF→FLt-,This value is only limited by the minimum/,-,R/W,Modbus 4378
+,maximum value range (no limitation of this value,,,
+qcur,by motor/power stage).,-,per.,Profibus 4378
+,"In the case of a Quick Stop, the current limit",-,-,CIP 117.1.13
+,(_Imax_act) is one of the following values,,,
+,(whichever is lowest):,,,ModbusTCP 4378
+,- LIM_I_maxQSTP,,,EtherCAT 3011:Dh
+,- _M_I_max,,,PROFINET 4378
+,- _PS_I_max,,,
+,Further current limitations caused by I2t,,,
+,monitoring are also taken into account during a,,,
+,Quick Stop.,,,
+,Default: _PS_I_max at 8 kHz PWM frequency and,,,
+,230/480 V mains voltage,,,
+,In increments of 0.01 Arms.,,,
+,Modified settings become active immediately.,,,

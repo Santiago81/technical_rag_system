@@ -1,0 +1,24 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+LIM_QStopReact,Quick Stop option code.,-,INT16,CANopen 3006:18h
+,-2 / Torque ramp (Fault): Use torque ramp and,-2,R/W,Modbus 1584
+,transit to operating state 9 Fault,,,
+,,6,per.,Profibus 1584
+,-1 / Deceleration Ramp (Fault): Use deceleration,,,
+,ramp and transit to operating state 9 Fault,7,-,CIP 106.1.24
+,6 / Deceleration ramp (Quick Stop): Use,,,ModbusTCP 1584
+,deceleration ramp and remain in operating state 7,,,
+,Quick Stop,,,EtherCAT 3006:18h
+,7 / Torque ramp (Quick Stop): Use torque ramp,,,PROFINET 1584
+,and remain in operating state 7 Quick Stop,,,
+,Type of deceleration for Quick Stop.,,,
+,Setting of deceleration ramp with parameter,,,
+,RAMPquickstop.,,,
+,Setting of torque ramp with parameter LIM_I_,,,
+,maxQSTP.,,,
+,"If a deceleration ramp is already active, the",,,
+,parameter cannot be written.,,,
+,Modified settings become active immediately.,,,

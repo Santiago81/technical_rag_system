@@ -1,0 +1,33 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_CTRL_ActParSet,Active control loop parameter set.,-,UINT16,CANopen 3011:17h
+,Value 1: Control loop parameter set 1 is active,-,R/-,Modbus 4398
+,Value 2: Control loop parameter set 2 is active,-,-,Profibus 4398
+,A control loop parameter set is active after the,-,-,CIP 117.1.23
+,time for the parameter switching (CTRL_,,,
+,ParChgTime) has elapsed.,,,ModbusTCP 4398
+,,,,EtherCAT 3011:17h
+,,,,PROFINET 4398
+CTRL_PwrUpParSet,Selection of control loop parameter set at power,-,UINT16,CANopen 3011:18h
+,up.,,,
+,,0,R/W,Modbus 4400
+,0 / Switching Condition: The switching condition,,,
+,is used for control loop parameter set switching,1,per.,Profibus 4400
+,1 / Parameter Set 1: Control loop parameter set 1,2,-,CIP 117.1.24
+,is used,,,
+,,,,ModbusTCP 4400
+,2 / Parameter Set 2: Control loop parameter set 2,,,
+,is used,,,EtherCAT 3011:18h
+,The selected value is also written to CTRL_,,,PROFINET 4400
+,SelParSet (non-persistent).,,,
+,Modified settings become active immediately.,,,
+CTRL_SelParSet,Selection of control loop parameter set.,-,UINT16,CANopen 3011:19h
+,Coding see parameter: CTRL_PwrUpParSet,0,R/W,Modbus 4402
+,Modified settings become active immediately.,1,-,Profibus 4402
+,,2,-,CIP 117.1.25
+,,,,ModbusTCP 4402
+,,,,EtherCAT 3011:19h
+,,,,PROFINET 4402

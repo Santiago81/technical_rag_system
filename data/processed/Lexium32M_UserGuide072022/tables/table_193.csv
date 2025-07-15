@@ -1,0 +1,37 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_SelParSet,Selection of control loop parameter set.,-,UINT16,CANopen 3011:19h
+,Coding see parameter: CTRL_PwrUpParSet,0,R/W,Modbus 4402
+,Modified settings become active immediately.,1,-,Profibus 4402
+,,2,-,CIP 117.1.25
+,,,,ModbusTCP 4402
+,,,,EtherCAT 3011:19h
+,,,,PROFINET 4402
+_CTRL_ActParSet,Active control loop parameter set.,-,UINT16,CANopen 3011:17h
+,Value 1: Control loop parameter set 1 is active,-,R/-,Modbus 4398
+,Value 2: Control loop parameter set 2 is active,-,-,Profibus 4398
+,A control loop parameter set is active after the,-,-,CIP 117.1.23
+,time for the parameter switching (CTRL_,,,
+,ParChgTime) has elapsed.,,,ModbusTCP 4398
+,,,,EtherCAT 3011:17h
+,,,,PROFINET 4398
+CTRL_ParChgTime,Period of time for control loop parameter set,ms,UINT16,CANopen 3011:14h
+,switching.,,,
+,,0,R/W,Modbus 4392
+,In the case of control loop parameter set,,,
+,"switching, the values of the following parameters",0,per.,Profibus 4392
+,are changed linearly:,,,
+,,2000,-,CIP 117.1.20
+,- CTRL_KPn,,,
+,,,,ModbusTCP 4392
+,- CTRL_TNn,,,
+,,,,EtherCAT 3011:14h
+,- CTRL_KPp,,,
+,,,,PROFINET 4392
+,- CTRL_TAUnref,,,
+,- CTRL_TAUiref,,,
+,- CTRL_KFPp,,,
+,Modified settings become active immediately.,,,

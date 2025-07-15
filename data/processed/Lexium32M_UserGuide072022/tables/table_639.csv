@@ -1,0 +1,66 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_,Motor overload and overtemperature monitoring.,-,UINT16,CANopen 303F:68h
+MotOvLoadOvTemp,,,,
+,Value 0: Motor overload and overtemperature,0,R/W,Modbus 16336
+,monitoring using thermal retention and speed,,,
+,sensitivity (as per IEC 61800-5-1:2007/,0,per.,Profibus 16336
+,AMD1:2016),,,
+,,1,expert,CIP 163.1.104
+,Value 1: Motor overload and overtemperature,,,
+,monitoring using the nominal stall torque of the,,,ModbusTCP 16336
+,"motor, without thermal retention and speed",,,
+,sensitivity. Additional external measures may,,,EtherCAT 303F:68h
+,have to be implemented.,,,
+,,,,PROFINET 16336
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.32.,,,
+MON_p_dif_load,Maximum load-dependent position deviation.,revolution,UINT32,CANopen 6065:0h
+,The load-dependent position deviation is the,0.0001,R/W,Modbus 1606
+,difference between the reference position and the,,,
+,actual position caused by the load.,1.0000,per.,Profibus 1606
+,The parameter MON_p_dif_load_usr allows you,200.0000,-,CIP 106.1.35
+,to enter the value in user-defined units.,,,
+,,,,ModbusTCP 1606
+,In increments of 0.0001 revolution.,,,
+,,,,EtherCAT 6065:0h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 1606
+MON_p_dif_load_usr,Maximum load-dependent position deviation.,usr_p,INT32,CANopen 3006:3Eh
+,The load-dependent position deviation is the,1,R/W,Modbus 1660
+,difference between the reference position and the,,,
+,actual position caused by the load.,16384,per.,Profibus 1660
+,"The minimum value, the factory setting and the",2147483647,-,CIP 106.1.62
+,maximum value depend on the scaling factor.,,,
+,,,,ModbusTCP 1660
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:3Eh
+,Available with firmware version ≥V01.03.,,,
+,,,,PROFINET 1660
+MON_p_dif_warn,Advisory limit of the load-dependent position,%,UINT16,CANopen 3006:29h
+,deviation (error class 0).,,,
+,,0,R/W,Modbus 1618
+,100.0 % correspond to the maximum position,,,
+,deviation (following error) as specified by means,75,per.,Profibus 1618
+,of parameter MON_p_dif_load.,,,
+,,100,-,CIP 106.1.41
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1618
+,,,,EtherCAT 3006:29h
+,,,,PROFINET 1618
+MON_p_DiffWin,Monitoring of position deviation.,revolution,UINT16,CANopen 3006:19h
+,The system verifies whether the drive is within the,0.0000,R/W,Modbus 1586
+,defined deviation during the period set with MON_,,,
+,ChkTime.,0.0010,per.,Profibus 1586
+,The status can be output via a parameterizable,0.9999,-,CIP 106.1.25
+,output.,,,
+,,,,ModbusTCP 1586
+,The parameter MON_p_DiffWin_usr allows you to,,,
+,enter the value in user-defined units.,,,EtherCAT 3006:19h
+,In increments of 0.0001 revolution.,,,PROFINET 1586
+,Modified settings become active immediately.,,,

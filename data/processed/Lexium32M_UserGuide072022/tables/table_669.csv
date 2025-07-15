@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ResolENC2Denom,"Resolution of encoder 2, denominator.",revolution,INT32,CANopen 3050:5h
+,See numerator (ResolEnc2Num) for a description.,1,R/W,Modbus 20490
+,Setting can only be modified if power stage is,1,per.,Profibus 20490
+,disabled.,,,
+,,16383,-,CIP 180.1.5
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,ModbusTCP 20490
+,,,,EtherCAT 3050:5h
+,,,,PROFINET 20490
+ResolENC2Num,"Resolution of encoder 2, numerator.",EncInc,INT32,CANopen 3050:6h
+,Digital encoders:,1,R/W,Modbus 20492
+,Specification of the encoder increments the,10000,per.,Profibus 20492
+,external encoder returns for one or several,,,
+,revolutions of the motor shaft.,2147483647,-,CIP 180.1.6
+,The value is indicated with a numerator and a,,,ModbusTCP 20492
+,"denominator so that it is possible, for example, to",,,
+,take into account the gear ratio of a mechanical,,,EtherCAT 3050:6h
+,gearing.,,,
+,,,,PROFINET 20492
+,The value must not be set to 0.,,,
+,The resolution factor is not applied until this,,,
+,numerator value is specified.,,,
+,Example: One motor revolution causes 1/3,,,
+,encoder revolution at an encoder resolution of,,,
+,16384 EncInc/revolution.,,,
+,ResolENC2Num = 16384 EncInc,,,
+,ResolENC2Denom = 3 revolutions,,,
+,Analog encoders:,,,
+,Num/Denom must be set equivalent to the number,,,
+,of analog periods per 1 motor revolution.,,,
+,Example: One motor revolution causes 1/3,,,
+,encoder revolution at an encoder resolution of 16,,,
+,analog periods per revolution.,,,
+,ResolENC2Num = 16 periods,,,
+,ResolENC2Denom = 3 revolutions,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+ResWriComNotOpEn,Response to write command (operating state is,-,UINT16,CANopen 3006:49h
+,not Operation Enabled).,,,
+,,0,R/W,Modbus 1682
+,0 / Emergency Message: An Emergency,,,
+,message is sent,0,per.,Profibus 1682
+,1 / Error class 0: An error with error class 0 is,1,-,CIP 106.1.73
+,sent,,,
+,,,,ModbusTCP 1682
+,This parameter specifies the response of the drive,,,
+,to a write command that cannot be executed,,,EtherCAT 3006:49h
+,because the operating state is not Operation,,,
+,Enabled.,,,PROFINET 1682
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.26.,,,

@@ -1,0 +1,66 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AI12_I_max,IOM1 Limitation of current at 10 V of AI12.,Arms,UINT16,CANopen 304F:14h
+ConF→i-o-,In increments of 0.01 Arms.,0.00,R/W,Modbus 20264
+L12i,Setting can only be modified if power stage is,3.00,per.,Profibus 20264
+,disabled.,,,
+,,463.00,-,CIP 179.1.20
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,ModbusTCP 20264
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:14h
+,,,,PROFINET 20264
+IOM1_AI12_M_scale,IOM1 Target torque at 10 V in operating mode,%,INT16,CANopen 304F:17h
+,Profile Torque of AI12.,,,
+ConF→i-o-,,-3000.0,R/W,Modbus 20270
+,100.0 % correspond to the continuous stall torque,,,
+t12i,_M_M_0.,100.0,per.,Profibus 20270
+,"By using a negative sign, you can invert the",3000.0,-,CIP 179.1.23
+,evaluation of the analog signal.,,,
+,,,,ModbusTCP 20270
+,In increments of 0.1 %.,,,
+,,,,EtherCAT 304F:17h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 20270
+,Available with firmware version ≥V01.06.,,,
+IOM1_AI12_mode,IOM1 Type of usage of AI12.,-,UINT16,CANopen 304F:13h
+ConF→i-o-,0 / None /nonE: No function,0,R/W,Modbus 20262
+A12u,1 / Target Velocity /SPdS: Target velocity for,0,per.,Profibus 20262
+,the velocity controller,,,
+,,4,-,CIP 179.1.19
+,2 / Target Torque /trqS: Target torque for the,,,
+,current controller,,,ModbusTCP 20262
+,3 / Velocity Limitation /LSPd: Limitation of the,,,EtherCAT 304F:13h
+,reference velocity for the velocity controller,,,
+,,,,PROFINET 20262
+,4 / Current Limitation /Lcur: Limitation of the,,,
+,reference current for the current controller,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_AI12_offset,IOM1 Offset voltage of AI12.,mV,INT16,CANopen 304F:Ch
+ConF→i-o-,The analog input AI12 is corrected/offset by the,-5000,R/W,Modbus 20248
+,offset value. If you have defined a zero voltage,,,
+A12o,"window, this window is effective in the zero pass",0,per.,Profibus 20248
+,range of the corrected analog input AI12.,,,
+,,5000,-,CIP 179.1.12
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 20248
+,Available with firmware version ≥V01.06.,,,
+,,,,EtherCAT 304F:Ch
+,,,,PROFINET 20248
+IOM1_AI12_Tau,IOM1 Filter time constant of AI12.,ms,UINT16,CANopen 304F:18h
+ConF→i-o-,First-order low pass (PT1) filter time constant for,0.00,R/W,Modbus 20272
+,analog input AI12.,,,
+A12F,,0.00,per.,Profibus 20272
+,In increments of 0.01 ms.,,,
+,,327.67,-,CIP 179.1.24
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 20272
+,Available with firmware version ≥V01.06.,,,
+,,,,EtherCAT 304F:18h
+,,,,PROFINET 20272

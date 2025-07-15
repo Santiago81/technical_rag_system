@@ -1,0 +1,3 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+MON_v_win,"Velocity window, permissible deviation.Modified settings become active immediately.* Datatype for CANopen: UINT16","usr_v1102147483647","UINT32*R/Wper.-","CANopen 606D:0hModbus 1576Profibus 1576CIP 106.1.20ModbusTCP 1576EtherCAT 606D:0hPROFINET 1576"
+MON_v_winTime,"Velocity window, time.Value 0: Velocity window monitoring deactivatedChanging the value causes a restart of velocitymonitoring.Modified settings become active immediately.","ms0016383","UINT16R/Wper.-","CANopen 606E:0hModbus 1578Profibus 1578CIP 106.1.21ModbusTCP 1578EtherCAT 606E:0hPROFINET 1578"

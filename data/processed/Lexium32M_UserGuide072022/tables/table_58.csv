@@ -1,0 +1,12 @@
+Characteristic Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,LXM32•U45M2,,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Resistance value of internal braking resistor Ω,94,,47,20,10
+Continuous power internal braking resistor PPR W,10,,20,40,60
+Peak energy ECR Ws,82,,166,330,550
+Parameter DCbus_compat = 0 (default value),,,,,
+Switch-on voltage of braking resistor at V,236,,236,236,236
+nominal voltage 115 V,,,,,
+Switch-on voltage of braking resistor at V,430,,430,430,430
+nominal voltage 200 V and 230 V,,,,,
+Parameter DCbus_compat = 1 (reduced switch-on voltage),,,,,
+Switch-on voltage of braking resistor V,395,,395,395,395

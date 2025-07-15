@@ -1,0 +1,3 @@
+Unnamed: 0,"In the System Manager select I/O - Configuration → I/ODevices.Press the Scan in the toolbar or right-click on I/O Devicesand select Scan Devices....In both cases, the following sequence starts:"
+,Close the information window with OK.
+,"Select the devices to be automatically added to theTwinCAT project.As a minimum, select the device with the supplement(EtherCAT).Complete the selection with OK."

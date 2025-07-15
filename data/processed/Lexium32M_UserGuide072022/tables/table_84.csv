@@ -1,0 +1,3 @@
+Unnamed: 0,Maximum length:,Minimum cross section,"Shielded, bothends grounded","Twistedpair",PELV
+"PC, commissioning interface",20 m (65.62 ft),0.14 mm2 (AWG 24),Required,Required,Required
+"(1) Note the installation requirements (protected cable installation), see Functional Safety, page 78.(2) See Connection Power Stage Supply (CN1), page 108(3) Length depends on the required limit values for conducted interference.(4) See Connection Motor Phases and Holding Brake (CN10 and CN11), page 97",,,,,

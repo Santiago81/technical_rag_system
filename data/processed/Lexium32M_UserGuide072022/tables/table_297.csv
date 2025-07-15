@@ -1,0 +1,7 @@
+Signal input,Signal input function
+DI0,"""Enable""Enable and disable the power stage"
+DI1,"""Fault Reset""Resetting an error message"
+DI2,"""Operating Mode Switch""See Starting and Changing an Operating Mode, page 245"
+DI3,"""Velocity Limitation""See Limitation of the Velocity via Signal Inputs, page 324"
+DI4,"""Zero Clamp""See Zero Clamp, page 330"
+DI5,"""Halt""See Stopping Movement with Halt, page 320"

@@ -1,0 +1,5 @@
+Pin,Signal,Pair,Meaning
+7,PULSE(24V),A,Pulse 24V
+2,PULSE,A,"Pulse, inverted"
+8,DIR(24V),B,Direction 24V
+5,DIR,B,"Direction, inverted"

@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ScalePOSdenom,Position scaling: Denominator.,usr_p,INT32,CANopen 3006:7h
+,Refer to numerator (ScalePOSnum) for a,1,R/W,Modbus 1550
+,description.,,,
+,,16384,per.,Profibus 1550
+,A new scaling is activated when the numerator,,,
+,value is supplied.,2147483647,-,CIP 106.1.7
+,Setting can only be modified if power stage is,,,ModbusTCP 1550
+,disabled.,,,
+,,,,EtherCAT 3006:7h
+,,,,PROFINET 1550
+ScalePOSnum,Position scaling: Numerator.,revolution,INT32,CANopen 3006:8h
+,Specification of the scaling factor:,1,R/W,Modbus 1552
+,Motor revolutions,1,per.,Profibus 1552
+,-------------------------------------------,2147483647,-,CIP 106.1.8
+,User-defined units [usr_p],,,ModbusTCP 1552
+,A new scaling is activated when the numerator,,,EtherCAT 3006:8h
+,value is supplied.,,,
+,,,,PROFINET 1552
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+ScaleRAMPdenom,Ramp scaling: Denominator.,usr_a,INT32,CANopen 3006:30h
+,See numerator (ScaleRAMPnum) for a,1,R/W,Modbus 1632
+,description.,,,
+,,1,per.,Profibus 1632
+,A new scaling is activated when the numerator,,,
+,value is supplied.,2147483647,-,CIP 106.1.48
+,Setting can only be modified if power stage is,,,ModbusTCP 1632
+,disabled.,,,
+,,,,EtherCAT 3006:30h
+,,,,PROFINET 1632
+ScaleRAMPnum,Ramp scaling: Numerator.,RPM/s,INT32,CANopen 3006:31h
+,Setting can only be modified if power stage is,1,R/W,Modbus 1634
+,disabled.,,,
+,,1,per.,Profibus 1634
+,Modified settings become active immediately.,,,
+,,2147483647,-,CIP 106.1.49
+,,,,ModbusTCP 1634
+,,,,EtherCAT 3006:31h
+,,,,PROFINET 1634
+ScaleVELdenom,Velocity scaling: Denominator.,usr_v,INT32,CANopen 3006:21h
+,See numerator (ScaleVELnum) for a description.,1,R/W,Modbus 1602
+,A new scaling is activated when the numerator,1,per.,Profibus 1602
+,value is supplied.,,,
+,,2147483647,-,CIP 106.1.33
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1602
+,,,,EtherCAT 3006:21h
+,,,,PROFINET 1602

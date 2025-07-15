@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_WarnLatched,"Saved errors of error class 0, bit-coded.",-,UINT32,CANopen 301C:Ch
+Mon,The bits are set to 0 in the case of a Fault Reset.,-,R/-,Modbus 7192
+WrnS,Bits 10 and 13 are set to 0 automatically.,-,-,Profibus 7192
+,Signal state:,-,-,CIP 128.1.12
+,0: Not activated,,,ModbusTCP 7192
+,1: Activated,,,EtherCAT 301C:Ch
+,Bit assignments:,,,PROFINET 7192
+,Bit 0: General,,,
+,Bit 1: Reserved,,,
+,"Bit 2: Out of range (software limit switches, tuning)",,,
+,Bit 3: Reserved,,,
+,Bit 4: Active operating mode,,,
+,Bit 5: Commissioning interface (RS485),,,
+,Bit 6: Integrated fieldbus,,,
+,Bit 7: Reserved,,,
+,Bit 8: Following error,,,
+,Bit 9: Reserved,,,
+,Bit 10: Inputs STO_A and/or STO_B,,,
+,Bits 11 ... 12: Reserved,,,
+,Bit 13: Low voltage DC bus or mains phase,,,
+,missing,,,
+,Bits 14 ... 15: Reserved,,,
+,Bit 16: Integrated encoder interface,,,
+,Bit 17: Temperature of motor high,,,
+,Bit 18: Temperature of power stage high,,,
+,Bit 19: Reserved,,,
+,Bit 20: Memory card,,,
+,Bit 21: Fieldbus module,,,
+,Bit 22: Encoder module,,,
+,Bit 23: Safety module eSM or module IOM1,,,
+,Bits 24 ... 27: Reserved,,,
+,Bit 28: Transistor for braking resistor overload (I2t),,,
+,Bit 29: Braking resistor overload (I2t),,,
+,Bit 30: Power stage overload (I2t),,,
+,Bit 31: Motor overload (I2t),,,
+,Monitoring functions are product-dependent.,,,
+AbsHomeRequest,Absolute positioning only after homing.,-,UINT16,CANopen 3006:16h
+,0 / No: No,0,R/W,Modbus 1580
+,1 / Yes: Yes,1,per.,Profibus 1580
+,This parameter has no function if the parameter,1,-,CIP 106.1.22
+,'PP_ModeRangeLim' is set to '1' which allows,,,
+,,,,ModbusTCP 1580

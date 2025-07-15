@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_hwVersSlot3,Hardware version of module in slot 3.,-,UINT16,CANopen 3002:20h
+,,-,R/-,Modbus 576
+,,-,-,Profibus 576
+,,-,-,CIP 102.1.32
+,,,,ModbusTCP 576
+,,,,EtherCAT 3002:20h
+,,,,PROFINET 576
+_I_act,Total motor current.,Arms,INT16,CANopen 301E:3h
+Mon,In increments of 0.01 Arms.,-,R/-,Modbus 7686
+iAct,,-,-,Profibus 7686
+,,-,-,CIP 130.1.3
+,,,,ModbusTCP 7686
+,,,,EtherCAT 301E:3h
+,,,,PROFINET 7686
+_Id_act_rms,"Actual motor current (d component, field",Arms,INT16,CANopen 301E:2h
+,weakening).,,,
+,,-,R/-,Modbus 7684
+,In increments of 0.01 Arms.,,,
+,,-,-,Profibus 7684
+,,-,-,CIP 130.1.2
+,,,,ModbusTCP 7684
+,,,,EtherCAT 301E:2h
+,,,,PROFINET 7684
+_Id_ref_rms,"Reference motor current (d component, field",Arms,INT16,CANopen 301E:11h
+,weakening).,,,
+,,-,R/-,Modbus 7714
+,In increments of 0.01 Arms.,,,
+,,-,-,Profibus 7714
+,,-,-,CIP 130.1.17
+,,,,ModbusTCP 7714
+,,,,EtherCAT 301E:11h
+,,,,PROFINET 7714
+_Imax_act,Currently effective current limitation.,Arms,UINT16,CANopen 301C:28h
+,Value of the currently effective current limitation.,-,R/-,Modbus 7248
+,This is one of the following values (whichever is,,,
+,lowest):,-,-,Profibus 7248
+,- CTRL_I_max (only during normal operation),-,-,CIP 128.1.40
+,- LIM_I_maxQSTP (only during Quick Stop),,,ModbusTCP 7248
+,- LIM_I_maxHalt (only during Halt),,,EtherCAT 301C:28h
+,- Current limitation via digital input,,,PROFINET 7248
+,- _M_I_max (only if motor is connected),,,
+,- _PS_I_max,,,
+,Limitations caused by I2t monitoring are also,,,
+,taken into account.,,,
+,In increments of 0.01 Arms.,,,

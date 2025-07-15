@@ -1,0 +1,5 @@
+Pin,Signal,Pair,Meaning
+1,PULSE(5V),2,Pulse 5V
+2,PULSE,2,"Pulse, inverted"
+4,DIR(5V),1,Direction 5V
+5,DIR,1,"Direction, inverted"

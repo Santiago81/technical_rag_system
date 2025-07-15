@@ -1,0 +1,5 @@
+Characteristic,Unit,Value
+Output voltage for encoder,V,10
+Output current for encoder,mA,100
+SIN/COS input signal voltage range,-,"1 Vpp with 2.5 V offset,0.5 Vpp at 100 kHz"
+Input resistance,Ω,120

@@ -1,0 +1,13 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4
+,,"VW3-M5100R•••","VW3-M5101R•••","VW3-M5102R•••","VW3-M5103R•••","VW3-M5105R•••","VW3-M5104R•••"
+"Cable jacket, insulation",-,"PURorange(RAL 2003),TPM","PUR orange (RAL 2003), polypropylene (PP)",,,,
+"Capacitance power wiresWire/wireWire/shield",pF/m,"80145","80135","80150","90150","85150","100160"
+Number of contacts (shielded),-,"(4 x 1 mm2+ 2 x (2 x0.75 mm2))","(4 x 1.5mm2 + (2 x1 mm2))","(4 x 2.5mm2 + (2 x1 mm2))","(4 x 4 mm2+ (2 x 1mm2))","(4 x 6 mm2+ (2 x 1mm2))","(4 x 10 mm2+ (2 x 1mm2))"
+Connector motor side,-,"8-pincircular Y-TEC",8-pin circular M23,8-pin circular M40,,,
+Connector drive side,-,Open,,,,,
+Cable diameter,"mm(in)","11 ± 0.3(0.43 ±0.01)","12 ± 0.2(0.47 ±0.01)","14.3 ± 0.3(0.55 ±0.01)","16.3 ± 0.3(0.64 ±0.01)","18.8 ± 0.4(0.74 ±0.02)","23.5 ± 0.6(0.93 ±0.02)"
+"Minimum bend radius with fixedinstallation",-,"10 times thecablediameter",5 times the cable diameter,,,,
+"Minimum bend radius with movinginstallation",-,"10 times thecablediameter",7.5 times the cable diameter,10 times the cable diameter,,,
+"Nominal voltageMotor phasesHolding brake",V,"10001000","600300",,,,
+Maximum orderable length,m (ft),25 (82),75 (246),,,,
+"Permissible temperature rangeduring operation with fixedinstallation",°C (°F),-40 ... 80 (-40 ... 176),,,,,

@@ -1,0 +1,5 @@
+Pin,Signal,Pair,Meaning
+1,ENC_A(5V),2,Encoder channel A 5V
+2,ENC_A,2,"Encoder channel A, inverted"
+4,ENC_B(5V),1,Encoder channel B 5V
+5,ENC_B,1,"Encoder channel B, inverted"

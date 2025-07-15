@@ -1,0 +1,9 @@
+"BitByte",7,6,5,4,3,2,1,0
+I0.,"Multipleinputstrobe","Acknowledgefor multipleoutput",Restart,-,-,-,-,"_____STOP"
+I1.,"Basicsetting","Set currentvalue",Edit inhibit,Start,"Transferallow","Operating mode coded421",,
+I2.,"Feed allowAchse 3  -","Drive onaxis 3  -","Referencepoint switchaxis 2  -","Feed allowAchse 1  -","Drive onaxis 2  -","Referencepoint switchaxis 1  -","Feed allowAchse 1  -","Drive onaxis 1"
+I3.,-,"OptionalSTOP","Autorestart","User inputs 1 - 44321","Referencepoint switchaxis 3  -",,,
+I4.,"Feed in %421","Axis  select.axis 3  -","Axis  select.axis 2  -","Axis  select.axis 1  -",Manual -,Manual +,,
+I5.,"Multiple input address8421",-,-,"Conditionaljump","Operatingmode input1:PLC/0:BPF",,,
+I6.,"Multiple input data (BCD coded)804020108421",,,,,,,
+I7.,8000400020001000800400200100,,,,,,,

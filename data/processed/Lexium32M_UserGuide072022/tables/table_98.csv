@@ -1,0 +1,21 @@
+Characteristic,Unit,Value
+Lifetime of the safety-related function STO,Years,20
+(IEC 61508),,
+,,See also Lifetime Safety-Related Function
+,,"STO, page 657."
+SFF (IEC 61508),%,90
+Safe Failure Fraction,,
+HFT (IEC 61508),-,1
+Hardware Fault Tolerance,,
+Type A subsystem,,
+Safety integrity level IEC 61508,-,SIL3
+Safety integrity level IEC 62061,-,SILCL3
+PFH (IEC 61508),1/h,1*10-9
+Probability of Dangerous Hardware Failure,(FIT),(1)
+per Hour,,
+PL (ISO 13849-1),-,e (category 3)
+Performance Level,,
+MTTFd (ISO 13849-1),-,High (1400 years)
+Mean Time to Dangerous Failure,,
+DC (ISO 13849-1),%,90
+Diagnostic Coverage,,

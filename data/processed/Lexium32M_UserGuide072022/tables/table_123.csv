@@ -1,0 +1,5 @@
+Shield:,"Required, both ends grounded"
+Twisted Pair:,Required
+PELV:,Required
+Minimum conductor cross section:,0.14 mm2 (AWG 24)
+Maximum cable length:,"100 m (328 ft) with RS42210 m (32.8 ft) with push-pull1 m (3.28 ft) with open collector"

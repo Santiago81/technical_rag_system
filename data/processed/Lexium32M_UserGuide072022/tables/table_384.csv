@@ -1,0 +1,13 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_v_dif_usr,Load-dependent velocity deviation.,usr_v,INT32,CANopen 301E:2Ch
+,The load-dependent velocity deviation is the,-2147483648,R/-,Modbus 7768
+,difference between reference velocity and actual,,,
+,velocity.,-,-,Profibus 7768
+,Available with firmware version ≥V01.26.,2147483647,-,CIP 130.1.44
+,,,,ModbusTCP 7768
+,,,,EtherCAT 301E:2Ch
+,,,,PROFINET 7768

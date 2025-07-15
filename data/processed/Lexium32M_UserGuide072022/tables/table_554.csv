@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_ParSetCopy,Control loop parameter set copying.,-,UINT16,CANopen 3011:16h
+,Value 1: Copy control loop parameter set 1 to set,0.0,R/W,Modbus 4396
+,2,,,
+,,-,-,Profibus 4396
+,Value 2: Copy control loop parameter set 2 to set,,,
+,1,0.2,-,CIP 117.1.22
+,If control loop parameter set 2 is copied to control,,,ModbusTCP 4396
+,"loop parameter set 1, the parameter CTRL_",,,
+,GlobGain is set to 100%.,,,EtherCAT 3011:16h
+,Modified settings become active immediately.,,,PROFINET 4396
+CTRL_PwrUpParSet,Selection of control loop parameter set at power,-,UINT16,CANopen 3011:18h
+,up.,,,
+,,0,R/W,Modbus 4400
+,0 / Switching Condition: The switching condition,,,
+,is used for control loop parameter set switching,1,per.,Profibus 4400
+,1 / Parameter Set 1: Control loop parameter set 1,2,-,CIP 117.1.24
+,is used,,,
+,,,,ModbusTCP 4400
+,2 / Parameter Set 2: Control loop parameter set 2,,,
+,is used,,,EtherCAT 3011:18h
+,The selected value is also written to CTRL_,,,PROFINET 4400
+,SelParSet (non-persistent).,,,
+,Modified settings become active immediately.,,,
+CTRL_SelParSet,Selection of control loop parameter set.,-,UINT16,CANopen 3011:19h
+,Coding see parameter: CTRL_PwrUpParSet,0,R/W,Modbus 4402
+,Modified settings become active immediately.,1,-,Profibus 4402
+,,2,-,CIP 117.1.25
+,,,,ModbusTCP 4402
+,,,,EtherCAT 3011:19h
+,,,,PROFINET 4402
+CTRL_SmoothCurr,Smoothing factor for current controller.,%,UINT16,CANopen 3011:26h
+,This parameter decreases the dynamics of the,50,R/W,Modbus 4428
+,current control loop.,,,
+,,100,per.,Profibus 4428
+,Modified settings become active immediately.,,,
+,,100,-,CIP 117.1.38
+,Available with firmware version ≥V01.26.,,,
+,,,,ModbusTCP 4428
+,,,,EtherCAT 3011:26h
+,,,,PROFINET 4428
+CTRL_SpdFric,Speed of rotation up to which the friction,RPM,UINT32,CANopen 3011:9h
+,compensation is linear.,,,
+,,0,R/W,Modbus 4370
+,Modified settings become active immediately.,,,
+,,5,per.,Profibus 4370
+,,20,expert,CIP 117.1.9
+,,,,ModbusTCP 4370
+,,,,EtherCAT 3011:9h
+,,,,PROFINET 4370

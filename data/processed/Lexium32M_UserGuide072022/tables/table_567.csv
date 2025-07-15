@@ -1,0 +1,43 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+DPL_RefA32,Drive Profile Lexium RefA32.,-,INT32,CANopen 301B:20h
+,,-,R/W,Modbus 6976
+,,-,-,Profibus 6976
+,,-,-,CIP 127.1.32
+,,,,ModbusTCP 6976
+,,,,EtherCAT 301B:20h
+,,,,PROFINET 6976
+DPL_RefB32,Drive Profile Lexium RefB32.,-,INT32,CANopen 301B:21h
+,,-,R/W,Modbus 6978
+,,-,-,Profibus 6978
+,,-,-,CIP 127.1.33
+,,,,ModbusTCP 6978
+,,,,EtherCAT 301B:21h
+,,,,PROFINET 6978
+DplParChCheckData-,Drive Profile Lexium: Data type verification for,-,UINT16,CANopen 3005:39h
+Typ,write access.,,,
+,,0,R/W,Modbus 1394
+,0 / Data Type Verification Off: Data type,,,
+,verification for write access is off,0,per.,Profibus 1394
+,1 / Data Type Verification On: Data type,1,-,CIP 105.1.57
+,verification for write access is on,,,
+,,,,ModbusTCP 1394
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3005:39h
+,Available with firmware version ≥V01.26.,,,
+,,,,PROFINET 1394
+DS402compatib,DS402 state machine: State transition from 3 to 4.,-,UINT16,CANopen 301B:13h
+,0 / Automatic: Automatic (state transition is,0,R/W,Modbus 6950
+,performed automatically),,,
+,,0,per.,Profibus 6950
+,1 / DS402-compliant: DS402-compliant (state,,,
+,transition must be controlled via the fieldbus),1,-,CIP 127.1.19
+,Determines the state transition between the states,,,ModbusTCP 6950
+,SwitchOnDisabled (3) and ReadyToSwitchOn (4).,,,
+,,,,EtherCAT 301B:13h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 6950
+,Modified settings become active immediately.,,,

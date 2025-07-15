@@ -1,0 +1,15 @@
+Characteristic Unit,Value
+Input voltage - sinking inputs Vdc,
+Level 0,-3 ... 5
+Level 1,15 ... 30
+Input voltage - sourcing inputs (at 24 Vdc) Vdc,
+Level 0,>19
+Level 1,<9
+Input current (at 24 Vdc) mA,5
+Debounce time (software)(1)(2) ms,1.5 (default value)
+Hardware switching time μs,
+Rising edge (level 0 -> 1),15
+Falling edge (level 1 -> 0),150
+Jitter (capture inputs) μs,<2
+(1) Adjustable via parameter (sampling period 250μs),
+(2) If the capture inputs are used for capture then the debounce time is not applied.,

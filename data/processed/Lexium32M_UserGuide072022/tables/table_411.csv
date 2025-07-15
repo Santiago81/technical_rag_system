@@ -1,0 +1,4 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+"_PS_loadMonLdFP",Load of power stage.,"%---","INT16R/---","CANopen 301C:17hModbus 7214Profibus 7214CIP 128.1.23ModbusTCP 7214EtherCAT 301C:17hPROFINET 7214"
+"_M_loadMonLdFM",Load of motor.,"%---","INT16R/---","CANopen 301C:1AhModbus 7220Profibus 7220CIP 128.1.26ModbusTCP 7220EtherCAT 301C:1AhPROFINET 7220"
+"_RES_loadMonLdFb","Load of braking resistor.The braking resistor set via parameter RESint_extis monitored.","%---","INT16R/---","CANopen 301C:14hModbus 7208Profibus 7208CIP 128.1.20ModbusTCP 7208EtherCAT 301C:14hPROFINET 7208"

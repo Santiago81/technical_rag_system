@@ -1,0 +1,46 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PosReg1ValueA,Comparison value A for position register channel,usr_p,INT32,CANopen 300B:8h
+,1.,,,
+,,-,R/W,Modbus 2832
+,,0,per.,Profibus 2832
+,,-,-,CIP 111.1.8
+,,,,ModbusTCP 2832
+,,,,EtherCAT 300B:8h
+,,,,PROFINET 2832
+PosReg1ValueB,Comparison value B for position register channel,usr_p,INT32,CANopen 300B:9h
+,1.,,,
+,,-,R/W,Modbus 2834
+,,0,per.,Profibus 2834
+,,-,-,CIP 111.1.9
+,,,,ModbusTCP 2834
+,,,,EtherCAT 300B:9h
+,,,,PROFINET 2834
+PosReg2ValueA,Comparison value A for position register channel,usr_p,INT32,CANopen 300B:Ah
+,2.,,,
+,,-,R/W,Modbus 2836
+,,0,per.,Profibus 2836
+,,-,-,CIP 111.1.10
+,,,,ModbusTCP 2836
+,,,,EtherCAT 300B:Ah
+,,,,PROFINET 2836
+PosReg2ValueB,Comparison value B for position register channel,usr_p,INT32,CANopen 300B:Bh
+,2.,,,
+,,-,R/W,Modbus 2838
+,,0,per.,Profibus 2838
+,,-,-,CIP 111.1.11
+,,,,ModbusTCP 2838
+,,,,EtherCAT 300B:Bh
+,,,,PROFINET 2838
+PosReg3ValueA,Comparison value A for position register channel,usr_p,INT32,CANopen 300B:12h
+,3.,,,
+,,-,R/W,Modbus 2852
+,Available with firmware version ≥V01.04.,,,
+,,0,per.,Profibus 2852
+,,-,-,CIP 111.1.18
+,,,,ModbusTCP 2852
+,,,,EtherCAT 300B:12h
+,,,,PROFINET 2852

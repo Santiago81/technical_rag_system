@@ -1,0 +1,4 @@
+Display,Description
+,"1 = ""M"" indicates that the ""menu mode"" is activated."
+,"2 = The ""Reset"" menu is active."
+,3 = Indicates which channel of the AX5000 the reset affects.

@@ -1,0 +1,53 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PosReg1Start,Start/stop of position register channel 1.,-,UINT16,CANopen 300B:2h
+,0 / Off (keep last state): Position Register,0,R/W,Modbus 2820
+,channel 1 is off and status bit keeps last state,,,
+,,0,-,Profibus 2820
+,1 / On: Position Register channel 1 is on,,,
+,,3,-,CIP 111.1.2
+,2 / Off (set state 0): Position Register channel 1 is,,,
+,off and status bit is set to 0,,,ModbusTCP 2820
+,3 / Off (set state 1): Position Register channel 1 is,,,EtherCAT 300B:2h
+,off and status bit is set to 1,,,
+,,,,PROFINET 2820
+,Modified settings become active immediately.,,,
+PosReg1ValueA,Comparison value A for position register channel,usr_p,INT32,CANopen 300B:8h
+,1.,,,
+,,-,R/W,Modbus 2832
+,,0,per.,Profibus 2832
+,,-,-,CIP 111.1.8
+,,,,ModbusTCP 2832
+,,,,EtherCAT 300B:8h
+,,,,PROFINET 2832
+PosReg1ValueB,Comparison value B for position register channel,usr_p,INT32,CANopen 300B:9h
+,1.,,,
+,,-,R/W,Modbus 2834
+,,0,per.,Profibus 2834
+,,-,-,CIP 111.1.9
+,,,,ModbusTCP 2834
+,,,,EtherCAT 300B:9h
+,,,,PROFINET 2834
+PosReg2Mode,Selection of comparison criterion for position,-,UINT16,CANopen 300B:5h
+,register channel 2.,,,
+,,0,R/W,Modbus 2826
+,0 / Pact greater equal A: Actual position is,,,
+,greater than or equal to comparison value A for,0,per.,Profibus 2826
+,position register channel 2,,,
+,,5,-,CIP 111.1.5
+,1 / Pact less equal A: Actual position is less than,,,
+,or equal to comparison value A for position,,,ModbusTCP 2826
+,register channel 2,,,
+,,,,EtherCAT 300B:5h
+,2 / Pact in [A-B] (basic): Actual position is in the,,,
+,range A-B including limits (basic),,,PROFINET 2826
+,3 / Pact out [A-B] (basic): Actual position is out of,,,
+,the range A-B excluding limits (basic),,,
+,4 / Pact in [A-B] (extended): Actual position is in,,,
+,the range A-B including limits (extended),,,
+,5 / Pact out [A-B] (extended): Actual position is,,,
+,out of the range A-B excluding limits (extended),,,
+,Modified settings become active immediately.,,,

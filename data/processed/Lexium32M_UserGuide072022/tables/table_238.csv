@@ -1,0 +1,14 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+InvertDirOfCount,Inversion of direction of counting at PTI interface.,-,UINT16,CANopen 3008:7h
+,0 / Inversion Off: Inversion of direction of,0,R/W,Modbus 2062
+,counting is off,,,
+,,0,per.,Profibus 2062
+,1 / Inversion On: Inversion of direction of,,,
+,counting is on,1,-,CIP 108.1.7
+,Modified settings become active immediately.,,,ModbusTCP 2062
+,,,,EtherCAT 3008:7h
+,,,,PROFINET 2062

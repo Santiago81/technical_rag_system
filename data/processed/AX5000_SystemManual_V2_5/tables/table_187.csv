@@ -1,0 +1,9 @@
+Type,System,"Resolution perrevolution",Interface,Sampling
+EEK 37,Singleturn,16 bit,OCT,Capacitive
+EEL 37,Multiturn,16 bit,OCT,Capacitive
+EKS 36,Singleturn,18 bit,OCT,Optical
+EKM 36,Multiturn,18 bit,OCT,Optical
+EKS 36,Singleturn,20 bit,OCT,Optical
+EKM 36,Multiturn,20 bit,OCT,Optical
+ERS 50,Singleturn,23 bit,OCT,Optical
+ERM 50,Multiturn,23 bit,OCT,Optical

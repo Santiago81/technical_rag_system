@@ -1,0 +1,23 @@
+No.,Name,Unnamed: 0
+1,"X11 - feedback connection, encoder",
+2,"X12 - feedback connection, resolver",
+3,"X21 - feedback connection, encoderchannel B (only for two-channel unit)",
+4,"X22 - feedback connection, resolverchannel B (only for two-channel unit)",
+5,"X3x - optional slot for safety cardX4x - optional slot for expansion cards",
+6,Navigation rocker,
+7,Status LED for EtherCAT output,
+8,Labelling field,
+9,X05 - socket for EtherCAT output,
+10,X03 - power supply 24 V DC input,
+11,"X14 – sensor for motor temperature, brake and OCT",
+12,"X24 – sensor for motor temperature, brake and OCTchannel B (only for two-channel unit)",
+13,"X23 - motor connection (U, V, W, PE)channel B (only for two-channel unit)",
+14,"X13 - motor connection (U, V, W, PE)",
+15,X01 - mains supply 100 - 480 V,
+16,"X02 - DC link output(max. voltage 875 V DC)Connection for the external brake resistor",
+17,DANGER,"Max. voltage 875 V DC at the DC linkterminal points (X02). Once the devicehas been switched off dangerousvoltage will still be present for afurther 5 minutes. The device is safeonce the voltage has fallen below 50V."
+18,X04 - socket for EtherCAT input,
+19,Labelling field,
+20,Status LED for EtherCAT input,
+21,Display,
+22,X06 - connection for digital inputs and outputs,

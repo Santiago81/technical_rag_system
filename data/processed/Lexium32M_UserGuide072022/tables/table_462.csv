@@ -1,0 +1,15 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7877,2,"eSM module: Input /INTERLOCK_INis high even though Ignore has beenconfiguredParameter _SigLatched Bit 23",-,-
+7878,2,"eSM module: Speed limit for machineoperating mode Setup Mode (eSM_v_maxSetup) higher than speed limitfor machine operating modeAutomatic Mode (eSM_v_maxAuto)Parameter _SigLatched Bit 23","Speed limit for machine operatingmode Setup Mode must not begreater than speed limit for machineoperating mode Automatic Mode.","Verify the speed limits for machineoperating modes Automatic Modeand Setup Mode and change them asrequired."
+7879,4,"eSM module: System error detected:Indeterminable state of eSM statemachineParameter _SigLatched Bit 23",-,-
+787A,2,"eSM module: ESM24VDCundervoltageParameter _SigLatched Bit 23","Voltage at the ESM24VDC connectorto low.",Verify power supply.
+787D,4,"eSM module: System error detected:Asynchronous communication(UART/SPI)Parameter _SigLatched Bit 23",-,-
+787E,4,"eSM module: System error detected:RAM (bit)Parameter _SigLatched Bit 23",-,-
+787F,4,"eSM module: Encoder signal errordetectedParameter _SigLatched Bit 23","Encoder or encoder cableinoperative. Incorrect signalevaluation in drive.",-
+7880,2,"eSM module: Indeterminable serviceParameter _SigLatched Bit 23",-,-
+7881,2,"eSM module: Parameter does notexistParameter _SigLatched Bit 23",Parameter does not exist.,Verify the parameter number.
+7882,4,"eSM module: System error detected:3_3V overvoltageParameter _SigLatched Bit 23","Overvoltage in internal eSM powersupply.",-
+7883,4,"eSM module: System error detected:3_3V undervoltageParameter _SigLatched Bit 23","Undervoltage in internal eSM powersupply.",-
+7884,4,"eSM module: System error detected:Temperature sensorParameter _SigLatched Bit 23","Temperature sensor for CPU_A orCPU_B does not work properly.",-
+7886,2,"eSM module: No speed limit fornegative direction set for direction-dependent SLSParameter _SigLatched Bit 23","Direction-dependent SLS is active,but no speed limit greater than 0RPM has been specified in theparameter eSM_v_maxSetup or inparameter eSM_SLSnegDirS.","Set a speed limit for direction-dependent SLS greater than 0 RPMin the parameter _eSM_v_maxSetupor in the parameter eSM_SLSnegDirS or deactivate direction-dependent SLS via the parametereSM_FuncSwitches."
+7887,2,"eSM module: Speed limit for SLS innegative direction has beenspecified, but direction-dependantSLS has not been activatedParameter _SigLatched Bit 23","Direction-dependent SLS is notactive, but a speed limit for direction-dependent SLS in negative directionhas been specified.","Set the speed limit for direction-dependent SLS in negative directionin parameter eSM_SLSnegDirS to 0RPM or activate direction-dependentSLS via the parameter eSM_FuncSwitches."

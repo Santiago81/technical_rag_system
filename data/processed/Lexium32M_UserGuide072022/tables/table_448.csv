@@ -1,0 +1,20 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+5502,2,"System error detected: Timeoutduring read/write request",-,-
+5503,2,"System error detected: Invalidresponse in the case of a read/writerequest",-,-
+5504,4,"System error detected: Safetymodule not available",-,-
+5505,4,"System error detected:Indeterminable type of safety module",-,-
+5506,1,"Error detected during write access tosafety module via fieldbus. Additionalinformation in the error memoryindicates the detailed error code.",-,-
+5507,3,"A Fault Reset was not processed bythe safety module eSM","The safety module eSM was unableto execute the Fault Reset, forexample, because it was stillprocessing an error response.",Trigger the Fault Reset again.
+5600,3,"Motor connection phase errordetectedParameter _SigLatched Bit 26",Missing motor phase.,-
+5603,3,"Commutation error detected.Additional information in the errormemory indicates Internal_DeltaQuep.Parameter _SigLatched Bit 26","Incorrect wiring of motor cable.Encoder signals are lost or subject tointerference.The load torque is greater than themotor torque.The encoder nonvolatile memorycontains incorrect data (encoderphase offset is incorrect).Motor is not adjusted.","Verify motor phases, verify encoderwiring.Improve EMC, verify grounding andshield connection.Use a differently sized motor that canwithstand the load torque.Verify the motor data.Contact your Schneider Electricservice representative."
+6102,4,"System error detected: Internalsoftware errorParameter _SigLatched Bit 30",-,-
+6103,4,"System error detected: System stackoverflowParameter _SigLatched Bit 31",-,-
+6104,0,"System error detected: Division byzero (internal)",-,-
+6105,0,"System error detected: Overflowduring 32 bit calculation (internal)",-,-
+6106,4,"System error detected: Size of datainterface does not matchParameter _SigLatched Bit 30",-,-
+6107,0,"Parameter outside of value range(calculation error detected)",-,-
+6108,0,Function not available,-,-
+6109,0,"System error detected: Internal rangeexceeded",-,-
+610A,2,"System error detected: Calculatedvalue cannot be represented as a 32bit value",-,-
+610D,0,Error detected in selection parameter,Incorrect parameter value selected.,Verify the value to be written.
+610E,4,"System error detected: 24 VDCbelow undervoltage threshold forshutdown",-,-

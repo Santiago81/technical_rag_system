@@ -1,0 +1,61 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IO_DQ_act,Status of digital outputs.,-,UINT16,CANopen 3008:10h
+Mon,Bit assignments:,-,R/-,Modbus 2080
+doMo,Bit 0: DQ0,-,-,Profibus 2080
+,Bit 1: DQ1,-,-,CIP 108.1.16
+,Bit 2: DQ2,,,ModbusTCP 2080
+,,,,EtherCAT 3008:10h
+,,,,PROFINET 2080
+_IO_STO_act,Status of the inputs for the safety-related function,-,UINT16,CANopen 3008:26h
+,STO.,,,
+Mon,,-,R/-,Modbus 2124
+,Bit 0: STO_A,,,
+Sto,,-,-,Profibus 2124
+,Bit 1: STO_B,,,
+,,-,-,CIP 108.1.38
+,"If no safety module eSM is inserted, this",,,
+,parameter indicates the status of the signal inputs,,,ModbusTCP 2124
+,STO_A and STO_B.,,,
+,,,,EtherCAT 3008:26h
+,"If a safety module eSM is inserted, the safety-",,,
+,related function STO can be triggered via the,,,PROFINET 2124
+,signal inputs or via the safety module eSM. This,,,
+,parameter indicates whether or not the safety-,,,
+,related function STO was triggered (regardless of,,,
+,whether it was triggered via the signal inputs or via,,,
+,the safety module eSM).,,,
+_IOdataMtoS01,I/O parameter data Master to Slave - parameter,-,UINT32,CANopen 3040:1h
+,01.,,,
+,,0,R/-,Modbus 16386
+,Data of the cyclic communication between the,,,
+,master and slave.,FFFFFFFFhex,-,Profibus 16386
+,This parameter contains the data of the first,4294967295,-,CIP 164.1.1
+,parameter mapped from the master to the slave.,,,
+,,,,ModbusTCP 16386
+,The parameters _IOdataMtoS02 to,,,
+,_IOdataMtoS16 contain the data of the remaining,,,EtherCAT 3040:1h
+,mapped parameters.,,,
+,,,,PROFINET 16386
+_IOdataStoM01,I/O parameter data Slave to Master - parameter,-,UINT32,CANopen 3040:21h
+,01.,,,
+,,0,R/-,Modbus 16450
+,Data of the cyclic communication between the,,,
+,master and slave.,FFFFFFFFhex,-,Profibus 16450
+,This parameter contains the data of the first,4294967295,-,CIP 164.1.33
+,parameter mapped from the slave to the master.,,,
+,,,,ModbusTCP 16450
+,The parameters _IOdataStoM02 to,,,
+,_IOdataStoM16 contain the data of the remaining,,,EtherCAT 3040:21h
+,mapped parameters.,,,
+,,,,PROFINET 16450
+_IOM1_AI11_act,IOM1 Value of input voltage of AI11.,mV,INT16,CANopen 304F:1h
+Mon,Available with firmware version ≥V01.06.,-10000,R/-,Modbus 20226
+An11,,-,-,Profibus 20226
+,,10000,-,CIP 179.1.1
+,,,,ModbusTCP 20226
+,,,,EtherCAT 304F:1h
+,,,,PROFINET 20226

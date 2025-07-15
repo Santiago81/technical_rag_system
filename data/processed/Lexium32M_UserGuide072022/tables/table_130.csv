@@ -1,0 +1,5 @@
+Pin,Signal,Pair,Meaning
+7,CW(24V),A,Pulse positive 24V
+2,CW,A,"Pulse positive, inverted"
+8,CCW(24V),B,Pulse negative 24V
+5,CCW,B,"Pulse negative, inverted"

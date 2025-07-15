@@ -1,0 +1,8 @@
+Dimensions,Unnamed: 0,Motor connectors,Unnamed: 1,Encoder connector
+,,straight,,straight
+,,M23,M40,M23
+D,mm (in),28 (1.1),46 (1.81),26 (1.02)
+LS,mm (in),76 (2.99),100 (3.94),51 (2.01)
+LR,mm (in),117 (4.61),155 (6.1),76 (2.99)
+LC,mm (in),100 (3.94),145 (5.71),60 (2.36)
+LM,mm (in),40 (1.57),54 (2.13),23 (0.91)

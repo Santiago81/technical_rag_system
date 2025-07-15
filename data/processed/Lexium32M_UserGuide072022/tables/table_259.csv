@@ -1,0 +1,6 @@
+Operating state,Description
+5 Switched On,Power stage is switched on
+6 Operation Enabled,"Power stage is enabledSelected operating mode is active"
+7 Quick Stop Active,"""Quick Stop"" is being executed"
+8 Fault Reaction Active,Error response is active
+9 Fault,"Error response terminatedPower stage is disabled"

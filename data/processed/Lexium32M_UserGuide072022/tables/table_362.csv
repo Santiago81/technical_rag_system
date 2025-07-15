@@ -1,0 +1,9 @@
+Bit,Value 0,Value 1
+0,Capture input 1 deactivated,Capture input 1 activated
+1,"Capture input 1 no value captured for risingedge","Capture input 1 value captured for risingedge"
+2,"Capture input 1 no value captured forfalling edge","Capture input 1 value captured for fallingedge"
+3 ... 7,Reserved,-
+8,Capture input 2 deactivated,Capture input 2 activated
+9,"Capture input 2 no value captured for risingedge","Capture input 2 value captured for risingedge"
+10,"Capture input 2 no value captured forfalling edge","Capture input 2 value captured for fallingedge"
+"11 ...15",Reserved,-

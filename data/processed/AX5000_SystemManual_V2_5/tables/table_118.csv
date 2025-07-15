@@ -1,0 +1,7 @@
+Terminal point,Unnamed: 0,Connection,Tightening torque
+,3-phase,1-phase,
+L1,Phase L1,Phase L1,
+L2,Phase L2,not used,
+,,,"0,5 - 0,6 Nm"
+L3/ N,Phase L3,Neutral conductor,
+PE,Protective conductor,Protective conductor,

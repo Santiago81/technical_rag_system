@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PS_overload,Overload of power stage.,%,INT16,CANopen 301C:24h
+,,-,R/-,Modbus 7240
+,,-,-,Profibus 7240
+,,-,-,CIP 128.1.36
+,,,,ModbusTCP 7240
+,,,,EtherCAT 301C:24h
+,,,,PROFINET 7240
+_PS_overload_cte,Overload of power stage (chip temperature).,%,INT16,CANopen 301C:22h
+,,-,R/-,Modbus 7236
+,,-,-,Profibus 7236
+,,-,-,CIP 128.1.34
+,,,,ModbusTCP 7236
+,,,,EtherCAT 301C:22h
+,,,,PROFINET 7236
+_PS_overload_I2t,Overload of power stage (I2t).,%,INT16,CANopen 301C:16h
+,,-,R/-,Modbus 7212
+,,-,-,Profibus 7212
+,,-,-,CIP 128.1.22
+,,,,ModbusTCP 7212
+,,,,EtherCAT 301C:16h
+,,,,PROFINET 7212
+_PS_overload_psq,Overload of power stage (power squared).,%,INT16,CANopen 301C:23h
+,,-,R/-,Modbus 7238
+,,-,-,Profibus 7238
+,,-,-,CIP 128.1.35
+,,,,ModbusTCP 7238
+,,,,EtherCAT 301C:23h
+,,,,PROFINET 7238
+_PS_T_current,Temperature of power stage.,°C,INT16,CANopen 301C:10h
+Mon,,-,R/-,Modbus 7200
+tPS,,-,-,Profibus 7200
+,,-,-,CIP 128.1.16
+,,,,ModbusTCP 7200
+,,,,EtherCAT 301C:10h
+,,,,PROFINET 7200

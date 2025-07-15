@@ -1,0 +1,35 @@
+{
+  "pdf_path": "data/raw_pdfs/AX5000_SystemManual_V2_5.pdf",
+  "pdf_name": "AX5000_SystemManual_V2_5.pdf",
+  "start_time": "2025-07-13T16:53:07.781123",
+  "steps": {
+    "pdf_extraction": {
+      "status": "completed",
+      "manual_id": 1
+    },
+    "analysis": {
+      "status": "completed",
+      "document_type": "technical_diagrams"
+    },
+    "chunking": {
+      "status": "completed",
+      "chunks_created": 927
+    },
+    "images": {
+      "status": "completed",
+      "total_images": 959,
+      "by_type": {
+        "raster": 687,
+        "technical_diagram": 272
+      }
+    },
+    "tables": {
+      "status": "completed",
+      "total_tables": 374
+    }
+  },
+  "manual_id": 1,
+  "end_time": "2025-07-13T16:53:55.129014",
+  "duration_seconds": 47.347891,
+  "status": "success"
+}

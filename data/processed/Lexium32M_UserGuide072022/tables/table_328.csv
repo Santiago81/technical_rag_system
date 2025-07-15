@@ -1,0 +1,3 @@
+Data set type,Setting A,Setting B,Setting C,Setting D,Transition type
+"""Move Velocity""Movement at aspecific velocity","Acceleration(2)Unit: usr_a","VelocityUnit: usr_v","Direction ofmovementValue 0: PositiveValue 1: NegativeValue 2: Fromprevious data set","Deceleration(2)Unit: usr_a","•Abort And GoNext"
+"(1) Function principle like operating mode Homing.(2) The motion profile for velocity must have been activated see parameter RAMP_v_enable in section Motion Profile for the Velocity, page317.",,,,,

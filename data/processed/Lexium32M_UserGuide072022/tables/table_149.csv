@@ -1,0 +1,6 @@
+HMI menuop,Description
+op,Operating mode (Operation)
+Jog-,Operating mode Jog
+tun-,Autotuning
+hom-,Operating mode Homing
+msm-,Operating mode Motion Sequence

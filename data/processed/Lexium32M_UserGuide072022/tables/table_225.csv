@@ -1,0 +1,62 @@
+Parameter name,Description,Unit,Data,Parameter
+,,,type,address via
+HMI menu,,Minimum value,,fieldbus
+,,,R/W,
+HMI name,,Factory setting,,
+,,,Persis-,
+,,Maximum,tent,
+,,value,,
+,,,Expert,
+,30 / Start Signal Of RMAC /SrMc: Start signal of relative,,,
+,movement after capture (RMAC),,,
+,31 / Activate RMAC /ArMc: Activates the relative movement,,,
+,after capture (RMAC),,,
+,32 / Activate Operating Mode /AcoP: Activates operating,,,
+,mode,,,
+,35 / Data Set Bit 4 /dSb4: Motion Sequence: Data set bit 4,,,
+,36 / Data Set Bit 5 /dSb5: Motion Sequence: Data set bit 5,,,
+,37 / Data Set Bit 6 /dSb6: Motion Sequence: Data set bit 6,,,
+,38 / Inversion AI11 (IO Module) /A11i: Inverts analog input,,,
+,AI11 (I/O module),,,
+,39 / Inversion AI12 (IO Module) /A12i: Inverts analog input,,,
+,AI12 (I/O module),,,
+,40 / Release Holding Brake /rEhb: Releases the holding,,,
+,brake,,,
+,Setting can only be modified if power stage is disabled.,,,
+,Modified settings become active the next time the product is,,,
+,powered on.,,,
+IOfunct_DI5,Function Input DI5.,-,UINT16,CANopen
+,,,,3007:6h
+ConF→i-,1 / Freely Available /nonE: Available as required,-,R/W,
+o-,,,,Modbus 1804
+,2 / Fault Reset /FrES: Fault reset after error,-,per.,
+di5,,,,Profibus 1804
+,3 / Enable /EnAb: Enables the power stage,-,-,
+,,,,CIP 107.1.6
+,4 / Halt /hALt: Halt,,,
+,,,,ModbusTCP
+,5 / Start Profile Positioning /SPtP: Start request for,,,1804
+,movement,,,
+,,,,EtherCAT
+,6 / Current Limitation /iLiM: Limits the current to parameter,,,3007:6h
+,value,,,
+,,,,PROFINET 1804
+,7 / Zero Clamp /CLMP: Zero clamping,,,
+,8 / Velocity Limitation /VLiM: Limits the velocity to,,,
+,parameter value,,,
+,9 / Jog Positive /JoGP: Jog: Moves in positive direction,,,
+,10 / Jog Negative /JoGn: Jog: Moves in negative direction,,,
+,11 / Jog Fast/Slow /JoGF: Jog: Switches between slow and,,,
+,fast movement,,,
+,12 / Gear Ratio Switch /GrAt: Electronic Gear: Switches,,,
+,between two gear ratios,,,
+,13 / Start Single Data Set /dStA: Motion Sequence: Starts a,,,
+,single data set,,,
+,14 / Data Set Select /dSEL: Motion Sequence: Data set,,,
+,selection,,,
+,15 / Data Set Bit 0 /dSb0: Motion Sequence: Data set bit 0,,,
+,16 / Data Set Bit 1 /dSb1: Motion Sequence: Data set bit 1,,,
+,17 / Data Set Bit 2 /dSb2: Motion Sequence: Data set bit 2,,,
+,18 / Data Set Bit 3 /dSb3: Motion Sequence: Data set bit 3,,,
+,19 / Gear Offset 1 /GoF1: Electronic Gear: Adds first gear,,,
+,offset,,,

@@ -1,0 +1,63 @@
+Parameter name,Description,Unit,Data,Parameter
+,,,type,address via
+HMI menu,,Minimum value,,fieldbus
+,,,R/W,
+HMI name,,Factory setting,,
+,,,Persis-,
+,,Maximum,tent,
+,,value,,
+,,,Expert,
+IOfunct_DI0,Function Input DI0.,-,UINT16,CANopen
+,,,,3007:1h
+ConF→i-,1 / Freely Available /nonE: Available as required,-,R/W,
+o-,,,,Modbus 1794
+,2 / Fault Reset /FrES: Fault reset after error,-,per.,
+di0,,,,Profibus 1794
+,3 / Enable /EnAb: Enables the power stage,-,-,
+,,,,CIP 107.1.1
+,4 / Halt /hALt: Halt,,,
+,,,,ModbusTCP
+,5 / Start Profile Positioning /SPtP: Start request for,,,1794
+,movement,,,
+,,,,EtherCAT
+,6 / Current Limitation /iLiM: Limits the current to parameter,,,3007:1h
+,value,,,
+,,,,PROFINET 1794
+,7 / Zero Clamp /CLMP: Zero clamping,,,
+,8 / Velocity Limitation /VLiM: Limits the velocity to,,,
+,parameter value,,,
+,9 / Jog Positive /JoGP: Jog: Moves in positive direction,,,
+,10 / Jog Negative /JoGn: Jog: Moves in negative direction,,,
+,11 / Jog Fast/Slow /JoGF: Jog: Switches between slow and,,,
+,fast movement,,,
+,12 / Gear Ratio Switch /GrAt: Electronic Gear: Switches,,,
+,between two gear ratios,,,
+,13 / Start Single Data Set /dStA: Motion Sequence: Starts a,,,
+,single data set,,,
+,14 / Data Set Select /dSEL: Motion Sequence: Data set,,,
+,selection,,,
+,15 / Data Set Bit 0 /dSb0: Motion Sequence: Data set bit 0,,,
+,16 / Data Set Bit 1 /dSb1: Motion Sequence: Data set bit 1,,,
+,17 / Data Set Bit 2 /dSb2: Motion Sequence: Data set bit 2,,,
+,18 / Data Set Bit 3 /dSb3: Motion Sequence: Data set bit 3,,,
+,19 / Gear Offset 1 /GoF1: Electronic Gear: Adds first gear,,,
+,offset,,,
+,20 / Gear Offset 2 /GoF2: Electronic Gear: Adds second gear,,,
+,offset,,,
+,21 / Reference Switch (REF) /rEF: Reference switch,,,
+,22 / Positive Limit Switch (LIMP) /LiMP: Positive limit,,,
+,switch,,,
+,23 / Negative Limit Switch (LIMN) /LiMn: Negative limit,,,
+,switch,,,
+,24 / Switch Controller Parameter Set /CPAr: Switches,,,
+,control loop parameter set,,,
+,27 / Operating Mode Switch /MSWt: Switches operating,,,
+,mode,,,
+,28 / Velocity Controller Integral Off /tnoF: Switches off,,,
+,velocity controller integral term,,,
+,29 / Start Motion Sequence /StMS: Motion Sequence: Starts,,,
+,a motion sequence,,,
+,30 / Start Signal Of RMAC /SrMc: Start signal of relative,,,
+,movement after capture (RMAC),,,
+,31 / Activate RMAC /ArMc: Activates the relative movement,,,
+,after capture (RMAC),,,

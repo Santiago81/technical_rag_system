@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MOD_Enable,Activation of Modulo function.,-,UINT16,CANopen 3006:38h
+ConF→ACG-,0 / Modulo Off /oFF: Modulo is off,0,R/W,Modbus 1648
+AtyP,1 / Modulo On /on: Modulo is on,0,per.,Profibus 1648
+,Setting can only be modified if power stage is,1,-,CIP 106.1.56
+,disabled.,,,
+,,,,ModbusTCP 1648
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:38h
+,Available with firmware version ≥V01.01.,,,
+,,,,PROFINET 1648
+MOD_Max,Maximum position of modulo range.,usr_p,INT32,CANopen 3006:3Ah
+,The maximum position value of the modulo range,-,R/W,Modbus 1652
+,must be greater than the minimum position value,,,
+,of the modulo range.,3600,per.,Profibus 1652
+,The value must not exceed the maximum possible,-,-,CIP 106.1.58
+,value of position scaling _ScalePOSmax.,,,
+,,,,ModbusTCP 1652
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3006:3Ah
+,Modified settings become active immediately.,,,PROFINET 1652
+,Available with firmware version ≥V01.01.,,,
+MOD_Min,Minimum position of modulo range.,usr_p,INT32,CANopen 3006:39h
+,The minimum position value of the modulo range,-,R/W,Modbus 1650
+,must be less than the maximum position value of,,,
+,the modulo range.,0,per.,Profibus 1650
+,The value must not exceed the maximum possible,-,-,CIP 106.1.57
+,value of position scaling _ScalePOSmax.,,,
+,,,,ModbusTCP 1650
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3006:39h
+,Modified settings become active immediately.,,,PROFINET 1650
+,Available with firmware version ≥V01.01.,,,
+MON_ChkTime,Monitoring of time window.,ms,UINT16,CANopen 3006:1Dh
+ConF→i-o-,Adjustment of a time for monitoring of position,0,R/W,Modbus 1594
+,"deviation, velocity deviation, velocity value and",,,
+tthr,current value. If the monitored value is in the,0,per.,Profibus 1594
+,"permissible range during the adjusted time, the",,,
+,monitoring function delivers a positive result.,9999,-,CIP 106.1.29
+,The status can be output via a parameterizable,,,ModbusTCP 1594
+,output.,,,
+,,,,EtherCAT 3006:1Dh
+,Modified settings become active immediately.,,,
+,,,,PROFINET 1594
+MON_commutat,Commutation monitoring.,-,UINT16,CANopen 3005:5h
+,0 / Off: Commutation monitoring off,0,R/W,Modbus 1290
+,1 / On: Commutation monitoring on in operating,1,per.,Profibus 1290
+,"states 6, 7 and 8",,,
+,,2,-,CIP 105.1.5
+,2 / On (OpState6+7): Commutation monitoring on,,,
+,in operating states 6 and 7,,,ModbusTCP 1290
+,Setting can only be modified if power stage is,,,EtherCAT 3005:5h
+,disabled.,,,
+,,,,PROFINET 1290
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

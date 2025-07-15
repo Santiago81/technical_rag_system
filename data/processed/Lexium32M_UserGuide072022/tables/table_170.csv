@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IO_act,Physical status of the digital inputs and outputs.,-,UINT16,CANopen 3008:1h
+,Low byte:,-,R/-,Modbus 2050
+,Bit 0: DI0,-,-,Profibus 2050
+,Bit 1: DI1,-,-,CIP 108.1.1
+,Bit 2: DI2,,,ModbusTCP 2050
+,Bit 3: DI3,,,EtherCAT 3008:1h
+,Bit 4: DI4,,,PROFINET 2050
+,Bit 5: DI5,,,
+,High byte:,,,
+,Bit 8: DQ0,,,
+,Bit 9: DQ1,,,
+,Bit 10: DQ2,,,
+_IO_DI_act,Status of digital inputs.,-,UINT16,CANopen 3008:Fh
+Mon,Bit assignments:,-,R/-,Modbus 2078
+diMo,Bit 0: DI0,-,-,Profibus 2078
+,Bit 1: DI1,-,-,CIP 108.1.15
+,Bit 2: DI2,,,ModbusTCP 2078
+,Bit 3: DI3,,,EtherCAT 3008:Fh
+,Bit 4: DI4,,,PROFINET 2078
+,Bit 5: DI5,,,
+_IO_DQ_act,Status of digital outputs.,-,UINT16,CANopen 3008:10h
+Mon,Bit assignments:,-,R/-,Modbus 2080
+doMo,Bit 0: DQ0,-,-,Profibus 2080
+,Bit 1: DQ1,-,-,CIP 108.1.16
+,Bit 2: DQ2,,,ModbusTCP 2080
+,,,,EtherCAT 3008:10h
+,,,,PROFINET 2080
+_IO_STO_act,Status of the inputs for the safety-related function,-,UINT16,CANopen 3008:26h
+,STO.,,,
+Mon,,-,R/-,Modbus 2124
+,Bit 0: STO_A,,,
+Sto,,-,-,Profibus 2124
+,Bit 1: STO_B,,,
+,,-,-,CIP 108.1.38
+,"If no safety module eSM is inserted, this",,,
+,parameter indicates the status of the signal inputs,,,ModbusTCP 2124
+,STO_A and STO_B.,,,
+,,,,EtherCAT 3008:26h
+,"If a safety module eSM is inserted, the safety-",,,
+,related function STO can be triggered via the,,,PROFINET 2124
+,signal inputs or via the safety module eSM. This,,,
+,parameter indicates whether or not the safety-,,,
+,related function STO was triggered (regardless of,,,
+,whether it was triggered via the signal inputs or via,,,
+,the safety module eSM).,,,

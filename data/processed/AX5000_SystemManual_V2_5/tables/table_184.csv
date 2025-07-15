@@ -1,0 +1,6 @@
+Type,System,"Sin/Cos perrevolution","Supplyvoltage",Interface,Sampling
+AD 34,Singleturn,2048,5 V,BiSS + 1 Vpp,Optical
+AD 36,Singleturn,2048,5 V,BiSS + 1 Vpp,Optical
+AD 36,Multiturn,2048,5 V,BiSS + 1 Vpp,Optical
+AD 58,Singleturn,2048,5 V,BiSS + 1 Vpp,Optical
+AD 58,Multiturn,2048,5 V,BiSS + 1 Vpp,Optical

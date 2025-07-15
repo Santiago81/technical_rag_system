@@ -1,0 +1,14 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_LastWarning,Code of most recent error of error class 0.,-,UINT16,CANopen 301C:9h
+Mon,"If the error is no longer active, the code is stored",-,R/-,Modbus 7186
+,until the next Fault Reset.,,,
+LWrn,,-,-,Profibus 7186
+,Value 0: No error of error class 0,,,
+,,-,-,CIP 128.1.9
+,,,,ModbusTCP 7186
+,,,,EtherCAT 301C:9h
+,,,,PROFINET 7186

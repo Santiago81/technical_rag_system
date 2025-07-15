@@ -1,0 +1,18 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PTI_signal_type,Type of reference value signal for PTI interface.,-,UINT16,CANopen 3005:2h
+ConF→i-o-,0 / A/B Signals /Ab: Signals ENC_A and ENC_,0,R/W,Modbus 1284
+,B (quadruple evaluation),,,
+ioPi,,0,per.,Profibus 1284
+,1 / P/D Signals /Pd: Signals PULSE and DIR,,,
+,,2,-,CIP 105.1.2
+,2 / CW/CCW Signals /cWcc: Signals,,,
+,clockwise and counterclockwise,,,ModbusTCP 1284
+,Setting can only be modified if power stage is,,,EtherCAT 3005:2h
+,disabled.,,,
+,,,,PROFINET 1284
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PntMAC5,"MAC address PROFINET module, byte 5.",-,UINT16,CANopen 3048:29h
+,,-,R/-,Modbus 18514
+,,-,-,Profibus 18514
+,,-,-,CIP 172.1.41
+,,,,ModbusTCP 18514
+,,,,EtherCAT 3048:29h
+,,,,PROFINET 18514
+_PntMAC6,"MAC address PROFINET module, byte 6.",-,UINT16,CANopen 3048:2Ah
+,,-,R/-,Modbus 18516
+,,-,-,Profibus 18516
+,,-,-,CIP 172.1.42
+,,,,ModbusTCP 18516
+,,,,EtherCAT 3048:2Ah
+,,,,PROFINET 18516
+_PntProfile,PROFINET drive profile.,-,UINT16,CANopen 3048:3h
+ConF→inF-,0 / None /nonE: No connection,-,R/-,Modbus 18438
+PnPr,104 / Drive Profile Lexium 1 /dPL1: Drive,-,-,Profibus 18438
+,Profile Lexium telegram 1 (library),,,
+,,-,-,CIP 172.1.3
+,105 / Drive Profile Lexium 2 /dPL2: Drive,,,
+,Profile Lexium telegram 2,,,ModbusTCP 18438
+,,,,EtherCAT 3048:3h
+,,,,PROFINET 18438
+_PosRegStatus,Status of the position register channels.,-,UINT16,CANopen 300B:1h
+,Signal state:,-,R/-,Modbus 2818
+,0: Comparison criterion not met,-,-,Profibus 2818
+,1: Comparison criterion met,-,-,CIP 111.1.1
+,Bit assignments:,,,ModbusTCP 2818
+,Bit 0: State of position register channel 1,,,EtherCAT 300B:1h
+,Bit 1: State of position register channel 2,,,PROFINET 2818
+,Bit 2: State of position register channel 3,,,
+,Bit 3: State of position register channel 4,,,
+_Power_act,Output power.,W,INT32,CANopen 301C:Dh
+,,-,R/-,Modbus 7194
+,,-,-,Profibus 7194
+,,-,-,CIP 128.1.13
+,,,,ModbusTCP 7194
+,,,,EtherCAT 301C:Dh
+,,,,PROFINET 7194

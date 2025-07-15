@@ -1,0 +1,5 @@
+Operating state,Description
+1 Start,Electronics are initialized
+2 Not Ready To Switch On,The power stage is not ready to switch on
+3 Switch On Disabled,Impossible to enable the power stage
+4 Ready To Switch On,The power stage is ready to switch on.

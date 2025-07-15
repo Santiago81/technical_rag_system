@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+610F,4,"System error detected: Internal timerbasis missing (Timer0)Parameter _SigLatched Bit 30",-,-
+6111,2,"System error detected: Memory arealockedParameter _SigLatched Bit 30",-,-
+6112,2,"System error detected: Out ofmemoryParameter _SigLatched Bit 30",-,-
+6113,1,"System error detected: Calculatedvalue cannot be represented as a 16bit value",-,-
+6114,4,"System error detected: Impermissiblefunction call from interrupt serviceroutine",Incorrect programming,-
+6117,0,"Holding brake cannot be releasedmanually.","The holding brake cannot bereleased manually because it is stillapplied manually.","First, switch from applying theholding brake manually to Automatic,then to releasing the holding brakemanually."
+7100,4,"System error detected: Invalid powerstage dataParameter _SigLatched Bit 30","Error detected in power stage datastored in device (incorrect CRC),error detected in internal memorydata.","Contact your Schneider Electricservice representative or replace thedevice."
+7110,2,"System error detected: Internalbraking resistor","Internal braking resistor is inoperativeor not connected.","Contact your Schneider Electricservice representative."
+7111,0,"Parameter cannot be changedbecause the external braking resistoris active.","An attempt is made to change one ofthe parameters RESext_ton,RESext_P or RESext_R even thoughthe external braking resistor is active.","Verify that the external brakingresistor is not active if one of theparameters RESext_ton, RESext_Por RESext_R has to be changed."
+7112,2,"No external braking resistorconnected","External braking resistor activated(Parameter RESint_ext), but noexternal resistor is detected.","Verify wiring of the external brakingresistor. Verify correct resistance."
+7120,4,"Invalid motor dataParameter _SigLatched Bit 16","Motor data is incorrect (incorrectCRC).","Contact your Schneider Electricservice representative or replace themotor."
+7121,2,"System error detected: Error in motorencoder communicationParameter _SigLatched Bit 16","EMI, detailed information can befound in the error memory thatcontains the error code of theencoder.","Contact your Schneider Electricservice representative."
+7122,4,"Invalid motor dataParameter _SigLatched Bit 30","Error detected in motor data stored inmotor encoder, error detected ininternal memory data.","Contact your Schneider Electricservice representative or replace themotor."
+7124,4,"System error detected: Motorencoder inoperativeParameter _SigLatched Bit 16",-,"Contact your Schneider Electricservice representative or replace themotor."
+7125,4,"System error detected: Lengthspecification for user data too greatParameter _SigLatched Bit 16",-,-
+7129,0,"System error detected: MotorencoderParameter _WarnLatched Bit 16",-,-
+712C,0,"System error detected:Communication with encoder notpossibleParameter _WarnLatched Bit 16",-,-
+712D,4,"Electronic motor nameplate not foundParameter _SigLatched Bit 16","Incorrect motor data (incorrect CRC).Motor without electronic motornameplate (for example, SER motor)","Contact your Schneider Electricservice representative or replace themotor."

@@ -1,0 +1,46 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_AT_state,Autotuning status.,-,UINT16,CANopen 302F:2h
+,Bit assignments:,-,R/-,Modbus 12036
+,Bits 0 ... 10: Last processing step,-,-,Profibus 12036
+,Bit 13: auto_tune_process,-,-,CIP 147.1.2
+,Bit 14: auto_tune_end,,,ModbusTCP 12036
+,Bit 15: auto_tune_err,,,EtherCAT 302F:2h
+,,,,PROFINET 12036
+_CanDiag,CANopen diagnostics word.,-,UINT16,CANopen 3041:6h
+,0001h: pms read error for TxPdo,-,R/-,Modbus 16652
+,0002h: pms write error for RxPdo1,-,-,Profibus 16652
+,0004h: pms write error for RxPdo2,-,-,CIP 165.1.6
+,0008h: pms write error for RxPdo3,,,ModbusTCP 16652
+,0010h: pms write error for RxPdo4,,,EtherCAT 3041:6h
+,0020h: heartbeat or lifeguard error (timer expired),,,PROFINET 16652
+,0040h: heartbeat msg with incorrect state,,,
+,received,,,
+,0080h: CAN error counter >96,,,
+,0100h: CAN message lost,,,
+,0200h: CAN error counter = 256 (bus-off),,,
+,0400h: software queue rx/tx overrun,,,
+,0800h: error indication from last detected error,,,
+_Cap1CntFall,Capture input 1 event counter at falling edges,-,UINT16,CANopen 300A:2Ch
+,(DS402).,,,
+,,-,R/-,Modbus 2648
+,Counts the capture events at falling edges.,,,
+,,-,-,Profibus 2648
+,The event counter is reset when capture input 1 is,,,
+,activated.,-,-,CIP 110.1.44
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2648
+,,,,EtherCAT 300A:2Ch
+,,,,PROFINET 2648
+_Cap1CntRise,Capture input 1 event counter at rising edges,-,UINT16,CANopen 300A:2Bh
+,(DS402).,,,
+,,-,R/-,Modbus 2646
+,Counts the capture events at rising edges.,,,
+,,-,-,Profibus 2646
+,The event counter is reset when capture input 1 is,,,
+,activated.,-,-,CIP 110.1.43
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2646
+,,,,EtherCAT 300A:2Bh
+,,,,PROFINET 2646

@@ -1,0 +1,20 @@
+{
+  "total_chunks": 15,
+  "single_chunk_qa": 41,
+  "multi_chunk_qa": 9,
+  "aggregations_performed": 3,
+  "examples_by_type": {
+    "factual_basic": 13,
+    "factual_intermediate": 14,
+    "application_intermediate": 14,
+    "multi_chunk_synthesis": 3,
+    "multi_chunk_comparison": 3,
+    "multi_chunk_comprehensive_analysis": 3
+  },
+  "processing_time": 168.01375102996826,
+  "chunks_by_pdf": {
+    "AX5000_SystemManual_V2_5.pdf": 15
+  },
+  "total_examples": 50,
+  "examples_per_chunk": 3.3333333333333335
+}

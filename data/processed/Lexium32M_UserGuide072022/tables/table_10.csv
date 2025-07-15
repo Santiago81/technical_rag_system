@@ -1,0 +1,25 @@
+Characteristic Unit,Value
+Installation altitude above mean sea level m,<1000
+without derating.,
+(ft),(<3281)
+Altitude above mean sea level when all of m,1000 ... 2000
+the following conditions are met:,
+(ft),(3281 ... 6562)
+• Maximum ambient temperature 45 °C,
+(113 °F),
+• Reduction of the continuous power by,
+1% per 100 m (328 ft) above 1000 m,
+(3281 ft),
+Altitude above mean sea level when all of m,2000 ... 3000
+the following conditions are met:,
+(ft),(6562 ... 9843)
+• Maximum ambient temperature 40 °C,
+(104 °F),
+• Reduction of the continuous power by,
+1% per 100 m (328 ft) above 1000 m,
+(3281 ft),
+• Overvoltages of the supply mains,
+limited to overvoltage category II as,
+per IEC 60664-1(1),
+• No IT grounding system,
+"(1) LXM32•U, LXM32•D12, LXM32•D18, LXM32•D30 and LXM32•D72 only.",

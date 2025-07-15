@@ -1,0 +1,22 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+1125,1,Scaling not possible,"The scaling factors for position,velocity or acceleration/decelerationare beyond internal calculation limits.",Retry with different scaling factors.
+1126,0,"Configuration is blocked by anotheraccess channel",-,"Close other access channel (forexample, other instance ofcommissioning software)."
+1127,0,Invalid key received,-,-
+1128,0,"Special login is required forManufacturing Test Firmware",-,-
+1129,0,Test step not yet started,-,-
+112D,0,"Configuration of edges is notsupported","The selected capture input does notsupport rising and falling edge at thesame time.","Set the edge to either ""rising"" or""falling""."
+112F,0,"Time filter settings cannot bechanged","Position capture is already activewith a time filter. The filter settingscannot be changed.",Deactivate position capture.
+1130,0,Incorrect parameter setting,"The parameter ENC_ModeOfMaEncis set to ""Velocity And Position"". Theparameter ErrorResp_PDiffEncM isset to ""Error Class 1"" or ""Error Class2"". The combination of these settingsis invalid.","Set parameter ErrorResp_PDiffEncMto ""Error Class 3""."
+1131,0,Function not available,Function not available,-
+1132,0,"Incorrect size of configuration file(odd number of bytes)",Incorrect number of bytes.,"Retry. If the condition persists,contact your Schneider Electricservice representative."
+1140,0,"File transfer over fieldbus: Read orwrite access to file denied (forexample, due to invalid accesschannel)","Invalid access channel used.The String field (for the file name)does not contain ""Config"" or ""config"".","Use a valid access channel (fieldbusmain channel or Modbus RTU).Use ""Config"" or ""config"" in the Stringfield (for the file name)."
+1141,0,"File transfer over fieldbus: Insufficientmemory space",-,-
+1142,0,"File transfer over fieldbus: Invalidpassword","No password has been set(password = 0).The password used does not matchthe password set.","Set a password not equal to 0 toenable the EtherCAT function FileAccess over EtherCAT.Use the correct password."
+1143,0,"File transfer over fieldbus: Errordetected with indeterminable errorcause",-,-
+1144,0,"File transfer over fieldbus: Incorrectchecksum",-,-
+1145,0,"File transfer over fieldbus: Hardwareversion does not support file transferover fieldbus","The hardware version of the drivedoes not support the EtherCATfunction File Access over EtherCAT.","Use a drive with the hardwareversion ≥RS03."
+1146,0,"File transfer over fieldbus: Invalid fileheader",-,-
+1147,0,"File transfer over fieldbus: Filecannot be stored or file already exists","No memory available for theconfiguration file or the configurationfile already exists.",Power cycle the drive.
+1300,3,"Safety-related function STOactivated (STO_A, STO_B)Parameter _SigLatched Bit 10","The safety-related function STO wasactivated in the operating stateOperation Enabled.","Verify correct wiring of the inputs ofthe safety-related function STO andperform a Fault Reset."
+1301,4,"STO_A and STO_B different levelParameter _SigLatched Bit 11","The levels of the inputs STO_A andSTO_B were different for more than 1second.","Verify correct wiring of the inputs ofthe safety-related function STO."
+1302,0,"Safety-related function STOactivated (STO_A, STO_B)Parameter _WarnLatched Bit 10","Safety-related function STO wasactivated while the power stage wasdisabled.","Verify correct wiring of the inputs ofthe safety-related function STO."

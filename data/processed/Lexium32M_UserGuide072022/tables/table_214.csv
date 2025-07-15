@@ -1,0 +1,11 @@
+Signal,Jog,Electronic Gear,Profile Torque,Profile Velocity,Motion Sequence
+DI0,Enable,Enable,Enable,Enable,Enable
+DI1,Fault Reset,Fault Reset,Fault Reset,Fault Reset,Reference Switch
+,,,,,(REF)
+DI2,Positive Limit Switch,Positive Limit Switch,Operating Mode,Operating Mode,Positive Limit Switch
+,(LIMP),(LIMP),Switch,Switch,(LIMP)
+DI3,Negative Limit Switch,Negative Limit Switch,Velocity Limitation,Velocity Limitation,Negative Limit Switch
+,(LIMN),(LIMN),,,(LIMN)
+DI4,Jog negative,Gear Ratio Switch,Current Limitation,Zero Clamp,Start Motion
+,,,,,Sequence
+DI5,Jog positive,Halt,Halt,Halt,Data Set Select

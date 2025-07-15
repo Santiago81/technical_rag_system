@@ -1,0 +1,3 @@
+"""Enable""",State transition
+Rising edge,Enable power stage (T3)
+Falling edge,Disabling the power stage (T9 and T12)

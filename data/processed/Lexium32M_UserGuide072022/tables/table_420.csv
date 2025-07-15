@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+MON_GroundFault,"Ground monitoring.0 / Off: Ground monitoring off1 / On: Ground monitoring onModified settings become active the next time theproduct is powered on.","-011","UINT16R/Wper.expert","CANopen 3005:10hModbus 1312Profibus 1312CIP 105.1.16ModbusTCP 1312EtherCAT 3005:10hPROFINET 1312"

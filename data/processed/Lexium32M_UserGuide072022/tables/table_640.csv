@@ -1,0 +1,59 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_p_DiffWin_usr,Monitoring of position deviation.,usr_p,INT32,CANopen 3006:3Fh
+,The system verifies whether the drive is within the,0,R/W,Modbus 1662
+,defined deviation during the period set with MON_,,,
+,ChkTime.,16,per.,Profibus 1662
+,The status can be output via a parameterizable,2147483647,-,CIP 106.1.63
+,output.,,,
+,,,,ModbusTCP 1662
+,"The minimum value, the factory setting and the",,,
+,maximum value depend on the scaling factor.,,,EtherCAT 3006:3Fh
+,Modified settings become active immediately.,,,PROFINET 1662
+,Available with firmware version ≥V01.03.,,,
+MON_p_win,"Standstill window, permissible control deviation.",revolution,UINT16*,CANopen 6067:0h
+,The control deviation for the standstill window time,0.0000,R/W,Modbus 1608
+,must be within this range for a standstill of the,,,
+,drive to be detected.,0.0010,per.,Profibus 1608
+,Processing of the standstill window must be,3.2767,-,CIP 106.1.36
+,activated via the parameter MON_p_winTime.,,,
+,,,,ModbusTCP 1608
+,The parameter MON_p_win_usr allows you to,,,
+,enter the value in user-defined units.,,,EtherCAT 6067:0h
+,In increments of 0.0001 revolution.,,,PROFINET 1608
+,Modified settings become active immediately.,,,
+,* Datatype for CANopen: UINT32,,,
+MON_p_win_usr,"Standstill window, permissible control deviation.",usr_p,INT32,CANopen 3006:40h
+,The control deviation for the standstill window time,0,R/W,Modbus 1664
+,must be within this range for a standstill of the,,,
+,drive to be detected.,16,per.,Profibus 1664
+,Processing of the standstill window must be,2147483647,-,CIP 106.1.64
+,activated via the parameter MON_p_winTime.,,,
+,,,,ModbusTCP 1664
+,"The minimum value, the factory setting and the",,,
+,maximum value depend on the scaling factor.,,,EtherCAT 3006:40h
+,Modified settings become active immediately.,,,PROFINET 1664
+,Available with firmware version ≥V01.03.,,,
+MON_p_winTime,"Standstill window, time.",ms,UINT16,CANopen 6068:0h
+,Value 0: Monitoring of standstill window,0,R/W,Modbus 1610
+,deactivated,,,
+,,0,per.,Profibus 1610
+,Value >0: Time in ms during which the control,,,
+,deviation must be in the standstill window,32767,-,CIP 106.1.37
+,Modified settings become active immediately.,,,ModbusTCP 1610
+,,,,EtherCAT 6068:0h
+,,,,PROFINET 1610
+MON_p_winTout,Timeout time for standstill window monitoring.,ms,UINT16,CANopen 3006:26h
+,Value 0: Timeout monitoring deactivated,0,R/W,Modbus 1612
+,Value >0: Timeout time in ms,0,per.,Profibus 1612
+,Standstill window processing values are set via,16000,-,CIP 106.1.38
+,MON_p_win and MON_p_winTime.,,,
+,,,,ModbusTCP 1612
+,Time monitoring starts when the target position,,,
+,(reference position of position controller) is,,,EtherCAT 3006:26h
+,reached or when the profile generator has finished,,,
+,processing.,,,PROFINET 1612
+,Modified settings become active immediately.,,,

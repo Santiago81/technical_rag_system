@@ -1,0 +1,4 @@
+Signal input function,Description
+"""Start Motion Sequence""Factory setting for DI4","Start of a data set with sequence.A data set is set via the signal input functions ""Data Set Bit 0"" to""Data Set Bit x"" and confirmed with the signal input function ""DataSet Select""."
+"""Data Set Select""Factory setting for DI5","The signal input function ""Data Set Select"" is used to confirmedthe set data set.If the signal input functions ""Data Set Bit 0"" to ""Data Set Bit x"" arenot set to any of the signal inputs, data set 0 is confirmed with thesignal input function ""Data Set Select""."
+"""Data Set Bit 0"" to ""Data SetBit x""Adjustable for signal inputsDI0 ... DI5","The signal input functions ""Data Set Bit 0"" to ""Data Set Bit x"" areused to set a data set in a bit-coded way.The set data set must be confirmed with the signal input function""Data Set Select""."

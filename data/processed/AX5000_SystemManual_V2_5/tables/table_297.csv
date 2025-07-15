@@ -1,0 +1,2 @@
+DANGER
+"Serious risk of injury through high electrical voltage!Due to the DC link capacitors dangerous voltage may persist at the DC link contacts ""X02"" after the servodrive has been disconnected from the mains supply. Wait 5 minutes after disconnection and measure thevoltage on the DC link contacts DC+ and DC-. The device is safe once the voltage has fallen below 50 V."

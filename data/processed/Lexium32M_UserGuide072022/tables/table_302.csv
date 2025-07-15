@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+PPp_target,"Target position for operating mode ProfilePosition.Minimum/maximum values depend on:- Scaling factor- Software limit switches (if they are activated)Modified settings become active immediately.","usr_p---","INT32R/W--","CANopen 607A:0hModbus 6940Profibus 6940CIP 127.1.14ModbusTCP 6940EtherCAT 607A:0hPROFINET 6940"

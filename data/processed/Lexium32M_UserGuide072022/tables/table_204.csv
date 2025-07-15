@@ -1,0 +1,10 @@
+Operating Mode,Local control mode,Fieldbus control mode
+Jog,Available(1),Available
+Electronic Gear,Available(1),Available
+Profile Torque,Available(1)(2),Available
+Profile Velocity,Available(1)(2),Available
+Profile Position,Not available,Available
+Interpolated Position,Not available,Available
+Homing,Not available,Available
+Motion Sequence,Available,Available
+"(1) With firmware version ≥V01.08(2) Only possible with IOM1 module",,

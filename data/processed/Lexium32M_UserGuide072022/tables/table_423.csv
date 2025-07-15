@@ -1,0 +1,5 @@
+Message,Description
+wdog,Undeterminable system error. Contact your Schneider Electric
+,representative.
+----,"Firmware not available. Retry to flash the firmware. If the condition persists,"
+,contact your Schneider Electric representative.

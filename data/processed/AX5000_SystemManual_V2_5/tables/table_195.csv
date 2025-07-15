@@ -1,0 +1,18 @@
+Pin,EnDAT / BiSS,Hiperface,Sine / cosine 1 Vpp,TTL1),Output current
+1.0,SIN,SIN,SIN,n.c.,
+2.0,GND_5 V,GND_11 V,GND_5 V,GND_5 V,
+3.0,COS,COS,COS,n.c.,
+4.0,Us_5 V,n.c.,Us_5 V,Us_5 V,
+5.0,DX+ (Data),DX+ (Data),n.c.,B+,
+6.0,n.c.,Us_11 V,n.c.,n.c.,
+7.0,n.c.,n.c.,REF Z,REF Z,
+8.0,CLK+ (Clock),n.c.,n.c.,A+,
+,,,,,max. 250 mA /
+9.0,REFSIN,REFSIN,REFSIN,n.c.,
+,,,,,channel
+10.0,GND_Sense,n.c.,GND_Sense,GND_Sense,
+11.0,REFCOS,REFCOS,REFCOS,n.c.,
+12.0,Us_5 V_Sense,n.c.,Us_5 V_Sense,Us_5 V_Sense,
+13.0,DX- (Data),DX- (Data),n.c.,B -,
+14.0,n.c.,n.c.,Z,Z,
+15.0,CLK- (Clock),n.c.,n.c.,A -,

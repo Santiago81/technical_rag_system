@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSM_ds_setA,Setting A.,-,INT32,CANopen 302D:12h
+,The value depends on the type of data set as,-2147483648,R/W,Modbus 11556
+,selected with parameter MSM_ds_type:,,,
+,,0,per.,Profibus 11556
+,- Move Absolute: Acceleration,,,
+,,2147483647,-,CIP 145.1.18
+,- Move Relative: Acceleration,,,
+,,,,ModbusTCP 11556
+,- Reference Movement: Homing method (except,,,
+,method 35),,,EtherCAT 302D:12h
+,- Position Setting: Position for Position Setting,,,PROFINET 11556
+,- Repeat: Loop counter (1 ... 65535),,,
+,- Move Additive: Acceleration,,,
+,- Move Velocity: Acceleration,,,
+,- Gear: Synchronization method,,,
+,- Write Parameter: Modbus address of the,,,
+,parameter,,,
+,Modified settings become active immediately.,,,
+MSM_ds_setB,Setting B.,-,INT32,CANopen 302D:13h
+,The value depends on the type of data set as,-2147483648,R/W,Modbus 11558
+,selected with parameter MSM_ds_type:,,,
+,,0,per.,Profibus 11558
+,- Move Absolute: Velocity,,,
+,,2147483647,-,CIP 145.1.19
+,- Move Relative: Velocity,,,
+,,,,ModbusTCP 11558
+,- Reference Movement: Position at reference point,,,
+,after a successful reference movement,,,EtherCAT 302D:13h
+,- Position Setting: -,,,PROFINET 11558
+,- Repeat: Number of data set to be executed,,,
+,- Move Additive: Velocity,,,
+,- Move Velocity: Velocity,,,
+,- Gear: Numerator,,,
+,- Write Parameter: Value of the parameter,,,
+,Modified settings become active immediately.,,,

@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+RMAC_Activate,"Activation of relative movement after capture.0 / Off: Off1 / On: OnModified settings become active immediately.Available with firmware version ≥V01.10.","-001","UINT16R/W--","CANopen 3023:ChModbus 8984Profibus 8984CIP 135.1.12ModbusTCP 8984EtherCAT 3023:ChPROFINET 8984"

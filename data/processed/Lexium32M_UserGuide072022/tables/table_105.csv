@@ -1,0 +1,5 @@
+Shield:,"Required, both ends grounded"
+Twisted Pair:,-
+PELV:,"The wires for the holding brake are PELV-compliant."
+Cable composition:,"3 wires for motor phases2 wires for holding brake1 wire for protective ground (PE)"
+Maximum cable length:,"Depends on the required limit values forconducted interference, see ElectromagneticEmission, page 53."

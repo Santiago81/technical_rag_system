@@ -1,0 +1,48 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,Bit 29: Nonvolatile memory error detected,,,
+,Bit 30: System start-up (hardware or parameter),,,
+,"Bit 31: System error detected (for example,",,,
+,"watchdog, internal hardware interface)",,,
+,Monitoring functions are product-dependent.,,,
+_SuppDriveModes,Supported operating modes as per DSP402.,-,UINT32,CANopen 6502:0h
+,Bit 0: Profile Position,-,R/-,Modbus 6952
+,Bit 2: Profile Velocity,-,-,Profibus 6952
+,Bit 3: Profile Torque,-,-,CIP 127.1.20
+,Bit 5: Homing,,,ModbusTCP 6952
+,Bit 6: Interpolated Position,,,EtherCAT 6502:0h
+,Bit 7: Cyclic Synchronous Position,,,PROFINET 6952
+,Bit 8: Cyclic Synchronous Velocity,,,
+,Bit 9: Cyclic Synchronous Torque,,,
+,Bit 16: Jog,,,
+,Bit 17: Electronic Gear,,,
+,Bit 21: Manual Tuning,,,
+,Bit 23: Motion Sequence,,,
+_TouchProbeStat,Touch Probe status (DS402).,-,UINT16,CANopen 60B9:0h
+,Available with firmware version ≥V01.16.,-,R/-,Modbus 7030
+,,-,-,Profibus 7030
+,,-,-,CIP 127.1.59
+,,,,ModbusTCP 7030
+,,,,EtherCAT 60B9:0h
+,,,,PROFINET 7030
+_tq_act,Actual torque.,%,INT16,CANopen 6077:0h
+,Positive value: Actual torque in positive direction,-,R/-,Modbus 7752
+,of movement,,,
+,,-,-,Profibus 7752
+,Negative value: Actual torque in negative direction,,,
+,of movement,-,-,CIP 130.1.36
+,100.0 % correspond to the continuous stall torque,,,ModbusTCP 7752
+,_M_M_0.,,,
+,,,,EtherCAT 6077:0h
+,In increments of 0.1 %.,,,
+,,,,PROFINET 7752
+_Ud_ref,Reference motor voltage d component.,V,INT16,CANopen 301E:5h
+,In increments of 0.1 V.,-,R/-,Modbus 7690
+,,-,-,Profibus 7690
+,,-,-,CIP 130.1.5
+,,,,ModbusTCP 7690
+,,,,EtherCAT 301E:5h
+,,,,PROFINET 7690

@@ -1,0 +1,11 @@
+Shield:,"Required, both ends grounded"
+Twisted Pair:,-
+PELV:,-
+Cable composition:,Minimum conductor cross section: Same cross
+,"section as power stage supply, see Connection"
+,"Power Stage Supply (CN1), page 108."
+,The conductors must have a sufficiently large
+,cross section so that the fuse at the mains
+,connection can protect the equipment if
+,necessary.
+Maximum cable length:,3 m (9.84 ft)

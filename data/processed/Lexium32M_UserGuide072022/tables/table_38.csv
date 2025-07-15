@@ -1,0 +1,7 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4
+,,LXM32•D85N4,LXM32•C10N4,,,,
+Voltage limit: activation of Quick Stop,V,160,360,360.0,160,360.0,360.0
+Overvoltage limit,V,450(1) / 820,820,820.0,450(1) / 820,820.0,820.0
+Maximum continuous power via DC bus,kW,7.0,15.0,15.0,11.0,22.0,22.0
+Maximum continuous current via DC bus,A,28.0,28.0,28.0,40.0,40.0,40.0
+(1) Can be set via parameter MON_DCbusVdcThresh.,,,,,,,

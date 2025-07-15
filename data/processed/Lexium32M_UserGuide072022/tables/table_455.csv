@@ -1,0 +1,16 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7627,4,"Configuration error detected: InvalidBiSS encoder parameter settingParameter _SigLatched Bit 22","Incorrect values in parametersENCDigBISSResSgl orENCDigBISSResMult.",-
+7628,0,"BiSS encoder bits 'War' or 'Err' aresetParameter _WarnLatched Bit 22","The bits are used for diverse types ofmonitoring such as:- Encoder temperature is too high.- Service life of LED inside encoderexceeded.- Position is not reliable.",Replace encoder.
+7629,3,"BiSS initialization error detectedParameter _SigLatched Bit 22",-,-
+7701,4,"System error detected: Timeoutduring connection to power stageParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7702,4,"System error detected: Invalid datareceived from power stageParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7703,4,"System error detected: Dataexchange with power stage lostParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7704,4,"System error detected: Exchange ofidentification data from power stagenot successfulParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7705,4,"System error detected: Checksumidentification data from power stageincorrectParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7706,4,"System error detected: Noidentification frame received frompower stageParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7707,4,"System error detected: Type ofpower stage and manufacture datado not match",-,"Contact your Schneider Electricservice representative."
+7708,4,"PIC voltage supply too lowParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7709,4,"System error detected: Invalidnumbers of data receivedParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+770A,2,"PIC received data with incorrectparityParameter _SigLatched Bit 31",-,"Contact your Schneider Electricservice representative."
+7800,1,"eSM module: System error detected:Error of class 1 forcedParameter _SigLatched Bit 23",-,-
+7801,2,"eSM module: System error detected:Error of class 2 forcedParameter _SigLatched Bit 23",-,-

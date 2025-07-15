@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMp_home,Position at reference point.,usr_p,INT32,CANopen 3028:Bh
+,"After a successful reference movement, this",-2147483648,R/W,Modbus 10262
+,position is automatically set at the reference point.,,,
+,,0,per.,Profibus 10262
+,Modified settings become active the next time the,,,
+,motor moves.,2147483647,-,CIP 140.1.11
+,,,,ModbusTCP 10262
+,,,,EtherCAT 3028:Bh
+,,,,PROFINET 10262
+HMp_setP,Position for Position Setting.,usr_p,INT32,CANopen 301B:16h
+,"Position for operating mode Homing, method 35.",-,R/W,Modbus 6956
+,Modified settings become active immediately.,0,-,Profibus 6956
+,,-,-,CIP 127.1.22
+,,,,ModbusTCP 6956
+,,,,EtherCAT 301B:16h
+,,,,PROFINET 6956
+HMprefmethod,Preferred homing method.,-,INT16,CANopen 3028:Ah
+oP →hoM-,Modified settings become active immediately.,1,R/W,Modbus 10260
+MEth,,18,per.,Profibus 10260
+,,35,-,CIP 140.1.10
+,,,,ModbusTCP 10260
+,,,,EtherCAT 3028:Ah
+,,,,PROFINET 10260
+HMsrchdis,Maximum search distance after overtravel of,usr_p,INT32,CANopen 3028:Dh
+,switch.,,,
+,,0,R/W,Modbus 10266
+,0: Search distance monitoring disabled,,,
+,,0,per.,Profibus 10266
+,>0: Search distance,,,
+,,2147483647,-,CIP 140.1.13
+,The switch must be activated again within this,,,
+,"search distance, otherwise the reference",,,ModbusTCP 10266
+,movement is canceled.,,,
+,,,,EtherCAT 3028:Dh
+,Modified settings become active the next time the,,,
+,motor moves.,,,PROFINET 10266
+HMv,Target velocity for searching the switch.,usr_v,UINT32,CANopen 6099:1h
+oP →hoM-,The adjustable value is internally limited to the,1,R/W,Modbus 10248
+,parameter setting in RAMP_v_max.,,,
+hMn,,60,per.,Profibus 10248
+,Modified settings become active the next time the,,,
+,motor moves.,2147483647,-,CIP 140.1.4
+,,,,ModbusTCP 10248
+,,,,EtherCAT 6099:1h
+,,,,PROFINET 10248

@@ -1,0 +1,4 @@
+Cause,Options
+The memory card is new.,"The drive data can be transferred to the memorycard."
+"The data on the memory card does not matchthe drive (different drive type, different motortype, different firmware version).","The drive data can be transferred to the memorycard."
+"The data on the memory card matches thedrive, but the parameter values are different.","The drive data can be transferred to the memorycard.The data on the memory card can be transferredto the drive. If the memory card is to remain inthe drive, the drive data must be transferred tothe memory card."

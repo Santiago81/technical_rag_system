@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENCDigSSIResSgl,SSI singleturn resolution (rotary).,bit,UINT16,CANopen 3052:1h
+,This parameter is only relevant for SSI encoders,8,R/W,Modbus 20994
+,(singleturn and multiturn).,,,
+,,13,per.,Profibus 20994
+,"Example: If ENCDigSSIResSgl is set to 13, an SSI",,,
+,encoder with a singleturn resolution of 2^13 =,25,-,CIP 182.1.1
+,8192 increments must be used.,,,
+,,,,ModbusTCP 20994
+,"If a multiturn encoder is used, the sum of",,,
+,ENCDigSSIResMult + ENCDigSSIResSgl must,,,EtherCAT 3052:1h
+,be less than or equal to 32 bits.,,,
+,,,,PROFINET 20994
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCSinCosMaxIx,Maximum distance for search for index pulse for,-,INT32,CANopen 3051:4h
+,SinCos encoder.,,,
+,,1,R/W,Modbus 20744
+,The parameter specifies the maximum number of,,,
+,periods during which the index pulse must be,1024,per.,Profibus 20744
+,found (search range).,,,
+,,2147483647,-,CIP 181.1.4
+,A tolerance of 10 % is added to this value. If no,,,
+,index pulse is found within this range (including,,,ModbusTCP 20744
+,"the 10% tolerance), an error message is",,,
+,generated.,,,EtherCAT 3051:4h
+,Setting can only be modified if power stage is,,,PROFINET 20744
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.01.,,,
+ERR_clear,Clear error memory.,-,UINT16,CANopen 303B:4h
+,Value 1: Delete entries in the error memory,0,R/W,Modbus 15112
+,The clearing process is completed if a 0 is,-,-,Profibus 15112
+,returned after a read access.,,,
+,,1,-,CIP 159.1.4
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 15112
+,,,,EtherCAT 303B:4h
+,,,,PROFINET 15112
+ERR_reset,Reset error memory read pointer.,-,UINT16,CANopen 303B:5h
+,Value 1: Set error memory read pointer to oldest,0,R/W,Modbus 15114
+,error entry.,,,
+,,-,-,Profibus 15114
+,Modified settings become active immediately.,,,
+,,1,-,CIP 159.1.5
+,,,,ModbusTCP 15114
+,,,,EtherCAT 303B:5h
+,,,,PROFINET 15114

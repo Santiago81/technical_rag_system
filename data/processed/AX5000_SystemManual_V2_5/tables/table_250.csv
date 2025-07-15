@@ -1,0 +1,11 @@
+Bit,Operation mode
+0,no mode of operation
+1,torque control
+2,velocity control
+3,position control feedback 1
+4,position control feedback 2
+11 and 12,position ctrl feedback 1 + 2 lag less
+32769,torque control using dynamic MDT
+32770,velocity control using dynamic MDT
+32771 and 32772,position control feedback 1 + 2 using dynamic MDT
+32779 and 32780,position control feedback 1 + 2 lag less using dynamic MDT

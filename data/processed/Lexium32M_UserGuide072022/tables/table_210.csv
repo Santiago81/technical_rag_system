@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MOD_AbsMultiRng,Multiple ranges for absolute movement with,-,UINT16,CANopen 3006:3Ch
+,Modulo.,,,
+,,0,R/W,Modbus 1656
+,0 / Multiple Ranges Off: Absolute movement in,,,
+,one modulo range,0,per.,Profibus 1656
+,1 / Multiple Ranges On: Absolute movement in,1,-,CIP 106.1.60
+,multiple modulo ranges,,,
+,,,,ModbusTCP 1656
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:3Ch
+,Available with firmware version ≥V01.01.,,,
+,,,,PROFINET 1656

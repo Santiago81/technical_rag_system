@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CLSET_ParSwiCond,Condition for parameter set switching.,-,UINT16,CANopen 3011:1Ah
+,0 / None Or Digital Input: None or digital input,0,R/W,Modbus 4404
+,function selected,,,
+,,0,per.,Profibus 4404
+,1 / Inside Position Deviation: Inside position,,,
+,deviation (value definition in parameter CLSET_,4,-,CIP 117.1.26
+,p_DiffWin),,,
+,,,,ModbusTCP 4404
+,2 / Below Reference Velocity: Below reference,,,
+,velocity (value definition in parameter CLSET_v_,,,EtherCAT 3011:1Ah
+,Threshol),,,
+,,,,PROFINET 4404
+,3 / Below Actual Velocity: Below actual velocity,,,
+,(value definition in parameter CLSET_v_Threshol),,,
+,4 / Reserved: Reserved,,,
+,"In the case of parameter set switching, the values",,,
+,of the following parameters are changed,,,
+,gradually:,,,
+,- CTRL_KPn,,,
+,- CTRL_TNn,,,
+,- CTRL_KPp,,,
+,- CTRL_TAUnref,,,
+,- CTRL_TAUiref,,,
+,- CTRL_KFPp,,,
+,The following parameters are changed,,,
+,immediately after the time for parameter set,,,
+,switching (CTRL_ParChgTime):,,,
+,- CTRL_Nf1damp,,,
+,- CTRL_Nf1freq,,,
+,- CTRL_Nf1bandw,,,
+,- CTRL_Nf2damp,,,
+,- CTRL_Nf2freq,,,
+,- CTRL_Nf2bandw,,,
+,- CTRL_Osupdamp,,,
+,- CTRL_Osupdelay,,,
+,- CTRL_Kfric,,,
+,Modified settings become active immediately.,,,
+CLSET_v_Threshol,Velocity threshold for control loop parameter set,usr_v,UINT32,CANopen 3011:1Dh
+,switching.,,,
+,,0,R/W,Modbus 4410
+,If the reference velocity or the actual velocity are,,,
+,"less than the value of this parameter, control loop",50,per.,Profibus 4410
+,"parameter set 2 is used. Otherwise, control loop",,,
+,parameter set 1 is used.,2147483647,-,CIP 117.1.29
+,Modified settings become active immediately.,,,ModbusTCP 4410
+,,,,EtherCAT 3011:1Dh
+,,,,PROFINET 4410

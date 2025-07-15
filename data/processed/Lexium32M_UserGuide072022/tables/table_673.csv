@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+SyncMechStart,Activation of synchronization mechanism.,-,UINT16,CANopen 3022:5h
+,Value 0: Deactivate synchronization mechanism,0,R/W,Modbus 8714
+,Value 1: Activate synchronization mechanism,0,-,Profibus 8714
+,(CANmotion).,,,
+,,2,-,CIP 134.1.5
+,"Value 2: Activate synchronization mechanism,",,,
+,standard CANopen mechanism.,,,ModbusTCP 8714
+,The cycle time of the synchronization signal is,,,EtherCAT 3022:5h
+,derived from the parameters intTimPerVal and,,,
+,intTimInd.,,,PROFINET 8714
+,Modified settings become active immediately.,,,
+SyncMechStatus,Status of synchronization mechanism.,-,UINT16,CANopen 3022:6h
+,Status of synchronization mechanism:,-,R/-,Modbus 8716
+,Value 1: Synchronization mechanism of drive is,-,-,Profibus 8716
+,inactive.,,,
+,,-,-,CIP 134.1.6
+,Value 32: Drive is synchronizing with external,,,
+,sync signal.,,,ModbusTCP 8716
+,Value 64: Drive is synchronized with external sync,,,EtherCAT 3022:6h
+,signal.,,,
+,,,,PROFINET 8716
+,Available with firmware version ≥V01.08.,,,
+SyncMechTol,Synchronization tolerance.,-,UINT16,CANopen 3022:4h
+,The value is applied when the synchronization,1,R/W,Modbus 8712
+,mechanism is activated via the parameter,,,
+,SyncMechStart.,1,-,Profibus 8712
+,Modified settings become active immediately.,20,-,CIP 134.1.4
+,Available with firmware version ≥V01.08.,,,ModbusTCP 8712
+,,,,EtherCAT 3022:4h
+,,,,PROFINET 8712
+TouchProbeFct,Touch Probe function (DS402).,-,UINT16,CANopen 60B8:0h
+,Modified settings become active immediately.,-,R/W,Modbus 7028
+,Available with firmware version ≥V01.16.,-,-,Profibus 7028
+,,-,-,CIP 127.1.58
+,,,,ModbusTCP 7028
+,,,,EtherCAT 60B8:0h
+,,,,PROFINET 7028
+UsrAppDataMem1,User-specific data 1.,-,UINT32,CANopen 3001:43h
+,This parameter can be used to store user-specific,-,R/W,Modbus 390
+,data.,,,
+,,-,per.,Profibus 390
+,Modified settings become active immediately.,,,
+,,-,-,CIP 101.1.67
+,Available with firmware version ≥V01.20.,,,
+,,,,ModbusTCP 390
+,,,,EtherCAT 3001:43h
+,,,,PROFINET 390

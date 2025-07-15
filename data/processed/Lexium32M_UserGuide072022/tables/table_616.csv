@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AQ11_FixVal,IOM1 Fixed value for AQ11.,-,INT16,CANopen 304F:24h
+,Only available if parameter IOM1_AQ11_func is,-10000,R/W,Modbus 20296
+,set to 'Fixed Value'.,,,
+,,0,-,Profibus 20296
+,Unit and range depend on setting in parameter,,,
+,IOM1_AQ_mode.,20000,-,CIP 179.1.36
+,If setting is 'Voltage':,,,ModbusTCP 20296
+,Unit: mV,,,EtherCAT 304F:24h
+,Range: -10000 ... 10000,,,PROFINET 20296
+,If setting is 'Current':,,,
+,Unit: μA,,,
+,Range: 0 ... 20000,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_AQ11_func,IOM1 Function of AQ11.,-,UINT16,CANopen 304F:21h
+ConF→i-o-,0 / None /nonE: No function,0,R/W,Modbus 20290
+A11M,1 / Actual Velocity /VACt: Actual velocity (10,0,per.,Profibus 20290
+,V / 20 mA correspond to value in CTRL_v_max),,,
+,,7,-,CIP 179.1.33
+,2 / Actual Torque /tAct: Actual torque (10 V /,,,
+,20 mA correspond to value in CTRL_I_max),,,ModbusTCP 20290
+,3 / Reference Velocity /VrEF: Reference,,,EtherCAT 304F:21h
+,velocity (10 V / 20 mA correspond to value in,,,
+,CTRL_v_max),,,PROFINET 20290
+,4 / Reference Torque /trEF: Reference,,,
+,torque (10 V / 20 mA correspond to value in,,,
+,CTRL_I_max),,,
+,5 / Position Deviation /PdiF: Position,,,
+,deviation (10 V / 20 mA correspond to value in,,,
+,MON_p_dif_load_usr),,,
+,6 / Fixed Value /FiVA: Fixed value (setting in,,,
+,parameter IOM1_AQ11_FixVal),,,
+,7 / Actual Position /PAct: Actual position in,,,
+,the modulo range (10 V / 20 mA correspond to,,,
+,value in MOD_Max),,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_AQ11_I_range,IOM1 Range of current of AQ11.,-,UINT16,CANopen 304F:22h
+ConF→i-o-,0 / 0-20mA /0-2: 0 mA ... 20 mA (0 mA,0,R/W,Modbus 20292
+,correspond to 0 user-defined units),,,
+A11C,,0,per.,Profibus 20292
+,1 / 4-20mA unsigned /4-2u: 4 mA ... 20 mA,,,
+,(4 mA correspond to 0 user-defined units),2,-,CIP 179.1.34
+,2 / 4-20mA signed /4-2S: 4 mA ... 20 mA (12,,,ModbusTCP 20292
+,mA correspond to 0 user-defined units),,,
+,,,,EtherCAT 304F:22h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20292
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.06.,,,

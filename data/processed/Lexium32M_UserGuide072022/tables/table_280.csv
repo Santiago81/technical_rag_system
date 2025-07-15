@@ -1,0 +1,7 @@
+Signal input,Signal input function
+DI3,"""Negative Limit Switch (LIMN)"""
+,"See Limit Switches, page 350"
+DI4,"""Gear Ratio Switch"""
+,Switch between 2 parameterizable gear ratios
+DI5,"""Halt"""
+,"See Stopping Movement with Halt, page 320"

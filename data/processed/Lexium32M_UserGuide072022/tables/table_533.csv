@@ -1,0 +1,43 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PS_T_max,Maximum temperature of power stage.,°C,INT16,CANopen 3010:7h
+,,-,R/-,Modbus 4110
+,,-,per.,Profibus 4110
+,,-,-,CIP 116.1.7
+,,,,ModbusTCP 4110
+,,,,EtherCAT 3010:7h
+,,,,PROFINET 4110
+_PS_T_warn,Advisory temperature limit of power stage (error,°C,INT16,CANopen 3010:6h
+,class 0).,,,
+,,-,R/-,Modbus 4108
+,,-,per.,Profibus 4108
+,,-,-,CIP 116.1.6
+,,,,ModbusTCP 4108
+,,,,EtherCAT 3010:6h
+,,,,PROFINET 4108
+_PS_U_maxDC,Maximum permissible DC bus voltage.,V,UINT16,CANopen 3010:3h
+,In increments of 0.1 V.,-,R/-,Modbus 4102
+,,-,per.,Profibus 4102
+,,-,-,CIP 116.1.3
+,,,,ModbusTCP 4102
+,,,,EtherCAT 3010:3h
+,,,,PROFINET 4102
+_PS_U_minDC,Minimum permissible DC bus voltage.,V,UINT16,CANopen 3010:4h
+,In increments of 0.1 V.,-,R/-,Modbus 4104
+,,-,per.,Profibus 4104
+,,-,-,CIP 116.1.4
+,,,,ModbusTCP 4104
+,,,,EtherCAT 3010:4h
+,,,,PROFINET 4104
+_PS_U_minStopDC,DC bus voltage low threshold for Quick Stop.,V,UINT16,CANopen 3010:Ah
+,"If the threshold is reached, the drive performs a",-,R/-,Modbus 4116
+,Quick Stop.,,,
+,,-,per.,Profibus 4116
+,In increments of 0.1 V.,,,
+,,-,-,CIP 116.1.10
+,,,,ModbusTCP 4116
+,,,,EtherCAT 3010:Ah
+,,,,PROFINET 4116

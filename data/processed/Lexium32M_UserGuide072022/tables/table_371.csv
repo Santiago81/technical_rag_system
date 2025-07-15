@@ -1,0 +1,14 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+BLSH_Position,Position value for backlash compensation.,usr_p,INT32,CANopen 3006:42h
+,Setting can only be modified if power stage is,0,R/W,Modbus 1668
+,disabled.,,,
+,,0,per.,Profibus 1668
+,Modified settings become active the next time the,,,
+,power stage is enabled.,2147483647,-,CIP 106.1.66
+,Available with firmware version ≥V01.14.,,,ModbusTCP 1668
+,,,,EtherCAT 3006:42h
+,,,,PROFINET 1668

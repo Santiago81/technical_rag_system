@@ -1,0 +1,11 @@
+Pin,Signal,"Motor, pin",Pair,Meaning,I/O
+1,COS+,9.0,2.0,Cosine signal,I
+2,REFCOS,5.0,2.0,Reference for cosine signal,I
+3,SIN+,8.0,3.0,Sine signal,I
+6,REFSIN,4.0,3.0,Reference for sine signal,I
+4,Data,6.0,1.0,"Receive data, transmit data",I/O
+5,Data,7.0,1.0,"Receive data and transmit data, inverted",I/O
+"7 ...8",-,,4.0,Reserved,
+A,ENC+10V_OUT,10.0,5.0,Encoder supply,O
+B,ENC_0V,11.0,5.0,Reference potential for encoder supply,
+,SHLD,,,Shield,

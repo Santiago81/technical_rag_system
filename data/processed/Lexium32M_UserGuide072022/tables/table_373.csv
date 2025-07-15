@@ -1,0 +1,15 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+BLSH_Mode,Processing mode of backlash compensation.,-,UINT16,CANopen 3006:41h
+,0 / Off: Backlash compensation is off,0,R/W,Modbus 1666
+,1 / OnAfterPositiveMovement: Backlash,0,per.,Profibus 1666
+,"compensation is on, last movement was in",,,
+,positive direction,2,-,CIP 106.1.65
+,2 / OnAfterNegativeMovement: Backlash,,,ModbusTCP 1666
+,"compensation is on, last movement was in",,,
+,negative direction,,,EtherCAT 3006:41h
+,Modified settings become active immediately.,,,PROFINET 1666
+,Available with firmware version ≥V01.14.,,,

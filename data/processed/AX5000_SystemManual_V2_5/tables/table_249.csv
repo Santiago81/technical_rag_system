@@ -1,0 +1,10 @@
+Unnamed: 0,Absolute encoder system,Part-absolute encoder sys-,Relative encoder system
+,,tem,
+NC,Referencing not required,Recommended reference,Recommended reference
+,,mode SoftwareSync,mode HardwareSync
+,,"(also possible: PlcCam,",(also possible: PlcCam)
+,,HardwareSync),
+Drive,Referencing not required,Drive setting not required,Drive parameterization
+,,,required
+,,,(for Sercos/SoE see Probe
+,,,Unit)

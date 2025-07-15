@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7842,2,"eSM module: Output CCM24V_OUT_A (cross fault to another outputdetected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to another output.",Verify wiring and connected devices.
+7843,2,"eSM module: Output AUXOUT1(cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+7844,2,"eSM module: Output /INTERLOCK_OUT (cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+7845,2,"eSM module: Output RELAY_OUT_A(cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+7846,2,"eSM module: Output CCM24V_OUT_A (cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",-
+7848,2,"eSM module: System error detected:Input ESMSTART_AParameter _SigLatched Bit 23",-,-
+7849,2,"eSM module: System error detected:Input SETUPENABLE_AParameter _SigLatched Bit 23",-,-
+784A,2,"eSM module: System error detected:Input SETUPMODE_AParameter _SigLatched Bit 23",-,-
+784B,2,"eSM module: System error detected:Input GUARD_AParameter _SigLatched Bit 23",-,-
+784C,2,"eSM module: System error detected:Input GUARD_ACKParameter _SigLatched Bit 23",-,-
+784D,2,"eSM module: System error detected:Input /INTERLOCK_IN_AParameter _SigLatched Bit 23",-,-
+784E,2,"eSM module: System error detected:Input /ESTOP_AParameter _SigLatched Bit 23",-,-
+784F,2,"eSM module: System error detected:Input NOTUSED_AParameter _SigLatched Bit 23",-,-
+7850,2,"eSM module: Overload outputschannel BParameter _SigLatched Bit 23",Short circuit or overload.,Verify wiring and connected devices.
+7851,4,"eSM module: System error detected:UARToverrun/framing errorParameter _SigLatched Bit 23",-,-
+7852,2,"eSM module: System error detected:ResEnc (encoder resolution) is set to0Parameter _SigLatched Bit 23",-,-

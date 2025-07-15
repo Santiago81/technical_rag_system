@@ -1,0 +1,62 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_p_dif,Position deviation including dynamic position,revolution,INT32,CANopen 60F4:0h
+,deviation.,,,
+,,-214748.3648,R/-,Modbus 7716
+,Position deviation is the difference between,,,
+,reference position and actual position. The,-,-,Profibus 7716
+,position deviation consists of the load-dependent,,,
+,position deviation and the dynamic position,214748.3647,-,CIP 130.1.18
+,deviation.,,,
+,,,,ModbusTCP 7716
+,The parameter _p_dif_usr allows you to enter the,,,
+,value in user-defined units.,,,EtherCAT 60F4:0h
+,In increments of 0.0001 revolution.,,,PROFINET 7716
+_p_dif_load,Load-dependent position deviation between,revolution,INT32,CANopen 301E:1Ch
+,reference and actual positions.,,,
+,,-214748.3648,R/-,Modbus 7736
+,The load-dependent position deviation is the,,,
+,difference between the reference position and the,-,-,Profibus 7736
+,actual position caused by the load. This value is,,,
+,used for following error monitoring.,214748.3647,-,CIP 130.1.28
+,The parameter _p_dif_load_usr allows you to,,,ModbusTCP 7736
+,enter the value in user-defined units.,,,
+,,,,EtherCAT 301E:1Ch
+,In increments of 0.0001 revolution.,,,
+,,,,PROFINET 7736
+_p_dif_load_peak,Maximum value of the load-dependent position,revolution,UINT32,CANopen 301E:1Bh
+,deviation.,,,
+,,0.0000,R/W,Modbus 7734
+,This parameter contains the maximum load-,,,
+,dependent position deviation reached so far. A,-,-,Profibus 7734
+,write access resets this value.,,,
+,,429496.7295,-,CIP 130.1.27
+,The parameter _p_dif_load_peak_usr allows you,,,
+,to enter the value in user-defined units.,,,ModbusTCP 7734
+,In increments of 0.0001 revolution.,,,EtherCAT 301E:1Bh
+,Modified settings become active immediately.,,,PROFINET 7734
+_p_dif_load_peak_,Maximum value of the load-dependent position,usr_p,INT32,CANopen 301E:15h
+usr,deviation.,,,
+,,0,R/W,Modbus 7722
+,This parameter contains the maximum load-,,,
+,dependent position deviation reached so far. A,-,-,Profibus 7722
+,write access resets this value.,,,
+,,2147483647,-,CIP 130.1.21
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 7722
+,Available with firmware version ≥V01.03.,,,
+,,,,EtherCAT 301E:15h
+,,,,PROFINET 7722
+_p_dif_load_usr,Load-dependent position deviation between,usr_p,INT32,CANopen 301E:16h
+,reference and actual positions.,,,
+,,-2147483648,R/-,Modbus 7724
+,The load-dependent position deviation is the,,,
+,difference between the reference position and the,-,-,Profibus 7724
+,actual position caused by the load. This value is,,,
+,used for following error monitoring.,2147483647,-,CIP 130.1.22
+,Available with firmware version ≥V01.03.,,,ModbusTCP 7724
+,,,,EtherCAT 301E:16h
+,,,,PROFINET 7724

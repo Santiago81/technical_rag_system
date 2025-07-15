@@ -1,0 +1,7 @@
+Connection,Meaning,Color
+U,Motor phase,Black L1 (BK)
+V,Motor phase,Black L2 (BK)
+W,Motor phase,Black L3 (BK)
+PE,Protective ground conductor,Green/yellow (GN/YE)
+BR+,Holding brake +,White (WH) or black 5 (BK)
+BR-,Holding brake -,Gray (GR) or black 6 (BK)

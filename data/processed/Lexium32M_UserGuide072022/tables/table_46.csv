@@ -1,0 +1,6 @@
+Characteristic Unit,Value
+Logic level,As per RS422(1)
+Output frequency per signal kHz,≤500
+Motor increments per second Inc/s,≤1.6 * 106
+"(1) Due to the input current of the optocoupler in the input circuit, a parallel connection of a driver",
+output to several devices is not permitted.,

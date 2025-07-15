@@ -1,0 +1,11 @@
+Figure,Art.-No.,Description
+,AX5021-0000-0000,Using a brake module allows to take up additional braking power
+,,in a drive system. For drives up to the size of the AX5125 (25 A
+,,rated current) it is not permissible to connect the DC busses and
+,,an external brake resistor at the same time. A further advantage
+,,is the simple installation and the small space requirement of the
+,,brake module. The brake module is equipped with a complete
+,,DC link and an internal brake resistor and enables the
+,,connection of an external brake resistor with the integrated
+,,brake chopper. Several brake modules can be integrated into a
+,,drive system.

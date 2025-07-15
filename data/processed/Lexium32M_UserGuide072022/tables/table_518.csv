@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_T_current,Temperature of motor.,°C,INT16,CANopen 301C:11h
+Mon,,-,R/-,Modbus 7202
+tMot,,-,-,Profibus 7202
+,,-,-,CIP 128.1.17
+,,,,ModbusTCP 7202
+,,,,EtherCAT 301C:11h
+,,,,PROFINET 7202
+_M_T_max,Maximum temperature of motor.,°C,INT16,CANopen 300D:10h
+,,-,R/-,Modbus 3360
+,,-,-,Profibus 3360
+,,-,-,CIP 113.1.16
+,,,,ModbusTCP 3360
+,,,,EtherCAT 300D:10h
+,,,,PROFINET 3360
+_M_Type,Motor type.,-,UINT32,CANopen 300D:2h
+ConF→inF-,Value 0: No motor selected,-,R/-,Modbus 3332
+MtyP,Value >0: Connected motor type,-,-,Profibus 3332
+,,-,-,CIP 113.1.2
+,,,,ModbusTCP 3332
+,,,,EtherCAT 300D:2h
+,,,,PROFINET 3332
+_M_U_max,Maximum voltage of motor.,V,UINT16,CANopen 300D:19h
+,In increments of 0.1 V.,-,R/-,Modbus 3378
+,,-,-,Profibus 3378
+,,-,-,CIP 113.1.25
+,,,,ModbusTCP 3378
+,,,,EtherCAT 300D:19h
+,,,,PROFINET 3378
+_M_U_nom,Nominal voltage of motor.,V,UINT16,CANopen 300D:Ah
+,In increments of 0.1 V.,-,R/-,Modbus 3348
+,,-,-,Profibus 3348
+,,-,-,CIP 113.1.10
+,,,,ModbusTCP 3348
+,,,,EtherCAT 300D:Ah
+,,,,PROFINET 3348

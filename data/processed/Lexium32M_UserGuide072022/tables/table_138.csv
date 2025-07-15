@@ -1,0 +1,14 @@
+Signal Meaning
+DQCOM Reference potential to DQ0 ... DQ2
+DQ0 Digital output 0
+DQ1 Digital output 1
+DQ2 Digital output 2
+SHLD Shield connection
+DICOM Reference potential to DI0 ... DI5
+DI0/CAP1 Digital input 0 / Capture input 1
+DI1/CAP2 Digital input 1 / Capture input 2
+DI2/CAP3(1) Digital input 2 / Capture input 3(1)
+DI3 Digital input 3
+DI4 Digital input 4
+DI5 Digital input 5
+(1) Available with hardware version ≥RS03

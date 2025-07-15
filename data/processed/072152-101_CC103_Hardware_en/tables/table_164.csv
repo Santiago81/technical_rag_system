@@ -1,0 +1,7 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F086SET ERRORA block number  has not beenWrong block presetfound in  definition of a blocknumber for the CC 10- F087V–ERROR 1 Aa)General for all measuringAxis stuck or  drive not insystemscontrol loop (e.g. trigger- F088V–ERROR 2 Aenable missing) or  driveStandstill monitoring function- F089V–ERROR 3 Aamplifier or axis movinghas responded, seealthough there is no traveldescription  in Section 4.4.5command from the controlof interface conditions.Encoder defectiveb)Actual speed on theabsolute encoder does notcorrespond to the requiredspeedF090HARDWAREThe parameter  P201 doesParameter P201 notCONFIG.not agree with the hardware.correctly  definede.g. P201  defined forabsolute encoder, butHardware defectivemeasuring system inputincrementalThe hardware  identification(axis board) is  not correctF091E–CODE ERRORChecksum of  ASCIIData transfer corruptvalencies  (E–code)  incorrectF092REF. CAM 1 A?Applies only as  from 2ndReference point switch orapproach to reference point.feeder cable defectiveF093REF. CAM 2 A?Axis positioned  at theF094REF. CAM 3 A?reference  point position, butthe reference point switch isnot signalled** Occurs only in conjunction with absolute encoder","Check blockpreset byPLCCheckmechanismand  wiringReplaceencoderCorrectparameterP201ReplacedeviceRepeat datatransfer,checkchecksum(E–code)Check switchor feedercable andreplace ifnecessary",,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

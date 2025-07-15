@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_CommutCntAct,Actual value of commutation monitoring counter.,-,INT16,CANopen 303F:62h
+,Available with firmware version ≥V01.30.,-,R/-,Modbus 16324
+,,-,-,Profibus 16324
+,,-,-,CIP 163.1.98
+,,,,ModbusTCP 16324
+,,,,EtherCAT 303F:62h
+,,,,PROFINET 16324
+_Cond_State4,Conditions for transition to operating state Ready,-,UINT16,CANopen 301C:26h
+,To Switch On.,,,
+,,-,R/-,Modbus 7244
+,Signal state:,,,
+,,-,-,Profibus 7244
+,0: Condition not met,,,
+,,-,-,CIP 128.1.38
+,1: Condition met,,,
+,,,,ModbusTCP 7244
+,Bit 0: DC bus or mains voltage,,,
+,,,,EtherCAT 301C:26h
+,Bit 1: Inputs for safety function,,,
+,,,,PROFINET 7244
+,Bit 2: No configuration download ongoing,,,
+,Bit 3: Velocity greater than limit value,,,
+,Bit 4: Absolute position has been set,,,
+,Bit 5: Holding brake not manually released,,,
+_CTRL_ActParSet,Active control loop parameter set.,-,UINT16,CANopen 3011:17h
+,Value 1: Control loop parameter set 1 is active,-,R/-,Modbus 4398
+,Value 2: Control loop parameter set 2 is active,-,-,Profibus 4398
+,A control loop parameter set is active after the,-,-,CIP 117.1.23
+,time for the parameter switching (CTRL_,,,
+,ParChgTime) has elapsed.,,,ModbusTCP 4398
+,,,,EtherCAT 3011:17h
+,,,,PROFINET 4398
+_CTRL_KPid,Current controller d component P gain.,V/A,UINT16,CANopen 3011:1h
+,This value is calculated on the basis of the motor,0.5,R/-,Modbus 4354
+,parameters.,,,
+,,-,per.,Profibus 4354
+,In increments of 0.1 V/A.,,,
+,,1270.0,-,CIP 117.1.1
+,,,,ModbusTCP 4354
+,,,,EtherCAT 3011:1h
+,,,,PROFINET 4354
+_CTRL_KPiq,Current controller q component P gain.,V/A,UINT16,CANopen 3011:3h
+,This value is calculated on the basis of the motor,0.5,R/-,Modbus 4358
+,parameters.,,,
+,,-,per.,Profibus 4358
+,In increments of 0.1 V/A.,,,
+,,1270.0,-,CIP 117.1.3
+,,,,ModbusTCP 4358
+,,,,EtherCAT 3011:3h
+,,,,PROFINET 4358

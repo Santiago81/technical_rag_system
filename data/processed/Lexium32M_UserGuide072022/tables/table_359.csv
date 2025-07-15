@@ -1,0 +1,10 @@
+Bit,Value 0,Value 1
+0,Deactivate Capture input 1,Activate Capture input 1
+1,One-time capture,Continuous capture
+2 ... 3,Reserved (must be 0),-
+4,Disabling capture with rising edge,Enabling capture with rising edge
+5,Disabling capture with falling edge,Enabling capture with falling edge
+6 ... 7,Reserved (must be 0),-
+8,Deactivate Capture input 2,Activate Capture input 2
+9,One-time capture,Continuous capture
+"10 ...11",Reserved (must be 0),-

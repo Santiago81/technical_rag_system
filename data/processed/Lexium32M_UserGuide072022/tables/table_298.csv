@@ -1,0 +1,12 @@
+Signal output,Signal output function
+DQ0,"""No Fault"""
+,"Signals the operating states 4 Ready To Switch On, 5 Switched On and"
+,6 Operation Enabled
+DQ1,"""Active"""
+,Signals the operating state 6 Operation Enabled
+DQ2,With local control mode:
+,"""In Velocity Deviation Window"""
+,"See Velocity Deviation Window, page 373"
+,With fieldbus control mode:
+,"""Freely Available"""
+,"See Setting a Signal Output via Parameter, page 331"

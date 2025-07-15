@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+160E,1,"Autotuning: Test movement could notbe started",-,-
+160F,1,"Autotuning: Power stage cannot beenabled","Autotuning was not started in theoperating state Ready To Switch On.","Start Autotuning when the drive is inthe operating state Ready To SwitchOn."
+1610,1,Autotuning: Processing stopped,"Autotuning stopped by usercommand or by detected error (seeadditional error message in errormemory, for example, DC busundervoltage, limit switchestriggered)","Remove the cause of the stop andrestart Autotuning."
+1611,1,"System error detected: Parametercould not be written duringAutotuning. Additional information inthe error memory indicates theModbus register address.",-,-
+1612,1,"System error detected: Parametercould not be read during Autotuning",-,-
+1613,1,"Autotuning: Maximum permissiblemovement range exceededParameter _SigLatched Bit 2","The movement exceeded theadjusted movement range duringAutotuning.","Increase the movement range valueor disable movement rangemonitoring by setting AT_DIS = 0."
+1614,0,Autotuning: Already active,"Autotuning has been started twicesimultaneously or an Autotuningparameter is modified duringAutotuning (parameter AT_dis andAT_dir).","Wait for Autotuning to finish beforerestarting Autotuning."
+1615,0,"Autotuning: This parameter cannotbe changed while Autotuning isactive","Parameter AT_gain or AT_J arewritten during Autotuning.","Wait for Autotuning to finish beforechanging the parameter."
+1617,1,"Autotuning: Friction torque or loadtorque too great","The current limit has been reached(parameter CTRL_I_max).","Verify that the system can easily bemoved.Verify the load.Use a differently rated drive."
+1618,1,Autotuning: Optimization aborted,"The internal Autotuning sequencehas not been finished, there mayhave been a following error.","See the additional informationprovided in the error memory."
+1619,0,"Autotuning: Velocity jump inparameter AT_n_ref is not sufficient","Parameter AT_n_ref < 2 * AT_n_tolerance.The drive only checks this for the firstvelocity jump.","Modify the parameter AT_n_ref orAT_n_tolerance to meet the requiredcondition."
+1620,1,Autotuning: Load torque too high,"Product rating is not suitable for themachine load.Detected machine inertia is too highcompared to the inertia of the motor.","Reduce load, verify rating."
+1621,1,"System error detected: Calculationerror",-,-
+1622,0,"Autotuning: Not possible to performAutotuning","Autotuning can only be performed ifno operating mode is active.","Terminate the active operating modeor disable the power stage."
+1623,1,"Autotuning: HALT request hasstopped the autotuning process","Autotuning can only be performed ifno operating mode is active.","Terminate the active operating modeor disable the power stage."
+1A00,0,"System error detected: FIFO memoryoverflow",-,-
+1A01,3,"Motor has been changed (differenttype of motor)Parameter _SigLatched Bit 16","Detected motor type is different frompreviously detected motor.",Confirm the change.
+1A03,4,"System error detected: Hardwareand firmware do not match",-,-

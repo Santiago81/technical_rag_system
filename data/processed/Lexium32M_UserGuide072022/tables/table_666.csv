@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+RAMP_v_dec,Deceleration of the motion profile for velocity.,usr_a,UINT32,CANopen 6084:0h
+,The minimum value depends on the operating,1,R/W,Modbus 1558
+,mode:,,,
+,,600,per.,Profibus 1558
+,Operating modes with minimum value 1:,,,
+,,2147483647,-,CIP 106.1.11
+,Electronic Gear (velocity synchronization),,,
+,,,,ModbusTCP 1558
+,Profile Velocity,,,
+,,,,EtherCAT 6084:0h
+,Motion Sequence (Move Velocity),,,
+,,,,PROFINET 1558
+,Operating modes with minimum value 120:,,,
+,Jog,,,
+,Profile Position,,,
+,Homing,,,
+,"Motion Sequence (Move Absolute, Move Additive,",,,
+,Move Relative and Reference Movement),,,
+,Writing the value 0 has no effect on the parameter.,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+RAMP_v_enable,Activation of the motion profile for velocity.,-,UINT16,CANopen 3006:2Bh
+,0 / Profile Off: Profile off,0,R/W,Modbus 1622
+,1 / Profile On: Profile on,1,per.,Profibus 1622
+,Setting can only be modified if power stage is,1,-,CIP 106.1.43
+,disabled.,,,
+,,,,ModbusTCP 1622
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:2Bh
+,,,,PROFINET 1622
+RAMP_v_jerk,Jerk limitation of the motion profile for velocity.,ms,UINT16,CANopen 3006:Dh
+ConF→drC-,0 / Off /oFF: Off,0,R/W,Modbus 1562
+JEr,1 / 1 /1: 1 ms,0,per.,Profibus 1562
+,2 / 2 /2: 2 ms,128,-,CIP 106.1.13
+,4 / 4 /4: 4 ms,,,ModbusTCP 1562
+,8 / 8 /8: 8 ms,,,EtherCAT 3006:Dh
+,16 / 16 /16: 16 ms,,,PROFINET 1562
+,32 / 32 /32: 32 ms,,,
+,64 / 64 /64: 64 ms,,,
+,128 / 128 /128: 128 ms,,,
+,Adjustments can only be made if the operating,,,
+,mode is inactive (x_end=1).,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,

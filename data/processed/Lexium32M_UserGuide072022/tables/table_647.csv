@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSM_ds_trancon1,Transition condition 1.,-,UINT16,CANopen 302D:18h
+,0 / Continue Without Condition: Continue,0,R/W,Modbus 11568
+,without condition,,,
+,,0,per.,Profibus 11568
+,1 / Wait Time: Wait time,,,
+,,3,-,CIP 145.1.24
+,2 / Start Request Edge: Start request edge,,,
+,,,,ModbusTCP 11568
+,3 / Start Request Level: Start request level,,,
+,,,,EtherCAT 302D:18h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 11568
+MSM_ds_trancon2,Transition condition 2.,-,UINT16,CANopen 302D:1Ch
+,0 / Continue Without Condition: Continue,0,R/W,Modbus 11576
+,without condition,,,
+,,0,per.,Profibus 11576
+,2 / Start Request Edge: Start request edge,,,
+,,3,-,CIP 145.1.28
+,3 / Start Request Level: Start request level,,,
+,,,,ModbusTCP 11576
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 302D:1Ch
+,,,,PROFINET 11576
+MSM_ds_transiti,Transition type.,-,UINT16,CANopen 302D:16h
+,0 / No Transition: No transition,0,R/W,Modbus 11564
+,1 / Abort And Go Next: Abort and go next,0,per.,Profibus 11564
+,2 / Buffer And Start Next: Buffer and start next,4,-,CIP 145.1.22
+,3 / Blending Previous: Blending previous,,,ModbusTCP 11564
+,4 / Blending Next: Blending next,,,EtherCAT 302D:16h
+,Modified settings become active immediately.,,,PROFINET 11564
+MSM_ds_tranval1,Value for transition condition 1.,-,INT32,CANopen 302D:19h
+,The value depends on the type of data set as,0,R/W,Modbus 11570
+,selected with parameter MSM_ds_trancon1:,,,
+,,0,per.,Profibus 11570
+,- Continue Without Condition: No transition,,,
+,condition value,30000,-,CIP 145.1.25
+,- Waiting Time: Wait time in ms,,,ModbusTCP 11570
+,Values: 0 ... 30000,,,EtherCAT 302D:19h
+,- Start Request Edge: Start request edge,,,PROFINET 11570
+,Value 0: Rising edge,,,
+,Value 1: Falling edge,,,
+,Value 4: Rising or falling edge,,,
+,- Start Request Level: Start request level,,,
+,Value 2: 1 level,,,
+,Value 3: 0 level,,,
+,Modified settings become active immediately.,,,

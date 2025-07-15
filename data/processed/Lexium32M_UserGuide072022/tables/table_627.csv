@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,16 / Selected Warning /SWrn: One of the,,,
+,specified errors of error class 0 is active,,,
+,17 / Motion Sequence: Done /MSCo: Motion,,,
+,Sequence: Sequence done,,,
+,18 / Position Register Channel 1 /PrC1:,,,
+,Position register channel 1,,,
+,19 / Position Register Channel 2 /PrC2:,,,
+,Position register channel 2,,,
+,20 / Position Register Channel 3 /PrC3:,,,
+,Position register channel 3,,,
+,21 / Position Register Channel 4 /PrC4:,,,
+,Position register channel 4,,,
+,22 / Motor Moves Positive /MPoS: Motor,,,
+,moves in positive direction,,,
+,23 / Motor Moves Negative /MnEG: Motor,,,
+,moves in negative direction,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.06.,,,
+IOsigCurrLim,Signal evaluation for signal input function Current,-,UINT16,CANopen 3008:28h
+,Limitation.,,,
+,,1,R/W,Modbus 2128
+,1 / Normally Closed: Normally closed NC,,,
+,,2,per.,Profibus 2128
+,2 / Normally Open: Normally open NO,,,
+,,2,-,CIP 108.1.40
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 2128
+,Modified settings become active the next time the,,,EtherCAT 3008:28h
+,power stage is enabled.,,,
+,,,,PROFINET 2128
+,Available with firmware version ≥V01.24.,,,
+IOsigLIMN,Signal evaluation for negative limit switch.,-,UINT16,CANopen 3006:Fh
+,0 / Inactive: Inactive,0,R/W,Modbus 1566
+,1 / Normally Closed: Normally closed NC,1,per.,Profibus 1566
+,2 / Normally Open: Normally open NO,2,-,CIP 106.1.15
+,Setting can only be modified if power stage is,,,ModbusTCP 1566
+,disabled.,,,
+,,,,EtherCAT 3006:Fh
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1566
+IOsigLIMP,Signal evaluation for positive limit switch.,-,UINT16,CANopen 3006:10h
+,0 / Inactive: Inactive,0,R/W,Modbus 1568
+,1 / Normally Closed: Normally closed NC,1,per.,Profibus 1568
+,2 / Normally Open: Normally open NO,2,-,CIP 106.1.16
+,Setting can only be modified if power stage is,,,ModbusTCP 1568
+,disabled.,,,
+,,,,EtherCAT 3006:10h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1568

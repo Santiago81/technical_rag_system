@@ -1,0 +1,29 @@
+{
+  "manuals": [
+    {
+      "filename": "AX5000_SystemManual_V2_5.pdf",
+      "manufacturer": "Beckhoff",
+      "model": "AX5000",
+      "document_type": "technical"
+    },
+    {
+      "filename": "Lexium32M_UserGuide072022.pdf", 
+      "manufacturer": "Schneider Electric",
+      "model": "Lexium 32M",
+      "document_type": "user"
+    },
+    {
+      "filename": "072152-101_CC103_Hardware_en.pdf",
+      "manufacturer": "Unknown",
+      "model": "CC103",
+      "document_type": "technical"
+    }
+  ],
+  "processing_options": {
+    "skip_analysis": false,
+    "skip_chunks": false,
+    "skip_images": false,
+    "skip_tables": false,
+    "generate_embeddings": false
+  }
+}

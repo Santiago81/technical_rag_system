@@ -1,0 +1,19 @@
+"Statetransition","Operatingstate",Condition / event(1),Response
+T0,1-> 2,•Device electronics successfully initialized,
+T1,2-> 3,•Parameter successfully initialized,
+T2,3 -> 4,"•No undervoltageand Encoder successfully checkedand Actual velocity: <1000 RPMand STO signals = +24Vand fieldbus command: Shutdown(2)",
+T3,4 -> 5,"•Request for enabling the power stage•Fieldbus command: Switch On or EnableOperation",
+T4,5 -> 6,"•Automatic transition•Fieldbus command: Enable Operation","Power stage is enabled.User parameters are checked.Holding brake is released (if available)."
+T5,6 -> 5,•Fieldbus command: Disable Operation,"Movement is canceled with ""Halt"".Holding brake is applied (if available).Power stage is disabled."
+T6,5 -> 4,•Fieldbus command: Shutdown,
+T7,4 -> 3,"•Undervoltage•STO signals = 0V•Actual velocity: >1000 RPM (for example byexternal driving force)•Fieldbus command: Disable Voltage",-
+T8,6 -> 4,•Fieldbus command: Shutdown,"Movement is canceled with ""Halt"" or powerstage is immediately disabled. Can be set viaparameter DSM_ShutDownOption."
+T9,6 -> 3,"•Request for disabling the power stage•Fieldbus command: Disable Voltage","For “Request for disabling the power stage”:Movement is canceled with ""Halt"" or powerstage is immediately disabled. Can be set viaparameter DSM_ShutDownOption.For “Fieldbus command: Disable Voltage”:Power stage is disabled immediately."
+T10,5 -> 3,"•Request for disabling the power stage•Fieldbus command: Disable Voltage",
+T11,6 -> 7,"•Error of error class 1•Fieldbus command: Quick Stop","Movement is canceled with ""Quick Stop""."
+T12,7 -> 3,"•Request for disabling the power stage•Fieldbus command: Disable Voltage","Power stage is disabled immediately, even if""Quick Stop"" is still active."
+T13,x -> 8,"•Error of error classes 2, 3 or 4","Error response is carried out, see ""ErrorResponse""."
+T14,8 -> 9,"•Error response terminated (error class 2)•Error of error classes 3 or 4",
+T15,9 -> 3,"•Function: ""Fault Reset""","Error is reset (cause of error must have beencorrected)."
+T16,7 -> 6,"•Function: ""Fault Reset""•Fieldbus command: Enable Operation(3)","In the event of a ""Quick Stop"" triggered by adetected error of class 1, a ""Fault Reset""causes a direct transition to the operating state6 Operation Enabled."
+"(1) In order to trigger a state transition it is sufficient if one condition is met.(2) Only required with fieldbus control mode and parameter DS402compatib = 1.(3) Possible only if operating state was triggered via the fieldbus.",,,

@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PosReg3ValueB,Comparison value B for position register channel,usr_p,INT32,CANopen 300B:13h
+,3.,,,
+,,-,R/W,Modbus 2854
+,Available with firmware version ≥V01.04.,,,
+,,0,per.,Profibus 2854
+,,-,-,CIP 111.1.19
+,,,,ModbusTCP 2854
+,,,,EtherCAT 300B:13h
+,,,,PROFINET 2854
+PosReg4Mode,Selection of comparison criterion for position,-,UINT16,CANopen 300B:Fh
+,register channel 4.,,,
+,,0,R/W,Modbus 2846
+,0 / Pact greater equal A: Actual position is,,,
+,greater than or equal to comparison value A for,0,per.,Profibus 2846
+,position register channel 4,,,
+,,5,-,CIP 111.1.15
+,1 / Pact less equal A: Actual position is less than,,,
+,or equal to comparison value A for position,,,ModbusTCP 2846
+,register channel 4,,,
+,,,,EtherCAT 300B:Fh
+,2 / Pact in [A-B] (basic): Actual position is in the,,,
+,range A-B including limits (basic),,,PROFINET 2846
+,3 / Pact out [A-B] (basic): Actual position is out of,,,
+,the range A-B excluding limits (basic),,,
+,4 / Pact in [A-B] (extended): Actual position is in,,,
+,the range A-B including limits (extended),,,
+,5 / Pact out [A-B] (extended): Actual position is,,,
+,out of the range A-B excluding limits (extended),,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.04.,,,
+PosReg4Source,Selection of source for position register channel 4.,-,UINT16,CANopen 300B:11h
+,0 / Pact Encoder 1: Source for position register,0,R/W,Modbus 2850
+,channel 4 is Pact of encoder 1,,,
+,,0,per.,Profibus 2850
+,1 / Pact Encoder 2: Source for position register,,,
+,channel 4 is Pact of encoder 2 (module),1,-,CIP 111.1.17
+,Modified settings become active immediately.,,,ModbusTCP 2850
+,Available with firmware version ≥V01.04.,,,EtherCAT 300B:11h
+,,,,PROFINET 2850
+PosReg4Start,Start/stop of position register channel 4.,-,UINT16,CANopen 300B:Dh
+,0 / Off (keep last state): Position Register,0,R/W,Modbus 2842
+,channel 4 is off and status bit keeps last state,,,
+,,0,-,Profibus 2842
+,1 / On: Position Register channel 4 is on,,,
+,,3,-,CIP 111.1.13
+,2 / Off (set state 0): Position Register channel 4 is,,,
+,off and status bit is set to 0,,,ModbusTCP 2842
+,3 / Off (set state 1): Position Register channel 4 is,,,EtherCAT 300B:Dh
+,off and status bit is set to 1,,,
+,,,,PROFINET 2842
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.04.,,,

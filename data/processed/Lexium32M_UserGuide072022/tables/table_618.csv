@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AQ12_I_range,IOM1 Range of current of AQ12.,-,UINT16,CANopen 304F:2Ch
+ConF→i-o-,0 / 0-20mA /0-2: 0 mA ... 20 mA (0 mA,0,R/W,Modbus 20312
+,correspond to 0 user-defined units),,,
+A12C,,0,per.,Profibus 20312
+,1 / 4-20mA unsigned /4-2u: 4 mA ... 20 mA,,,
+,(4 mA correspond to 0 user-defined units),2,-,CIP 179.1.44
+,2 / 4-20mA signed /4-2S: 4 mA ... 20 mA (12,,,ModbusTCP 20312
+,mA correspond to 0 user-defined units),,,
+,,,,EtherCAT 304F:2Ch
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20312
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_AQ12_invert,IOM1 Inversion of AQ12.,-,UINT16,CANopen 304F:2Dh
+,Only available if output is set to a voltage output.,0,R/W,Modbus 20314
+,Value 0: No inversion,0,per.,Profibus 20314
+,Value 1: Inversion active,1,-,CIP 179.1.45
+,Modified settings become active immediately.,,,ModbusTCP 20314
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:2Dh
+,,,,PROFINET 20314
+IOM1_DI_10_Deb,IOM1 Debounce time of DI10.,-,UINT16,CANopen 304F:40h
+,0 / No: No software debouncing,0,R/W,Modbus 20352
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 20352
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 179.1.64
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 20352
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 304F:40h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 20352
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_DI_11_Deb,IOM1 Debounce time of DI11.,-,UINT16,CANopen 304F:41h
+,0 / No: No software debouncing,0,R/W,Modbus 20354
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 20354
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 179.1.65
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 20354
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 304F:41h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 20354
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,

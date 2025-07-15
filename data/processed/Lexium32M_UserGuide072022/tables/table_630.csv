@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+JOGtime,Wait time for step movement.,ms,UINT16,CANopen 3029:8h
+,Modified settings become active the next time the,1,R/W,Modbus 10512
+,motor moves.,,,
+,,500,per.,Profibus 10512
+,,32767,-,CIP 141.1.8
+,,,,ModbusTCP 10512
+,,,,EtherCAT 3029:8h
+,,,,PROFINET 10512
+JOGv_fast,Velocity for fast movement.,usr_v,UINT32,CANopen 3029:5h
+oP →JoG-,The adjustable value is internally limited to the,1,R/W,Modbus 10506
+,parameter setting in RAMP_v_max.,,,
+JGhi,,180,per.,Profibus 10506
+,Modified settings become active immediately.,,,
+,,2147483647,-,CIP 141.1.5
+,,,,ModbusTCP 10506
+,,,,EtherCAT 3029:5h
+,,,,PROFINET 10506
+JOGv_slow,Velocity for slow movement.,usr_v,UINT32,CANopen 3029:4h
+oP →JoG-,The adjustable value is internally limited to the,1,R/W,Modbus 10504
+,parameter setting in RAMP_v_max.,,,
+JGLo,,60,per.,Profibus 10504
+,Modified settings become active immediately.,,,
+,,2147483647,-,CIP 141.1.4
+,,,,ModbusTCP 10504
+,,,,EtherCAT 3029:4h
+,,,,PROFINET 10504
+LIM_HaltReaction,Halt option code.,-,INT16,CANopen 605D:0h
+ConF→ACG-,1 / Deceleration Ramp /dEcE: Deceleration,1,R/W,Modbus 1582
+,ramp,,,
+htyP,,1,per.,Profibus 1582
+,3 / Torque Ramp /torq: Torque ramp,,,
+,,3,-,CIP 106.1.23
+,Set the deceleration ramp with parameter RAMP_,,,
+,v_dec.,,,ModbusTCP 1582
+,Set the torque ramp with parameter LIM_I_,,,EtherCAT 605D:0h
+,maxHalt.,,,
+,,,,PROFINET 1582
+,"If a deceleration ramp is already active, the",,,
+,parameter cannot be written.,,,
+,Modified settings become active immediately.,,,

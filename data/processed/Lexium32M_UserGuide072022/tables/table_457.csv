@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7819,2,"eSM module: Overload outputschannel AParameter _SigLatched Bit 23",Short circuit or overload.,Verify wiring and connected devices.
+781A,4,"eSM module: System error detected:5V overvoltageParameter _SigLatched Bit 23","eSM internal power supply errordetected",-
+781B,4,"eSM module: System error detected:5V undervoltageParameter _SigLatched Bit 23","eSM internal power supply errordetected",-
+781D,2,"eSM module: ESMSTART: Maximumpermissible pulse duration exceededParameter _SigLatched Bit 23","Pulse duration longer than 4seconds.","Pulse duration must be less than 4seconds."
+781E,4,"eSM module: System error detected:RAMParameter _SigLatched Bit 23",eSM RAM error detected,-
+781F,4,"eSM module: System error detected:Stack overflowParameter _SigLatched Bit 23",-,-
+7820,4,"eSM module: System error detected:Program sequence control(communication)Parameter _SigLatched Bit 23",Software watchdog eSM (CPU_B),-
+7821,4,"eSM module: System error detected:Program sequence control (Idle task)Parameter _SigLatched Bit 23",-,-
+7825,4,"eSM module: System error detected:Firmware checksumParameter _SigLatched Bit 23",-,-
+7826,0,"eSM module: Parameter outside ofpermissible value rangeParameter _WarnLatched Bit 23","Parameter outside of permissiblevalue range.",Verify parameter value.
+7827,2,"eSM module: Parameter checksumerror detectedParameter _SigLatched Bit 23",Saved parameter values are invalid.,"Reconfigure the eSM. Contact yourSchneider Electric servicerepresentative."
+7828,2,"eSM module: System error detected:SPI framing error detectedParameter _SigLatched Bit 23",-,-
+7829,4,"eSM module: Input states channel Aand channel B are not identicalParameter _SigLatched Bit 23","Wire break or connected devices areinoperable.",Verify wiring and connected devices.
+782A,2,"eSM module: Output states channelA and channel B are not identicalParameter _SigLatched Bit 23","Short circuit to 24V DC. System errordetected.","Verify wiring and connected devices.Verify connection of STO_A andSTO_B. Contact your SchneiderElectric service representative."
+782B,3,"eSM module: System error detected:Position evaluation error detected(values not identical)Parameter _SigLatched Bit 23","CPU_A and CPU_B have differentposition values. This condition mayhave been caused by the encoder.",-
+782C,3,"eSM module: System error detected:Velocity evaluation error detected(values not identical)Parameter _SigLatched Bit 23","CPU_A and CPU_B have differentvelocity values. This condition mayhave been caused by the encoder.",-

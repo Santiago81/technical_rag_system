@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Power_mean,Mean output power.,W,UINT16,CANopen 301C:Eh
+,,-,R/-,Modbus 7196
+,,-,-,Profibus 7196
+,,-,-,CIP 128.1.14
+,,,,ModbusTCP 7196
+,,,,EtherCAT 301C:Eh
+,,,,PROFINET 7196
+_pref_acc,Acceleration of reference value for acceleration,usr_a,INT32,CANopen 301F:9h
+,feed-forward control.,,,
+,,-,R/-,Modbus 7954
+,Sign according to the changed velocity value:,,,
+,,-,-,Profibus 7954
+,Increased velocity: Positive sign,,,
+,,-,-,CIP 131.1.9
+,Reduced velocity: Negative sign,,,
+,,,,ModbusTCP 7954
+,,,,EtherCAT 301F:9h
+,,,,PROFINET 7954
+_pref_v,Velocity of reference value for velocity feed-,usr_v,INT32,CANopen 301F:7h
+,forward control.,,,
+,,-,R/-,Modbus 7950
+,,-,-,Profibus 7950
+,,-,-,CIP 131.1.7
+,,,,ModbusTCP 7950
+,,,,EtherCAT 301F:7h
+,,,,PROFINET 7950
+_prgNoDEV,Firmware number of device.,-,UINT32,CANopen 3001:1h
+ConF→inF-,Example: PR0912.00,-,R/-,Modbus 258
+Prn,The value is provided as a decimal value: 91200,-,-,Profibus 258
+,,-,-,CIP 101.1.1
+,,,,ModbusTCP 258
+,,,,EtherCAT 3001:1h
+,,,,PROFINET 258
+_prgRevDEV,Firmware revision of device.,-,UINT16,CANopen 3001:4h
+ConF→inF-,The version format is XX.YY.ZZ.,-,R/-,Modbus 264
+Prr,Part XX.YY is contained in parameter,-,-,Profibus 264
+,_prgVerDEV.,,,
+,,-,-,CIP 101.1.4
+,Part ZZ is used for quality evolution and contained,,,
+,in this parameter.,,,ModbusTCP 264
+,Example: V01.23.45,,,EtherCAT 3001:4h
+,The value is provided as a decimal value: 45,,,PROFINET 264

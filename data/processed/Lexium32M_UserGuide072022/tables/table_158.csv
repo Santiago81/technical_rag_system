@@ -1,0 +1,17 @@
+HMI menuacg-,Description
+acg-,Axis configuration (Axis Configuration)
+atyp,Activation of Modulo
+ioae,Enabling the power stage at PowerOn
+inmo,Inversion of direction of movement
+qabs,Simulation of absolute position at power cycling
+nrmp,Maximum velocity of the motion profile for velocity
+hcur,Current value for Halt
+htyp,Halt option code
+Sdty,Behavior for disabling the power stage during movement
+eibr,Selection of internal or external braking resistor
+tbr,Maximum permissible activation duration of external braking resistor
+rbr,Resistance value of external braking resistor
+pobr,Nominal power of external braking resistor
+ptom,Type of usage of PTO interface
+devC,Specification of the control mode
+Card,Memory card management

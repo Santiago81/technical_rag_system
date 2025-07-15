@@ -1,0 +1,12 @@
+No.,Description
+F870,„Encoder not ready“ – execute the RESET command (S-0-0099)
+F872,„Error flag active“ – status changes to „Safe-Op“. Restart required.
+F873,„Get position timeout“ – status changes to „Safe-Op“. Restart required.
+F874,“Crc memory error”– execute the RESET command (S-0-0099)
+F875,“No EnDat 2.2 encoder connected”– execute the RESET command (S-0-0099)
+F876,“UART Error”– execute the RESET command (S-0-0099)
+F877,“Out of memory”– execute the RESET command (S-0-0099)
+F879,“Callibration error”– execute the RESET command (S-0-0099)
+F87A,“AX572x power supply error”– execute the RESET command (S-0-0099)
+F87C,“AX572x protocol not supported”– execute the RESET command (S-0-0099)
+F87D,“AX572x wrong parameter”– execute the RESET command (S-0-0099)

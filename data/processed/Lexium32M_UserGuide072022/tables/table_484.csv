@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Cap2Pos,Capture input 2 captured position (one-time).,usr_p,INT32,CANopen 300A:7h
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2574
+,"signal"".",,,
+,,-,-,Profibus 2574
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.7
+,,,,ModbusTCP 2574
+,,,,EtherCAT 300A:7h
+,,,,PROFINET 2574
+_Cap2PosCons,Capture input 2 captured position (continuous).,usr_p,INT32,CANopen 300A:1Ah
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2612
+,"signal"".",,,
+,,-,-,Profibus 2612
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.26
+,"By reading the parameter ""_Cap2CountCons"",",,,ModbusTCP 2612
+,this parameter is updated and locked so it cannot,,,
+,be changed. Both parameter values remain,,,EtherCAT 300A:1Ah
+,consistent.,,,
+,,,,PROFINET 2612
+,Available with firmware version ≥V01.12.,,,
+_Cap2PosFallEdge,Capture input 2 captured position at falling edge,usr_p,INT32,CANopen 60BD:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2640
+,This parameter contains the position captured at,,,
+,the point in time a falling edge was detected.,-,-,Profibus 2640
+,The captured position is recalculated after,-,-,CIP 110.1.40
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2640
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BD:0h
+,,,,PROFINET 2640
+_Cap2PosRisEdge,Capture input 2 captured position at rising edge,usr_p,INT32,CANopen 60BC:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2638
+,This parameter contains the position captured at,,,
+,the point in time a rising edge was detected.,-,-,Profibus 2638
+,The captured position is recalculated after,-,-,CIP 110.1.39
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2638
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BC:0h
+,,,,PROFINET 2638
+_Cap3Count,Capture input 3 event counter (one-time).,-,UINT16,CANopen 300A:14h
+,Counts the capture events.,-,R/-,Modbus 2600
+,The event counter is reset when capture input 3 is,-,-,Profibus 2600
+,activated.,,,
+,,-,-,CIP 110.1.20
+,Available with hardware version ≥RS03.,,,
+,,,,ModbusTCP 2600
+,,,,EtherCAT 300A:14h
+,,,,PROFINET 2600

@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL2_KFPp,Velocity feed-forward control.,%,UINT16,CANopen 3013:6h
+ConF→drC-,In the case of switching between the two control,0.0,R/W,Modbus 4876
+,"loop parameter sets, the values are changed",,,
+FPP2,linearly over the time defined in the parameter,0.0,per.,Profibus 4876
+,CTRL_ParChgTime.,,,
+,,200.0,-,CIP 119.1.6
+,In increments of 0.1 %.,,,
+,,,,ModbusTCP 4876
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3013:6h
+,,,,PROFINET 4876
+CTRL2_Nf1damp,Notch filter 1: Damping.,%,UINT16,CANopen 3013:8h
+,In increments of 0.1 %.,55.0,R/W,Modbus 4880
+,Modified settings become active immediately.,90.0,per.,Profibus 4880
+,,99.0,expert,CIP 119.1.8
+,,,,ModbusTCP 4880
+,,,,EtherCAT 3013:8h
+,,,,PROFINET 4880
+CTRL2_Nf1freq,Notch filter 1: Frequency.,Hz,UINT16,CANopen 3013:9h
+,The filter is deactivated at a value of 15000.,50.0,R/W,Modbus 4882
+,In increments of 0.1 Hz.,1500.0,per.,Profibus 4882
+,Modified settings become active immediately.,1500.0,expert,CIP 119.1.9
+,,,,ModbusTCP 4882
+,,,,EtherCAT 3013:9h
+,,,,PROFINET 4882
+CTRL2_Nf1bandw,Notch filter 1: Bandwidth.,%,UINT16,CANopen 3013:Ah
+,Definition of bandwidth: 1 - Fb/F0,1.0,R/W,Modbus 4884
+,In increments of 0.1 %.,70.0,per.,Profibus 4884
+,Modified settings become active immediately.,90.0,expert,CIP 119.1.10
+,,,,ModbusTCP 4884
+,,,,EtherCAT 3013:Ah
+,,,,PROFINET 4884
+CTRL2_Nf2damp,Notch filter 2: Damping.,%,UINT16,CANopen 3013:Bh
+,In increments of 0.1 %.,55.0,R/W,Modbus 4886
+,Modified settings become active immediately.,90.0,per.,Profibus 4886
+,,99.0,expert,CIP 119.1.11
+,,,,ModbusTCP 4886
+,,,,EtherCAT 3013:Bh
+,,,,PROFINET 4886

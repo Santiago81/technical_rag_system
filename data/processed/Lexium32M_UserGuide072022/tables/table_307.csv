@@ -1,0 +1,8 @@
+Data packets,Size in bytes,1 Mbit,500 kbit,250 kbit
+R_PDO2,6,0.114 ms,0.228 ms,0.456 ms
+T_PDO2,6,0.114 ms,0.228 ms,0.456 ms
+SYNC,0,0.067 ms,0.134 ms,0.268 ms
+EMCY,8,0.130 ms,0.260 ms,0.520 ms
+R_PDOx,8,0.130 ms,0.260 ms,0.520 ms
+T_PDOx,8,0.130 ms,0.260 ms,0.520 ms
+R_SDO and T_SDO,16,0.260 ms,0.520 ms,1.040 ms

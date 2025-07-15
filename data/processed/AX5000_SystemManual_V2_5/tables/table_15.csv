@@ -1,0 +1,2 @@
+DANGER
+"Serious risk of injury through high electrical voltage!Due to the DC link capacitors, the DC link terminal points ""DC+ and DC-"" and ""RB+ and RB-"" may be sub-ject to dangerous voltages exceeding 875 VDC, even after the servo drive was disconnected from the mainssupply.After disconnection, wait for 15 minutes (AX5160/AX5172), 30 minutes (AX5190/AX5191) or 45 minutes(AX5192/AX5193) and measure the voltage at the DC link-terminal points DC+ and DC-. The device is safeonce the voltage has fallen below 50 V."

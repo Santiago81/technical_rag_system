@@ -1,0 +1,11 @@
+Error code (hex),Range
+1xxx,General
+2xxx,Overcurrent
+3xxx,Voltage
+4xxx,Temperature
+5xxx,Hardware
+6xxx,Software
+7xxx,"Interface, wiring"
+8xxx,Fieldbus
+Axxx,Motor movement
+Bxxx,Communication

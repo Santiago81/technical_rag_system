@@ -1,0 +1,18 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PWM_fChop,PWM frequency of power stage.,-,UINT16,CANopen 3005:Eh
+,4 / 4 kHz: 4 kHz,4,R/W,Modbus 1308
+,8 / 8 kHz: 8 kHz,-,per.,Profibus 1308
+,16 / 16 kHz: 16 kHz,16,expert,CIP 105.1.14
+,Factory setting:,,,ModbusTCP 1308
+,Peak output current ≤72 Arms: 8 kHz,,,EtherCAT 3005:Eh
+,Peak output current >72 Arms: 4 kHz,,,PROFINET 1308
+,Changing this setting is only possible in the case,,,
+,of devices with a peak output current >72 Arms.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

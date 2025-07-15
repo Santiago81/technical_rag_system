@@ -1,0 +1,5 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2
+,,LXM32•D85N4,,LXM32•C10N4,
+Nominal voltage,V,208 400,480.0,208 400,480.0
+Nominal voltage DC bus,V,294 566,679.0,294 566,679.0
+Undervoltage limit,V,150 350,350.0,150 350,350.0

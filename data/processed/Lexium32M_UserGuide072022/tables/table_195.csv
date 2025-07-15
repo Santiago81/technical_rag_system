@@ -1,0 +1,25 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL1_TAUnref,Filter time constant of the reference velocity value,ms,UINT16,CANopen 3012:4h
+,filter.,,,
+ConF→drC-,,0.00,R/W,Modbus 4616
+,In the case of switching between the two control,,,
+tAu1,"loop parameter sets, the values are changed",9.00,per.,Profibus 4616
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,327.67,-,CIP 118.1.4
+,In increments of 0.01 ms.,,,ModbusTCP 4616
+,Modified settings become active immediately.,,,EtherCAT 3012:4h
+,,,,PROFINET 4616
+CTRL2_TAUnref,Filter time constant of the reference velocity value,ms,UINT16,CANopen 3013:4h
+,filter.,,,
+ConF→drC-,,0.00,R/W,Modbus 4872
+,In the case of switching between the two control,,,
+tAu2,"loop parameter sets, the values are changed",9.00,per.,Profibus 4872
+,linearly over the time defined in the parameter,,,
+,CTRL_ParChgTime.,327.67,-,CIP 119.1.4
+,In increments of 0.01 ms.,,,ModbusTCP 4872
+,Modified settings become active immediately.,,,EtherCAT 3013:4h
+,,,,PROFINET 4872

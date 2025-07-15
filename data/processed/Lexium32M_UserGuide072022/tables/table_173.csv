@@ -1,0 +1,5 @@
+Step,Action
+1,"Start the operating mode Jog (HMI:op→JOg→JGST).The power stage is enabled and the holding brake released. The HMI displaysJG-."
+2,"If the holding brake has been released, hold down the navigation button. Then pressESC.As long as the navigation button is held down, the motor moves. When you press ESC,the holding brake is applied again and the power stage is disabled."
+3,"If the holding brake is not released, press ESC.When you press ESC, the power stage is disabled."
+4,Verify the wiring if the behavior of the holding brake is not correct.

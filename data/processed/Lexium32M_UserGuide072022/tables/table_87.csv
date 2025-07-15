@@ -1,0 +1,36 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+,,VW3- VW3- VW3-,,VW3-,,VW3- VW3-
+,,M5300R••• M5301R••• M5302R•••,,M5303R•••,,M5305R••• M5304R•••
+"Cable jacket, insulation",-,"PUR PUR orange (RAL 2003), polypropylene (PP)",,,,
+,,orange,,,,
+,,"(RAL 2003),",,,,
+,,TPM,,,,
+Capacitance power wires,pF/m,,,,,
+Wire/wire,,80 80 80,,90,,85 100
+Wire/shield,,145 135 150,,150,,150 160
+Number of contacts (shielded),-,(4 x 1 mm2 (4 x 1.5 (4 x 2.5,,(4 x 4 mm2,,(4 x 6 mm2 (4 x 10 mm2
+,,+ 2 x (2 x mm2 + (2 x mm2 + (2 x,,+ (2 x 1,,+ (2 x 1 + (2 x 1
+,,0.75 mm2)) 1 mm2)) 1 mm2)),,mm2)),,mm2)) mm2))
+Connector motor side,-,Open,,,,
+Connector drive side,-,Open,,,,
+Cable diameter,mm,11 ± 0.3 12 ± 0.2 14.3 ± 0.3,,16.3 ± 0.3,,18.8 ± 0.4 23.5 ± 0.6
+,(in),(0.43 ± (0.47 ± (0.55 ±,,(0.64 ±,,(0.74 ± (0.93 ±
+,,0.01) 0.01) 0.01),,0.01),,0.02) 0.02)
+Minimum bend radius with fixed,-,10 times the 5 times the cable diameter,,,,
+installation,,cable,,,,
+,,diameter,,,,
+Minimum bend radius with moving,-,10 times the 7.5 times the cable diameter,,,,10 times the cable diameter
+installation,,cable,,,,
+,,diameter,,,,
+Nominal voltage,V,,,,,
+Motor phases,,1000 600,,,,
+Holding brake,,1000 300,,,,
+Maximum orderable length,m (ft),100 (328),,,,
+Permissible temperature range,°C (°F),-40 ... 80 (-40 ... 176),,,,
+during operation with fixed,,,,,,
+installation,,,,,,
+Permissible temperature range,°C (°F),-20 ... 60 (-4 -20 ... 80 (-4 ... 176),,,,
+during operation with moving,,... 140),,,,
+installation,,,,,,
+Certifications / declaration of,-,"CE, c-UR-us, DESINA",,,,
+conformity,,,,,,

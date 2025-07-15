@@ -1,0 +1,13 @@
+Figure,Art.-No.,Unnamed: 0,Description
+,AX5721-0000,encoder option card for one additional,The optional encoder card enables connection of
+,,"encoder input EnDat 2.2, BiSS C",an additional feedback systems per channel. The
+,AX5722-0000,encoder option card for two additional,system parameters match the standard parame-
+,,"encoder inputs EnDat 2.2, BiSS C",ters that are analyzed via inputs X11 and X21.
+,,,Through simple configuration via jumpers up to
+,,,"six further digital inputs (In ""A"" to In ""F"") can be"
+,,,"analyzed, which are provided through special"
+,,,feedback systems via parameter channels. The
+,,,X41 and X42 sockets are compatible with the
+,,,plugs of the X11 and X21 front sockets of the
+,,,"AX5000, which means that the tried and tested"
+,,,cables from the ZK4510 series can be used.

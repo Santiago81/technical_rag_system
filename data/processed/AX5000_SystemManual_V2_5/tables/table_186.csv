@@ -1,0 +1,9 @@
+Type,System,"Sin/Cos perrevolution","Supplyvoltage",Interface,Sampling
+SEK 37,Singleturn,16,7 V - 12 V,HIPERFACE + 1 Vpp,Capacitive
+SEL 37,Multiturn,16,7 V - 12 V,HIPERFACE + 1 Vpp,Capacitive
+SEK 52,Singleturn,16,7 V - 12 V,HIPERFACE + 1 Vpp,Capacitive
+SEL 52,Multiturn,16,7 V - 12 V,HIPERFACE + 1 Vpp,Capacitive
+SRS 50,Singleturn,512,7 V - 12 V,HIPERFACE + 1 Vpp,Optical
+SRM 50,Multiturn,512,7 V - 12 V,HIPERFACE + 1 Vpp,Optical
+SKS 36,Singleturn,125,7 V - 12 V,HIPERFACE + 1 Vpp,Optical
+SKM 36,Multiturn,125,7 V - 12 V,HIPERFACE + 1 Vpp,Optical

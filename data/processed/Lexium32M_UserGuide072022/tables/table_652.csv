@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PAR_CTRLreset,Reset control loop parameters.,-,UINT16,CANopen 3004:7h
+ConF→FCS-,0 / No /no: No,0,R/W,Modbus 1038
+rESC,1 / Yes /yES: Yes,0,-,Profibus 1038
+,Reset of the control loop parameters. The control,1,-,CIP 104.1.7
+,loop parameters are recalculated on the basis of,,,
+,the motor data of the connected motor.,,,ModbusTCP 1038
+,Current and velocity limitations are not reset.,,,EtherCAT 3004:7h
+,"Therefore, a user parameter reset is required.",,,
+,,,,PROFINET 1038
+,The new settings are not saved to the nonvolatile,,,
+,memory.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+PAR_ScalingStart,Recalculation of parameters with user-defined,-,UINT16,CANopen 3004:14h
+,units.,,,
+,,0,R/W,Modbus 1064
+,The parameters with user-defined units can be,,,
+,recalculated with a changed scaling factor.,0,-,Profibus 1064
+,Value 0: Inactive,2,-,CIP 104.1.20
+,Value 1: Initialize recalculation,,,ModbusTCP 1064
+,Value 2: Start recalculation,,,EtherCAT 3004:14h
+,Setting can only be modified if power stage is,,,PROFINET 1064
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.03.,,,
+PAReeprSave,Save parameter values to the nonvolatile memory.,-,UINT16,CANopen 3004:1h
+,Value 1: Save persistent parameters,-,R/W,Modbus 1026
+,The currently set parameters are saved to the,-,-,Profibus 1026
+,nonvolatile memory.,,,
+,,-,-,CIP 104.1.1
+,The saving process is complete when the,,,
+,parameter is read and 0 is returned.,,,ModbusTCP 1026
+,Parameters for the safety module eSM are,,,EtherCAT 3004:1h
+,modified using the commissioning software. The,,,
+,parameter values are saved persistently after,,,PROFINET 1026
+,transfer. Explicit saving to the persistent memory,,,
+,is not required in the case of the safety module,,,
+,eSM.,,,
+,Modified settings become active immediately.,,,

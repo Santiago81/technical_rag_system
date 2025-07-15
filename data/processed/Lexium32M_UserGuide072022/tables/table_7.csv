@@ -1,0 +1,7 @@
+Item,Meaning
+1 ... 3,"Product familyLXM = Lexium"
+4 ... 5,"Product type32 = AC servo drive for one axis"
+6,"Fieldbus interfaceM = Modular Drive"
+7 ... 9,"Peak currentU45 = 4.5 ArmsU60 = 6 ArmsU90 = 9 ArmsD12 = 12 ArmsD18 = 18 ArmsD30 = 30 ArmsD72 = 72 ArmsD85 = 85 ArmsC10 = 100 Arms"
+10 ... 11,"Power stage supplyM2 = Single-phase, 115/200/240 VacN4 = Three-phase, 208/400/480 Vac"
+12 ... 15,"Customized versionS = Customized version"

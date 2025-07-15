@@ -1,0 +1,12 @@
+Unnamed: 0,Maximum length:,Minimum cross section,"Shielded, bothends grounded","Twistedpair",PELV
+24 Vdc control supply,-,0.75 mm2 (AWG 18),-,-,Required
+Safety-related function STO(1),-,0.75 mm2 (AWG 18),(1),-,Required
+Power stage supply,-,−(2),-,-,-
+Motor phases,−(3),−(4),Required,-,-
+External braking resistor,3 m (9.84 ft),As power stage supply,Required,-,-
+Motor encoder,100 m (328.01 ft),"6 * 0.14 mm2 and 2 * 0.34mm2 (6 * AWG 24 and 2 *AWG 20)",Required,Required,Required
+A/B signals,100 m (328.08 ft),0.25 mm2 (AWG 22),Required,Required,Required
+PULSE / DIR signals,100 m (328.08 ft),0.14 mm2 (AWG 24),Required,Required,Required
+CW/CCW signals,100 m (328.08 ft),0.14 mm2 (AWG 24),Required,Required,Required
+ESIM,100 m (328.08 ft),0.14 mm2 (AWG 24),Required,Required,Required
+Digital inputs / outputs,30 m (98.43 ft),0.14 mm2 (AWG 24),-,-,Required

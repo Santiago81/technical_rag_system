@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+GEARpos_v_max,Velocity limitation for the method Position,usr_v,UINT32,CANopen 3026:9h
+,Synchronization.,,,
+,,0,R/W,Modbus 9746
+,Value 0: No velocity limitation,,,
+,,0,per.,Profibus 9746
+,Value >0: Velocity limitation in usr_v,,,
+,,2147483647,-,CIP 138.1.9
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 9746
+,Available with firmware version ≥V01.10.,,,
+,,,,EtherCAT 3026:9h
+,,,,PROFINET 9746

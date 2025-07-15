@@ -1,0 +1,35 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PS_overload,Overload of power stage.,%,INT16,CANopen 301C:24h
+,,-,R/-,Modbus 7240
+,,-,-,Profibus 7240
+,,-,-,CIP 128.1.36
+,,,,ModbusTCP 7240
+,,,,EtherCAT 301C:24h
+,,,,PROFINET 7240
+_PS_maxoverload,Maximum value of overload of power stage.,%,INT16,CANopen 301C:18h
+,Maximum overload of power stage during the last,-,R/-,Modbus 7216
+,10 seconds.,,,
+,,-,-,Profibus 7216
+,,-,-,CIP 128.1.24
+,,,,ModbusTCP 7216
+,,,,EtherCAT 301C:18h
+,,,,PROFINET 7216
+_M_overload,Overload of motor (I2t).,%,INT16,CANopen 301C:19h
+,,-,R/-,Modbus 7218
+,,-,-,Profibus 7218
+,,-,-,CIP 128.1.25
+,,,,ModbusTCP 7218
+,,,,EtherCAT 301C:19h
+,,,,PROFINET 7218
+_M_maxoverload,Maximum value of overload of motor.,%,INT16,CANopen 301C:1Bh
+,Maximum overload of motor during the last 10,-,R/-,Modbus 7222
+,seconds.,,,
+,,-,-,Profibus 7222
+,,-,-,CIP 128.1.27
+,,,,ModbusTCP 7222
+,,,,EtherCAT 301C:1Bh
+,,,,PROFINET 7222

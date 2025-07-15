@@ -1,0 +1,6 @@
+Motor type,Operation mode and limits
+Brushless synchronous motors,•Servo mode with feedback
+Torque motors,"•Multipole servomotors with high torque andrelatively low speed"
+Linear motors (iron core),•Servo mode with feedback
+Linear motors (ironless),•Servo mode with feedback
+Asynchronous motor,"•Frequency converter mode without feedback•High-frequency spindle up to 60,000 rpm(only for devices of the AX5xxx-0000-x21x series""Dual Use [} 13]"")•Servo mode with feedback"

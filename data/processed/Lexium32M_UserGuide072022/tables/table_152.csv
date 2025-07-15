@@ -1,0 +1,5 @@
+HMI menuhom-,Description
+hom-,Operating mode Homing
+hmst,Start operating mode Homing
+meth,Preferred homing method
+hmn,Target velocity for searching the switch

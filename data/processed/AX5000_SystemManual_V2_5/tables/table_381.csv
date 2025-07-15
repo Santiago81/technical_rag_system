@@ -1,0 +1,18 @@
+Connection pin,Signal description,MES,LIKA,SIKO,NJ*
+,,AL2200,SMS-V1,LE100,LIA 1 Vss
+X1-PE,PE / GND,shield,shield,shield,wh / gn
+X2-1,COS -,red,orange,green,red
+X2-2,GND,white,black,black,white
+X2-3,SIN -,yellow,blue,orange,yellow
+X2-4,+ 5V DC,brown,red,brown,brown
+X2-5,DATA + / Z +,---,white,blue,grey
+X2-6,n.c.,---,---,---,---
+X2-7,PTC,---,---,---,---
+X2-8,Clock+,---,---,---,---
+X2-9,COS +,blue,green,yellow,blue
+X2-10,GND sense,grey,---,---,---
+X2-11,SIN +,green,yellow,red,green
+X2-12,+ 5V sense,pink,---,---,---
+X2-13,DATA - / Z -,---,---,violet,pink
+X2-14,PTC,---,---,---,---
+X2-15,Clock-,---,---,---,---

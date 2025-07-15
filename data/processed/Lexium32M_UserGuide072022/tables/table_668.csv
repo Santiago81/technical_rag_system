@@ -1,0 +1,59 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+RESext_P,Nominal power of external braking resistor.,W,UINT16,CANopen 3005:12h
+ConF→ACG-,The maximum value depends on the power stage.,1,R/W,Modbus 1316
+Pobr,Setting can only be modified if power stage is,10,per.,Profibus 1316
+,disabled.,,,
+,,-,-,CIP 105.1.18
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,ModbusTCP 1316
+,,,,EtherCAT 3005:12h
+,,,,PROFINET 1316
+RESext_R,Resistance value of external braking resistor.,Ω,UINT16,CANopen 3005:13h
+ConF→ACG-,The minimum value depends on the power stage.,-,R/W,Modbus 1318
+rbr,In increments of 0.01 Ω.,100.00,per.,Profibus 1318
+,Setting can only be modified if power stage is,327.67,-,CIP 105.1.19
+,disabled.,,,
+,,,,ModbusTCP 1318
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,EtherCAT 3005:13h
+,,,,PROFINET 1318
+RESext_ton,Maximum permissible switch-on time of external,ms,UINT16,CANopen 3005:11h
+,braking resistor.,,,
+ConF→ACG-,,1,R/W,Modbus 1314
+,Setting can only be modified if power stage is,,,
+tbr,disabled.,1,per.,Profibus 1314
+,Modified settings become active the next time the,30000,-,CIP 105.1.17
+,power stage is enabled.,,,
+,,,,ModbusTCP 1314
+,,,,EtherCAT 3005:11h
+,,,,PROFINET 1314
+RESint_ext,Selection of type of braking resistor.,-,UINT16,CANopen 3005:9h
+ConF→ACG-,0 / Internal Braking Resistor /int: Internal,0,R/W,Modbus 1298
+,braking resistor,,,
+Eibr,,0,per.,Profibus 1298
+,1 / External Braking Resistor /Eht: External,,,
+,braking resistor,2,-,CIP 105.1.9
+,2 / Reserved /rSVd: Reserved,,,ModbusTCP 1298
+,Setting can only be modified if power stage is,,,EtherCAT 3005:9h
+,disabled.,,,
+,,,,PROFINET 1298
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+ResolENC2,Raw resolution of encoder 2.,EncInc,UINT32,CANopen 3050:Fh
+,Digital encoders:,1,R/W,Modbus 20510
+,Number of encoder increments per encoder,10000,per.,Profibus 20510
+,revolution.,,,
+,,2147483647,-,CIP 180.1.15
+,Analog encoders:,,,
+,,,,ModbusTCP 20510
+,Number of analog periods per encoder revolution.,,,
+,,,,EtherCAT 3050:Fh
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20510
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.26.,,,

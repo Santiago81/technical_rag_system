@@ -1,0 +1,6 @@
+"Operating state Signal output function ""No fault""(1)",Unnamed: 0,"Signal output function ""Active""(2)"
+7 Quick Stop Active 0,,0.0
+8 Fault Reaction Active 0,,0.0
+9 Fault 0,,0.0
+(1) The signal output function is factory setting for DQ0,,
+(2) The signal output function is the factory setting for DQ1,,

@@ -1,0 +1,4 @@
+Bit,Value 0,Value 1
+12,Disabling capture with rising edge,Enabling capture with rising edge
+13,Disabling capture with falling edge,Enabling capture with falling edge
+"14 ...15",Reserved (must be 0),-

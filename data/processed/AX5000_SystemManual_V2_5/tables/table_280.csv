@@ -1,0 +1,19 @@
+Parameter,Default,Description
+Command mode,0: Static current vector,"Selection between two commutationmethods"
+Activation,0: manual,"Selection of when the commutation processis started"
+Static current vector,,Commutation methods
+Current level,Stationary current in %,"Current intensity of the current vector (value= 100% x P0-0093 / P0-0092)"
+Duration,3000 ms,"Period for which the parameterized currentis maintained so that any oscillations thatmay be present can settle, allowing anoptimum commutation angle to be reached"
+Wake and shake,,Commutation methods
+First phase current vector,Stationary current in %,"Current intensity of the current vector(value = 100% x P0-0093 / P0-0092)"
+First phase ramp up time,100 ms,"Time for the current vector ""a"" to reachits parameterized magnitude"
+Second phase current level,Stationary current in %,"Current intensity of the current vector(value = 100% x P0-0093 / P0-0092)"
+Second phase ramp up time,500 ms,"Time for the current vector ""g"" to reach itsparameterized magnitude"
+Commutation pos control: Kp,0.04,"Amplification factor. Attention: If ""0"" thenVariant 2 will be carried out in Phase 2"
+Wake and shake expert,,"Attention: Only experienced users shouldchange the following parameters!"
+First phase pos monitoring limit,0.5 degrees,"Minimum angle of rotation of the rotorrequired to detect movement"
+First phase step width,22.5 degrees,"Current vector offset or segmentdetection angle"
+First phase waiting time after step,150 ms,"The time from detection of movementand the next step in Phase 1 or betweenPhase 1 and Phase 2 (any oscillations inthe system have time to settle)"
+Second phase duration,3000 ms,"Period for which the parameterizedcurrent is maintained so that anyoscillations that may be present can settle,allowing an optimum commutation angle tobe reached"
+Error monitoring (range of motion),90 degrees,"The maximum movement of the rotorbefore it is switched off, since there wouldotherwise be a risk that the motor wouldmake an uncontrolled movement."
+,= identifying characters for the description below,

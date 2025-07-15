@@ -1,0 +1,16 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+734B,0,"Signal position evaluation of analogencoder inoperativeParameter _WarnLatched Bit 16","Incorrect encoder wiring.Encoder hardware interfaceinoperative.",-
+734C,par.,"Error detected with quasi absolutepositionParameter _SigLatched Bit 16","The motor shaft may have beenmoved while the drive was powereddown. A quasi absolute position hasbeen detected that is not within thepermissible motor shaft deviationrange.","If the quasi absolute function isactive, only power down the drive ifthe motor is at a standstill and do notmove the motor shaft when the driveis off."
+734D,0,"Index pulse is not available for theencoderParameter _WarnLatched Bit 16",-,-
+734E,4,"Error in analog signals from encoderdetected. Additional information inthe error memory indicates Internal_DeltaQuep.Parameter _SigLatched Bit 16","Encoder cable not properlyconnected.Encoder signals subject to EMI(shield connection, wiring, etc.).Mechanical issue.","Verify EMC measures.Contact your Schneider Electricservice representative."
+7500,0,"RS485/Modbus: Overrun errordetectedParameter _WarnLatched Bit 5",EMI; incorrect cabling.,Verify cables.
+7501,0,"RS485/Modbus: Framing errordetectedParameter _WarnLatched Bit 5",EMI; incorrect cabling.,Verify cables.
+7502,0,"RS485/Modbus: Parity error detectedParameter _WarnLatched Bit 5",EMI; incorrect cabling.,Verify cables.
+7503,0,"RS485/Modbus: Receive errordetectedParameter _WarnLatched Bit 5",EMI; incorrect cabling.,Verify cables.
+7601,4,"System error detected:Indeterminable type of encoderParameter _SigLatched Bit 22",-,-
+7602,4,"Configuration error detected:Encoder module and selectedmachine encoder type do not matchParameter _SigLatched Bit 22",-,-
+7603,4,"Configuration error detected:Encoder module and selected motorencoder type do not matchParameter _SigLatched Bit 22",-,-
+7604,4,"Configuration error detected:Encoder module parameterized, butno module detectedParameter _SigLatched Bit 22",-,-
+7605,4,"Configuration error detected: Nomotor encoder type selected forencoder moduleParameter _SigLatched Bit 22",-,-
+7606,4,"Configuration error detected: Nomachine encoder type selected forencoder moduleParameter _SigLatched Bit 22",-,-
+7607,4,"Encoder module cannot be identifiedParameter _SigLatched Bit 22","The encoder module isindeterminable.",Use correct encoder module.

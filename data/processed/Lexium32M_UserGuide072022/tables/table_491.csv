@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_ENC_AmplMin,Minimum value of the SinCos amplitude.,mV,UINT16,CANopen 303F:5Fh
+,This value is only available if monitoring of the,-,R/-,Modbus 16318
+,SinCos amplitude has been activated.,,,
+,,-,-,Profibus 16318
+,Available with firmware version ≥V01.26.,,,
+,,-,-,CIP 163.1.95
+,,,,ModbusTCP 16318
+,,,,EtherCAT 303F:5Fh
+,,,,PROFINET 16318
+_ENC_AmplVal,Value of the SinCos amplitude.,mV,UINT16,CANopen 303F:5Dh
+,This value is only available if monitoring of the,-,R/-,Modbus 16314
+,SinCos amplitude has been activated.,,,
+,,-,-,Profibus 16314
+,Available with firmware version ≥V01.26.,,,
+,,-,-,CIP 163.1.93
+,,,,ModbusTCP 16314
+,,,,EtherCAT 303F:5Dh
+,,,,PROFINET 16314
+_Enc2Cos,Cosine signal of encoder 2.,V,INT16,CANopen 3051:5h
+,In increments of 0.001 V.,-,R/-,Modbus 20746
+,Available with firmware version ≥V01.26.,-,-,Profibus 20746
+,,-,-,CIP 181.1.5
+,,,,ModbusTCP 20746
+,,,,EtherCAT 3051:5h
+,,,,PROFINET 20746
+_Enc2Sin,Sine signal of encoder 2.,V,INT16,CANopen 3051:6h
+,In increments of 0.001 V.,-,R/-,Modbus 20748
+,Available with firmware version ≥V01.26.,-,-,Profibus 20748
+,,-,-,CIP 181.1.6
+,,,,ModbusTCP 20748
+,,,,EtherCAT 3051:6h
+,,,,PROFINET 20748
+_ENCAnaHallStatu,Sequence of Hall effect sensor signals of analog,-,UINT16,CANopen 3051:3h
+,encoder.,,,
+,,0,R/-,Modbus 20742
+,This parameter can be used to read the sequence,,,
+,of the Hall effect sensor signals of an analog,-,-,Profibus 20742
+,"encoder with the interface ""SinCos 1Vpp (with",,,
+,"Hall)"".",7,-,CIP 181.1.3
+,Available with firmware version ≥V01.01.,,,ModbusTCP 20742
+,,,,EtherCAT 3051:3h
+,,,,PROFINET 20742

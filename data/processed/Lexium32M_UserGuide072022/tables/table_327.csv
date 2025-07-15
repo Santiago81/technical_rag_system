@@ -1,0 +1,7 @@
+Data set type,Setting A,Setting B,Setting C,Setting D,Transition type
+"""Move Absolute""Movement to anabsolute positionvalue","AccelerationUnit: usr_a","VelocityUnit: usr_v","Absolute targetpositionUnit: usr_p","DecelerationUnit: usr_a","•No Transition•Abort And GoNext•Buffer AndStart Next•BlendingPrevious•Blending Next"
+"""Move Additive""Movement that isadded to targetposition","AccelerationUnit: usr_a","VelocityUnit: usr_v","Added targetpositionUnit: usr_p","DecelerationUnit: usr_a","•No Transition•Abort And GoNext•Buffer AndStart Next"
+"""ReferenceMovement""Referencemovement(1)","Homing methodLike parameterHMmethod","Desired positionvalue at referencepointUnit: usr_p",-,-,"•No Transition•Buffer AndStart Next"
+"""Position Setting""Position setting","Position for PositionSettingUnit: usr_p",-,-,-,"•No Transition•Buffer AndStart Next"
+"""Repeat""Repeat part of asequence","Number ofrepetitions (1 ...65535)","Number of the dataset at which therepetition is to bestarted",-,-,"•No Transition•Buffer AndStart Next"
+"""Move Relative""Movement relativewith reference toactual position","AccelerationUnit: usr_a","VelocityUnit: usr_v","Relative targetpositionUnit: usr_p","DecelerationUnit: usr_a","•No Transition•Abort And GoNext•Buffer AndStart Next"

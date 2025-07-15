@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL2_Nf2freq,Notch filter 2: Frequency.,Hz,UINT16,CANopen 3013:Ch
+,The filter is deactivated at a value of 15000.,50.0,R/W,Modbus 4888
+,In increments of 0.1 Hz.,1500.0,per.,Profibus 4888
+,Modified settings become active immediately.,1500.0,expert,CIP 119.1.12
+,,,,ModbusTCP 4888
+,,,,EtherCAT 3013:Ch
+,,,,PROFINET 4888
+CTRL2_Nf2bandw,Notch filter 2: Bandwidth.,%,UINT16,CANopen 3013:Dh
+,Definition of bandwidth: 1 - Fb/F0,1.0,R/W,Modbus 4890
+,In increments of 0.1 %.,70.0,per.,Profibus 4890
+,Modified settings become active immediately.,90.0,expert,CIP 119.1.13
+,,,,ModbusTCP 4890
+,,,,EtherCAT 3013:Dh
+,,,,PROFINET 4890
+CTRL2_Osupdamp,Overshoot suppression filter: Damping.,%,UINT16,CANopen 3013:Eh
+,The filter is deactivated at a value of 0.,0.0,R/W,Modbus 4892
+,In increments of 0.1 %.,0.0,per.,Profibus 4892
+,Modified settings become active immediately.,50.0,expert,CIP 119.1.14
+,,,,ModbusTCP 4892
+,,,,EtherCAT 3013:Eh
+,,,,PROFINET 4892
+CTRL2_Osupdelay,Overshoot suppression filter: Time delay.,ms,UINT16,CANopen 3013:Fh
+,The filter is deactivated at a value of 0.,0.00,R/W,Modbus 4894
+,In increments of 0.01 ms.,0.00,per.,Profibus 4894
+,Modified settings become active immediately.,75.00,expert,CIP 119.1.15
+,,,,ModbusTCP 4894
+,,,,EtherCAT 3013:Fh
+,,,,PROFINET 4894
+CTRL2_Kfric,Friction compensation: Gain.,Arms,UINT16,CANopen 3013:10h
+,In increments of 0.01 Arms.,0.00,R/W,Modbus 4896
+,Modified settings become active immediately.,0.00,per.,Profibus 4896
+,,10.00,expert,CIP 119.1.16
+,,,,ModbusTCP 4896
+,,,,EtherCAT 3013:10h
+,,,,PROFINET 4896

@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Cap1PosRisEdge,Capture input 1 captured position at rising edge,usr_p,INT32,CANopen 60BA:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2634
+,This parameter contains the position captured at,,,
+,the point in time a rising edge was detected.,-,-,Profibus 2634
+,The captured position is recalculated after,-,-,CIP 110.1.37
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2634
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BA:0h
+,,,,PROFINET 2634
+_Cap2CntFall,Capture input 2 event counter at falling edges,-,UINT16,CANopen 300A:2Eh
+,(DS402).,,,
+,,-,R/-,Modbus 2652
+,Counts the capture events at falling edges.,,,
+,,-,-,Profibus 2652
+,The event counter is reset when capture input 2 is,,,
+,activated.,-,-,CIP 110.1.46
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2652
+,,,,EtherCAT 300A:2Eh
+,,,,PROFINET 2652
+_Cap2CntRise,Capture input 2 event counter at rising edges,-,UINT16,CANopen 300A:2Dh
+,(DS402).,,,
+,,-,R/-,Modbus 2650
+,Counts the capture events at rising edges.,,,
+,,-,-,Profibus 2650
+,The event counter is reset when capture input 2 is,,,
+,activated.,-,-,CIP 110.1.45
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2650
+,,,,EtherCAT 300A:2Dh
+,,,,PROFINET 2650
+_Cap2Count,Capture input 2 event counter (one-time).,-,UINT16,CANopen 300A:9h
+,Counts the capture events.,-,R/-,Modbus 2578
+,The event counter is reset when capture input 2 is,-,-,Profibus 2578
+,activated.,,,
+,,-,-,CIP 110.1.9
+,,,,ModbusTCP 2578
+,,,,EtherCAT 300A:9h
+,,,,PROFINET 2578
+_Cap2CountCons,Capture input 2 event counter (continuous).,-,UINT16,CANopen 300A:19h
+,Counts the capture events.,-,R/-,Modbus 2610
+,The event counter is reset when capture input 2 is,-,-,Profibus 2610
+,activated.,,,
+,,-,-,CIP 110.1.25
+,"By reading this parameter, the parameter",,,
+,"""_Cap2PosCons"" is updated and locked so it",,,ModbusTCP 2610
+,cannot be changed. Both parameter values,,,
+,remain consistent.,,,EtherCAT 300A:19h
+,Available with firmware version ≥V01.12.,,,PROFINET 2610

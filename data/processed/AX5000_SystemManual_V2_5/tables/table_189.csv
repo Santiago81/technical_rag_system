@@ -1,0 +1,9 @@
+Type,System,"Measuringsteps","Supplyvoltage",Interface,Sampling
+LS 388C,incremental,20 μm,5 V,1 Vpp,Optical
+LS 486,incremental,20 μm,5 V,1 Vpp,Optical
+LS 487,incremental,20 μm,5 V,1 Vpp,Optical
+LC 483,incremental,20 μm,3.6 V – 5.25 V,"EnDat 2.1 + 1Vpp",Optical
+LIDA 477,incremental,20 μm,5 V,1 Vpp,Optical
+LIDA 483,incremental,20 μm,5 V,1 Vpp,Optical
+LIDA 487,incremental,20 μm,5 V,1 Vpp,Optical
+LIDA 287,incremental,200 μm,5 V,1 Vpp,Optical

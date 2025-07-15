@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+RMAC_Activate,Activation of relative movement after capture.,-,UINT16,CANopen 3023:Ch
+,0 / Off: Off,0,R/W,Modbus 8984
+,1 / On: On,0,-,Profibus 8984
+,Modified settings become active immediately.,1,-,CIP 135.1.12
+,Available with firmware version ≥V01.10.,,,ModbusTCP 8984
+,,,,EtherCAT 3023:Ch
+,,,,PROFINET 8984
+RMAC_Edge,Edge of capture signal for relative movement after,-,UINT16,CANopen 3023:10h
+,capture.,,,
+,,0,R/W,Modbus 8992
+,0 / Falling edge: Falling edge,,,
+,,0,per.,Profibus 8992
+,1 / Rising edge: Rising edge,,,
+,,1,-,CIP 135.1.16
+,Available with firmware version ≥V01.10.,,,
+,,,,ModbusTCP 8992
+,,,,EtherCAT 3023:10h
+,,,,PROFINET 8992
+RMAC_Position,Target position of relative movement after capture.,usr_p,INT32,CANopen 3023:Dh
+,Minimum/maximum values depend on:,-,R/W,Modbus 8986
+,- Scaling factor,0,per.,Profibus 8986
+,Modified settings become active the next time the,-,-,CIP 135.1.13
+,motor moves.,,,
+,,,,ModbusTCP 8986
+,Available with firmware version ≥V01.10.,,,
+,,,,EtherCAT 3023:Dh
+,,,,PROFINET 8986
+RMAC_Response,Response if target position is overtraveled.,-,UINT16,CANopen 3023:Fh
+,0 / Error Class 1: Error class 1,0,R/W,Modbus 8990
+,1 / No Movement To Target Position: No,0,per.,Profibus 8990
+,movement to target position,,,
+,,2,-,CIP 135.1.15
+,2 / Movement To Target Position: Movement to,,,
+,target position,,,ModbusTCP 8990
+,Modified settings become active immediately.,,,EtherCAT 3023:Fh
+,Available with firmware version ≥V01.10.,,,PROFINET 8990
+RMAC_Velocity,Velocity of relative movement after capture.,usr_v,UINT32,CANopen 3023:Eh
+,Value 0: Use actual motor velocity,0,R/W,Modbus 8988
+,Value >0: Value is the target velocity,0,per.,Profibus 8988
+,The adjustable value is internally limited to the,2147483647,-,CIP 135.1.14
+,setting in RAMP_v_max.,,,
+,,,,ModbusTCP 8988
+,Modified settings become active the next time the,,,
+,motor moves.,,,EtherCAT 3023:Eh
+,Available with firmware version ≥V01.10.,,,PROFINET 8988

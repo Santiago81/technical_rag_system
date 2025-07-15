@@ -1,0 +1,58 @@
+Parameter name,Description Unit,Data type,Parameter address
+,,,via fieldbus
+HMI menu,Minimum value,R/W,
+HMI name,Factory setting,Persistent,
+,Maximum value,Expert,
+MON_HW_Limits,Temporary deactivation of hardware limit -,UINT16,CANopen 3006:11h
+,switches.,,
+,0,R/W,Modbus 1570
+,0 / None: No limit switch deactivated,,
+,0,-,Profibus 1570
+,1 / Positive Limit Switch: Deactivate positive,,
+,limit switch 3,-,CIP 106.1.17
+,2 / Negative Limit Switch: Deactivate negative,,ModbusTCP 1570
+,limit switch,,
+,,,EtherCAT 3006:11h
+,3 / Both Limit Switches: Deactivate both limit,,
+,switches,,PROFINET 1570
+,"With this parameter, a controller can temporarily",,
+,deactivate hardware limit switches. This is useful if,,
+,a homing procedure controlled by a controller is to,,
+,use a limit switch as a reference switch without an,,
+,error response of the drive.,,
+,The parameter is only available with the EtherCAT,,
+,module.,,
+,Modified settings become active immediately.,,
+MON_I_Threshold,Monitoring of current threshold. Arms,UINT16,CANopen 3006:1Ch
+ConF→i-o-,The system monitors whether the drive is below 0.00,R/W,Modbus 1592
+,the defined value during the period set with MON_,,
+ithr,ChkTime. 0.20,per.,Profibus 1592
+,The status can be output via a parameterizable 300.00,-,CIP 106.1.28
+,output.,,
+,,,ModbusTCP 1592
+,The parameter _Iq_act_rms is used as,,
+,comparison value.,,EtherCAT 3006:1Ch
+,In increments of 0.01 A PROFINET 1592rms.,,
+,Modified settings become active immediately.,,
+MON_IO_SelErr1,Signal output function Selected Error (error -,UINT16,CANopen 303B:6h
+,classes 1 to 4): First error code.,,
+,0,R/W,Modbus 15116
+,This parameter specifies the error code of an error,,
+,of error classes 1 ... 4 which is to activate the 0,per.,Profibus 15116
+,signal output function.,,
+,65535,-,CIP 159.1.6
+,Modified settings become active immediately.,,
+,,,ModbusTCP 15116
+,,,EtherCAT 303B:6h
+,,,PROFINET 15116
+MON_IO_SelErr2,Signal output function Selected Error (error -,UINT16,CANopen 303B:7h
+,classes 1 to 4): Second error code.,,
+,0,R/W,Modbus 15118
+,This parameter specifies the error code of an error,,
+,of error classes 1 ... 4 which is to activate the 0,per.,Profibus 15118
+,signal output function.,,
+,65535,-,CIP 159.1.7
+,Modified settings become active immediately.,,
+,,,ModbusTCP 15118
+,,,EtherCAT 303B:7h
+,,,PROFINET 15118

@@ -1,0 +1,6 @@
+Error class,State transition,Error response,Resetting an error message
+0,-,No interruption of the movement,"Function ""Fault Reset"""
+1,T11,"Stop movement with ""Quick Stop""","Function ""Fault Reset"""
+2,"T13, T14","Stop movement with ""Quick Stop"" and disable thepower stage when the motor has come to a standstill","Function ""Fault Reset"""
+3,"T13, T14","Disable the power stage immediately without stoppingthe movement first","Function ""Fault Reset"""
+4,"T13, T14","Disable the power stage immediately without stoppingthe movement first",Power cycle

@@ -1,0 +1,6 @@
+Characteristic,Value
+"Vibration, sinusoidal",Tested as per IEC 60068-2-6
+,3.5 mm (2 ... 8.4 Hz)
+,10 m/s2 (8.4 ... 200 Hz)
+"Shock, semi-sinusoidal",Tested as per IEC 60068-2-27
+,150 m/s2 (for 11 ms)

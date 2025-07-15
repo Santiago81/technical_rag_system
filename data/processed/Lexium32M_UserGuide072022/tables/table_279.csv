@@ -1,0 +1,4 @@
+Signal input,Signal input function
+DI0,"""Enable""Enable and disable the power stage"
+DI1,"""Fault Reset""Resetting an error message"
+DI2,"""Positive Limit Switch (LIMP)""See Limit Switches, page 350"

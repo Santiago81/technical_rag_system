@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+A306,1,"Stop by user-initiated software stopParameter _SigLatched Bit 3","Drive is in operating state Quick StopActive due to a software stoprequest. The activation of a newoperating mode is not possible, theerror code is sent as the response tothe activation command.","Clear break condition with commandFault Reset."
+A307,0,Interruption by internal software stop,"In the operating modes Homing andJog, the movement is internallyinterrupted by an internal softwarestop. The activation of a newoperating mode is not possible, theerror code is sent as the response tothe activation command.",Perform a Fault Reset.
+A308,0,"Drive is in operating state Fault orFault Reaction Active","Error with error class 2 or higherdetected.","Verify the error code, remove thecause and perform a Fault Reset."
+A309,0,"Drive not in operating state OperationEnabled","A command was sent that requiresthe drive to be in the operating stateOperation Enabled (for example, acommand to change the operatingmode).","Set drive to operating state OperationEnabled and repeat the command."
+A310,0,Power stage not enabled,"Command cannot be used becausethe power stage is not enabled(operating state Operation Enabledor Quick Stop Active).","Set drive to an operating state inwhich the power stage is enabled,see state diagram."
+A311,0,Operating mode change active,"A start request for an operating modehas been received while a change ofthe operating mode was active.","Wait until the operating mode changehas terminated before triggering astart request for another operatingmode."
+A312,0,Profile generation interrupted,-,-
+A313,0,"Position overflow, zero point istherefore no longer valid (ref_ok=0)","The movement range limits wereexceeded and the zero point is nolonger valid. An absolute movementrequires a valid zero point.","Define a valid zero point by means ofthe operating mode Homing."
+A314,0,No valid zero point,"Command needs a valid zero point(ref_ok=1).","Define a valid zero point by means ofthe operating mode Homing."
+A315,0,Homing active,"Command cannot be used while theoperating mode Homing is active.","Wait until reference movement isfinished."
+A316,0,"Overflow during calculation ofacceleration",-,-
+A317,0,Motor is not at a standstill,"Command sent which is notpermissible when the motor is not ata standstill.For example:- Change of software limit switches- Change of handling of monitoringsignals- Setting of reference point- Teach in of data set","Wait until the motor has come to astandstill (x_end = 1)."
+A318,0,Operating mode active (x_end=0),"Activation of a new operating mode isnot possible while another operatingmode is still active.","Wait until the command in theoperating mode has finished (x_end=1)or terminate active operating modewith HALT command."
+A319,1,"Manual tuning/Autotuning: Movementout of rangeParameter _SigLatched Bit 2","The movement exceeds theparameterized maximum movementrange.","Verify permissible movement rangevalue and time interval."
+A31A,0,"Manual tuning/Autotuning:Amplitude/offset too high","Amplitude plus offset for tuningexceed internal velocity or currentlimitation.","Choose lower amplitude and offsetvalues."
+A31B,0,Halt requested,"Command not permissible while Haltis requested.","Clear Halt request and repeatcommand."

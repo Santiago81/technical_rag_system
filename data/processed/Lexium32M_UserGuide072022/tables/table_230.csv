@@ -1,0 +1,9 @@
+Signal output function,Description in section
+Freely Available,"Setting a Signal Output via Parameter, page 331"
+No Fault,"Indication of the Operating State via Signal Inputs, page 242"
+Active,"Indication of the Operating State via Signal Inputs, page 242"
+RMAC Active Or Finished,"Relative Movement After Capture (RMAC), page 343"
+In Position Deviation Window,"Position Deviation Window, page 371"
+In Velocity Deviation Window,"Velocity Deviation Window, page 373"
+Velocity Below Threshold,"Velocity Threshold Value, page 375"
+Current Below Threshold,"Current Threshold Value, page 376"

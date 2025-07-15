@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+DS402intLim,DS402 status word: Setting for bit 11 (internal,-,UINT16,CANopen 301B:1Eh
+,limit).,,,
+,,0,R/W,Modbus 6972
+,0 / None: Not used (reserved),,,
+,,0,per.,Profibus 6972
+,1 / Current Below Threshold: Current threshold,,,
+,value,11,-,CIP 127.1.30
+,2 / Velocity Below Threshold: Velocity threshold,,,ModbusTCP 6972
+,value,,,
+,,,,EtherCAT 301B:1Eh
+,3 / In Position Deviation Window: Position,,,
+,deviation window,,,PROFINET 6972
+,4 / In Velocity Deviation Window: Velocity,,,
+,deviation window,,,
+,5 / Position Register Channel 1: Position,,,
+,register channel 1,,,
+,6 / Position Register Channel 2: Position,,,
+,register channel 2,,,
+,7 / Position Register Channel 3: Position,,,
+,register channel 3,,,
+,8 / Position Register Channel 4: Position,,,
+,register channel 4,,,
+,9 / Hardware Limit Switch: Hardware limit switch,,,
+,10 / RMAC active or finished: Relative,,,
+,movement after capture is active or finished,,,
+,11 / Position Window: Position window,,,
+,Setting for:,,,
+,Bit 11 of the parameter _DCOMstatus,,,
+,Bit 10 of the parameter _actionStatus,,,
+,Bit 10 of the parameter _DPL_motionStat,,,
+,Modified settings become active immediately.,,,
+DSM_,Behavior for disabling the power stage during,-,INT16,CANopen 605B:0h
+ShutDownOption,movement.,,,
+,,0,R/W,Modbus 1684
+ConF→ACG-,0 / Disable Immediately /diSi: Disable,,,
+,power stage immediately,0,per.,Profibus 1684
+Sdty,,,,
+,1 / Disable After Halt /diSh: Disable power,1,-,CIP 106.1.74
+,stage after deceleration to standstill,,,
+,,,,ModbusTCP 1684
+,This parameter specifies the response to a power,,,
+,stage disable request.,,,EtherCAT 605B:0h
+,Halt is used for deceleration to standstill.,,,PROFINET 1684
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.26.,,,
+DVNaddress,DeviceNet node address (MAC ID).,-,UINT16,CANopen 3042:1h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 16898
+,product is powered on.,,,
+dnAd,,63,per.,Profibus 16898
+,,63,-,CIP 166.1.1
+,,,,ModbusTCP 16898
+,,,,EtherCAT 3042:1h
+,,,,PROFINET 16898

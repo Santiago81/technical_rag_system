@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOsigREF,Signal evaluation for reference switch.,-,UINT16,CANopen 3006:Eh
+,1 / Normally Closed: Normally closed NC,1,R/W,Modbus 1564
+,2 / Normally Open: Normally open NO,1,per.,Profibus 1564
+,The reference switch is only active while a,2,-,CIP 106.1.14
+,reference movement to the reference switch is,,,
+,processed.,,,ModbusTCP 1564
+,Setting can only be modified if power stage is,,,EtherCAT 3006:Eh
+,disabled.,,,
+,,,,PROFINET 1564
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+IOsigRespOfPS,Response to active limit switch during enabling of,-,UINT16,CANopen 3006:6h
+,power stage.,,,
+,,0,R/W,Modbus 1548
+,0 / Error: Active limit switch triggers an error.,,,
+,,0,per.,Profibus 1548
+,1 / No Error: Active limit switch does not trigger an,,,
+,error.,1,-,CIP 106.1.6
+,Defines the response when the power stage is,,,ModbusTCP 1548
+,enabled while a hardware limit switch is active.,,,
+,,,,EtherCAT 3006:6h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 1548
+IOsigVelLim,Signal evaluation for signal input function Velocity,-,UINT16,CANopen 3008:27h
+,Limitation.,,,
+,,1,R/W,Modbus 2126
+,1 / Normally Closed: Normally closed NC,,,
+,,2,per.,Profibus 2126
+,2 / Normally Open: Normally open NO,,,
+,,2,-,CIP 108.1.39
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 2126
+,Modified settings become active the next time the,,,EtherCAT 3008:27h
+,power stage is enabled.,,,
+,,,,PROFINET 2126
+,Available with firmware version ≥V01.24.,,,
+IP_IntTimInd,Interpolation time index.,-,INT16*,CANopen 60C2:2h
+,Available with firmware version ≥V01.08.,-128,R/W,Modbus 7002
+,* Datatype for CANopen: INT8,-3,-,Profibus 7002
+,,63,-,CIP 127.1.45
+,,,,ModbusTCP 7002
+,,,,EtherCAT 60C2:2h
+,,,,PROFINET 7002
+IP_IntTimPerVal,Interpolation time period value.,s,UINT16*,CANopen 60C2:1h
+,Available with firmware version ≥V01.08.,0,R/W,Modbus 7000
+,* Datatype for CANopen: UINT8,1,-,Profibus 7000
+,,255,-,CIP 127.1.44
+,,,,ModbusTCP 7000
+,,,,EtherCAT 60C2:1h
+,,,,PROFINET 7000

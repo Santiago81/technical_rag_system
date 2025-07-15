@@ -1,0 +1,28 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ESIM_,Encoder simulation: High resolution.,EncInc,UINT32,CANopen 3005:32h
+HighResolution,,,,
+,Specifies the number of increments per revolution,0,R/W,Modbus 1380
+,with 12 bit decimal places. If the parameter is set,,,
+,"to a multiple of 4096, the index pulse will be",0,per.,Profibus 1380
+,generated exactly at the same position within one,,,
+,revolution.,268431360,expert,CIP 105.1.50
+,The setting of parameter ESIM_scale is only used,,,ModbusTCP 1380
+,if parameter ESIM_HighResolution is set to 0.,,,
+,"Otherwise, the setting of ESIM_HighResolution is",,,EtherCAT 3005:32h
+,used.,,,
+,,,,PROFINET 1380
+,Example: 1417.322835 encoder simulation pulses,,,
+,per revolution are required.,,,
+,Set the parameter to 1417.322835 * 4096 =,,,
+,5805354.,,,
+,"In this example, the index pulse will be generated",,,
+,exactly after every 1417 pulses. This means that,,,
+,the index pulse shifts with each revolution.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

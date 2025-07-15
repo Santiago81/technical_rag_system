@@ -1,0 +1,7 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2
+,,LXM32•U45M2,LXM32•U90M2,LXM32•D18M2,LXM32•D30M2
+Nominal voltage (single-phase),Vac,230,230,230,230
+Inrush current limitation,A,3.5,6.9,16,33
+Maximum fuse to be connected upstream(1),A,25,25,25,25
+Continuous output current,Arms,1.5,3,6,10
+Peak output current,Arms,4.5,9,18,30

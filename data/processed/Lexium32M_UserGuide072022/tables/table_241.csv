@@ -1,0 +1,16 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ESIM_scale,Resolution of encoder simulation.,EncInc,UINT16,CANopen 3005:15h
+ConF→i-o-,Resolution defines the number of increments per,8,R/W,Modbus 1322
+,revolution (AB signal with quadruple evaluation).,,,
+ESSC,,4096,per.,Profibus 1322
+,The index pulse is created once per revolution at,,,
+,an interval where signal A and signal B are high.,65535,-,CIP 105.1.21
+,Setting can only be modified if power stage is,,,ModbusTCP 1322
+,disabled.,,,
+,,,,EtherCAT 3005:15h
+,Modified settings become active the next time the,,,
+,product is powered on.,,,PROFINET 1322

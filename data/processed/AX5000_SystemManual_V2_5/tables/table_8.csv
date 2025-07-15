@@ -1,0 +1,24 @@
+Pos.,Name,Pos..1,Name.1
+1.0,"X11 - feedback connection, encoder",11.0,X07 - external brake resistor (only AX5140)
+2.0,"X12 - feedback connection, resolver",12.0,"X13 - motor connection (U, V, W, PE)"
+3.0,X3x - optional slot for safety card,13.0,X01 - mains supply 100 - 480 V
+,X4x - optional slot for expansion cards,,
+4.0,Navigation rocker,14.0,"X02 – DC link output (max. voltage 875 V DC),"
+,,,connection for external brake resistor (only
+,,,AX5118 and AX5125)
+5.0,Status LED for EtherCAT output,15.0,X04 - socket for EtherCAT input
+6.0,Labelling field,16.0,Labelling field
+7.0,X05 - socket for EtherCAT output,17.0,Status LED for EtherCAT input
+8.0,X03 - power supply 24 V DC input,18.0,Display
+9.0,Max. voltage 875 V DC at,19.0,X06 - connection for digital inputs and outputs
+,the DC link terminals,,
+,(X02). Dangerous voltage,,
+,continues to be present for,,
+,around 5 minutes after the,,
+,DANGER device has been switched,,
+,off (AX5140 = 15 min.).,,
+,The device is safe once the,,
+,voltage has fallen below 50,,
+,V.,,
+10.0,"X14 – sensor for motor temperature, brake",,
+,and OCT,,

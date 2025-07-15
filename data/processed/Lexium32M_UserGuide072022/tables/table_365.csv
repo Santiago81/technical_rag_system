@@ -1,0 +1,8 @@
+Signal input function,Meaning,Activation
+Activate RMAC,Activation of relative movement,1 level
+,after capture,
+Start Signal Of RMAC,Start signal for relative movement,Adjustable via parameter RMAC_
+,,Edge
+Activate Operating,When the relative movement has,Rising edge
+Mode,"terminated, the operating mode is",
+,resumed.,

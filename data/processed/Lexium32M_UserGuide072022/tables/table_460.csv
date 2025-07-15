@@ -1,0 +1,16 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7853,4,"eSM module: System error detected:CPU synchronizationParameter _SigLatched Bit 23",-,-
+7854,2,"eSM module: No motor movementfor 36 hoursParameter _SigLatched Bit 23","There has not been a minimum motormovement for the last 36 hours.","There must be a minimum motormovement at least once every 36hours."
+7855,2,"eSM module: System error detected:Timeout high-priority tests (5 sec)Parameter _SigLatched Bit 23",-,-
+7856,2,"eSM module: System error detected:Timeout low-priority testsParameter _SigLatched Bit 23",-,-
+7857,2,"eSM module: Parameter dec_Qstop(minimum deceleration) is set to 0Parameter _SigLatched Bit 23",Module is not configured.,Download a configuration.
+7858,2,"eSM module: Output AUXOUT2(cross fault to another outputdetected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to another output.",Verify wiring and connected devices.
+7859,2,"eSM module: Output /INTERLOCK_OUT (cross fault to another outputdetected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to another output.",Verify wiring and connected devices.
+785A,2,"eSM module: Output RELAY_OUT_B(cross fault to another outputdetected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to another output.",Verify wiring and connected devices.
+785B,2,"eSM module: Output CCM24V_OUT_B (cross fault to another outputdetected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to another output.",Verify wiring and connected devices.
+785C,2,"eSM module: Output AUXOUT2(cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+785D,2,"eSM module: Output /INTERLOCK_OUT (cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+785E,2,"eSM module: Output RELAY_OUT_B(cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+785F,2,"eSM module: Output CCM24V_OUT_B (cross fault to 24 V detected)Parameter _SigLatched Bit 23","Cross fault detection detected across fault to 24 V.",Verify wiring and connected devices.
+7861,2,"eSM module: System error detected:Input ESMSTART_BParameter _SigLatched Bit 23",-,-
+7862,2,"eSM module: System error detected:Input SETUPENABLE_BParameter _SigLatched Bit 23",-,-

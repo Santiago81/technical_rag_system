@@ -1,0 +1,18 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_LastError,Detected error causing a stop (error classes 1 to,-,UINT16,CANopen 603F:0h
+,4).,,,
+Mon,,-,R/-,Modbus 7178
+,Error code of the most recent detected error.,,,
+LFLt,Consecutive detected errors do not overwrite this,-,-,Profibus 7178
+,error code.,,,
+,,-,-,CIP 128.1.5
+,Example: If an error response to a detected limit,,,
+,"switch error causes overvoltage, this parameter",,,ModbusTCP 7178
+,contains the code of the detected limit switch,,,
+,error.,,,EtherCAT 603F:0h
+,Exception: Detected errors of error class 4,,,PROFINET 7178
+,overwrite existing entries.,,,

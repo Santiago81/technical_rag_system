@@ -1,0 +1,64 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+BLSH_Time,Processing time for backlash compensation.,ms,UINT16,CANopen 3006:44h
+,Value 0: Immediate backlash compensation,0,R/W,Modbus 1672
+,Value >0: Processing time for backlash,0,per.,Profibus 1672
+,compensation,,,
+,,16383,-,CIP 106.1.68
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1672
+,Modified settings become active the next time the,,,EtherCAT 3006:44h
+,power stage is enabled.,,,
+,,,,PROFINET 1672
+,Available with firmware version ≥V01.14.,,,
+BRK_AddT_apply,Additional time delay for applying the holding,ms,INT16,CANopen 3005:8h
+,brake.,,,
+,,0,R/W,Modbus 1296
+,The overall time delay for applying the holding,,,
+,brake is the time delay from the electronic,0,per.,Profibus 1296
+,nameplate of the motor and the additional time,,,
+,delay in this parameter.,1000,-,CIP 105.1.8
+,Setting can only be modified if power stage is,,,ModbusTCP 1296
+,disabled.,,,
+,,,,EtherCAT 3005:8h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1296
+BRK_AddT_release,Additional time delay for releasing the holding,ms,INT16,CANopen 3005:7h
+,brake.,,,
+,,0,R/W,Modbus 1294
+,The overall time delay for releasing the holding,,,
+,brake is the time delay from the electronic,0,per.,Profibus 1294
+,nameplate of the motor and the additional time,,,
+,delay in this parameter.,400,-,CIP 105.1.7
+,Setting can only be modified if power stage is,,,ModbusTCP 1294
+,disabled.,,,
+,,,,EtherCAT 3005:7h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1294
+BRK_release,Manual operation of the holding brake.,-,UINT16,CANopen 3008:Ah
+,0 / Automatic: Automatic processing,0,R/W,Modbus 2068
+,1 / Manual Release: Manual release of holding,0,-,Profibus 2068
+,brake,,,
+,,2,-,CIP 108.1.10
+,2 / Manual Application: Manual applying of,,,
+,holding brake,,,ModbusTCP 2068
+,You can apply or release the holding brake,,,EtherCAT 3008:Ah
+,manually.,,,
+,,,,PROFINET 2068
+,The holding brake can only be manually released,,,
+,"in the operating states 'Switch On Disabled',",,,
+,'Ready To Switch On' or 'Fault'.,,,
+,If you have applied the holding brake manually,,,
+,"and then want to release it manually, you must",,,
+,first set this parameter to Automatic and then to,,,
+,Manual Release.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.12.,,,
+CANaddress,CANopen address (node number).,-,UINT16,-
+ConF→CoM-,Modified settings become active the next time the,1,R/W,
+,product is powered on.,,,
+CoAd,,-,per.,
+,,127,-,

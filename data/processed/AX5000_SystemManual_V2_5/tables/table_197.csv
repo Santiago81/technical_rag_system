@@ -1,0 +1,19 @@
+Pin,Resolver,Analog Hall sensor
+1.0,"Temperature (only PTC,",n.c.
+,Klixon or bimetal!).,
+,Switching point: 1300 Ω ±,
+,3%,
+2.0,AGND,n.c.
+3.0,COS - (S3),n.c.
+4.0,SIN - (S4),n.c.
+5.0,REF - (R2),n.c.
+6.0,n.c.,Sin 1Vpp
+7.0,n.c.,-120° or -90° 1Vpp *
+8.0,n.c.,Us_11 V (supply)
+9.0,Temp._GND,n.c.
+10.0,COS + (S1),n.c.
+11.0,SIN + (S2),n.c.
+12.0,REF + (R1),n.c.
+13.0,n.c.,REFSin 1Vpp
+14.0,n.c.,-120° or -90° 1Vpp *
+15.0,n.c.,GND (supply)

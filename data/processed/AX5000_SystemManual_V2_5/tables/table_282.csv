@@ -1,0 +1,39 @@
+Parameter,Default,Possible causes that might require a
+,,change in the default value
+First phase current level,Stationary current in %,"Sluggish system,"
+,,high attenuation --> increase value
+,,"Smooth system,"
+,,low attenuation --> reduce value
+First phase ramp up time,100 ms,"Sluggish system,"
+,,high attenuation --> increase value
+,,"Smooth system,"
+,,low attenuation --> reduce value
+First phase pos monitoring limit,0.5 degrees,Application only permits very limited
+,,uncontrolled changes in the movement
+,,--> reduce value
+,,The system has a small amount of
+,,attenuation
+,,--> reduce value
+,,The loading relationships require more
+,,overshoot
+,,--> increase value
+First phase step width,22.5 degrees,
+First phase waiting time after step,150 ms,Decay behavior of the system:
+,,Long settling time --> increase value
+,,Short settling time --> reduce value
+Second phase current level,Stationary current in %,
+Second phase ramp up time,500 ms,
+Second phase duration,3000 ms,
+Error monitoring (range of motion),90 degrees,Application only permits very limited
+,,uncontrolled changes in the movement
+,,--> reduce value
+,,The system has a small amount of
+,,attenuation
+,,--> reduce value
+,,The loading relationships require more
+,,overshoot
+,,--> increase value
+Commutation pos control: Kp,0.04,High load stiffness --> increase value
+,,Low load stiffness --> reduce value
+,,"A special case ""0"": Variant 2 is carried out in"
+,,Phase 2

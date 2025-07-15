@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,overtraveling of the movement range (ref_ok is set,,,EtherCAT 3006:16h
+,to 0 when the range is overtraveled).,,,
+,,,,PROFINET 1580
+,Modified settings become active immediately.,,,
+AccessExcl,Get exclusive access to access channel.,-,UINT16,CANopen 3001:Dh
+,Write parameter:,-,R/W,Modbus 282
+,Value 0: Release access channel,-,-,Profibus 282
+,Value 1: Use exclusive access for access channel,-,-,CIP 101.1.13
+,Read parameter:,,,ModbusTCP 282
+,Value 0: Access channel is not used exclusively,,,EtherCAT 3001:Dh
+,Value 1: Access channel is used exclusively,,,PROFINET 282
+,(access channel used for reading),,,
+,Modified settings become active immediately.,,,
+AccessLock,Locking other access channels.,-,UINT16,CANopen 3001:Eh
+,Value 0: Allow control via other access channels,0,R/W,Modbus 284
+,Value 1: Lock control via other access channels,0,-,Profibus 284
+,Example:,1,-,CIP 101.1.14
+,The access channel is used by the fieldbus.,,,ModbusTCP 284
+,"In this case, control via the commissioning",,,EtherCAT 3001:Eh
+,"software, for example, is not possible.",,,
+,,,,PROFINET 284
+,The access channel can only be locked after the,,,
+,currently active operating mode has terminated.,,,
+,Modified settings become active immediately.,,,
+AT_dir,Direction of movement for Autotuning.,-,UINT16,CANopen 302F:4h
+oP →tun-,1 / Positive Negative Home /Pnh: Positive,1,R/W,Modbus 12040
+,"direction first, then negative direction with return to",,,
+StiM,initial position,1,-,Profibus 12040
+,2 / Negative Positive Home /nPh: Negative,6,-,CIP 147.1.4
+,"direction first, then positive direction with return to",,,
+,initial position,,,ModbusTCP 12040
+,3 / Positive Home /P-h: Positive direction only,,,EtherCAT 302F:4h
+,with return to initial position,,,
+,,,,PROFINET 12040
+,4 / Positive /P--: Positive direction only,,,
+,without return to initial position,,,
+,5 / Negative Home /n-h: Negative direction,,,
+,only with return to initial position,,,
+,6 / Negative /n--: Negative direction only,,,
+,without return to initial position,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,

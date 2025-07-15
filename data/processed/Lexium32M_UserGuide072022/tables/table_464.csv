@@ -1,0 +1,15 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7A07,3,"Module IOM1: System errordetected: Nonvolatile memory readerror detected, CRC does not matchParameter _SigLatched Bit 23",-,-
+7A08,3,"Module IOM1: System errordetected: Nonvolatile memory writeerror detectedParameter _SigLatched Bit 23",-,-
+7A09,3,"Module IOM1: System errordetected: Nonvolatile memory eraseerror detectedParameter _SigLatched Bit 23",-,-
+7A0A,3,"Module IOM1: System errordetected: Incorrect flash APIimplementedParameter _SigLatched Bit 23",-,-
+7A0B,0,"Module IOM1: OvertemperatureParameter _WarnLatched Bit 23","Device cooling not sufficient.Cooling fan inoperative.Ambient temperature too high.",Verify fan and ambient temperature.
+7A0C,2,"Module IOM1: OvertemperatureParameter _SigLatched Bit 23","Device cooling not sufficient.Cooling fan inoperative.Ambient temperature too high.",Verify fan and ambient temperature.
+7A0D,2,"Module IOM1: Module not availableParameter _SigLatched Bit 23","The module IOM1 was not detectedwhen the operating mode ProfileVelocity or Profile Torque withreference value via analog input wasactivated.The module IOM1 has been removedwhen the de device was off.",Insert the module IOM1.
+7A0E,4,"Module IOM1: InoperativeParameter _SigLatched Bit 23","Module IOM1 inoperative.Hardware interface to the moduleIOM1 inoperative.",-
+7A0F,2,"Module IOM1: InoperativeParameter _SigLatched Bit 23","Module IOM1 inoperative.Hardware interface to the moduleIOM1 inoperative.",-
+7A10,4,"Module IOM1: InoperativeParameter _SigLatched Bit 23","Module IOM1 inoperative.Hardware interface to the moduleIOM1 inoperative.",-
+7A11,4,"Module IOM1: InoperativeParameter _SigLatched Bit 23","Module IOM1 inoperative.Hardware interface to the moduleIOM1 inoperative.",-
+7A12,2,"Module IOM1: Module IOM1 requiredfor velocity or torque limitation viaanalog inputParameter _SigLatched Bit 23","Velocity or torque limitation viaanalog input has been activated, butthe module IOM1 has not beeninserted.","Insert the module IOM1 or deactivatethe velocity or torque limitationsetting via the analog input."
+7A13,par.,"Module IOM1: Overload or shortcircuit at analog outputParameter _SigLatched Bit 23","Overload or shot circuit at one of theanalog outputs.",Verify wiring and connected load.
+7A14,4,"Module IOM1: Module IOM1 notsupported in combination withPROFINET fieldbus moduleParameter _SigLatched Bit 23","The module IOM1 is not supported ifthe PROFINET fieldbus module isused.",-

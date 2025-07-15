@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+TouchProbeFct,"Touch Probe function (DS402).Modified settings become active immediately.Available with firmware version ≥V01.16.","----","UINT16R/W--","CANopen 60B8:0hModbus 7028Profibus 7028CIP 127.1.58ModbusTCP 7028EtherCAT 60B8:0hPROFINET 7028"

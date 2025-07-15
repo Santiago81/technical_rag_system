@@ -1,0 +1,15 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMdis,Distance from switching point.,usr_p,INT32,CANopen 3028:7h
+,The distance from the switching point is defined as,1,R/W,Modbus 10254
+,the reference point.,,,
+,,200,per.,Profibus 10254
+,The parameter is only effective during a reference,,,
+,movement without index pulse.,2147483647,-,CIP 140.1.7
+,Modified settings become active the next time the,,,ModbusTCP 10254
+,motor moves.,,,
+,,,,EtherCAT 3028:7h
+,,,,PROFINET 10254

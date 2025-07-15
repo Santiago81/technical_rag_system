@@ -1,0 +1,7 @@
+Input circuit,Unnamed: 0,RS422,Push pull,Open collector
+Minimum input frequency with method position,Hz,0,0,0
+synchronization,,,,
+Minimum input frequency with method velocity,Hz,100,100,100
+synchronization,,,,
+Maximum input frequency,MHz,1,0.2,0.01
+Maximum line length,m (ft),100 (328),10 (32.8),1 (3.28)

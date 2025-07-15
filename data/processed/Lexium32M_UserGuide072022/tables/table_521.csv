@@ -1,0 +1,53 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_MSM_error_num,Number of the data set in which an error has been,-,INT16,CANopen 302D:Dh
+,detected.,,,
+,,-1,R/-,Modbus 11546
+,Value -1: No error,,,
+,,-1,-,Profibus 11546
+,Values 0 ... 127: Number of the data set in which,,,
+,an error has been detected.,127,-,CIP 145.1.13
+,Available with firmware version ≥V01.09.,,,ModbusTCP 11546
+,,,,EtherCAT 302D:Dh
+,,,,PROFINET 11546
+_MSM_used_data_,Number of data sets used.,-,UINT16,CANopen 302D:1Fh
+sets,,,,
+,Any data set whose data set type is not equal to,-,R/-,Modbus 11582
+,'None' is counted as a used data set.,,,
+,,-,-,Profibus 11582
+,Available with firmware version ≥V01.16.,,,
+,,-,-,CIP 145.1.31
+,,,,ModbusTCP 11582
+,,,,EtherCAT 302D:1Fh
+,,,,PROFINET 11582
+_MSMactNum,Number of data set being processed.,-,INT16,CANopen 302D:6h
+,Value -1: Operating mode is inactive or no data,-1,R/-,Modbus 11532
+,set has been triggered,,,
+,,-1,-,Profibus 11532
+,Value >0: Number of the data set being processed,,,
+,,127,-,CIP 145.1.6
+,,,,ModbusTCP 11532
+,,,,EtherCAT 302D:6h
+,,,,PROFINET 11532
+_MSMnextNum,Next data set to be triggered.,-,INT16,CANopen 302D:7h
+,Value -1: Operating mode is inactive or no data,-1,R/-,Modbus 11534
+,set is selected,,,
+,,-1,-,Profibus 11534
+,Value >0: Number of the next data set,,,
+,,127,-,CIP 145.1.7
+,,,,ModbusTCP 11534
+,,,,EtherCAT 302D:7h
+,,,,PROFINET 11534
+_MSMNumFinish,Number of data set that was active when a,-,INT16,CANopen 302D:Bh
+,movement was interrupted.,,,
+,,-1,R/-,Modbus 11542
+,"When a movement is interrupted, the number of",,,
+,the data set that was being processed at the point,-1,-,Profibus 11542
+,in time of the interruption is contained in this,,,
+,parameter.,127,-,CIP 145.1.11
+,,,,ModbusTCP 11542
+,,,,EtherCAT 302D:Bh
+,,,,PROFINET 11542

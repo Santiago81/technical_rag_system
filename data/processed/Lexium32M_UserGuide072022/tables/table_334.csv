@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+GEARjerklim,Activation of jerk limitation.,-,UINT16,CANopen 3026:7h
+ConF→i-o-,0 / Off /oFF: Jerk limitation deactivated.,0,R/W,Modbus 9742
+GFiL,1 / PosSyncOn /P_on: Jerk limitation active,0,per.,Profibus 9742
+,(only with position synchronization).,,,
+,,1,-,CIP 138.1.7
+,The time for jerk limitation must be set via,,,
+,parameter RAMP_v_jerk.,,,ModbusTCP 9742
+,Setting can only be modified if power stage is,,,EtherCAT 3026:7h
+,disabled.,,,
+,,,,PROFINET 9742
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.02.,,,

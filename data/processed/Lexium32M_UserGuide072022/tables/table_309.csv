@@ -1,0 +1,19 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IP_IntTimPerVal,Interpolation time period value.,s,UINT16*,CANopen 60C2:1h
+,Available with firmware version ≥V01.08.,0,R/W,Modbus 7000
+,* Datatype for CANopen: UINT8,1,-,Profibus 7000
+,,255,-,CIP 127.1.44
+,,,,ModbusTCP 7000
+,,,,EtherCAT 60C2:1h
+,,,,PROFINET 7000
+IP_IntTimInd,Interpolation time index.,-,INT16*,CANopen 60C2:2h
+,Available with firmware version ≥V01.08.,-128,R/W,Modbus 7002
+,* Datatype for CANopen: INT8,-3,-,Profibus 7002
+,,63,-,CIP 127.1.45
+,,,,ModbusTCP 7002
+,,,,EtherCAT 60C2:2h
+,,,,PROFINET 7002

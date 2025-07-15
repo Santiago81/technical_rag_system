@@ -1,0 +1,21 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PP_OpmChgType,Change to operating mode Profile Position during,-,UINT16,CANopen 3023:9h
+,movements.,,,
+,,0,R/W,Modbus 8978
+,0 / WithStandStill: Change with standstill,,,
+,,0,per.,Profibus 8978
+,1 / OnTheFly: Change without standstill,,,
+,,1,-,CIP 135.1.9
+,"If Modulo is active, a transition to the operating",,,
+,mode Profile Position is performed with the setting,,,ModbusTCP 8978
+,"WithStandStill, regardless of the setting of this",,,
+,parameter.,,,EtherCAT 3023:9h
+,Setting can only be modified if power stage is,,,PROFINET 8978
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.04.,,,

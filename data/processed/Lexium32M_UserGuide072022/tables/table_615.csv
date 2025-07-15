@@ -1,0 +1,67 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AI12_v_max,IOM1 Limitation of velocity at 10 V of AI12.,usr_v,UINT32,CANopen 304F:15h
+,The maximum velocity is limited to the setting in,1,R/W,Modbus 20266
+,CTRL_v_max.,,,
+,,3000,per.,Profibus 20266
+,The minimum velocity is internally limited to 100,,,
+,RPM.,2147483647,-,CIP 179.1.21
+,Setting can only be modified if power stage is,,,ModbusTCP 20266
+,disabled.,,,
+,,,,EtherCAT 304F:15h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 20266
+,Available with firmware version ≥V01.06.,,,
+IOM1_AI12_v_scale,IOM1 Target velocity at 10 V in operating mode,usr_v,INT32,CANopen 304F:16h
+,Profile Velocity of AI12.,,,
+,,-2147483648,R/W,Modbus 20268
+,The maximum velocity is limited to the setting in,,,
+,CTRL_v_max.,6000,per.,Profibus 20268
+,"By using a negative sign, you can invert the",2147483647,-,CIP 179.1.22
+,evaluation of the analog signal.,,,
+,,,,ModbusTCP 20268
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 304F:16h
+,Available with firmware version ≥V01.06.,,,
+,,,,PROFINET 20268
+IOM1_AI12_win,IOM1 Zero voltage window of AI12.,mV,UINT16,CANopen 304F:Ah
+ConF→i-o-,Threshold value up to which an input voltage,0,R/W,Modbus 20244
+,value is treated as 0 V.,,,
+A12W,,0,per.,Profibus 20244
+,"Example: Value 20, this means a range from -20",,,
+,... +20 mV is treated as 0 mV.,1000,-,CIP 179.1.10
+,Modified settings become active immediately.,,,ModbusTCP 20244
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:Ah
+,,,,PROFINET 20244
+IOM1_AQ_ErrResp,IOM1 Error response to overload of analog,-,UINT16,CANopen 304F:1Fh
+,outputs.,,,
+,,0,R/W,Modbus 20286
+,0 / Error Class 0: Error class 0,,,
+,,1,per.,Profibus 20286
+,1 / Error Class 1: Error class 1,,,
+,,3,-,CIP 179.1.31
+,2 / Error Class 2: Error class 2,,,
+,,,,ModbusTCP 20286
+,3 / Error Class 3: Error class 3,,,
+,,,,EtherCAT 304F:1Fh
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20286
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+IOM1_AQ_mode,IOM1 Type of usage of analog outputs.,-,UINT16,CANopen 304F:20h
+ConF→i-o-,0 / none /nonE: Analog outputs are,0,R/W,Modbus 20288
+,deactivated,,,
+Aoty,,0,per.,Profibus 20288
+,1 / Voltage /VoLt: Both analog outputs are,,,
+,voltage outputs,2,-,CIP 179.1.32
+,2 / Current /Curr: Both analog outputs are,,,ModbusTCP 20288
+,current outputs,,,
+,,,,EtherCAT 304F:20h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20288
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.06.,,,

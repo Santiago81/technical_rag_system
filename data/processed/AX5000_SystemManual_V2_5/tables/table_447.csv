@@ -1,0 +1,6 @@
+AX2090-TS50-3000,Unnamed: 0
+Electrical data,
+Rated input voltage [VAC],100 – 480
+Max. pulse peak current [A],3000 at 25 °C
+Power derating,20% at 50 °C
+Transient protection,Fuse AX3-430C or similar according to E128662

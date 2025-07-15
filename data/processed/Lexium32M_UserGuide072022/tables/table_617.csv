@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AQ11_invert,IOM1 Inversion of AQ11.,-,UINT16,CANopen 304F:23h
+,Only available if output is set to a voltage output.,0,R/W,Modbus 20294
+,Value 0: No inversion,0,per.,Profibus 20294
+,Value 1: Inversion active,1,-,CIP 179.1.35
+,Modified settings become active immediately.,,,ModbusTCP 20294
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:23h
+,,,,PROFINET 20294
+IOM1_AQ12_FixVal,IOM1 Fixed value for AQ12.,-,INT16,CANopen 304F:2Eh
+,Only available if parameter IOM1_AQ12_func is,-10000,R/W,Modbus 20316
+,set to 'Fixed Value'.,,,
+,,0,-,Profibus 20316
+,Unit and range depend on setting in parameter,,,
+,IOM1_AQ_mode.,20000,-,CIP 179.1.46
+,If setting is 'Voltage':,,,ModbusTCP 20316
+,Unit: mV,,,EtherCAT 304F:2Eh
+,Range: -10000 ... 10000,,,PROFINET 20316
+,If setting is 'Current':,,,
+,Unit: μA,,,
+,Range: 0 ... 20000,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_AQ12_func,IOM1 Function of AQ12.,-,UINT16,CANopen 304F:2Bh
+ConF→i-o-,0 / None /nonE: No function,0,R/W,Modbus 20310
+A12M,1 / Actual Velocity /VACt: Actual velocity (10,0,per.,Profibus 20310
+,V / 20 mA correspond to value in CTRL_v_max),,,
+,,7,-,CIP 179.1.43
+,2 / Actual Torque /tAct: Actual torque (10 V /,,,
+,20 mA correspond to value in CTRL_I_max),,,ModbusTCP 20310
+,3 / Reference Velocity /VrEF: Reference,,,EtherCAT 304F:2Bh
+,velocity (10 V / 20 mA correspond to value in,,,
+,CTRL_v_max),,,PROFINET 20310
+,4 / Reference Torque /trEF: Reference,,,
+,torque (10 V / 20 mA correspond to value in,,,
+,CTRL_I_max),,,
+,5 / Position Deviation /PdiF: Position,,,
+,deviation (10 V / 20 mA correspond to value in,,,
+,MON_p_dif_load_usr),,,
+,6 / Fixed Value /FiVA: Fixed value (setting in,,,
+,parameter IOM1_AQ12_FixVal),,,
+,7 / Actual Position /PAct: Actual position in,,,
+,the modulo range (10 V / 20 mA correspond to,,,
+,value in MOD_Max),,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,

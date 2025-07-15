@@ -1,0 +1,53 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_VelObsInert,Inertia value for velocity observer.,g cm2,UINT32,CANopen 3011:24h
+,System inertia that is used for velocity observer,1,R/W,Modbus 4424
+,calculations.,,,
+,,-,per.,Profibus 4424
+,The default value is the inertia of the mounted,,,
+,motor.,2147483648,expert,CIP 117.1.36
+,"In the case of autotuning, the value of this",,,ModbusTCP 4424
+,parameter can be set equal to that of _AT_J.,,,
+,,,,EtherCAT 3011:24h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 4424
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.01.,,,
+CTRL_vPIDDPart,PID velocity controller: D gain.,%,UINT16,CANopen 3011:6h
+,In increments of 0.1 %.,0.0,R/W,Modbus 4364
+,Modified settings become active immediately.,0.0,per.,Profibus 4364
+,,400.0,expert,CIP 117.1.6
+,,,,ModbusTCP 4364
+,,,,EtherCAT 3011:6h
+,,,,PROFINET 4364
+CTRL_vPIDDTime,PID velocity controller: Time constant of D term,ms,UINT16,CANopen 3011:5h
+,smoothing filter.,,,
+,,0.01,R/W,Modbus 4362
+,In increments of 0.01 ms.,,,
+,,0.25,per.,Profibus 4362
+,Modified settings become active immediately.,,,
+,,10.00,expert,CIP 117.1.5
+,,,,ModbusTCP 4362
+,,,,EtherCAT 3011:5h
+,,,,PROFINET 4362
+CTRL1_KFPp,Velocity feed-forward control.,%,UINT16,CANopen 3012:6h
+ConF→drC-,In the case of switching between the two control,0.0,R/W,Modbus 4620
+,"loop parameter sets, the values are changed",,,
+FPP1,linearly over the time defined in the parameter,0.0,per.,Profibus 4620
+,CTRL_ParChgTime.,,,
+,,200.0,-,CIP 118.1.6
+,In increments of 0.1 %.,,,
+,,,,ModbusTCP 4620
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3012:6h
+,,,,PROFINET 4620
+CTRL1_Kfric,Friction compensation: Gain.,Arms,UINT16,CANopen 3012:10h
+,In increments of 0.01 Arms.,0.00,R/W,Modbus 4640
+,Modified settings become active immediately.,0.00,per.,Profibus 4640
+,,10.00,expert,CIP 118.1.16
+,,,,ModbusTCP 4640
+,,,,EtherCAT 3012:10h
+,,,,PROFINET 4640

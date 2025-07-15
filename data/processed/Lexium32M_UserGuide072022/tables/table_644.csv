@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MSM_CondSequ,Start condition for the start of a sequence via a,-,UINT16,CANopen 302D:8h
+,signal input.,,,
+,,0,R/W,Modbus 11536
+,0 / Rising Edge: Rising edge,,,
+,,0,per.,Profibus 11536
+,1 / Falling Edge: Falling edge,,,
+,,3,-,CIP 145.1.8
+,2 / 1-level: 1 level,,,
+,,,,ModbusTCP 11536
+,3 / 0-level: 0 level,,,
+,,,,EtherCAT 302D:8h
+,The start condition defines the way the start,,,
+,request is to be processed. This setting is used for,,,PROFINET 11536
+,the first start after activation of the operating,,,
+,mode.,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+MSM_datasetnum,Selection of data set number in data set table.,-,UINT16,CANopen 302D:10h
+,Before an entry in the data set table can be read,0,R/W,Modbus 11552
+,"or written, the corresponding data set number",,,
+,must be selected.,0,-,Profibus 11552
+,Modified settings become active immediately.,127,-,CIP 145.1.16
+,,,,ModbusTCP 11552
+,,,,EtherCAT 302D:10h
+,,,,PROFINET 11552
+MSM_DebDigInNum,Debounce time for data set selection.,-,UINT16,CANopen 302D:20h
+,Debounce time for which the signal at the digital,0,R/W,Modbus 11584
+,input must be stable before the data set is,,,
+,considered to be valid.,0,per.,Profibus 11584
+,The debounce time is the value of this parameter,32767,-,CIP 145.1.32
+,multiplied by 250 μs.,,,
+,,,,ModbusTCP 11584
+,The value 0 deactivates debouncing.,,,
+,,,,EtherCAT 302D:20h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 11584
+,Available with firmware version ≥V01.20.,,,
+MSM_ds_logopera,Logical operator.,-,UINT16,CANopen 302D:1Ah
+,0 / None: None,0,R/W,Modbus 11572
+,1 / Logical AND: Logical AND,0,per.,Profibus 11572
+,2 / Logical OR: Logical OR,2,-,CIP 145.1.26
+,Transition condition 1 and transition condition 2,,,ModbusTCP 11572
+,can be logically combined.,,,
+,,,,EtherCAT 302D:1Ah
+,Modified settings become active immediately.,,,
+,,,,PROFINET 11572

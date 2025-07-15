@@ -1,0 +1,7 @@
+Signal,Signal input function
+DI0,Freely Available
+DI1,Reference Switch (REF)
+DI2,Positive Limit Switch (LIMP)
+DI3,Negative Limit Switch (LIMN)
+DI4,Freely Available
+DI5,Freely Available

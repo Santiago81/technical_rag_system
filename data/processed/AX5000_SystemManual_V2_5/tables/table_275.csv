@@ -1,0 +1,6 @@
+IDN,Name
+S-0-0206,Drive on delay time
+S-0-0207,Drive off delay time
+P-0-0058,Motor brake type
+P-0-0096,Motor control word
+P-0-0097,Motor status word

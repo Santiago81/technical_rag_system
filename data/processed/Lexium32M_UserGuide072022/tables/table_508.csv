@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IOM1_AI12_act,IOM1 Value of input voltage of AI12.,mV,INT16,CANopen 304F:5h
+Mon,Available with firmware version ≥V01.06.,-10000,R/-,Modbus 20234
+An12,,-,-,Profibus 20234
+,,10000,-,CIP 179.1.5
+,,,,ModbusTCP 20234
+,,,,EtherCAT 304F:5h
+,,,,PROFINET 20234
+_IOM1_AQ11_ref,IOM1 Value of AQ11.,-,INT16,CANopen 304F:27h
+Mon,Unit depends on setting in parameter IOM1_AQ_,-10000,R/-,Modbus 20302
+,mode.,,,
+Ao11,,-,-,Profibus 20302
+,If setting is 'Voltage':,,,
+,,20000,-,CIP 179.1.39
+,Unit: mV,,,
+,,,,ModbusTCP 20302
+,If setting is 'Current':,,,
+,,,,EtherCAT 304F:27h
+,Unit: μA,,,
+,,,,PROFINET 20302
+,Available with firmware version ≥V01.06.,,,
+_IOM1_AQ12_ref,IOM1 Value of AQ12.,-,INT16,CANopen 304F:31h
+Mon,Unit depends on setting in parameter IOM1_AQ_,-10000,R/-,Modbus 20322
+,mode.,,,
+Ao12,,-,-,Profibus 20322
+,If setting is 'Voltage':,,,
+,,20000,-,CIP 179.1.49
+,Unit: mV,,,
+,,,,ModbusTCP 20322
+,If setting is 'Current':,,,
+,,,,EtherCAT 304F:31h
+,Unit: μA,,,
+,,,,PROFINET 20322
+,Available with firmware version ≥V01.06.,,,
+_IOM1_DI_act,IOM1 Status of digital inputs.,-,UINT16,CANopen 304F:35h
+Mon,Bit assignments:,-,R/-,Modbus 20330
+di1X,Bit 0: DI10,-,-,Profibus 20330
+,Bit 1: DI11,-,-,CIP 179.1.53
+,Bit 2: DI12,,,ModbusTCP 20330
+,Bit 3: DI13,,,EtherCAT 304F:35h
+,Available with firmware version ≥V01.06.,,,PROFINET 20330
+_IOM1_DQ_act,IOM1 Status of digital outputs.,-,UINT16,CANopen 304F:36h
+Mon,Bit assignments:,-,R/-,Modbus 20332
+do1X,Bit 0: DQ10,-,-,Profibus 20332
+,Bit 1: DQ11,-,-,CIP 179.1.54
+,Available with firmware version ≥V01.06.,,,ModbusTCP 20332
+,,,,EtherCAT 304F:36h
+,,,,PROFINET 20332

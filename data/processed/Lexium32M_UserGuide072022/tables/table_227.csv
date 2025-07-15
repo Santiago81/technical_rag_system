@@ -1,0 +1,6 @@
+Signal,Jog,Electronic Gear,Profile Torque,Profile Velocity,Motion Sequence
+DQ0,No Fault,No Fault,No Fault,No Fault,Motion Sequence:
+,,,,,Done
+DQ1,Active,Active,Active,Active,Active
+DQ2,In Position Deviation,In Position Deviation,Current Below,In Velocity Deviation,Motion Sequence:
+,Window,Window,Threshold,Window,Start Acknowledge

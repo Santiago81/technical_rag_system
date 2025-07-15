@@ -1,0 +1,7 @@
+1,Order number,7,Rated output current,13,EtherCAT compliant
+2.0,Max. ambient temperature,8.0,Output frequency range,14.0,CE compliant
+3.0,Rated input voltage,9.0,Barcode,15.0,Standard mains supply with
+,,,,,earthed center
+4.0,Rated input current,10.0,Protection class,16.0,Customer-specific
+5.0,Input frequency,11.0,EAC compliant,17.0,Serial number
+6.0,Rated output voltage,12.0,cULus approval,,

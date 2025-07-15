@@ -1,0 +1,69 @@
+"parameter CTRL1_KFPp ..............................232, 528",parameter ENCDigEnDatBits ............................... 546
+"parameter CTRL1_Kfric ................................234, 528",parameter ENCDigLinBitsUsed ............................ 546
+"parameter CTRL1_KPn ........................ 167, 231, 529",parameter ENCDigPowSupply ............................. 547
+"parameter CTRL1_KPp ........................ 172, 232, 529",parameter ENCDigResMulUsed ........................... 547
+"parameter CTRL1_Nf1bandw........................233, 529",parameter ENCDigSSICoding .............................. 547
+"parameter CTRL1_Nf1damp .........................232, 529",parameter ENCDigSSILinAdd .............................. 547
+"parameter CTRL1_Nf1freq............................233, 529",parameter ENCDigSSILinRes .............................. 548
+"parameter CTRL1_Nf2bandw........................233, 530",parameter ENCDigSSIMaxFreq ........................... 548
+"parameter CTRL1_Nf2damp .........................233, 530",parameter ENCDigSSIResMult ............................ 548
+"parameter CTRL1_Nf2freq............................233, 530",parameter ENCDigSSIResSgl .............................. 549
+"parameter CTRL1_Osupdamp ......................234, 530",parameter ENCSinCosMaxIx ............................... 549
+"parameter CTRL1_Osupdelay.......................234, 530","parameter ERR_clear ...................................407, 549"
+"parameter CTRL1_TAUiref............................232, 531","parameter ERR_reset...................................407, 549"
+"parameter CTRL1_TAUnref .................. 168, 232, 531",parameter ErrorResp_bit_DE ............................... 550
+"parameter CTRL1_TNn ................. 167, 170, 231, 531",parameter ErrorResp_bit_ME............................... 550
+"parameter CTRL2_KFPp ..............................236, 531","parameter ErrorResp_Flt_AC ........................388, 550"
+"parameter CTRL2_Kfric ................................237, 531",parameter ErrorResp_I2tRES .............................. 550
+"parameter CTRL2_KPn ........................ 167, 235, 532","parameter ErrorResp_p_dif...........................356, 550"
+"parameter CTRL2_KPp ........................ 172, 235, 532",parameter ErrorResp_PDiffEncM ......................... 551
+"parameter CTRL2_Nf1bandw........................236, 532",parameter ErrorResp_QuasiAbs........................... 551
+"parameter CTRL2_Nf1damp .........................236, 532","parameter ErrorResp_v_dif ...........................358, 551"
+"parameter CTRL2_Nf1freq............................236, 532",parameter ErrResp_HeartB_LifeG........................ 551
+"parameter CTRL2_Nf2bandw........................237, 533","parameter ESIM_HighResolution ..................220, 552"
+"parameter CTRL2_Nf2damp .........................236, 533","parameter ESIM_PhaseShift .........................221, 552"
+"parameter CTRL2_Nf2freq............................237, 533","parameter ESIM_scale .................................220, 552"
+"parameter CTRL2_Osupdamp ......................237, 533",parameter eSM_BaseSetting ............................... 552
+"parameter CTRL2_Osupdelay.......................237, 533",parameter eSM_dec_NC ..................................... 553
+"parameter CTRL2_TAUiref............................235, 534",parameter eSM_dec_Qstop ................................. 553
+"parameter CTRL2_TAUnref .................. 168, 235, 534",parameter eSM_disable....................................... 553
+"parameter CTRL2_TNn ................. 167, 170, 235, 534",parameter eSM_FuncAUXOUT1 .......................... 554
+parameter DCbus_compat ................................... 534,parameter eSM_FuncAUXOUT2 .......................... 554
+parameter DCOMcontrol ...................................... 535,parameter eSM_FuncSwitches............................. 555
+parameter DCOMopmode.................................... 535,parameter eSM_LO_mask ................................... 556
+"parameter DEVcmdinterf ..............................182, 535",parameter eSM_SLSnegDirS ............................... 556
+parameter DevNameExtAddr ............................... 536,parameter eSM_t_NCDel..................................... 556
+"parameter DI_0_Debounce ...........................216, 536",parameter eSM_t_Relay ...................................... 556
+"parameter DI_1_Debounce ...........................216, 536",parameter eSM_v_maxAuto................................. 557
+"parameter DI_2_Debounce ...........................216, 536",parameter eSM_v_maxSetup............................... 557
+"parameter DI_3_Debounce ...........................217, 537",parameter EthIPgate1.......................................... 557
+"parameter DI_4_Debounce ...........................217, 537",parameter EthIPgate2.......................................... 557
+"parameter DI_5_Debounce ...........................217, 537",parameter EthIPgate3.......................................... 557
+parameter DPL_Activate ...................................... 537,parameter EthIPgate4.......................................... 558
+parameter DPL_dmControl .................................. 538,parameter EthIPmask1 ........................................ 558
+"parameter DPL_intLim ..................................381, 538",parameter EthIPmask2 ........................................ 558
+parameter DPL_RefA16....................................... 538,parameter EthIPmask3 ........................................ 558
+parameter DPL_RefA32....................................... 539,parameter EthIPmask4 ........................................ 558
+parameter DPL_RefB32....................................... 539,parameter EthIPmaster1 ...................................... 559
+parameter DplParChCheckDataTyp...................... 539,parameter EthIPmaster2 ...................................... 559
+parameter DS402compatib .................................. 539,parameter EthIPmaster3 ...................................... 559
+"parameter DS402intLim ................................381, 540",parameter EthIPmaster4 ...................................... 559
+"parameter DSM_ShutDownOption.................242, 540",parameter EthIpMode .......................................... 559
+parameter DVNaddress ....................................... 540,parameter EthIPmodule1 ..................................... 560
+parameter DVNbaud............................................ 541,parameter EthIPmodule2 ..................................... 560
+parameter DVNbuspower..................................... 541,parameter EthIPmodule3 ..................................... 560
+parameter DVNioDataIn....................................... 541,parameter EthIPmodule4 ..................................... 560
+parameter DVNioDataOut .................................... 541,parameter EthMbIPswap1.................................... 560
+parameter ECAT2ndaddress ................................ 541,parameter EthMbIPswap2.................................... 561
+parameter ENC_abs_source ................................ 542,parameter EthMbIPswap3.................................... 561
+parameter ENC_ModeOfMaEnc ........................... 542,parameter EthMbIPswap4.................................... 561
+"parameter ENC1_adjustment ........................155, 542",parameter EthMbScanner .................................... 561
+"parameter ENC2_adjustment ........................155, 543",parameter EthMbScanTimeout............................. 561
+parameter ENC2_type ......................................... 543,parameter EthMode............................................. 562
+parameter ENC2_usage ...................................... 544,parameter EthOptMapInp1................................... 562
+parameter ENCAnaPowSupply ............................ 544,parameter EthOptMapInp2................................... 562
+parameter ENCDigABIMaxFreq ........................... 544,parameter EthOptMapInp3................................... 562
+parameter ENCDigABImaxIx................................ 545,parameter EthOptMapOut1 .................................. 562
+parameter ENCDigBISSCoding ............................ 545,parameter EthOptMapOut2 .................................. 563
+parameter ENCDigBISSResMul ........................... 545,parameter EthOptMapOut3 .................................. 563
+parameter ENCDigBISSResSgl............................ 546,parameter EthRateSet ......................................... 563

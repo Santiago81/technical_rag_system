@@ -1,0 +1,18 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOsigCurrLim,Signal evaluation for signal input function Current,-,UINT16,CANopen 3008:28h
+,Limitation.,,,
+,,1,R/W,Modbus 2128
+,1 / Normally Closed: Normally closed NC,,,
+,,2,per.,Profibus 2128
+,2 / Normally Open: Normally open NO,,,
+,,2,-,CIP 108.1.40
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 2128
+,Modified settings become active the next time the,,,EtherCAT 3008:28h
+,power stage is enabled.,,,
+,,,,PROFINET 2128
+,Available with firmware version ≥V01.24.,,,

@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_,Configuration modification monitoring.,-,UINT16,CANopen 3004:1Dh
+ConfModification,,,,
+,Value 0: Modification detected for each write,0,R/W,Modbus 1082
+,access.,,,
+,,2,per.,Profibus 1082
+,Value 1: Modification detected for each write,,,
+,access which modifies a value.,2,-,CIP 104.1.29
+,Value 2: Identical to value 0 if commissioning,,,ModbusTCP 1082
+,software is not connected. Identical to value 1 if,,,
+,commissioning software is connected.,,,EtherCAT 3004:1Dh
+,Modified settings become active immediately.,,,PROFINET 1082
+,Available with firmware version ≥V01.26.,,,
+MON_,DC bus overvoltage monitoring threshold.,-,UINT16,CANopen 3005:3Dh
+DCbusVdcThresh,,,,
+,0 / Reduction Off: Reduction is off,0,R/W,Modbus 1402
+,1 / Reduction On: Reduction is on,0,per.,Profibus 1402
+,This parameter is used to reduce the threshold for,1,-,CIP 105.1.61
+,DC bus overvoltage monitoring. The parameter,,,
+,only affects single-phase devices supplied with,,,ModbusTCP 1402
+,115 V and three-phase devices supplied with 208,,,
+,V.,,,EtherCAT 3005:3Dh
+,Value 0:,,,PROFINET 1402
+,Single-phase: 450 Vdc,,,
+,Three-phase: 820 Vdc,,,
+,Value 1:,,,
+,Single-phase: 260 Vdc,,,
+,Three-phase: 450 Vdc,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.26.,,,
+MON_ENC_Ampl,Activation of monitoring of SinCos amplitude.,-,UINT16,CANopen 303F:61h
+,Value 0: Deactivate monitoring,0,R/W,Modbus 16322
+,Value 1: Activate monitoring,0,-,Profibus 16322
+,Modified settings become active immediately.,1,-,CIP 163.1.97
+,Available with firmware version ≥V01.26.,,,ModbusTCP 16322
+,,,,EtherCAT 303F:61h
+,,,,PROFINET 16322
+MON_GroundFault,Ground monitoring.,-,UINT16,CANopen 3005:10h
+,0 / Off: Ground monitoring off,0,R/W,Modbus 1312
+,1 / On: Ground monitoring on,1,per.,Profibus 1312
+,Modified settings become active the next time the,1,expert,CIP 105.1.16
+,product is powered on.,,,
+,,,,ModbusTCP 1312
+,,,,EtherCAT 3005:10h
+,,,,PROFINET 1312

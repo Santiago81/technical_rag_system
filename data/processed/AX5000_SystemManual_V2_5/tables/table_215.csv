@@ -1,0 +1,5 @@
+NC set values,AX5000 set values,NC actual values,AX5000 Actual values
+"axis n_Drive / outputs/axisn_DriveOut / nOutData1","MDT n / position set value(option)","axis n_Enc / inputs / axis1_Enc_In / nInData1","AT n / actual positionvalue sensor 1"
+"axis n_Drive / outputs/axisn_DriveOut / nOutData2",MDT n / velocity set value,,
+"axis n_Drive / outputs/axisn_DriveOut / nCtrl1","MDT n / master controlword (Hi-byte)","axis n_Drive / inputs/axisn_DriveIn / nStatus1 &nStatus2",AT n / drive status word
+,,"axis n_Drive / inputs/axisn_DriveIn / nStatus4",WcState' / WcState

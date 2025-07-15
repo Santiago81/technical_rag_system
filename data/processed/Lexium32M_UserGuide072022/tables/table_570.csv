@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENC_abs_source,Source for setting absolute encoder position.,-,UINT16,CANopen 3005:25h
+,0 / Encoder 1: Absolute position determined from,0,R/W,Modbus 1354
+,encoder 1,,,
+,,0,per.,Profibus 1354
+,1 / Encoder 2 (module): Absolute position,,,
+,determined from encoder 2 (module),1,-,CIP 105.1.37
+,This parameter defines the encoder source which,,,ModbusTCP 1354
+,is used to determine the base absolute position,,,
+,"after power cycling. If this is set to Encoder 1, the",,,EtherCAT 3005:25h
+,absolute position from encoder 1 is read and,,,
+,copied to the system values of encoder 2.,,,PROFINET 1354
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+ENC_ModeOfMaEnc,Selection of mode of machine encoder.,-,UINT16,CANopen 3050:2h
+,0 / None: Machine encoder is not used for motor,0,R/W,Modbus 20484
+,control,,,
+,,1,per.,Profibus 20484
+,1 / Position Control: Machine encoder is used for,,,
+,position control,2,-,CIP 180.1.2
+,2 / Velocity And Position Control: Machine,,,ModbusTCP 20484
+,encoder is used for velocity and position control,,,
+,,,,EtherCAT 3050:2h
+,It is not possible to use the machine encoder for,,,
+,velocity control and the motor encoder for position,,,PROFINET 20484
+,control.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+ENC1_adjustment,Adjustment of absolute position of encoder 1.,usr_p,INT32,CANopen 3005:16h
+,The value range depends on the encoder type.,-,R/W,Modbus 1324
+,Singleturn encoder:,-,-,Profibus 1324
+,0 ... x-1,-,-,CIP 105.1.22
+,Multiturn encoder:,,,ModbusTCP 1324
+,0 ... (4096*x)-1,,,EtherCAT 3005:16h
+,Singleturn encoder (shifted with parameter,,,PROFINET 1324
+,ShiftEncWorkRang):,,,
+,-(x/2) ... (x/2)-1,,,
+,Multiturn encoder (shifted with parameter,,,
+,ShiftEncWorkRang):,,,
+,-(2048*x) ... (2048*x)-1,,,
+,Definition of 'x': Maximum position for one encoder,,,
+,turn in user-defined units. This value is 16384 with,,,
+,the default scaling.,,,
+,If processing is to be performed with inversion of,,,
+,"the direction of movement, this must be set before",,,
+,the encoder position is adjusted.,,,
+,"After the write access, a wait time of at least 1",,,
+,second is required before the drive can be,,,
+,powered off.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

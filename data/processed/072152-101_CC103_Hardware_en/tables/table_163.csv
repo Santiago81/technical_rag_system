@@ -1,0 +1,11 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F066NO MPP DATANO MPP dataMPP data do not correspondEnter new MPP datato the internal checksum-F067*CABLE FAULT 1 ACableMechanical damageTest the encoder cablediscontinuity onand replace if-F068*CABLE FAULT 2 Athe absolutenecessaryencoder-F069*CABLE FAULT 3 A-F070*POWERFAIL 1 AEncoder powerMalfunctions in encoderTest the encoder cablefailurepower supplyand replace if-F071*POWERFAIL 2 Anecessary-F072*POWERFAIL 3 A-F073*DATA ERROR 1 AThe encoderMalfunctions on the encoderCheck the encodersupplies differentline or defective encoderand  encoder line-F074*DATA ERROR 2 Avalues after twodata requests-F075*DATA ERROR 3 AF076DRIVE OFF 1 ATraversePLC program or input signalCheck signal ”Drivecommand pendingitselfon” in the PLCF077DRIVE OFF 2 Abut signal ”Driveprogramon” not presentF078DRIVE OFF 3 AThe numericalWrong value for KV (loopCorrect KV, Vmax orvalue of the KVgain)pulse factor, see(loop gain) factorformula:-F079KV FACTOR? 1 Adoes notm3096481[ pulses ] . KVcorrespond to themin .  mm-F080KV FACTOR? 2 AKVL=other drive data.pulsesm-F081KV FACTOR? 3 AThis may lead toP200.mmP300mindivision by zerointernallyValues must beentered  without units.Errors F79...81indicated if KVL < 100F082LIMIT SWITCHSoftware end limitSoftware limit switch hasMove the axis away in1 Aswitch has beenbeen approachedthe opposite directionapproachedF083LIMIT SWITCH2 AF084LIMIT SWITCH3 A* Occurs only in conjunction with absolute encoder",,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

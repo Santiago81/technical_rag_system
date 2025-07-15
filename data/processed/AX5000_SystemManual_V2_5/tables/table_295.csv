@@ -1,0 +1,23 @@
+No.,Name
+1.0,Navigation rocker
+2.0,Labelling field
+3.0,X05 - socket for EtherCAT output
+4.0,X03 – power supply 24 V DC
+,Input
+5.0,X52 - connection of the temperature monitor
+,and the fan of the
+,external brake resistor
+6.0,X51 - connection of the external brake resistor
+7.0,X01 – mains supply
+,100 – 480 V
+8.0,X02 – DC link output
+,(890 V DC voltage).
+9.0,Max. voltage 890 V DC at the DC link
+,terminals (X02). Once the device has
+,been switched off dangerous voltage
+,will still be present for a further 5 min-
+,utes. The device is safe once the volt-
+,DANGER
+,age has fallen below 50 V.
+10.0,X04 - socket for EtherCAT input
+11.0,Display

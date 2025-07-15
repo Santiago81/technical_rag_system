@@ -1,0 +1,16 @@
+Unnamed: 0,Pin,EnDat 2.2,BiSS C,Output current
+,1,n.c.,n.c.,0.25 A / Channel
+2.0,GND,GND,,
+3.0,n.c.,n.c.,,
+4.0,5V+ ±10%,5V+ ±10%,,
+5.0,Data+,Data+,,
+6.0,12V,12V,,
+7.0,n.c.,n.c.,,
+8.0,CLK+,CLK+,,
+9.0,n.c.,n.c.,,
+10.0,GND sense,GND sense,,
+11.0,n.c.,n.c.,,
+12.0,5V sense ±10%,5V sense ±10%,,
+13.0,Data-,Data-,,
+14.0,n.c.,n.c.,,
+15.0,CLK-,CLK-,,

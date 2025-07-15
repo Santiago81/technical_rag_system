@@ -1,0 +1,10 @@
+Description,Reference
+"CANopen cable, 50 m (164 ft), [(2 x AWG 22) + (2 x AWG 24)], LSZH standard cable (low-smoke, zerohalogen, flame-retardant, tested as per IEC 60332-1), both cable ends open",TSXCANCA50
+"CANopen cable, 100 m (328 ft), [(2 x AWG 22) + (2 x AWG 24)], LSZH standard cable (low-smoke, zerohalogen, flame-retardant, tested as per IEC 60332-1), both cable ends open",TSXCANCA100
+"CANopen cable, 300 m (984 ft), [(2 x AWG 22) + (2 x AWG 24)], LSZH standard cable (low-smoke, zerohalogen, flame-retardant, tested as per IEC 60332-1), both cable ends open",TSXCANCA300
+"CANopen cable, 50 m (164 ft), [(2 x AWG 22) + (2 x AWG 24)], flame-retardant, tested as per IEC 60332-2,UL certification, both cable ends open",TSXCANCB50
+"CANopen cable, 100 m (328 ft), [(2 x AWG 22) + (2 x AWG 24)], flame-retardant, tested as per IEC 60332-2,UL certification, both cable ends open",TSXCANCB100
+"CANopen cable, 300 m (984 ft), [(2 x AWG 22) + (2 x AWG 24)], flame-retardant, tested as per IEC 60332-2,UL certification, both cable ends open",TSXCANCB300
+"CANopen cable, 50 m (164 ft), [(2 x AWG 22) + (2 x AWG 24)], flexible LSZH HD standard cable (low-smoke,zero halogen, flame-retardant, tested as per IEC 60332-1), for heavy-duty or flexible installation, oil-resistant,both cable ends open",TSXCANCD50
+"CANopen cable, 100 m (328 ft), [(2 x AWG 22) + (2 x AWG 24)], flexible LSZH HD standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1), for heavy-duty or flexible installation, oil-resistant, both cable ends open",TSXCANCD100
+"CANopen cable, 300 m (984 ft), [(2 x AWG 22) + (2 x AWG 24)], flexible LSZH HD standard cable (low-smoke, zero halogen, flame-retardant, tested as per IEC 60332-1), for heavy-duty or flexible installation, oil-resistant, both cable ends open",TSXCANCD300

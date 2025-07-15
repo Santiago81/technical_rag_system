@@ -1,0 +1,9 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F005F006F007- F008- F009- F010F011F012F013F014F015","ILLEGAL CHAR.PROGR ISACTIVELIMIT SWITCHSERVO FAULT1 ASERVO FAULT2 ASERVO FAULT3 AINTER. STOP 1 AINTER. STOP 2 AINTER. STOP 3 AILLEGALFORMATWRONGACCELERAT.","Illegal characterProgram isselected andactivatedLimit switchapproachedServo–fault onthe 1st axisServo–fault onthe 2nd axisServo–fault onthe 3rd axisInterpolator stop1st axisInterpolator stop2nd axisInterpolator stop3rd axisIllegal formatIllegal acceleration","Wrong order when enteringcharacters, e.g. a letterinstead of digit after NOn rotary axis: displacementin revolutions, preset value> 32.767 revolutionsAttempt to edit in the activeprogramA traversing range outsidethe software limit switches isdetected in a programDisplacement lies outside thetraversing rangeThe setpoint of the positioncontroller to the speedcontroller exceeds thepermitted range (signreversal)Positive feedback of thesystem, servo–outputdefective, servo–amplifierdoes not react  correctly tosetpoint input of the  CC 10Excessive overtravel, speedtoo high, mechanical systemdoes not move easilyEntered range of values toolarge, e.g. F 7.0 or illegalfunction, e.g. G90 forrevolution–programmedrotary axis or G74 forrevolution–coded incrementalencoderAcceleration too high forpreset  speed (programmedvalue plus override)","Edit programaddresses correctlyEnter new valueCancel program bymeans of ”Basicsetting” function andreselect for editingCorrect programcorrespondinglyCheck the motorfeeder cableCheck the measuringsystemCheck the servo–amplifierCheck the speed,mechanical system,parameters or loopgain factor, adjustservo–amplifierEdit, enter correctvalueEdit, enter correctvalue",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

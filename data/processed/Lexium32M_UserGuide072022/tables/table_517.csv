@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_n_nom,Nominal speed of rotation/velocity of motor.,motor_v,UINT16,CANopen 300D:5h
+,Units:,-,R/-,Modbus 3338
+,Rotary motors: RPM,-,-,Profibus 3338
+,Linear motors: mm/s,-,-,CIP 113.1.5
+,,,,ModbusTCP 3338
+,,,,EtherCAT 300D:5h
+,,,,PROFINET 3338
+_M_overload,Overload of motor (I2t).,%,INT16,CANopen 301C:19h
+,,-,R/-,Modbus 7218
+,,-,-,Profibus 7218
+,,-,-,CIP 128.1.25
+,,,,ModbusTCP 7218
+,,,,EtherCAT 301C:19h
+,,,,PROFINET 7218
+_M_Polepair,Number of pole pairs of motor.,-,UINT16,CANopen 300D:14h
+,,-,R/-,Modbus 3368
+,,-,-,Profibus 3368
+,,-,-,CIP 113.1.20
+,,,,ModbusTCP 3368
+,,,,EtherCAT 300D:14h
+,,,,PROFINET 3368
+_M_PolePairPitch,Pole pair pitch of motor.,mm,UINT16,CANopen 300D:23h
+,In increments of 0.01 mm.,-,R/-,Modbus 3398
+,Available with firmware version ≥V01.01.,-,-,Profibus 3398
+,,-,-,CIP 113.1.35
+,,,,ModbusTCP 3398
+,,,,EtherCAT 300D:23h
+,,,,PROFINET 3398
+_M_R_UV,Winding resistance of motor.,Ω,UINT16,CANopen 300D:Dh
+,In increments of 0.01 Ω.,-,R/-,Modbus 3354
+,,-,-,Profibus 3354
+,,-,-,CIP 113.1.13
+,,,,ModbusTCP 3354
+,,,,EtherCAT 300D:Dh
+,,,,PROFINET 3354

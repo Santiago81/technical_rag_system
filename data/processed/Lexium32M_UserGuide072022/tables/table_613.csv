@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_AI11_offset,IOM1 Offset voltage of AI11.,mV,INT16,CANopen 304F:Bh
+ConF→i-o-,The analog input AI11 is corrected/offset by the,-5000,R/W,Modbus 20246
+,offset value. If you have defined a zero voltage,,,
+A11o,"window, this window is effective in the zero pass",0,per.,Profibus 20246
+,range of the corrected analog input AI11.,,,
+,,5000,-,CIP 179.1.11
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 20246
+,Available with firmware version ≥V01.06.,,,
+,,,,EtherCAT 304F:Bh
+,,,,PROFINET 20246
+IOM1_AI11_Tau,IOM1 Filter time constant of AI11.,ms,UINT16,CANopen 304F:2h
+ConF→i-o-,First-order low pass (PT1) filter time constant for,0.00,R/W,Modbus 20228
+,analog input AI11.,,,
+A11F,,0.00,per.,Profibus 20228
+,In increments of 0.01 ms.,,,
+,,327.67,-,CIP 179.1.2
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 20228
+,Available with firmware version ≥V01.06.,,,
+,,,,EtherCAT 304F:2h
+,,,,PROFINET 20228
+IOM1_AI11_v_max,IOM1 Limitation of velocity at 10 V of AI11.,usr_v,UINT32,CANopen 304F:10h
+,The maximum velocity is limited to the setting in,1,R/W,Modbus 20256
+,CTRL_v_max.,,,
+,,3000,per.,Profibus 20256
+,The minimum velocity is internally limited to 100,,,
+,RPM.,2147483647,-,CIP 179.1.16
+,Setting can only be modified if power stage is,,,ModbusTCP 20256
+,disabled.,,,
+,,,,EtherCAT 304F:10h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 20256
+,Available with firmware version ≥V01.06.,,,
+IOM1_AI11_v_scale,IOM1 Target velocity at 10 V in operating mode,usr_v,INT32,CANopen 304F:11h
+,Profile Velocity of AI11.,,,
+,,-2147483648,R/W,Modbus 20258
+,The maximum velocity is limited to the setting in,,,
+,CTRL_v_max.,6000,per.,Profibus 20258
+,"By using a negative sign, you can invert the",2147483647,-,CIP 179.1.17
+,evaluation of the analog signal.,,,
+,,,,ModbusTCP 20258
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 304F:11h
+,Available with firmware version ≥V01.06.,,,
+,,,,PROFINET 20258
+IOM1_AI11_win,IOM1 Zero voltage window of AI11.,mV,UINT16,CANopen 304F:9h
+ConF→i-o-,Threshold value up to which an input voltage,0,R/W,Modbus 20242
+,value is treated as 0 V.,,,
+A11W,,0,per.,Profibus 20242
+,"Example: Value 20, this means a range from -20",,,
+,... +20 mV is treated as 0 mV.,1000,-,CIP 179.1.9
+,Modified settings become active immediately.,,,ModbusTCP 20242
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:9h
+,,,,PROFINET 20242

@@ -1,0 +1,24 @@
+Electrical data,AX5101,AX5103 AX5106,AX5112,Unnamed: 0,AX5118,AX5125,AX5140
+Rated output current,1.5 A,3 A 6 A,12 A,,18 A,25 A1),40 A
+Minimum rated channel current at,0.35 A,1 A 1 A,6 A,,12 A,12 A,18 A
+full current resolution,,,,,,,
+Peak output current 3),4.5 A,7.5 A 13 A,26 A,,36 A,50 A,80 A 4)
+Rated supply voltage,,3 x 100-10% - 480,,+10% VAC,2),,
+Max. DC link voltage,,,875 VDC,,,,
+Rated apparent power S1 operation,,,,,,,
+(selection),,,,,,,
+120 V,0.3 kVA,0.6 kVA 1.2 kVA,2.5 kVA,,3.4 kVA,4.8 kVA,8.3 kVA
+230 V,0.6 kVA,1.2 kVA 2.4 kVA,4.8 kVA,,7.2 kVA,10 kVA,16 kVA
+400 V,1.0 kVA,2.1 kVA 4.2 kVA,8.3 kVA,,12.5kVA,17.3 kVA,28 kVA
+480 V,1.2 kVA,2.5 kVA 5.0 kVA,10 kVA,,15 kVA,20.8 kVA,33 kVA
+Power loss 5),35 W,50 W 85 W,160 W,,255 W,340 W,510 W
+Max. continuous braking power,50 W,50 W 150 W,90 W,,200 W,200 W,150 W
+(internal brake resistor),,,,,,,
+Braking power (internal brake,,14 kW,,,26 kW,26 kW,26 kW
+resistor),,,,,,,
+Min. brake resistance (external,47 Ω,47 Ω 47 Ω,30 Ω,,22 Ω,22 Ω,22 Ω 6)
+brake resistor),,,,,,,
+Max. braking power (external brake,15 kW,15 kW 15 kW,23.5 kW,,32 kW,32 kW,32 kW
+resistor),,,,,,,
+DC link capacity,,235 μF,470 μF,,940 μF,1175 μF,1485 μF
+SCCR value,,,18 kA,,,,

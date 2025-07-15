@@ -1,0 +1,12 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_p_act,Actual position.,usr_p,INT32,CANopen 6064:0h
+,,-,R/-,Modbus 7706
+,,-,-,Profibus 7706
+,,-,-,CIP 130.1.13
+,,,,ModbusTCP 7706
+,,,,EtherCAT 6064:0h
+,,,,PROFINET 7706

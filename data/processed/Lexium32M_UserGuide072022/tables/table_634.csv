@@ -1,0 +1,64 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+Mfb_polepairs_lin,Number of encoder signal periods per pole pair,-,UINT16,CANopen 305C:19h
+,"pitch, denominator.",,,
+,,1,R/W,Modbus 23602
+,Description see parameter Mfb_lines_lin.,,,
+,,1,-,Profibus 23602
+,Setting can only be modified if power stage is,,,
+,disabled.,1000,-,CIP 192.1.25
+,Modified settings become active the next time the,,,ModbusTCP 23602
+,product is powered on.,,,
+,,,,EtherCAT 305C:19h
+,Available with firmware version ≥V01.34.,,,
+,,,,PROFINET 23602
+Mfb_U_max,Maximum encoder supply voltage.,V,UINT16,CANopen 305C:7h
+,In increments of 0.01 V.,-,R/W,Modbus 23566
+,Setting can only be modified if power stage is,-,-,Profibus 23566
+,disabled.,,,
+,,-,-,CIP 192.1.7
+,Modified settings become active the next time the,,,
+,product is powered on.,,,ModbusTCP 23566
+,,,,EtherCAT 305C:7h
+,,,,PROFINET 23566
+Mfb_U_min,Minimum encoder supply voltage.,V,UINT16,CANopen 305C:6h
+,In increments of 0.01 V.,-,R/W,Modbus 23564
+,Setting can only be modified if power stage is,-,-,Profibus 23564
+,disabled.,,,
+,,-,-,CIP 192.1.6
+,Modified settings become active the next time the,,,
+,product is powered on.,,,ModbusTCP 23564
+,,,,EtherCAT 305C:6h
+,,,,PROFINET 23564
+MOD_AbsDirection,Direction of absolute movement with Modulo.,-,UINT16,CANopen 3006:3Bh
+,0 / Shortest Distance: Movement with shortest,0,R/W,Modbus 1654
+,distance,,,
+,,0,per.,Profibus 1654
+,1 / Positive Direction: Movement only in positive,,,
+,direction,2,-,CIP 106.1.59
+,2 / Negative Direction: Movement only in,,,ModbusTCP 1654
+,negative direction,,,
+,,,,EtherCAT 3006:3Bh
+,"If the parameter is set to 0, the drive calculates the",,,
+,shortest way to the new target position and starts,,,PROFINET 1654
+,the movement in the corresponding direction. If,,,
+,the distance to the target position is identical in,,,
+,"positive and negative directions, the movement",,,
+,takes place in positive direction.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.01.,,,
+MOD_AbsMultiRng,Multiple ranges for absolute movement with,-,UINT16,CANopen 3006:3Ch
+,Modulo.,,,
+,,0,R/W,Modbus 1656
+,0 / Multiple Ranges Off: Absolute movement in,,,
+,one modulo range,0,per.,Profibus 1656
+,1 / Multiple Ranges On: Absolute movement in,1,-,CIP 106.1.60
+,multiple modulo ranges,,,
+,,,,ModbusTCP 1656
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:3Ch
+,Available with firmware version ≥V01.01.,,,
+,,,,PROFINET 1656

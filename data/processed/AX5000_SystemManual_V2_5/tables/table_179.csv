@@ -1,0 +1,18 @@
+Unnamed: 0,Terminal point,Signal,Output current
+I/O plug connector without LEDs,24,Power supply for the,max. 1 A
+ZS4500-2006,,external sensors (switches/,
+,,initiators),
+,,(Up 24 VDC +),
+,0,Input 0,
+,1,Input 1,
+,2,Input 2,
+I/O plug connector with LEDs,3,Input 3,
+ZS4500-2007 (optional),,,
+,4,Input 4,
+,5,Input 5,
+,6,Input 6,
+,7,Input 7 or output,max. 0.5 A
+,,(configurable),
+,,(Up 24 VDC +),
+,0V,GND (-),
+ZS4500-2008 (optional),,,

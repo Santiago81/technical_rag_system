@@ -1,0 +1,66 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PP_ModeRangeLim,Absolute movement beyond movement range.,-,UINT16,CANopen 3023:7h
+,0 / NoAbsMoveAllowed: Absolute movement,0,R/W,Modbus 8974
+,beyond movement range is not possible,,,
+,,0,per.,Profibus 8974
+,1 / AbsMoveAllowed: Absolute movement,,,
+,beyond movement range is possible,1,-,CIP 135.1.7
+,Setting can only be modified if power stage is,,,ModbusTCP 8974
+,disabled.,,,
+,,,,EtherCAT 3023:7h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 8974
+,Available with firmware version ≥V01.04.,,,
+PP_OpmChgType,Change to operating mode Profile Position during,-,UINT16,CANopen 3023:9h
+,movements.,,,
+,,0,R/W,Modbus 8978
+,0 / WithStandStill: Change with standstill,,,
+,,0,per.,Profibus 8978
+,1 / OnTheFly: Change without standstill,,,
+,,1,-,CIP 135.1.9
+,"If Modulo is active, a transition to the operating",,,
+,mode Profile Position is performed with the setting,,,ModbusTCP 8978
+,"WithStandStill, regardless of the setting of this",,,
+,parameter.,,,EtherCAT 3023:9h
+,Setting can only be modified if power stage is,,,PROFINET 8978
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.04.,,,
+PPoption,Options for operating mode Profile Position.,-,UINT16,CANopen 60F2:0h
+,Determines the reference position for relative,0,R/W,Modbus 6960
+,positioning:,,,
+,,0,-,Profibus 6960
+,0: Relative with reference to the previous target,,,
+,position of the profile generator,2,-,CIP 127.1.24
+,1: Not supported,,,ModbusTCP 6960
+,2: Relative with reference to the actual position of,,,EtherCAT 60F2:0h
+,the motor,,,
+,,,,PROFINET 6960
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+PPp_target,Target position for operating mode Profile,usr_p,INT32,CANopen 607A:0h
+,Position.,,,
+,,-,R/W,Modbus 6940
+,Minimum/maximum values depend on:,,,
+,,-,-,Profibus 6940
+,- Scaling factor,,,
+,,-,-,CIP 127.1.14
+,- Software limit switches (if they are activated),,,
+,,,,ModbusTCP 6940
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 607A:0h
+,,,,PROFINET 6940
+PPv_target,Target velocity for operating mode Profile Position.,usr_v,UINT32,CANopen 6081:0h
+,The target velocity is limited to the setting in,1,R/W,Modbus 6942
+,CTRL_v_max and RAMP_v_max.,,,
+,,60,-,Profibus 6942
+,Modified settings become active the next time the,,,
+,motor moves.,4294967295,-,CIP 127.1.15
+,,,,ModbusTCP 6942
+,,,,EtherCAT 6081:0h
+,,,,PROFINET 6942

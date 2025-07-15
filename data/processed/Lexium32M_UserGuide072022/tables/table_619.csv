@@ -1,0 +1,37 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOM1_DI_12_Deb,IOM1 Debounce time of DI12.,-,UINT16,CANopen 304F:42h
+,0 / No: No software debouncing,0,R/W,Modbus 20356
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 20356
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 179.1.66
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 20356
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 304F:42h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 20356
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_DI_13_Deb,IOM1 Debounce time of DI13.,-,UINT16,CANopen 304F:43h
+,0 / No: No software debouncing,0,R/W,Modbus 20358
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 20358
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 179.1.67
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 20358
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 304F:43h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 20358
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.06.,,,
+IOM1_DQ_set,IOM1 Setting the digital outputs directly.,-,UINT16,CANopen 304F:37h
+,Digital outputs can only be set directly if the signal,-,R/W,Modbus 20334
+,output function has been set to 'Available as,,,
+,required'.,-,-,Profibus 20334
+,Bit assignments:,-,-,CIP 179.1.55
+,Bit 0: DQ10,,,ModbusTCP 20334
+,Bit 1: DQ11,,,EtherCAT 304F:37h
+,,,,PROFINET 20334

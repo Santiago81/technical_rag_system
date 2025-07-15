@@ -1,0 +1,14 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+B603,2,"Ethernet: No valid IP addressParameter _SigLatched Bit 21",-,-
+B604,0,"Ethernet: DHCP/BOOTPParameter _WarnLatched Bit 21","IP assignment via DHCP/BOOTPunsuccessfull. Effort was given upafter 2 minutes.","Set up a properly working DHCP orBOOTP server or assign the IPaddress manually."
+B605,2,"Ethernet FDR: Unconfigured errordetectedParameter _SigLatched Bit 21",-,-
+B606,2,"Ethernet FDR: Irrecoverable errordetectedParameter _SigLatched Bit 21",-,-
+B607,2,"Ethernet: I/O data idleParameter _SigLatched Bit 21","Controller has been stopped, but I/Odata keeps being transmitted.","Disable power stage of connecteddrives before stopping the controller."
+B610,2,"EtherCAT: Fieldbus watchdog.Additional information in the errormemory indicates the detailed errorcode.Parameter _SigLatched Bit 21","EtherCAT frames are lost, forexample, due to inoperative cables orerrors caused by the master.","Verify correct cabling and shieldconnection. Verify diagnostics info ofEtherCAT master."
+B611,2,"EtherCAT: Invalid I/O data. Additionalinformation in the error memoryindicates the Modbus address.Parameter _SigLatched Bit 21","Incorrect input data or output data(such as object length, object type)","Verify correct PDO configuration(length, objects, etc.)."
+B612,2,"EtherCAT: Link lost at input andoutput portParameter _SigLatched Bit 21","EtherCAT cable. Link to connecteddevices lost.","Verify link LEDs. Verify cables andthat the devices connected to inputport and output port operate. UseEtherCAT master diagnostics forfurther troubleshooting."
+B613,2,"Ethernet: Ethernet carrier port 2 notavailableParameter _SigLatched Bit 21",-,-
+B614,1,"EtherCAT: General error detected.Additional information in the errormemory indicates the detailed errorcode.Parameter _SigLatched Bit 21",-,-
+B700,0,"Drive Profile Lexium: On activation ofthe profile, no dmControl, refA or refBhas been mapped.","dmControl, refA or refB have notbeen mapped.","Map dmControl, refA or refB."
+B702,1,"Insufficient velocity resolution due tovelocity scaling","Due to the configured velocityscaling, the velocity resolution inREFA16 is insufficient.",Change the velocity scaling.
+B703,0,"Drive Profile Lexium: Write requestwith incorrect data type.",-,-

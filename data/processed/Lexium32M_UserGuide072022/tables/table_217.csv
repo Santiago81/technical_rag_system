@@ -1,0 +1,11 @@
+Signal input function,Jog,"ElectronicGear","ProfileTorque","ProfileVelocity","MotionSequence",Description in section
+Start Signal Of RMAC,•,•,•,•,•,"Relative Movement AfterCapture (RMAC), page 343"
+Activate RMAC,•,•,•,•,•,"Relative Movement AfterCapture (RMAC), page 343"
+Activate Operating Mode,•,•,•,•,•,"Relative Movement AfterCapture (RMAC), page 343"
+Data Set Bit 4,,,,,•,"Operating Mode MotionSequence, page 305"
+Data Set Bit 5,,,,,•,"Operating Mode MotionSequence, page 305"
+Data Set Bit 6,,,,,•,"Operating Mode MotionSequence, page 305"
+Inversion AI11 (IO Module)(1),,,•,•,,"Inverting the Analog SignalInputs, page 323"
+Inversion AI12 (IO Module)(1),,,•,•,,"Inverting the Analog SignalInputs, page 323"
+Release Holding Brake,•,•,•,•,•,"Releasing the Holding BrakeManually, page 150"
+(1) Analog signal inputs are available with the IOM1 module.,,,,,,

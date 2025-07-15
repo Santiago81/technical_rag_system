@@ -1,0 +1,15 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+4301,0,"Motor overtemperatureParameter _WarnLatched Bit 17","Ambient temperature is too high.Duty cycle is too high.Motor not properly mounted (thermalisolation).Motor overload.","Verify motor installation: The heatmust be dissipated via the mountingsurface.Reduce ambient temperature.Provide ventilation."
+4302,0,"Motor overload (I2t)Parameter _WarnLatched Bit 31","The current has exceeded thenominal value for an extended periodof time.","Verify that the system can easily bemoved.Verify the load.Use a differently sized motor, ifnecessary."
+4303,0,No motor temperature monitoring,"The temperature parameters (inelectronic nameplate of motor,nonvolatile memory of encoder) areunavailable or invalid; parameter A12is equal to 0.","Contact your Schneider Electricservice representative.Replace motor."
+4304,0,"The encoder does not support motortemperature monitoring.",-,-
+4402,0,"Braking resistor overload (I2t > 75%)Parameter _WarnLatched Bit 29","Regeneration energy too high.External loads too high.Motor velocity too high.Deceleration too fast.Insufficient braking resistor.","Reduce load, velocity, deceleration.Verify correct braking resistor rating."
+4403,par.,"Braking resistor overload (I2t >100%)","Regeneration energy too high.External loads too high.Motor velocity too high.Deceleration too fast.Insufficient braking resistor.","Reduce load, velocity, deceleration.Verify correct braking resistor rating."
+4404,0,"Overload of transistor for brakingresistorParameter _WarnLatched Bit 28","Regeneration energy too high.External loads too high.Deceleration too fast.",Reduce load and/or deceleration.
+5101,0,Modbus power supply missing,-,-
+5102,4,"Motor encoder supply voltageParameter _SigLatched Bit 16","Encoder power supply is not withinpermissible range of 8 V to 12 V.","Replace the device.Contact your Schneider Electricservice representative."
+5200,4,"Error detected at connection to motorencoderParameter _SigLatched Bit 16","Encoder not properly connected, EMI",-
+5201,4,"Error detected in motor encodercommunicationParameter _SigLatched Bit 16","Encoder not properly connected, EMI",-
+5202,4,"Motor encoder is not supportedParameter _SigLatched Bit 16",Incompatible encoder connected.,-
+5203,4,"Error detected in connection motorencoderParameter _SigLatched Bit 16",Encoder not properly connected,-
+5204,3,"Connection to motor encoder lostParameter _SigLatched Bit 16",Encoder not properly connected,-

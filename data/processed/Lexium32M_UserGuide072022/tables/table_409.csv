@@ -1,0 +1,27 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PS_T_current,Temperature of power stage.,°C,INT16,CANopen 301C:10h
+Mon,,-,R/-,Modbus 7200
+tPS,,-,-,Profibus 7200
+,,-,-,CIP 128.1.16
+,,,,ModbusTCP 7200
+,,,,EtherCAT 301C:10h
+,,,,PROFINET 7200
+_PS_T_warn,Advisory temperature limit of power stage (error,°C,INT16,CANopen 3010:6h
+,class 0).,,,
+,,-,R/-,Modbus 4108
+,,-,per.,Profibus 4108
+,,-,-,CIP 116.1.6
+,,,,ModbusTCP 4108
+,,,,EtherCAT 3010:6h
+,,,,PROFINET 4108
+_PS_T_max,Maximum temperature of power stage.,°C,INT16,CANopen 3010:7h
+,,-,R/-,Modbus 4110
+,,-,per.,Profibus 4110
+,,-,-,CIP 116.1.7
+,,,,ModbusTCP 4110
+,,,,EtherCAT 3010:7h
+,,,,PROFINET 4110

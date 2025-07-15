@@ -1,0 +1,48 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_PAR_ScalingError,Additional information on error detected during,-,UINT32,CANopen 3004:16h
+,recalculation.,,,
+,,-,R/-,Modbus 1068
+,Coding:,,,
+,,-,-,Profibus 1068
+,Bits 0 ... 15: Address of the parameter that caused,,,
+,the error,-,-,CIP 104.1.22
+,Bits 16 ... 31: Number of the data set in the,,,ModbusTCP 1068
+,operating mode Motion Sequence that caused the,,,
+,error,,,EtherCAT 3004:16h
+,Available with firmware version ≥V01.03.,,,PROFINET 1068
+_PAR_ScalingState,Status of recalculation of the parameters with,-,UINT16,CANopen 3004:15h
+,user-defined units.,,,
+,,0,R/-,Modbus 1066
+,0 / Recalculation Active: Recalculation active,,,
+,,2,-,Profibus 1066
+,1 / Reserved (1): Reserved,,,
+,,7,-,CIP 104.1.21
+,2 / Recalculation Finished - No Error:,,,
+,"Recalculation finished, no error",,,ModbusTCP 1066
+,3 / Error During Recalculation: Error during,,,EtherCAT 3004:15h
+,recalculation,,,
+,,,,PROFINET 1066
+,4 / Initialization Successful: Initialization,,,
+,successful,,,
+,5 / Reserved (5): Reserved,,,
+,6 / Reserved (6): Reserved,,,
+,7 / Reserved (7): Reserved,,,
+,Status of recalculation of the parameters with,,,
+,user-defined units which are recalculated with a,,,
+,changed scaling factor.,,,
+,Available with firmware version ≥V01.03.,,,
+_PBbaud,Profibus baud rate.,-,UINT16,CANopen 3043:4h
+ConF→inF-,0 / None /nonE: No connection,-,R/-,Modbus 17160
+Pbbd,28 / 9.6 kBaud /9.6: 9.6 kBaud,-,-,Profibus 17160
+,32 / 19.2 kBaud /19.2: 19.2 kBaud,-,-,CIP 167.1.4
+,42 / 93.75 kBaud /93.7: 93.75 kBaud,,,ModbusTCP 17160
+,54 / 187.5 kBaud /187: 187.5 kBaud,,,EtherCAT 3043:4h
+,68 / 500 kBaud /500: 500 kBaud,,,PROFINET 17160
+,80 / 1500 kBaud /1500: 1500 kBaud,,,
+,82 / 3000 kBaud /3000: 3000 kBaud,,,
+,83 / 6000 kBaud /6000: 6000 kBaud,,,
+,88 / 12000 kBaud /12Mb: 12000 kBaud,,,

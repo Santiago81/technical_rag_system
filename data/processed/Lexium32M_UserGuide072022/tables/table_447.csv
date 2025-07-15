@@ -1,0 +1,18 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+544F,2,"System error detected: Memory cardParameter _SigLatched Bit 20","The last saving procedure may nothave been successful; the memorycard may be inoperative.","Retry saving the data.Replace the memory card."
+5451,0,"System error detected: No memorycard availableParameter _WarnLatched Bit 20",-,-
+5452,2,"System error detected: Data onmemory card and device do notmatchParameter _SigLatched Bit 20","Different type of device.Different type of power stage.Data on memory card does notmatch firmware version of device.",-
+5453,2,"System error detected: Incompatibledata on the memory cardParameter _SigLatched Bit 20",-,-
+5454,2,"System error detected: Capacity ofdetected memory card insufficientParameter _SigLatched Bit 20",-,-
+5455,2,"System error detected: Memory cardnot formatted properlyParameter _SigLatched Bit 20",-,"Format memory card or copy datafrom drive to memory card."
+5456,1,"System error detected: Memory cardis write-protectedParameter _SigLatched Bit 20","The memory card has been write-protected.","Remove memory card or disablewrite protection."
+5457,2,"System error detected: Incompatiblememory cardParameter _SigLatched Bit 20",Memory card capacity is insufficient.,Replace memory card
+5462,0,"Memory card implicitly written by thedeviceParameter _WarnLatched Bit 20","The content of the memory card andthe content of the nonvolatilememory are not identical.",-
+5468,3,"System error detected: Nonvolatilememory checksum error (devicename)Parameter _SigLatched Bit 29",-,-
+5469,3,"System error detected: Nonvolatilememory checksum error (SNMPinformation)Parameter _SigLatched Bit 29",-,-
+546A,3,"System error detected: Nonvolatilememory checksum errorParameter _SigLatched Bit 29",-,-
+546B,3,"System error detected: Nonvolatilememory checksum error (LLDP MIBdata)Parameter _SigLatched Bit 29",-,-
+546C,0,Nonvolatile memory file not available,-,-
+546D,3,"System error detected: Checksumerror in nonvolatile memory (IM data)Parameter _SigLatched Bit 29",-,-
+5500,3,"System error detected: Timeoutduring transmission of data",-,-
+5501,4,"System error detected: Receivedtoggle bit does not match","Software watchdog safety moduleeSM (CPU_A)",-

@@ -1,0 +1,6 @@
+Pos.,Description,Unnamed: 0,Pos..1,Unnamed: 1
+1,Powermanagement,,6.0,Activation / deactivation of the internal brake resistor
+2,Mains voltage selection,,7.0,External brake resistor parameter list
+3,Phase monitoring (deactivate for single-phase mains),,8.0,"0 = Deactivation of the external brake resistor(not recommended)1 = Standard energy management with external brake resistor2 = Energy management with external brake resistor(standalone)"
+4,"Delay time until the phase monitoring responds(activate if mains is unclean)",,9.0,"Enabling / disabling the fan of the external brake resistor andsetting the switching thresholds Switch on Level: Percentagespecification of the rated capacity value of the external brakeresistor. Switch on Temp.: Max. temperature value for theexternal brake resistor in °C."
+5,Internal brake resistor parameter list,,,

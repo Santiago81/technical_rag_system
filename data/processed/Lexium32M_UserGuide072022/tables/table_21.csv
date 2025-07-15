@@ -1,0 +1,5 @@
+Characteristic,Value
+"TT grounding system, TN groundingsystem",Approved
+IT grounding system,"Depends on hardware version:≥RS02: Approved(1)<RS02: Not approved"
+Mains with corner grounded system,Not approved
+"(1) Depending on installation altitude, see Environmental Conditions, page 24.",

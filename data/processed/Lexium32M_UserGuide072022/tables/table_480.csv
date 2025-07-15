@@ -1,0 +1,41 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,Bit 10: Assignment can be set via parameter,,,
+,DS402intLim,,,
+,Bit 11: Profile generator idle (reference velocity is,,,
+,0),,,
+,Bit 12: Profile generator decelerates,,,
+,Bit 13: Profile generator accelerates,,,
+,Bit 14: Profile generator moves at constant speed,,,
+,Bit 15: Reserved,,,
+_AT_J,Moment of inertia of the system.,kg cm2,UINT16,CANopen 302F:Ch
+,Is automatically calculated during Autotuning.,0.1,R/-,Modbus 12056
+,In increments of 0.1 kg cm2.,0.1,per.,Profibus 12056
+,,6553.5,-,CIP 147.1.12
+,,,,ModbusTCP 12056
+,,,,EtherCAT 302F:Ch
+,,,,PROFINET 12056
+_AT_M_friction,Friction torque of the system.,Arms,UINT16,CANopen 302F:7h
+,Is determined during Autotuning.,-,R/-,Modbus 12046
+,In increments of 0.01 Arms.,-,-,Profibus 12046
+,,-,-,CIP 147.1.7
+,,,,ModbusTCP 12046
+,,,,EtherCAT 302F:7h
+,,,,PROFINET 12046
+_AT_M_load,Constant load torque.,Arms,INT16,CANopen 302F:8h
+,Is determined during Autotuning.,-,R/-,Modbus 12048
+,In increments of 0.01 Arms.,-,-,Profibus 12048
+,,-,-,CIP 147.1.8
+,,,,ModbusTCP 12048
+,,,,EtherCAT 302F:8h
+,,,,PROFINET 12048
+_AT_progress,Progress of Autotuning.,%,UINT16,CANopen 302F:Bh
+,,0,R/-,Modbus 12054
+,,0,-,Profibus 12054
+,,100,-,CIP 147.1.11
+,,,,ModbusTCP 12054
+,,,,EtherCAT 302F:Bh
+,,,,PROFINET 12054

@@ -1,0 +1,5 @@
+Order identifier,Signal LEDs,Supports the following connection types
+,,Single-conductor Two-conductor Three-conductor
+ZS4500-2006,no,yes no no
+ZS4500-2007,yes,yes no no
+ZS4500-2008,yes,yes yes yes

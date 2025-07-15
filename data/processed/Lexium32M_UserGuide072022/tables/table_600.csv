@@ -1,0 +1,62 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IO_JOGmethod,Selection of jog method.,-,UINT16,CANopen 3005:18h
+ConF→ACG-,0 / Continuous Movement /coMo: Jog with,0,R/W,Modbus 1328
+,continuous movement,,,
+ioJG,,0,per.,Profibus 1328
+,1 / Step Movement /StMo: Jog with step,,,
+,movement,1,-,CIP 105.1.24
+,Modified settings become active the next time the,,,ModbusTCP 1328
+,motor moves.,,,
+,,,,EtherCAT 3005:18h
+,,,,PROFINET 1328
+IO_ModeSwitch,Operating mode for signal input function,-,UINT16,CANopen 3006:2Fh
+,Operating Mode Switch.,,,
+ConF→ACG-,,0,R/W,Modbus 1630
+,0 / None /nonE: None,,,
+ioMS,,0,per.,Profibus 1630
+,1 / Profile Torque /torq: Profile Torque,,,
+,,3,-,CIP 106.1.47
+,2 / Profile Velocity /VELP: Profile Velocity,,,
+,,,,ModbusTCP 1630
+,3 / Electronic Gear /GEAr: Electronic Gear,,,
+,,,,EtherCAT 3006:2Fh
+,Modified settings become active immediately.,,,
+,,,,PROFINET 1630
+IO_PTtq_reference,Reference value source for operating mode Profile,-,UINT16,CANopen 3005:38h
+,Torque.,,,
+ConF→ACG-,,0,R/W,Modbus 1392
+,0 / Analog Input /iAnA: Reference value via,,,
+iotq,analog input,0,per.,Profibus 1392
+,1 / PTI Interface /iPti: Reference value via,1,-,CIP 105.1.56
+,PTI interface,,,
+,,,,ModbusTCP 1392
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3005:38h
+,Modified settings become active the next time the,,,PROFINET 1392
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.20.,,,
+IO_v_limit,Velocity limitation via input.,usr_v,UINT32,CANopen 3006:1Eh
+,A velocity limitation can be activated via a digital,0,R/W,Modbus 1596
+,input.,,,
+,,10,per.,Profibus 1596
+,"In operating mode Profile Torque, the minimum",,,
+,velocity is internally limited to 100 RPM.,2147483647,-,CIP 106.1.30
+,Modified settings become active immediately.,,,ModbusTCP 1596
+,,,,EtherCAT 3006:1Eh
+,,,,PROFINET 1596
+IOdefaultMode,Operating mode.,-,UINT16,CANopen 3005:3h
+ConF→ACG-,0 / None /nonE: None,0,R/W,Modbus 1286
+io-M,1 / Profile Torque /torq: Profile Torque,6,per.,Profibus 1286
+,2 / Profile Velocity /VELP: Profile Velocity,6,-,CIP 105.1.3
+,3 / Electronic Gear /GEAr: Electronic Gear,,,ModbusTCP 1286
+,5 / Jog /JoG: Jog,,,EtherCAT 3005:3h
+,6 / Motion Sequence /MotS: Motion,,,PROFINET 1286
+,Sequence,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

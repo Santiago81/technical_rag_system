@@ -1,0 +1,9 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5
+,,"LXM32•-U60N4","LXM32•-D12N4","LXM32•-D18N4","LXM32•-D30N4","LXM32•-D72N4","LXM32•-D85N4","LXM32•-C10N4"
+"Minimum resistance value of external brakingresistor",Ω,70,47,25,15,8,8,8
+"Maximum resistance value of external brakingresistor(1)",Ω,145,73,50,30,12,11,11
+"Maximum continuous power of externalbraking resistor",W,200,500,800,1500,3000,4500,5500
+"Switch-on voltage of braking resistor atnominal voltage 208 V",V,430,430,430,430,430,430,430
+"Switch-on voltage of braking resistor atnominal voltage 380 V, 400 V and 480 V",V,780,780,780,780,780,780,780
+Parameter DCbus_compat has no effect in the case of three-phase devices,,,,,,,,
+"(1) The maximum specified braking resistor can derate the peak power of the device. Depending on the application, it is possible to use ahigher ohm resistor.",,,,,,,,

@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Cap1Count,Capture input 1 event counter (one-time).,-,UINT16,CANopen 300A:8h
+,Counts the capture events.,-,R/-,Modbus 2576
+,The event counter is reset when capture input 1 is,-,-,Profibus 2576
+,activated.,,,
+,,-,-,CIP 110.1.8
+,,,,ModbusTCP 2576
+,,,,EtherCAT 300A:8h
+,,,,PROFINET 2576
+_Cap1CountCons,Capture input 1 event counter (continuous).,-,UINT16,CANopen 300A:17h
+,Counts the capture events.,-,R/-,Modbus 2606
+,The event counter is reset when capture input 1 is,-,-,Profibus 2606
+,activated.,,,
+,,-,-,CIP 110.1.23
+,"By reading this parameter, the parameter",,,
+,"""_Cap1PosCons"" is updated and locked so it",,,ModbusTCP 2606
+,cannot be changed. Both parameter values,,,
+,remain consistent.,,,EtherCAT 300A:17h
+,Available with firmware version ≥V01.12.,,,PROFINET 2606
+_Cap1Pos,Capture input 1 captured position (one-time).,usr_p,INT32,CANopen 300A:6h
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2572
+,"signal"".",,,
+,,-,-,Profibus 2572
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.6
+,,,,ModbusTCP 2572
+,,,,EtherCAT 300A:6h
+,,,,PROFINET 2572
+_Cap1PosCons,Capture input 1 captured position (continuous).,usr_p,INT32,CANopen 300A:18h
+,"Captured position at the time of the ""capture",-,R/-,Modbus 2608
+,"signal"".",,,
+,,-,-,Profibus 2608
+,The captured position is re-calculated after,,,
+,"""Position Setting"" or ""Reference Movement"".",-,-,CIP 110.1.24
+,"By reading the parameter ""_Cap1CountCons"",",,,ModbusTCP 2608
+,this parameter is updated and locked so it cannot,,,
+,be changed. Both parameter values remain,,,EtherCAT 300A:18h
+,consistent.,,,
+,,,,PROFINET 2608
+,Available with firmware version ≥V01.12.,,,
+_Cap1PosFallEdge,Capture input 1 captured position at falling edge,usr_p,INT32,CANopen 60BB:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2636
+,This parameter contains the position captured at,,,
+,the point in time a falling edge was detected.,-,-,Profibus 2636
+,The captured position is recalculated after,-,-,CIP 110.1.38
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2636
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BB:0h
+,,,,PROFINET 2636

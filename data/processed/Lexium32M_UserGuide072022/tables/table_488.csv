@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_DCOMopmd_act,Active operating mode.,-,INT16*,CANopen 6061:0h
+,-6 / Manual Tuning / Autotuning: Manual Tuning,-6,R/-,Modbus 6920
+,/ Autotuning,,,
+,,0,-,Profibus 6920
+,-3 / Motion Sequence: Motion Sequence,,,
+,,10,-,CIP 127.1.4
+,-2 / Electronic Gear: Electronic Gear,,,
+,,,,ModbusTCP 6920
+,-1 / Jog: Jog,,,
+,,,,EtherCAT 6061:0h
+,0 / Reserved: Reserved,,,
+,,,,PROFINET 6920
+,1 / Profile Position: Profile Position,,,
+,3 / Profile Velocity: Profile Velocity,,,
+,4 / Profile Torque: Profile Torque,,,
+,6 / Homing: Homing,,,
+,7 / Interpolated Position: Interpolated Position,,,
+,8 / Cyclic Synchronous Position: Cyclic,,,
+,Synchronous Position,,,
+,9 / Cyclic Synchronous Velocity: Cyclic,,,
+,Synchronous Velocity,,,
+,10 / Cyclic Synchronous Torque: Cyclic,,,
+,Synchronous Torque,,,
+,* Datatype for CANopen: INT8,,,
+_DCOMstatus,DriveCom status word.,-,UINT16,CANopen 6041:0h
+,Bit assignments:,-,R/-,Modbus 6916
+,Bit 0: Operating state Ready To Switch On,-,-,Profibus 6916
+,Bit 1: Operating state Switched On,-,-,CIP 127.1.2
+,Bit 2: Operating state Operation Enabled,,,ModbusTCP 6916
+,Bit 3: Operating state Fault,,,EtherCAT 6041:0h
+,Bit 4: Voltage Enabled,,,PROFINET 6916
+,Bit 5: Operating state Quick Stop,,,
+,Bit 6: Operating state Switch On Disabled,,,
+,Bit 7: Error of error class 0,,,
+,Bit 8: HALT request active,,,
+,Bit 9: Remote,,,
+,Bit 10: Target Reached,,,
+,Bit 11: Internal Limit Active,,,
+,Bit 12: Operating mode-specific,,,
+,Bit 13: x_err,,,
+,Bit 14: x_end,,,
+,Bit 15: ref_ok,,,

@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+_MSMNumFinish,"Number of data set that was active when amovement was interrupted.When a movement is interrupted, the number ofthe data set that was being processed at the pointin time of the interruption is contained in thisparameter.","--1-1127","INT16R/---","CANopen 302D:BhModbus 11542Profibus 11542CIP 145.1.11ModbusTCP 11542EtherCAT 302D:BhPROFINET 11542"

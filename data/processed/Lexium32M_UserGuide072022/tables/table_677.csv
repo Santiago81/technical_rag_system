@@ -1,0 +1,13 @@
+Description,Reference
+"I/O module (module identification IOM1), additional analog and digital inputs and outputs with spring terminals",VW3M3302
+Fieldbus module CANopen (module identification CAN) with 2 x RJ45 connection,VW3A3608
+Fieldbus module CANopen (module identification CAN) with DE9 D-SUB connection (male),VW3A3618
+Fieldbus module CANopen (module identification CAN) with Open Style Connection (female),VW3A3628
+Fieldbus module Profibus DP (module identification PDP) with DE9 D-SUB connection (female),VW3A3607
+Fieldbus module PROFINET (module identification PNT) with 2 x RJ45 connection,VW3M3308
+Fieldbus module DeviceNet (module identification DNT) with Open Style Connection (female),VW3M3301
+"Fieldbus module EtherNet/IP (module identification ETH) with 2 x RJ45 connection. For EtherNet/IP andModbus-TCP",VW3A3616
+Fieldbus module EtherCAT (module identification ECT) with 2 x RJ45 connection,VW3A3601
+Encoder module RSR (resolver interface) with DE9 D-SUB connection (female),VW3M3401
+Encoder module DIG (digital interface) with HD15 D-SUB connection (female),VW3M3402
+Encoder module ANA (analog interface) with HD15 D-SUB connection (female),VW3M3403

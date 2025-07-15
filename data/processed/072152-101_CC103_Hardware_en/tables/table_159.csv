@@ -1,0 +1,9 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F016- F017F018F019F020- F021- F025- F029- F022- F026- F030- F023- F027- F031","OUTPUT FAULTE2P. PRGR.ERRORE2P. WRITEPROT.E2P OVERFLOWPROGR. NOTPOSS.NO MARKER 1 ANO MARKER 2 ANO MARKER 3 APOS. ERROR 1 APOS. ERROR 2 APOS. ERROR 3 AMS. ERROR 1 AMS. ERROR 2 AMS. ERROR 3 A","Output faultE2PROMprogrammingerrorE2PROM write–protectedE2PROMoverflowas for 17No marker 1 ANo marker 2 ANo marker 3 APosition error 1staxisPosition error2nd axisPosition error 3rdaxisMeasuring systemerror 1st axisMeasuring systemerror 2nd axisMeasuring systemerror 3rd  axis","Problems with output on theV.24/20 mA interface, e.g.wrong device, wrong baudrate, wrong handshakesignals, parity errorE2PROM cannot be written,is defectiveWRITE–Protect switch set to”ON” positionE2PROM is fullNo marker after one encoderrevolutionWire discontinuityDefective encoderEncoder pulses/encoderrevolution do not agree withthe parameter ”Number ofencoder lines”Wrong parameterWire discontinuityEncoder defectiveEncoder defectiveCable discontinuityShort–circuit","Initialize interfacecorrectlyReplace E2PROMSet WRITE–Protectswitch to ”Off”Delete programs notrequiredCheck the measuringsystem feeder cable,connectorCheck the ground andscreen connectionsCheck the measuringsystem feeder cable,connectorCheck the ground andscreen connectionsCheck the measuringsystem",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

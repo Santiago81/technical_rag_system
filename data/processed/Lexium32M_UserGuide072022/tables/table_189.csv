@@ -1,0 +1,3 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+_AT_state,"Autotuning status.Bit assignments:Bits 0 ... 10: Last processing stepBit 13: auto_tune_processBit 14: auto_tune_endBit 15: auto_tune_err","----","UINT16R/---","CANopen 302F:2hModbus 12036Profibus 12036CIP 147.1.2ModbusTCP 12036EtherCAT 302F:2hPROFINET 12036"
+_AT_progress,Progress of Autotuning.,"%00100","UINT16R/---","CANopen 302F:BhModbus 12054Profibus 12054CIP 147.1.11ModbusTCP 12054EtherCAT 302F:BhPROFINET 12054"

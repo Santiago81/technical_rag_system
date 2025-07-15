@@ -1,0 +1,6 @@
+SFF,HFT type A subsystem,Unnamed: 0,HFT type B subsystem,Unnamed: 1
+,0 1,2,0 1,2
+<60 %,SIL1 SIL2,SIL3,— SIL1,SIL2
+60 ... <90 %,SIL2 SIL3,SIL4,SIL1 SIL2,SIL3
+90 ... <99 %,SIL3 SIL4,SIL4,SIL2 SIL3,SIL4
+≥99 %,SIL3 SIL4,SIL4,SIL3 SIL4,SIL4

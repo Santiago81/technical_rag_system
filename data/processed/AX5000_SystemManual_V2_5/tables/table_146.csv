@@ -1,0 +1,4 @@
+Unnamed: 0,Terminal point,Connection,Current consumption
+,Up,"24 VDC ±10% (depending on the motor holdingbrake) - peripheral voltage (e.g.separate brake supply)","Depending on the connected consumers(see X06 and X14)"
+Us,"24 VDC-15% + 20% - systemsupply voltage","60A – 72A = 3A90A – 170A = 10A",
+GND,GND,,

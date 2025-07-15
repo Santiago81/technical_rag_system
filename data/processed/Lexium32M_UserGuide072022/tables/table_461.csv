@@ -1,0 +1,17 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+7863,2,"eSM module: System error detected:Input SETUPMODE_BParameter _SigLatched Bit 23",-,-
+7864,2,"eSM module: System error detected:Input GUARD_BParameter _SigLatched Bit 23",-,-
+7865,2,"eSM module: System error detected:Input GUARD_ACKParameter _SigLatched Bit 23",-,-
+7866,2,"eSM module: System error detected:Input /INTERLOCK_IN_BParameter _SigLatched Bit 23",-,-
+7867,2,"eSM module: System error detected:Input /ESTOP_BParameter _SigLatched Bit 23",-,-
+786A,4,"eSM module: UndertemperatureParameter _SigLatched Bit 23",Temperature of the eSM too low.,Verify ambient conditions.
+786C,2,"eSM module: OvervoltageESM24VDCParameter _SigLatched Bit 23",Voltage too high at the ESM24VDC.,Verify power supply.
+786D,4,"eSM module: OvertemperatureParameter _SigLatched Bit 23",Temperature too high.,"Verify the ambient conditions. Verifythat the flow of air is sufficient(pollution, objects)."
+786E,4,"eSM module: System error detected:Operating states not identicalParameter _SigLatched Bit 23",-,-
+7870,4,"eSM module: System error detected:Software versions not identicalParameter _SigLatched Bit 23",-,-
+7871,3,"eSM module: Error detected duringSafe Operating Stop (SOS) afterdetected errorParameter _SigLatched Bit 23","Motor movement during SafeOperating Stop (SOS).",-
+7872,4,"eSM module: System error detected:Software incompatible with hardwareParameter _SigLatched Bit 23",-,-
+7873,1,"eSM module: Error detected duringdeceleration to Safely Limited Speed(SLS)Parameter _SigLatched Bit 23","Velocity of drive greater than speedlimit configured for eSM SafelyLimited Speed (SLS).","Verify speed limit and delay time foreSM Safely Limited Speed (SLS).Adapt the drive values for ramp andvelocity, if necessary."
+7874,2,"eSM module: Repeated errordetected during Safe Operating Stop(SOS)Parameter _SigLatched Bit 23",-,-
+7875,4,"eSM module: Repeated errordetected during deceleration forQuick StopParameter _SigLatched Bit 23",-,-
+7876,3,"eSM module: /INTERLOCK_IN nothigh (timeout if t_Relay = 2)Parameter _SigLatched Bit 23",-,-

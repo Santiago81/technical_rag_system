@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_p_dif_usr,Position deviation including dynamic position,usr_p,INT32,CANopen 301E:14h
+,deviation.,,,
+,,-2147483648,R/-,Modbus 7720
+,Position deviation is the difference between,,,
+,reference position and actual position. The,-,-,Profibus 7720
+,position deviation consists of the load-dependent,,,
+,position deviation and the dynamic position,2147483647,-,CIP 130.1.20
+,deviation.,,,
+,,,,ModbusTCP 7720
+,Available with firmware version ≥V01.03.,,,
+,,,,EtherCAT 301E:14h
+,,,,PROFINET 7720
+_p_DifENC1toENC2,Deviation of encoder positions.,Inc,INT32,CANopen 301E:18h
+,Available with firmware version ≥V01.01.,-,R/-,Modbus 7728
+,,-,-,Profibus 7728
+,,-,-,CIP 130.1.24
+,,,,ModbusTCP 7728
+,,,,EtherCAT 301E:18h
+,,,,PROFINET 7728
+_p_PTI_act,Actual position at PTI interface.,Inc,INT32,CANopen 3008:5h
+,Counted position increments at PTI interface.,-2147483648,R/-,Modbus 2058
+,,-,-,Profibus 2058
+,,2147483647,-,CIP 108.1.5
+,,,,ModbusTCP 2058
+,,,,EtherCAT 3008:5h
+,,,,PROFINET 2058
+_p_ref,Reference position.,usr_p,INT32,CANopen 301E:Ch
+,Value corresponds to the reference position of the,-,R/-,Modbus 7704
+,position controller.,,,
+,,-,-,Profibus 7704
+,,-,-,CIP 130.1.12
+,,,,ModbusTCP 7704
+,,,,EtherCAT 301E:Ch
+,,,,PROFINET 7704
+_p_ref_int,Reference position in internal units.,Inc,INT32,CANopen 301E:9h
+,Value corresponds to the reference position of the,-,R/-,Modbus 7698
+,position controller.,,,
+,,-,-,Profibus 7698
+,,-,-,CIP 130.1.9
+,,,,ModbusTCP 7698
+,,,,EtherCAT 301E:9h
+,,,,PROFINET 7698

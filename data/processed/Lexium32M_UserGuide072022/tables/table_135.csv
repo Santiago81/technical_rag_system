@@ -1,0 +1,6 @@
+Pin,Signal,Meaning
+"1, 5",STO_A,"Safety-related function STO: Dual-channel connection, connection A"
+"2, 6",STO_B,"Safety-related function STO: Dual-channel connection, connection B"
+"3, 7",24V,24 Vdc control supply
+"4, 8",0V,Reference potential for 24 Vdc control supply and reference potential for safety-related
+,,function STO

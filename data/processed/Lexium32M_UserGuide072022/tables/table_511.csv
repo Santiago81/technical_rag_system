@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IPmaskAct1,"Currently used IP address subnet mask, byte 1.",-,UINT16,CANopen 303E:8h
+,Byte 1 (x.0.0.0) of the IP address of the subnet,0,R/-,Modbus 15888
+,mask.,,,
+,,0,-,Profibus 15888
+,Available with firmware version ≥V01.26.,,,
+,,255,-,CIP 162.1.8
+,,,,ModbusTCP 15888
+,,,,EtherCAT 303E:8h
+,,,,PROFINET 15888
+_IPmaskAct2,"Currently used IP address subnet mask, byte 2.",-,UINT16,CANopen 303E:9h
+,Byte 2 (0.x.0.0) of the IP address of the subnet,0,R/-,Modbus 15890
+,mask.,,,
+,,0,-,Profibus 15890
+,Available with firmware version ≥V01.26.,,,
+,,255,-,CIP 162.1.9
+,,,,ModbusTCP 15890
+,,,,EtherCAT 303E:9h
+,,,,PROFINET 15890
+_IPmaskAct3,"Currently used IP address subnet mask, byte 3.",-,UINT16,CANopen 303E:Ah
+,Byte 3 (0.0.x.0) of the IP address of the subnet,0,R/-,Modbus 15892
+,mask.,,,
+,,0,-,Profibus 15892
+,Available with firmware version ≥V01.26.,,,
+,,255,-,CIP 162.1.10
+,,,,ModbusTCP 15892
+,,,,EtherCAT 303E:Ah
+,,,,PROFINET 15892
+_IPmaskAct4,"Currently used IP address subnet mask, byte 4.",-,UINT16,CANopen 303E:Bh
+,Byte 4 (0.0.0.x) of the IP address of the subnet,0,R/-,Modbus 15894
+,mask.,,,
+,,0,-,Profibus 15894
+,Available with firmware version ≥V01.26.,,,
+,,255,-,CIP 162.1.11
+,,,,ModbusTCP 15894
+,,,,EtherCAT 303E:Bh
+,,,,PROFINET 15894
+_Iq_act_rms,"Actual motor current (q component, generating",Arms,INT16,CANopen 301E:1h
+,torque).,,,
+Mon,,-,R/-,Modbus 7682
+,In increments of 0.01 Arms.,,,
+qAct,,-,-,Profibus 7682
+,,-,-,CIP 130.1.1
+,,,,ModbusTCP 7682
+,,,,EtherCAT 301E:1h
+,,,,PROFINET 7682

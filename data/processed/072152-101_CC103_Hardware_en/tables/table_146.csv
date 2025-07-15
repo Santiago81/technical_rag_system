@@ -1,0 +1,37 @@
+Unnamed: 0,Bit,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9
+,,,7,6,5 4,3,,2,1,0
+Byte,,,,,,,,,,
+O8.,,,,,D i s p l a y,a x i s  1,,,,
+,,,2 7,2 6,2 5 2 4,2 3,,2 2,2 1,2 0
+O9.,,,,,(Setpoint or actual value),,,,,
+,,,2 15,2 14,2 13 2 12,2 11,,2 10,2 9,2 8
+O10.,,,,,,,,,,
+,,,2 23,2 22,2 21 2 20,2 19,,2 18,2 17,2 16
+,,Sign,,Act. value,Nom. value,,,,,
+O11.,,0: positive,,display,display -,-,,-,-,
+,,1: negative,,axis 1,axis 1,,,,,2 24
+O12.,,,,,D i s p l a y,a x i s  2,,,,
+,,,2 7,2 6,2 5 2 4,2 3,,2 2,2 1,2 0
+O13.,,,,,(Setpoint or actual value),,,,,
+,,,2 15,2 14,2 13 2 12,2 11,,2 10,2 9,2 8
+O14.,,,,,,,,,,
+,,,2 23,2 22,2 21 2 20,2 19,,2 18,2 17,2 16
+,,Sign,,Act. value,Nom. value,,,,,
+O15.,,0: positive,,display,display -,-,,-,-,24
+,,1: negative,,axis 2,axis 2,,,,,2
+O16.,,,,,D i s p l a y,a x i s  3,,,,
+,,,2 7,2 6,2 5 2 4,2 3,,2 2,2 1,2 0
+O17.,,,,,(Setpoint or actual value),,,,,
+,,,2 15,2 14,2 13 2 12,2 11,,2 10,2 9,2 8
+O18.,,,,,,,,,,
+,,,2 23,2 22,2 21 2 20,2 19,,2 18,2 17,2 16
+,,Sign,,Act. value,Nom. value,,,,,
+O19.,,0: positive,,display,display -,-,,-,-,24
+,,1: negative,,axis 3,axis 3,,,,,2
+,,Required,,Ackn.ledge,,,,,,
+O20.,,data output,,for required,- -,-,,-,-,-
+,,Strobe,,data  input,,,,,,
+O21.,,,,,U s e ro u t p u t s,,,,,
+,,,12,11,10 9,8,,7,6,5
+O22.,,,-,-,- -,-,,-,-,-
+O23.,,,-,-,- -,-,,-,-,-

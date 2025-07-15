@@ -1,0 +1,25 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMIDispPara,HMI display when motor moves.,-,UINT16,CANopen 303A:2h
+Mon,0 / OperatingState /StAt: Operating state,0,R/W,Modbus 14852
+SuPV,1 / v_act /VAct: Actual motor velocity,0,per.,Profibus 14852
+,2 / I_act /iAct: Actual motor current,2,-,CIP 158.1.2
+,Modified settings become active immediately.,,,ModbusTCP 14852
+,,,,EtherCAT 303A:2h
+,,,,PROFINET 14852
+HMIlocked,Lock HMI.,-,UINT16,CANopen 303A:1h
+,0 / Not Locked /nLoc: HMI not locked,0,R/W,Modbus 14850
+,1 / Locked /Loc: HMI locked,0,per.,Profibus 14850
+,The following functions can no longer be started,1,-,CIP 158.1.1
+,when the HMI is locked:,,,
+,,,,ModbusTCP 14850
+,- Parameter change,,,
+,,,,EtherCAT 303A:1h
+,- Jog,,,
+,,,,PROFINET 14850
+,- Autotuning,,,
+,- Fault Reset,,,
+,Modified settings become active immediately.,,,

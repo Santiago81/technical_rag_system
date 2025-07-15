@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_fwRevSlot3,Firmware revision of slot 3.,-,UINT16,CANopen 3002:23h
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 582
+,Part XX.YY is contained in parameter,-,-,Profibus 582
+,_fwVerSlot3.,,,
+,,-,-,CIP 102.1.35
+,Part ZZ is used for quality evolution and contained,,,
+,in this parameter.,,,ModbusTCP 582
+,"If no module is installed, the value 0 is returned.",,,EtherCAT 3002:23h
+,Example: V01.23.45,,,PROFINET 582
+,The value is provided as a decimal value: 45,,,
+_fwRevSlot3Boot,Firmware revision of slot 3 (Bootloader).,-,UINT16,CANopen 3002:29h
+ConF→inF-,The version format is XX.YY.ZZ.BB.,-,R/-,Modbus 594
+brEV,Part XX.YY is contained in parameter,-,-,Profibus 594
+,_fwVerSlot3Boot.,,,
+,,-,-,CIP 102.1.41
+,Part ZZ.BB is used for quality evolution and,,,
+,contained in this parameter.,,,ModbusTCP 594
+,"If no module is installed, the value 0 is returned.",,,EtherCAT 3002:29h
+,Example: V01.23.45.67,,,PROFINET 594
+,The value is provided as a decimal value: 4567,,,
+_fwRevSlot3FPGA,Firmware revision of slot 3 (FPGA).,-,UINT16,CANopen 3002:26h
+ConF→inF-,The version format is XX.YY.ZZ.,-,R/-,Modbus 588
+FrEV,Part XX.YY is contained in parameter,-,-,Profibus 588
+,_fwVerSlot3FPGA.,,,
+,,-,-,CIP 102.1.38
+,Part ZZ is used for quality evolution and contained,,,
+,in this parameter.,,,ModbusTCP 588
+,"If no module is installed, the value 0 is returned.",,,EtherCAT 3002:26h
+,Example: V01.23.45,,,PROFINET 588
+,The value is provided as a decimal value: 45,,,
+_fwVersSlot1,Firmware version of slot 1.,-,UINT16,CANopen 3002:18h
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 560
+,Part XX.YY is contained in this parameter.,-,-,Profibus 560
+,Part ZZ is contained in parameter _fwRevSlot1.,-,-,CIP 102.1.24
+,"If no module is installed, the value 0 is returned.",,,ModbusTCP 560
+,Example: V01.23.45,,,EtherCAT 3002:18h
+,The value is provided as a decimal value: 123,,,PROFINET 560
+_fwVersSlot2,Firmware version of slot 2.,-,UINT16,CANopen 3002:1Dh
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 570
+,Part XX.YY is contained in this parameter.,-,-,Profibus 570
+,Part ZZ is contained in parameter _fwRevSlot2.,-,-,CIP 102.1.29
+,"If no module is installed, the value 0 is returned.",,,ModbusTCP 570
+,Example: V01.23.45,,,EtherCAT 3002:1Dh
+,The value is provided as a decimal value: 123,,,PROFINET 570

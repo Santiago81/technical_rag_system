@@ -1,0 +1,26 @@
+Unnamed: 0,Unnamed: 1,CC 10
+,Contents,
+Flexible Automation,,Interface Conditions
+BPF CONNECTED,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . O 6.7,7-46
+GENERAL ERROR,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . O 7.0,
+ERROR CODE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,,O 7.1 - O 7.7 7-47
+"PRESET SETPOINT, 1ST AXIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 8.0 - I 11.7",,7-48
+"1ST PRESET SETPOINT INACTIVE, 1ST AXIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 11.2",,7-49
+FEED % . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 11.3 - I 11.6,,7-50
+"PRESET SETPOINT, 2ND AXIS",. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 12.0 - 15.7,7-51
+"PRESET SETPOINT INACTIVE, 2ND AXIS",. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 15.2,7-51
+"PRESET SETPOINT, 3RD AXIS",. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 16.0 - 19.7,7-51
+"PRESET SETPOINT INACTIVE, 3RD AXIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 19.2",,7-51
+PRESET SETPOINT POSITION,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.0,7-51
+G90/G91 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.1,,7-51
+SETPOINT DISPLAY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.2,,7-51
+ACTUAL VALUE DISPLAY . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.3,,7-52
+ACKNOWLEDGE DATA CHANNEL OUTPUT,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.6,7-52
+REQUIRED DATA INPUT STROBE,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.7,
+ACKNOWLEDGEMENT FOR REQUIRED DATA INPUT . . . . . . . . . . . . . . . . . . . . O 20.6,,7-53
+DISPLAY 1ST AXIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .,,O 8.0 - 11.7 7-54
+DISPLAY 2ND AXIS,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . O 12.0 - 15.7,7-54
+DISPLAY 3RD AXIS,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . O 16.0 - 19.7,7-54
+ACKNOWLEDGEMENT FOR REQUIRED DATA INPUT . . . . . . . . . . . . . . . . . . . . O 20.6,,7-54
+DATA CHANNEL OUTPUT STROBE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . O 20.7,,
+ACKNOWLEDGE DATA CHANNEL OUTPUT,. . . . . . . . . . . . . . . . . . . . . . . . . . . . . I 20.6,7-55

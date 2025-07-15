@@ -1,0 +1,26 @@
+Display,Description
+,"The display consists of 2 lines. These two lines display independent,"
+,configurable contents.
+,The contents can be arranged into 4 groups.
+,Cyclic values (standard display):
+,The so-called standard display is shown permanently. The values provided can
+,be displayed in the two lines. The two lines are preconfigured in the factory as
+,follows:
+,Line 1: EtherCAT status
+,Line 2: DC link voltage
+,Error messages:
+,"If an error occurs, the diagnostic code (hex) and a short version of the message"
+,(2+3) are shown alternately on the display. If the error concerns only channel
+,"""A"", then this display is shown only in the upper line; the standard text remains in"
+,"the lower line. If the error concerns only channel ""B"", then this display is shown"
+,only in the lower line; the standard text remains in the upper line. In both cases
+,the display additionally flashes (2-5).
+,If the error has been rectified and acknowledged with the reset command
+,"(S-0-0099), the standard display with the cyclic values appears again (see"
+,above).
+see error messages,Warnings:
+,"If a warning occurs, the display behaves in the same way as with an error"
+,message.
+see error messages,Information messages:
+,"If an information message occurs, the display behaves in the same way as with"
+,"an error message, but does not flash."

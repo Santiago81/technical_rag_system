@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_IPAddressAct4,"Currently used IP address, byte 4.",-,UINT16,CANopen 303E:7h
+ConF→CoM-,Byte 4 (0.0.0.x) of the IP address.,0,R/-,Modbus 15886
+iPA4,Available with firmware version ≥V01.26.,0,-,Profibus 15886
+,,255,-,CIP 162.1.7
+,,,,ModbusTCP 15886
+,,,,EtherCAT 303E:7h
+,,,,PROFINET 15886
+_IPgateAct1,"Currently used IP address gateway, byte 1.",-,UINT16,CANopen 303E:Ch
+,Byte 1 (x.0.0.0) of the IP address of the gateway.,0,R/-,Modbus 15896
+,Available with firmware version ≥V01.26.,0,-,Profibus 15896
+,,255,-,CIP 162.1.12
+,,,,ModbusTCP 15896
+,,,,EtherCAT 303E:Ch
+,,,,PROFINET 15896
+_IPgateAct2,"Currently used IP address gateway, byte 2.",-,UINT16,CANopen 303E:Dh
+,Byte 2 (0.x.0.0) of the IP address of the gateway.,0,R/-,Modbus 15898
+,Available with firmware version ≥V01.26.,0,-,Profibus 15898
+,,255,-,CIP 162.1.13
+,,,,ModbusTCP 15898
+,,,,EtherCAT 303E:Dh
+,,,,PROFINET 15898
+_IPgateAct3,"Currently used IP address gateway, byte 3.",-,UINT16,CANopen 303E:Eh
+,Byte 3 (0.0.x.0) of the IP address of the gateway.,0,R/-,Modbus 15900
+,Available with firmware version ≥V01.26.,0,-,Profibus 15900
+,,255,-,CIP 162.1.14
+,,,,ModbusTCP 15900
+,,,,EtherCAT 303E:Eh
+,,,,PROFINET 15900
+_IPgateAct4,"Currently used IP address gateway, byte 4.",-,UINT16,CANopen 303E:Fh
+,Byte 4 (0.0.0.x) of the IP address of the gateway.,0,R/-,Modbus 15902
+,Available with firmware version ≥V01.26.,0,-,Profibus 15902
+,,255,-,CIP 162.1.15
+,,,,ModbusTCP 15902
+,,,,EtherCAT 303E:Fh
+,,,,PROFINET 15902

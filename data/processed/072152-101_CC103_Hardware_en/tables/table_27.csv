@@ -1,0 +1,12 @@
+Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,RX
+TX+,13.0,13.0,"0,19  br",13.0,
+,,,,,TX
+RS+,16.0,16.0,"0,19 gn",16.0,RS+
+PGND,21.0,21.0,"0,19  bl",21.0,PGND
++12V In,10.0,10.0,"0,19  rt",10.0,+12V
+,9.0,,,,
++12V out,,9.0,,,
+,8.0,,,,
+BPF  in,,8.0,"0,19",8.0,Hand held unit
+,17.0,,,,
+BPF  out,,17.0,"0,19",17.0,identification

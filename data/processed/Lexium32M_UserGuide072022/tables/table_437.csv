@@ -1,0 +1,19 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+1100,0,"Parameter out of permissible valuerange","The value entered was outside of thepermissible value range for thisparameter.","The entered value must be within thepermissible value range."
+1101,0,Parameter does not exist,"Error detected by parametermanagement: Parameter (index)does not exist.",Select a different parameter (index).
+1102,0,Parameter does not exist,"Error detected by parametermanagement: Parameter (subindex)does not exist.","Select a different parameter(subindex)."
+1103,0,"Parameter write not permissible(READ only)",Write access to read only parameter.,"Write only to parameters that are notread-only."
+1104,0,"Write access denied (no accessauthorization)","Parameter only accessible at expertlevel.","The write access level expert isrequired."
+1105,0,"Block Upload/Download notinitialized",-,-
+1106,0,"Command not permissible whilepower stage is active","Command not permissible while thepower stage is enabled (operatingstate Operation Enabled or QuickStop Active).","Disable the power stage and repeatthe command."
+1107,0,Access via other interface blocked,"Access occupied by another channel(for example: Commissioningsoftware is active and fieldbusaccess was tried at the same time).","Verify the channel that blocksaccess."
+1108,0,"File cannot be uploaded: Incorrectfile ID",-,-
+1109,1,"Data stored after a power outage isinvalid",-,-
+110A,0,"System error detected: Nobootloader available",-,-
+110B,3,"Configuration error detected.Additional information in the errormemory indicates the Modbusregister address.Parameter _SigLatched Bit 30","Error detected during parametercheck (for example, referencevelocity value for operating modeProfile Position is greater thanmaximum permissible velocity ofdrive).","Value in additional error informationshows the Modbus register addressof the parameter where theinitialization error was detected."
+110D,1,"Basic configuration of drive requiredafter factory setting","The ""First Setup"" (FSU) was not runat all or not completed.",Perform a First Setup.
+110E,0,"Parameter changed that requires arestart of the drive","Only displayed by the commissioningsoftware.A parameter modification requiresthe drive to be powered off and on.","Restart the drive to activate theparameter functionality.See the section Parameters for theparameter that requires a restart ofthe drive."
+110F,0,"Function not available in this type ofdevice","The specific type of device does notsupport this function or thisparameter value.","Verify that you have the correctdevice type, in particular type ofmotor, type of encoder, holdingbrake."
+1110,0,"Incorrect file ID for upload ordownload","The specific type of device does notsupport this kind of file.","Verify that you have the correctdevice type or the correctconfiguration file."
+1111,0,File transfer not correctly initialized,"A previous file transfer has beenaborted.",-
+1112,0,Locking of configuration denied,"An external tool has tried to lock theconfiguration of the drive for uploador download. This may not workbecause another tool had alreadylocked the configuration of the driveor the drive is in an operating statethat does not allow locking.",-

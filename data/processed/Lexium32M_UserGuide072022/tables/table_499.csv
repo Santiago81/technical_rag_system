@@ -1,0 +1,40 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_EthMAC1,"MAC address Ethernet module, byte 1.",-,UINT16,CANopen 3044:1Fh
+,,-,R/-,Modbus 17470
+,,-,-,Profibus 17470
+,,-,-,CIP 168.1.31
+,,,,ModbusTCP 17470
+,,,,EtherCAT 3044:1Fh
+,,,,PROFINET 17470
+_EthMAC2,"MAC address Ethernet module, byte 2.",-,UINT16,CANopen 3044:20h
+,,-,R/-,Modbus 17472
+,,-,-,Profibus 17472
+,,-,-,CIP 168.1.32
+,,,,ModbusTCP 17472
+,,,,EtherCAT 3044:20h
+,,,,PROFINET 17472
+_EthMAC3,"MAC address Ethernet module, byte 3.",-,UINT16,CANopen 3044:21h
+,,-,R/-,Modbus 17474
+,,-,-,Profibus 17474
+,,-,-,CIP 168.1.33
+,,,,ModbusTCP 17474
+,,,,EtherCAT 3044:21h
+,,,,PROFINET 17474
+_EthMAC4,"MAC address Ethernet module, byte 4.",-,UINT16,CANopen 3044:22h
+,,-,R/-,Modbus 17476
+,,-,-,Profibus 17476
+,,-,-,CIP 168.1.34
+,,,,ModbusTCP 17476
+,,,,EtherCAT 3044:22h
+,,,,PROFINET 17476
+_EthMAC5,"MAC address Ethernet module, byte 5.",-,UINT16,CANopen 3044:23h
+,,-,R/-,Modbus 17478
+,,-,-,Profibus 17478
+,,-,-,CIP 168.1.35
+,,,,ModbusTCP 17478
+,,,,EtherCAT 3044:23h
+,,,,PROFINET 17478

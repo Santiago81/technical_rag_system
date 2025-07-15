@@ -1,0 +1,20 @@
+Description,Reference
+"Encoder cable 3 m (9.84 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorY-TEC, device end 10-pin connector RJ45",VW3M8100R30
+"Encoder cable 5 m (16.4 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorY-TEC, device end 10-pin connector RJ45",VW3M8100R50
+"Encoder cable 10 m (32.8 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorY-TEC, device end 10-pin connector RJ45",VW3M8100R100
+"Encoder cable 15 m (49.2 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorY-TEC, device end 10-pin connector RJ45",VW3M8100R150
+"Encoder cable 25 m (82 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorY-TEC, device end 10-pin connector RJ45",VW3M8100R250
+"Encoder cable 1.5 m (4.92 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circularconnector M23, device end 10-pin connector RJ45",VW3M8102R15
+"Encoder cable 3 m (9.84 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R30
+"Encoder cable 5 m (16.4 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R50
+"Encoder cable 10 m (32.8 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R100
+"Encoder cable 15 m (49.2 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R150
+"Encoder cable 20 m (65.6 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R200
+"Encoder cable 25 m (82 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R250
+"Encoder cable 50 m (164 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R500
+"Encoder cable 75 m (246 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; motor end 12-pin circular connectorM23, device end 10-pin connector RJ45",VW3M8102R750
+"Encoder cable 25 m (82 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; both cable ends open",VW3M8222R250
+"Encoder cable 50 m (164 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; both cable ends open",VW3M8222R500
+"Encoder cable 100 m (328 ft), (3 x 2 x 0.14 mm2 + 2 x 0.34 mm2) shielded; both cable ends open",VW3M8222R1000
+"Encoder cable 100 m (328 ft), (5 x 2 x 0.25 mm2 + 2 x 0.5 mm2) shielded; both cable ends open",VW3M8221R1000
+"Encoder cable 1 m (3.28 ft), shielded; HD15 D-SUB (male); other cable end open",VW3M4701

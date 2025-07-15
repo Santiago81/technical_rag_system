@@ -1,0 +1,16 @@
+Signal output,Signal output function
+DQ0,With local control mode:
+,"""Motion Sequence: Done"""
+,Signals the end of a sequence.
+,With fieldbus control mode:
+,"""No Fault"""
+,"Signals the operating states 4 Ready To Switch On, 5 Switched On and 6"
+,Operation Enabled
+DQ1,"""Active"""
+,Signals the operating state 6 Operation Enabled
+DQ2,With local control mode:
+,"""Motion Sequence: Start Acknowledge"""
+,Signals that the system is waiting for a transition condition to be met.
+,With fieldbus control mode:
+,"""Freely Available"""
+,"See Setting a Signal Output via Parameter, page 331"

@@ -1,0 +1,11 @@
+"Cross section inmm2 (AWG)","Current-carrying capacity withmethod of installation B2 in A(1)","Current carrying capacity withmethod of installation E in A(1)"
+0.75 (18),8.5,10.4
+1 (16),10.1,12.4
+1.5 (14),13.1,16.1
+2.5 (12),17.4,22.0
+4 (10),23.0,30.0
+6 (8),30.0,37.0
+10 (6),40.0,52.0
+16 (4),54.0,70.0
+25 (2),70.0,88.0
+"(1) Values as per IEC 60204-1 for continuous operation, copper conductors and ambient airtemperature 40 °C (104 °F). See IEC 60204-1 for additional information. The table is an excerptfrom this standard and also shows cable cross-sections that are not applicable with regard to theproduct.",,

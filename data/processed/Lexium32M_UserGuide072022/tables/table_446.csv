@@ -1,0 +1,16 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+543F,3,"System error detected: Nonvolatilememory checksum error (motorparameters)Parameter _SigLatched Bit 29",-,-
+5441,4,"System error detected: Nonvolatilememory checksum error (globalcontrol loop parameter set)Parameter _SigLatched Bit 29",-,-
+5442,4,"System error detected: Nonvolatilememory checksum error (control loopparameter set 1)Parameter _SigLatched Bit 29",-,-
+5443,4,"System error detected: Nonvolatilememory checksum error (control loopparameter set 2)Parameter _SigLatched Bit 29",-,-
+5444,4,"System error detected: Nonvolatilememory checksum error (NoResetparameter)Parameter _SigLatched Bit 29",-,-
+5445,4,"System error detected: Nonvolatilememory checksum error (hardwareinformation)Parameter _SigLatched Bit 29",-,-
+5446,4,"System error detected: Nonvolatilememory checksum error (for poweroutage data)Parameter _SigLatched Bit 29","Internal nonvolatile memory notoperative.","Restart the drive. If the detected errorpersists, contact your SchneiderElectric service representative."
+5447,3,"System error detected: Nonvolatilememory checksum error (data setsoperating mode Motion Sequence)Parameter _SigLatched Bit 29",-,-
+5448,2,"System error detected:Communication with memory cardParameter _SigLatched Bit 20",-,-
+5449,2,"System error detected: Memory cardbus is busyParameter _SigLatched Bit 20",-,-
+544A,4,"System error detected: Nonvolatilememory checksum error(administration data)Parameter _SigLatched Bit 29",-,-
+544B,4,"System error detected: Nonvolatilememory checksum error (DeviceNetdata)Parameter _SigLatched Bit 29",-,-
+544C,4,"System error detected: Nonvolatilememory is write-protectedParameter _SigLatched Bit 29",-,-
+544D,2,"System error detected: Memory cardParameter _SigLatched Bit 20","The last saving procedure may nothave been successful; the memorycard may be inoperative.","Retry saving the data.Replace the memory card."
+544E,2,"System error detected: Memory cardParameter _SigLatched Bit 20","The last saving procedure may nothave been successful; the memorycard may be inoperative.","Retry saving the data.Replace the memory card."

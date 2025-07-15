@@ -1,0 +1,50 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+EthIPmaster1,"IP address master, byte 1.",-,UINT16,CANopen 3044:29h
+,IP address of the master that is permitted to,0,R/W,Modbus 17490
+,perform Modbus TCP I/O scanning.,,,
+,,0,per.,Profibus 17490
+,"If set to 0.0.0.0 (default), any master can perform",,,
+,I/O scanning.,255,-,CIP 168.1.41
+,Setting can only be modified if power stage is,,,ModbusTCP 17490
+,disabled.,,,
+,,,,EtherCAT 3044:29h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 17490
+EthIPmaster2,"IP address master, byte 2.",-,UINT16,CANopen 3044:2Ah
+,Setting can only be modified if power stage is,0,R/W,Modbus 17492
+,disabled.,,,
+,,0,per.,Profibus 17492
+,Modified settings become active immediately.,,,
+,,255,-,CIP 168.1.42
+,,,,ModbusTCP 17492
+,,,,EtherCAT 3044:2Ah
+,,,,PROFINET 17492
+EthIPmaster3,"IP address master, byte 3.",-,UINT16,CANopen 3044:2Bh
+,Setting can only be modified if power stage is,0,R/W,Modbus 17494
+,disabled.,,,
+,,0,per.,Profibus 17494
+,Modified settings become active immediately.,,,
+,,255,-,CIP 168.1.43
+,,,,ModbusTCP 17494
+,,,,EtherCAT 3044:2Bh
+,,,,PROFINET 17494
+EthIPmaster4,"IP address master, byte 4.",-,UINT16,CANopen 3044:2Ch
+,Setting can only be modified if power stage is,0,R/W,Modbus 17496
+,disabled.,,,
+,,0,per.,Profibus 17496
+,Modified settings become active immediately.,,,
+,,255,-,CIP 168.1.44
+,,,,ModbusTCP 17496
+,,,,EtherCAT 3044:2Ch
+,,,,PROFINET 17496
+EthIpMode,Method of obtaining IP address.,-,UINT16,CANopen 3044:5h
+ConF→CoM-,0 / Manual /MAnu: Manual,0,R/W,Modbus 17418
+iPMd,1 / BOOTP /boot: BOOTP,2,per.,Profibus 17418
+,2 / DHCP /dhcP: DHCP,2,-,CIP 168.1.5
+,Modified settings become active immediately.,,,ModbusTCP 17418
+,,,,EtherCAT 3044:5h
+,,,,PROFINET 17418

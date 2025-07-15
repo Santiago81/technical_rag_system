@@ -1,0 +1,9 @@
+"BitByte",7,6,5,4,3,2,1,0
+O0.,"Acknowledgefor multipleinput","Multipleoutputstrobe",-,-,-,-,-,-
+O1.,"Basicsetting","In positionaxis 3  -","In positionaxis 2  -","In positionaxis 1","Programactive","Operating mode coded421",,
+O2.,"User outputs 1 - 44321","Softwarelimit switchactive","Reference  ptapproachedaxis 3  -","Reference  pt.approachedaxis 2  -","Reference  ptapproachedaxis 1",,,
+O3.,"Multiple outputs address8421",-,"Actualvalue setaxis 3  -","Actualvalue setaxis 2  -","Actualvalue setaxis 1",,,
+O4.,"Multiple outputs Data (BCD coded)804020108421",,,,,,,
+O5.,8000400020001000800400200100,,,,,,,
+O6.,"BPFconnected","ONLINEPLC",NC ready,-,-,-,"Programselected",-
+O7.,"Error - / status code6432168421","Error statusgeneral",,,,,,

@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+"DEVcmdinterfConF→ACG-nonEdEVC","Control mode.1 / Local Control Mode /io: Local control mode2 / Fieldbus Control Mode /FbuS: Fieldbuscontrol modeSetting can only be modified if power stage isdisabled.Modified settings become active the next time theproduct is powered on.","----","UINT16R/Wper.-","CANopen 3005:1hModbus 1282Profibus 1282CIP 105.1.1ModbusTCP 1282EtherCAT 3005:1hPROFINET 1282"

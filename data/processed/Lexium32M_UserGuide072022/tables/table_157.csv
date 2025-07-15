@@ -1,0 +1,13 @@
+HMI menuINF-,Description
+refd,Product name
+Mnam,Type
+unam,User application name
+pino,Nominal current of power stage
+pina,Maximum current of power stage
+ntyp,Motor type
+sens,Encoder type of motor
+mino,Nominal current of motor
+mima,Maximum motor current
+mnma,Maximum permissible speed of rotation/velocity of motor
+pbbd,Profibus baud rate
+pbpr,Profibus drive profile

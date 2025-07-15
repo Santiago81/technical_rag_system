@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_BRK_T_release,Holding brake release time.,ms,UINT16,CANopen 300D:22h
+,,-,R/-,Modbus 3396
+,,-,-,Profibus 3396
+,,-,-,CIP 113.1.34
+,,,,ModbusTCP 3396
+,,,,EtherCAT 300D:22h
+,,,,PROFINET 3396
+_M_Enc_Cosine,Voltage of cosine signal of encoder.,V,INT16,CANopen 301C:2Bh
+,In increments of 0.001 V.,-,R/-,Modbus 7254
+,Available with firmware version ≥V01.26.,-,-,Profibus 7254
+,,-,-,CIP 128.1.43
+,,,,ModbusTCP 7254
+,,,,EtherCAT 301C:2Bh
+,,,,PROFINET 7254
+_M_Enc_Sine,Voltage of sine signal of encoder.,V,INT16,CANopen 301C:2Ch
+,In increments of 0.001 V.,-,R/-,Modbus 7256
+,Available with firmware version ≥V01.26.,-,-,Profibus 7256
+,,-,-,CIP 128.1.44
+,,,,ModbusTCP 7256
+,,,,EtherCAT 301C:2Ch
+,,,,PROFINET 7256
+_M_Encoder,Type of motor encoder.,-,UINT16,CANopen 300D:3h
+ConF→inF-,1 / SinCos With HiFa /SWhi: SinCos with,-,R/-,Modbus 3334
+,Hiperface,,,
+SEnS,,-,-,Profibus 3334
+,2 / SinCos Without HiFa /SWoh: SinCos,,,
+,without Hiperface,-,-,CIP 113.1.3
+,3 / SinCos With Hall /SWhA: SinCos with Hall,,,ModbusTCP 3334
+,4 / SinCos With EnDat /SWEn: SinCos with,,,EtherCAT 300D:3h
+,EnDat,,,
+,,,,PROFINET 3334
+,5 / EnDat Without SinCos /EndA: EnDat,,,
+,without SinCos,,,
+,6 / Resolver /rESo: Resolver,,,
+,7 / Hall /hALL: Hall (not supported yet),,,
+,8 / BiSS /biSS: BiSS,,,
+,High byte:,,,
+,Value 0: Rotary encoder,,,
+,Value 1: Linear encoder,,,

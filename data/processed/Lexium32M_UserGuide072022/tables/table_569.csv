@@ -1,0 +1,53 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+DVNbaud,DeviceNet baud rate.,-,UINT16,CANopen 3042:2h
+ConF→CoM-,0 / 125 kBaud /125: 125 kBaud,0,R/W,Modbus 16900
+dnbd,1 / 250 kBaud /250: 250 kBaud,3,per.,Profibus 16900
+,2 / 500 kBaud /500: 500 kBaud,3,-,CIP 166.1.2
+,3 / Autobaud /Auto: Autobaud,,,ModbusTCP 16900
+,Modified settings become active the next time the,,,EtherCAT 3042:2h
+,product is powered on.,,,
+,,,,PROFINET 16900
+DVNbuspower,Monitoring of DeviceNet bus power supply.,-,UINT16,CANopen 3042:3h
+,0 / Off: Monitoring off,0,R/W,Modbus 16902
+,1 / On: Monitoring on,1,per.,Profibus 16902
+,Modified settings become active immediately.,1,-,CIP 166.1.3
+,,,,ModbusTCP 16902
+,,,,EtherCAT 3042:3h
+,,,,PROFINET 16902
+DVNioDataIn,DeviceNet I/O data input.,-,UINT16,CANopen 3042:4h
+,110 / Position Controller Profile: Position,110,R/W,Modbus 16904
+,Controller Profile,,,
+,,110,per.,Profibus 16904
+,111 / Standard Assembly: Standard assembly,,,
+,,112,-,CIP 166.1.4
+,112 / Extended Assembly: Extended assembly,,,
+,,,,ModbusTCP 16904
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3042:4h
+,Modified settings become active the next time the,,,PROFINET 16904
+,product is powered on.,,,
+DVNioDataOut,DeviceNet I/O data output.,-,UINT16,CANopen 3042:5h
+,100 / Position Controller Profile: Position,100,R/W,Modbus 16906
+,Controller Profile,,,
+,,100,per.,Profibus 16906
+,101 / Standard Assembly: Standard assembly,,,
+,,102,-,CIP 166.1.5
+,102 / Extended Assembly: Extended assembly,,,
+,,,,ModbusTCP 16906
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3042:5h
+,Modified settings become active the next time the,,,PROFINET 16906
+,product is powered on.,,,
+ECAT2ndaddress,Value for an EtherCAT Identification.,-,UINT16,CANopen 3045:6h
+ConF→CoM-,"Value for an EtherCAT ""Identification"" (also known",0,R/W,Modbus 17676
+,"as ""Station Alias""), for example, for the EtherCAT",,,
+EcSA,function Hot Connect.,0,per.,Profibus 17676
+,Modified settings become active the next time the,65535,-,CIP 169.1.6
+,product is powered on.,,,
+,,,,ModbusTCP 17676
+,,,,EtherCAT 3045:6h
+,,,,PROFINET 17676

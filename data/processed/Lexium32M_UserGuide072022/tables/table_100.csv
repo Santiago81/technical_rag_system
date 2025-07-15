@@ -1,0 +1,5 @@
+Slot,Module
+Slot 1,"Safety module eSMI/O module IOM1(1)"
+Slot 2,"Encoder module RSR (resolver interface)Encoder module DIG (digital interface)Encoder module ANA (analog interface)"
+Slot 3,"Fieldbus module CANopen and CANmotion (module identification CAN)Fieldbus module DeviceNet (module identification DNT)(2)Fieldbus module Profibus DP (module identification PDP)Fieldbus module PROFINET (module identification PNT)(3)Fieldbus module EtherNet/IP and Modbus-TCP (module identification ETH)Fieldbus module EtherCAT (module identification ECT)"
+"(1) With firmware version ≥V01.06(2) With firmware version ≤V01.22(3) With firmware version ≥V01.22",

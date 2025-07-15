@@ -1,0 +1,56 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,20 / Position Register Channel 3 /PrC3:,,,
+,Position register channel 3,,,
+,21 / Position Register Channel 4 /PrC4:,,,
+,Position register channel 4,,,
+,22 / Motor Moves Positive /MPoS: Motor,,,
+,moves in positive direction,,,
+,23 / Motor Moves Negative /MnEG: Motor,,,
+,moves in negative direction,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+IOM1_AI11_I_max,IOM1 Limitation of current at 10 V of AI11.,Arms,UINT16,CANopen 304F:Fh
+ConF→i-o-,In increments of 0.01 Arms.,0.00,R/W,Modbus 20254
+L11i,Setting can only be modified if power stage is,3.00,per.,Profibus 20254
+,disabled.,,,
+,,463.00,-,CIP 179.1.15
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,ModbusTCP 20254
+,Available with firmware version ≥V01.06.,,,EtherCAT 304F:Fh
+,,,,PROFINET 20254
+IOM1_AI11_M_scale,IOM1 Target torque at 10 V in operating mode,%,INT16,CANopen 304F:12h
+,Profile Torque of AI11.,,,
+ConF→i-o-,,-3000.0,R/W,Modbus 20260
+,100.0 % correspond to the continuous stall torque,,,
+t11t,_M_M_0.,100.0,per.,Profibus 20260
+,"By using a negative sign, you can invert the",3000.0,-,CIP 179.1.18
+,evaluation of the analog signal.,,,
+,,,,ModbusTCP 20260
+,In increments of 0.1 %.,,,
+,,,,EtherCAT 304F:12h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 20260
+,Available with firmware version ≥V01.06.,,,
+IOM1_AI11_mode,IOM1 Type of usage of AI11.,-,UINT16,CANopen 304F:Eh
+ConF→i-o-,0 / None /nonE: No function,0,R/W,Modbus 20252
+A11u,1 / Target Velocity /SPdS: Target velocity for,1,per.,Profibus 20252
+,the velocity controller,,,
+,,4,-,CIP 179.1.14
+,2 / Target Torque /trqS: Target torque for the,,,
+,current controller,,,ModbusTCP 20252
+,3 / Velocity Limitation /LSPd: Limitation of the,,,EtherCAT 304F:Eh
+,reference velocity for the velocity controller,,,
+,,,,PROFINET 20252
+,4 / Current Limitation /Lcur: Limitation of the,,,
+,reference current for the current controller,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.06.,,,

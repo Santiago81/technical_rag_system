@@ -1,0 +1,48 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+AT_start,Autotuning start.,-,UINT16,CANopen 302F:1h
+,Value 0: Terminate,0,R/W,Modbus 12034
+,Value 1: Activate EasyTuning,-,-,Profibus 12034
+,Value 2: Activate ComfortTuning,2,-,CIP 147.1.1
+,Modified settings become active immediately.,,,ModbusTCP 12034
+,,,,EtherCAT 302F:1h
+,,,,PROFINET 12034
+AT_v_ref,Velocity jump for Autotuning.,usr_v,INT32,CANopen 302F:13h
+,"The minimum value, the factory setting and the",1,R/W,Modbus 12070
+,maximum value depend on the scaling factor.,,,
+,,100,-,Profibus 12070
+,Modified settings become active the next time the,,,
+,motor moves.,2147483647,-,CIP 147.1.19
+,Available with firmware version ≥V01.03.,,,ModbusTCP 12070
+,,,,EtherCAT 302F:13h
+,,,,PROFINET 12070
+AT_wait,Waiting time between Autotuning steps.,ms,UINT16,CANopen 302F:9h
+,Modified settings become active the next time the,300,R/W,Modbus 12050
+,motor moves.,,,
+,,500,-,Profibus 12050
+,,10000,-,CIP 147.1.9
+,,,,ModbusTCP 12050
+,,,,EtherCAT 302F:9h
+,,,,PROFINET 12050
+BLSH_Mode,Processing mode of backlash compensation.,-,UINT16,CANopen 3006:41h
+,0 / Off: Backlash compensation is off,0,R/W,Modbus 1666
+,1 / OnAfterPositiveMovement: Backlash,0,per.,Profibus 1666
+,"compensation is on, last movement was in",,,
+,positive direction,2,-,CIP 106.1.65
+,2 / OnAfterNegativeMovement: Backlash,,,ModbusTCP 1666
+,"compensation is on, last movement was in",,,
+,negative direction,,,EtherCAT 3006:41h
+,Modified settings become active immediately.,,,PROFINET 1666
+,Available with firmware version ≥V01.14.,,,
+BLSH_Position,Position value for backlash compensation.,usr_p,INT32,CANopen 3006:42h
+,Setting can only be modified if power stage is,0,R/W,Modbus 1668
+,disabled.,,,
+,,0,per.,Profibus 1668
+,Modified settings become active the next time the,,,
+,power stage is enabled.,2147483647,-,CIP 106.1.66
+,Available with firmware version ≥V01.14.,,,ModbusTCP 1668
+,,,,EtherCAT 3006:42h
+,,,,PROFINET 1668

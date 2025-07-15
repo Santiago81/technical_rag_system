@@ -1,0 +1,59 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ESIM_,Encoder simulation: High resolution.,EncInc,UINT32,CANopen 3005:32h
+HighResolution,,,,
+,Specifies the number of increments per revolution,0,R/W,Modbus 1380
+,with 12 bit decimal places. If the parameter is set,,,
+,"to a multiple of 4096, the index pulse will be",0,per.,Profibus 1380
+,generated exactly at the same position within one,,,
+,revolution.,268431360,expert,CIP 105.1.50
+,The setting of parameter ESIM_scale is only used,,,ModbusTCP 1380
+,if parameter ESIM_HighResolution is set to 0.,,,
+,"Otherwise, the setting of ESIM_HighResolution is",,,EtherCAT 3005:32h
+,used.,,,
+,,,,PROFINET 1380
+,Example: 1417.322835 encoder simulation pulses,,,
+,per revolution are required.,,,
+,Set the parameter to 1417.322835 * 4096 =,,,
+,5805354.,,,
+,"In this example, the index pulse will be generated",,,
+,exactly after every 1417 pulses. This means that,,,
+,the index pulse shifts with each revolution.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+ESIM_PhaseShift,Encoder simulation: Phase shift for pulse output.,-,INT16,CANopen 3005:33h
+,The generated encoder simulation pulses can be,-32768,R/W,Modbus 1382
+,shifted in units of 1/4096 encoder pulses. The shift,,,
+,results in a position offset at PTO. The index pulse,0,-,Profibus 1382
+,is shifted as well.,,,
+,,32767,expert,CIP 105.1.51
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1382
+,Available with firmware version ≥V01.10.,,,
+,,,,EtherCAT 3005:33h
+,,,,PROFINET 1382
+ESIM_scale,Resolution of encoder simulation.,EncInc,UINT16,CANopen 3005:15h
+ConF→i-o-,Resolution defines the number of increments per,8,R/W,Modbus 1322
+,revolution (AB signal with quadruple evaluation).,,,
+ESSC,,4096,per.,Profibus 1322
+,The index pulse is created once per revolution at,,,
+,an interval where signal A and signal B are high.,65535,-,CIP 105.1.21
+,Setting can only be modified if power stage is,,,ModbusTCP 1322
+,disabled.,,,
+,,,,EtherCAT 3005:15h
+,Modified settings become active the next time the,,,
+,product is powered on.,,,PROFINET 1322
+eSM_BaseSetting,eSM basic settings.,-,UINT16,-
+,None: No function,-,R/W,
+,Auto Start: Automatic start (ESMSTART),-,per.,
+,Ignore GUARD_ACK: GUARD_ACK inactive,-,-,
+,Ignore /INTERLOCK_IN: INTERLOCK chain,,,
+,inactive,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.01.,,,

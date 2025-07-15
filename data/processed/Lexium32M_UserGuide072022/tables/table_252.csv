@@ -1,0 +1,26 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL1_Osupdamp,Overshoot suppression filter: Damping.,%,UINT16,CANopen 3012:Eh
+,The filter is deactivated at a value of 0.,0.0,R/W,Modbus 4636
+,In increments of 0.1 %.,0.0,per.,Profibus 4636
+,Modified settings become active immediately.,50.0,expert,CIP 118.1.14
+,,,,ModbusTCP 4636
+,,,,EtherCAT 3012:Eh
+,,,,PROFINET 4636
+CTRL1_Osupdelay,Overshoot suppression filter: Time delay.,ms,UINT16,CANopen 3012:Fh
+,The filter is deactivated at a value of 0.,0.00,R/W,Modbus 4638
+,In increments of 0.01 ms.,0.00,per.,Profibus 4638
+,Modified settings become active immediately.,75.00,expert,CIP 118.1.15
+,,,,ModbusTCP 4638
+,,,,EtherCAT 3012:Fh
+,,,,PROFINET 4638
+CTRL1_Kfric,Friction compensation: Gain.,Arms,UINT16,CANopen 3012:10h
+,In increments of 0.01 Arms.,0.00,R/W,Modbus 4640
+,Modified settings become active immediately.,0.00,per.,Profibus 4640
+,,10.00,expert,CIP 118.1.16
+,,,,ModbusTCP 4640
+,,,,EtherCAT 3012:10h
+,,,,PROFINET 4640

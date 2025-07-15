@@ -1,0 +1,6 @@
+Terminal point,Connection,Output current
+T -,Temp. - *,
+T+,Temp. + *,
+PE,Signal pair shield,
+B -,Brake GND,max. 2.2 A
+B+,Brake (Up) +,

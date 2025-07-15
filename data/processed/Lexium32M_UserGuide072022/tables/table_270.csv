@@ -1,0 +1,17 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IOdefaultMode,Operating mode.,-,UINT16,CANopen 3005:3h
+ConF→ACG-,0 / None /nonE: None,0,R/W,Modbus 1286
+io-M,1 / Profile Torque /torq: Profile Torque,6,per.,Profibus 1286
+,2 / Profile Velocity /VELP: Profile Velocity,6,-,CIP 105.1.3
+,3 / Electronic Gear /GEAr: Electronic Gear,,,ModbusTCP 1286
+,5 / Jog /JoG: Jog,,,EtherCAT 3005:3h
+,6 / Motion Sequence /MotS: Motion,,,PROFINET 1286
+,Sequence,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,

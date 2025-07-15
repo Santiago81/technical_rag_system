@@ -1,0 +1,13 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ABCDE,Short description,Apk,UINT32,Fieldbus 1234
+ConF→inF-,,,,
+,Selection values,0.00,R/W,
+Prn,1 / Abc1 /ABC1: Explanation 1,,,
+,,3.00,per.,
+,2 / Abc2 /ABC2: Explanation 2,,,
+,,300.00,-,
+,Description and details,,,

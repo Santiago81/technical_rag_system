@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+GEARnum,Numerator of gear ratio.,-,INT32,CANopen 3026:4h
+,Gear ratio = GEARnum / GEARdenom,-2147483648,R/W,Modbus 9736
+,The new gear ratio is applied when the numerator,1,per.,Profibus 9736
+,value is supplied.,,,
+,,2147483647,-,CIP 138.1.4
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 9736
+,,,,EtherCAT 3026:4h
+,,,,PROFINET 9736
+GEARnum2,Numerator of gear ratio number 2.,-,INT32,CANopen 3026:Dh
+,Gear ratio = GEARnum2 / GEARdenom2,-2147483648,R/W,Modbus 9754
+,The new gear ratio is applied when the numerator,1,per.,Profibus 9754
+,value is supplied.,,,
+,,2147483647,-,CIP 138.1.13
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 9754
+,,,,EtherCAT 3026:Dh
+,,,,PROFINET 9754
+GEARpos_v_max,Velocity limitation for the method Position,usr_v,UINT32,CANopen 3026:9h
+,Synchronization.,,,
+,,0,R/W,Modbus 9746
+,Value 0: No velocity limitation,,,
+,,0,per.,Profibus 9746
+,Value >0: Velocity limitation in usr_v,,,
+,,2147483647,-,CIP 138.1.9
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 9746
+,Available with firmware version ≥V01.10.,,,
+,,,,EtherCAT 3026:9h
+,,,,PROFINET 9746
+GEARposChgMode,Treatment of position changes with inactive power,-,UINT16,CANopen 3026:Bh
+,stage.,,,
+,,0,R/W,Modbus 9750
+,0 / Off: Position changes in states with disabled,,,
+,power stage are ignored.,0,per.,Profibus 9750
+,1 / On: Position changes in states with disabled,1,-,CIP 138.1.11
+,power stage are taken into account.,,,
+,,,,ModbusTCP 9750
+,This setting has an effect only if gear processing is,,,
+,started in the mode 'Synchronization with,,,EtherCAT 3026:Bh
+,compensation movement'.,,,
+,,,,PROFINET 9750
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

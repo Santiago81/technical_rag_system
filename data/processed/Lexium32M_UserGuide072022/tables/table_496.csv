@@ -1,0 +1,47 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_eSM_state,eSM operating state.,-,UINT16,CANopen 304C:16h
+Mon,0 / eSM module missing /MiSS: eSM module,-,R/-,Modbus 19500
+,missing,,,
+SMSt,,-,-,Profibus 19500
+,1 / Start /Strt: Start,,,
+,,-,-,CIP 176.1.22
+,2 / Not Ready To Switch On /nrdy: Not,,,
+,Ready To Switch On,,,ModbusTCP 19500
+,3 / Switch On Disabled /diS: Switch On,,,EtherCAT 304C:16h
+,Disabled,,,
+,,,,PROFINET 19500
+,4 / Ready To Switch On /rdy: Ready To,,,
+,Switch On,,,
+,6 / Operation Enabled /run: Operation,,,
+,Enabled,,,
+,7 / Quick Stop /qStP: Quick Stop,,,
+,8 / Fault Reaction Active /FLt: Fault Reaction,,,
+,Active,,,
+,9 / Fault /FLt: Fault,,,
+,Status word of eSM state machine,,,
+,Available with firmware version ≥V01.01.,,,
+_eSMVer,eSM revision of firmware.,-,UINT32,CANopen 304C:Fh
+,Revision of firmware:,-,R/-,Modbus 19486
+,Bits 0 ... 7: Firmware evolution (dec),-,-,Profibus 19486
+,Bits 8 ... 15: Firmware minor revision (dec),-,-,CIP 176.1.15
+,Bits 16 ... 23: Firmware major revision (dec),,,ModbusTCP 19486
+,Bits 24 ... 31: Reserved,,,EtherCAT 304C:Fh
+,Available with firmware version ≥V01.01.,,,PROFINET 19486
+_EthIPgateAct1,"Currently used IP address gateway, byte 1.",-,UINT16,CANopen 3044:1Bh
+,Byte 1 (x.0.0.0) of the IP address of the gateway.,-,R/-,Modbus 17462
+,,-,-,Profibus 17462
+,,-,-,CIP 168.1.27
+,,,,ModbusTCP 17462
+,,,,EtherCAT 3044:1Bh
+,,,,PROFINET 17462
+_EthIPgateAct2,"Currently used IP address gateway, byte 2.",-,UINT16,CANopen 3044:1Ch
+,,-,R/-,Modbus 17464
+,,-,-,Profibus 17464
+,,-,-,CIP 168.1.28
+,,,,ModbusTCP 17464
+,,,,EtherCAT 3044:1Ch
+,,,,PROFINET 17464

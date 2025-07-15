@@ -1,0 +1,46 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_ERR_motor_v,Motor velocity at the time the error was detected.,usr_v,INT32,CANopen 303C:8h
+,,-,R/-,Modbus 15376
+,,-,-,Profibus 15376
+,,-,-,CIP 160.1.8
+,,,,ModbusTCP 15376
+,,,,EtherCAT 303C:8h
+,,,,PROFINET 15376
+_ERR_number,Error code.,-,UINT16,CANopen 303C:1h
+,Reading this parameter copies the entire entry for,0,R/-,Modbus 15362
+,"the detected error (error class, time of detection of",,,
+,"error, ...) to an intermediate memory from which",-,-,Profibus 15362
+,the elements of the detected error can then be,,,
+,read.,65535,-,CIP 160.1.1
+,"In addition, the read pointer of the error memory is",,,ModbusTCP 15362
+,automatically set to the next error entry.,,,
+,,,,EtherCAT 303C:1h
+,,,,PROFINET 15362
+_ERR_powerOn,Number of power on cycles.,-,UINT32,CANopen 303B:2h
+Mon,,0,R/-,Modbus 15108
+PoWo,,-,-,Profibus 15108
+,,4294967295,-,CIP 159.1.2
+,,,,ModbusTCP 15108
+,,,,EtherCAT 303B:2h
+,,,,PROFINET 15108
+_ERR_qual,Additional information on detected error.,-,UINT16,CANopen 303C:4h
+,This entry contains additional information on the,0,R/-,Modbus 15368
+,"detected error, depending on the error number.",,,
+,,-,-,Profibus 15368
+,Example: a parameter address,,,
+,,65535,-,CIP 160.1.4
+,,,,ModbusTCP 15368
+,,,,EtherCAT 303C:4h
+,,,,PROFINET 15368
+_ERR_temp_dev,Temperature of device at the time the error was,°C,INT16,CANopen 303C:Bh
+,detected.,,,
+,,-,R/-,Modbus 15382
+,,-,-,Profibus 15382
+,,-,-,CIP 160.1.11
+,,,,ModbusTCP 15382
+,,,,EtherCAT 303C:Bh
+,,,,PROFINET 15382

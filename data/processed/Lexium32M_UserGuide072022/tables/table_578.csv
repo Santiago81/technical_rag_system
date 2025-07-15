@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ErrorResp_bit_DE,Error response to detected data error (DE bit).,-,INT16,CANopen 301B:6h
+,-1 / No Error Response: No error response,-1,R/W,Modbus 6924
+,0 / Error Class 0: Error class 0,-1,per.,Profibus 6924
+,1 / Error Class 1: Error class 1,3,-,CIP 127.1.6
+,2 / Error Class 2: Error class 2,,,ModbusTCP 6924
+,3 / Error Class 3: Error class 3,,,EtherCAT 301B:6h
+,"For the Drive Profile Lexium, the error response to",,,PROFINET 6924
+,a detected data error (DE bit) can be,,,
+,parameterized.,,,
+,"For EtherCAT RxPDO data error handling, this",,,
+,parameter is also used to classify the error,,,
+,response.,,,
+ErrorResp_bit_ME,Error response to detected mode error (ME bit).,-,INT16,CANopen 301B:7h
+,-1 / No Error Response: No error response,-1,R/W,Modbus 6926
+,0 / Error Class 0: Error class 0,-1,per.,Profibus 6926
+,1 / Error Class 1: Error class 1,3,-,CIP 127.1.7
+,2 / Error Class 2: Error class 2,,,ModbusTCP 6926
+,3 / Error Class 3: Error class 3,,,EtherCAT 301B:7h
+,"For the Drive Profile Lexium, the error response to",,,PROFINET 6926
+,a detected mode error (ME bit) can be,,,
+,parameterized.,,,
+ErrorResp_Flt_AC,Error response to missing mains phase.,-,UINT16,CANopen 3005:Ah
+,0 / Error Class 0: Error class 0,0,R/W,Modbus 1300
+,1 / Error Class 1: Error class 1,2,per.,Profibus 1300
+,2 / Error Class 2: Error class 2,3,-,CIP 105.1.10
+,3 / Error Class 3: Error class 3,,,ModbusTCP 1300
+,Setting can only be modified if power stage is,,,EtherCAT 3005:Ah
+,disabled.,,,
+,,,,PROFINET 1300
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+ErrorResp_I2tRES,Error response to 100% I2t braking resistor.,-,UINT16,CANopen 3005:22h
+,0 / Error Class 0: Error class 0,0,R/W,Modbus 1348
+,1 / Error Class 1: Error class 1,0,per.,Profibus 1348
+,2 / Error Class 2: Error class 2,2,-,CIP 105.1.34
+,Setting can only be modified if power stage is,,,ModbusTCP 1348
+,disabled.,,,
+,,,,EtherCAT 3005:22h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1348
+ErrorResp_p_dif,Error response to excessively high load-,-,UINT16,CANopen 3005:Bh
+,dependent position deviation.,,,
+,,1,R/W,Modbus 1302
+,1 / Error Class 1: Error class 1,,,
+,,3,per.,Profibus 1302
+,2 / Error Class 2: Error class 2,,,
+,,3,-,CIP 105.1.11
+,3 / Error Class 3: Error class 3,,,
+,,,,ModbusTCP 1302
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3005:Bh
+,Modified settings become active the next time the,,,PROFINET 1302
+,power stage is enabled.,,,

@@ -1,0 +1,65 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_v_zeroclamp,Velocity limit for Zero Clamp.,usr_v,UINT32,CANopen 3006:28h
+,A Zero Clamp operation is only possible if the,0,R/W,Modbus 1616
+,reference velocity is below the Zero Clamp,,,
+,velocity limit.,10,per.,Profibus 1616
+,Modified settings become active immediately.,2147483647,-,CIP 106.1.40
+,,,,ModbusTCP 1616
+,,,,EtherCAT 3006:28h
+,,,,PROFINET 1616
+MON_VelDiff,Maximum load-dependent velocity deviation.,usr_v,UINT32,CANopen 3006:4Bh
+,Value 0: Monitoring deactivated.,0,R/W,Modbus 1686
+,Value >0: Maximum value,0,per.,Profibus 1686
+,Modified settings become active immediately.,2147483647,-,CIP 106.1.75
+,Available with firmware version ≥V01.26.,,,ModbusTCP 1686
+,,,,EtherCAT 3006:4Bh
+,,,,PROFINET 1686
+MON_VelDiff_Time,Time window for maximum load-dependent,ms,UINT16,CANopen 3006:4Ch
+,velocity deviation.,,,
+,,0,R/W,Modbus 1688
+,Value 0: Monitoring deactivated.,,,
+,,10,per.,Profibus 1688
+,Value >0: Time window for maximum value,,,
+,,-,-,CIP 106.1.76
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1688
+,Available with firmware version ≥V01.26.,,,
+,,,,EtherCAT 3006:4Ch
+,,,,PROFINET 1688
+MON_,Maximum load-dependent velocity deviation for,usr_v,UINT32,CANopen 3006:48h
+VelDiffOpSt578,"operating states 5, 7 and 8.",,,
+,,0,R/W,Modbus 1680
+,Maximum load-dependent velocity deviation for,,,
+,"operating states 5 Switch On, 7 Quick Stop Active",0,per.,Profibus 1680
+,and 8 Fault Reaction Active.,,,
+,,2147483647,-,CIP 106.1.72
+,Value 0: Monitoring deactivated.,,,
+,,,,ModbusTCP 1680
+,Value >0: Maximum value.,,,
+,,,,EtherCAT 3006:48h
+,Monitoring is active if parameter LIM_QStopReact,,,
+,"is set to ""Deceleration Ramp (Fault)"" or to",,,PROFINET 1680
+,"""Deceleration ramp (Quick Stop)"".",,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.30.,,,
+MSM_AddtlSettings,Additional settings for operating mode Motion,-,UINT16,CANopen 302D:21h
+,Sequence.,,,
+,,0,R/W,Modbus 11586
+,Bit 0 = 0: After Relative Movement After Capture,,,
+,"(RMAC), the operating mode Motion Sequence is",0,per.,Profibus 11586
+,resumed without a rising edge or a falling edge of,,,
+,the signal input function Start Motion Sequence.,65535,-,CIP 145.1.33
+,Bit 0 = 1: After Relative Movement After Capture,,,ModbusTCP 11586
+,"(RMAC), the operating mode Motion Sequence is",,,
+,resumed with a rising edge or a falling edge of the,,,EtherCAT 302D:21h
+,signal input function Start Motion Sequence.,,,
+,,,,PROFINET 11586
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.26.,,,

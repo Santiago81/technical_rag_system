@@ -1,0 +1,55 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_ManuSdoAbort,CANopen manufacturer-specific SDO abort code.,-,UINT16,CANopen 3041:Ah
+,Provides more detailed information on a general,-,R/-,Modbus 16660
+,SDO abort code (0800 0000).,,,
+,,-,-,Profibus 16660
+,,-,-,CIP 165.1.10
+,,,,ModbusTCP 16660
+,,,,EtherCAT 3041:Ah
+,,,,PROFINET 16660
+_ModeError,Error code for detected synchronous errors (ME,-,UINT16,CANopen 301B:19h
+,bit).,,,
+,,-,R/-,Modbus 6962
+,Drive Profile Lexium:,,,
+,,-,-,Profibus 6962
+,Manufacturer-specific error code that caused the,,,
+,ModeError bit to be set.,-,-,CIP 127.1.25
+,"Usually, this is an error that was detected as a",,,ModbusTCP 6962
+,result of the activation of an operating mode. The,,,
+,ModeError bit relates to MT-dependent,,,EtherCAT 301B:19h
+,parameters.,,,
+,,,,PROFINET 6962
+_ModeErrorInfo,Additional error information of a detected,-,UINT16,CANopen 301B:1Ch
+,ModeError (ME bit).,,,
+,,-,R/-,Modbus 6968
+,Drive Profile Lexium:,,,
+,,-,-,Profibus 6968
+,Indicates the parameter of the mapping that,,,
+,caused the ME bit to be set. The ME bit is set if,-,-,CIP 127.1.28
+,MT-dependent parameters of the active mapping,,,
+,cause an error in connection with a write,,,ModbusTCP 6968
+,command.,,,
+,,,,EtherCAT 301B:1Ch
+,Example:,,,
+,,,,PROFINET 6968
+,1 = First mapped parameter,,,
+,2 = Second mapped parameter,,,
+,etc.,,,
+_ModuleSlot1,Module in slot 1.,-,UINT16,CANopen 3002:15h
+,0 / None: No module,-,R/-,Modbus 554
+,1025 / eSM: Safety module eSM,-,-,Profibus 554
+,1281 / IOM_1: IO module IOM1,-,-,CIP 102.1.21
+,,,,ModbusTCP 554
+,,,,EtherCAT 3002:15h
+,,,,PROFINET 554
+_ModuleSlot2,Module in slot 2.,-,UINT16,CANopen 3002:1Ah
+,0 / None: No module,-,R/-,Modbus 564
+,769 / Encoder ANA: Encoder module ANA,-,-,Profibus 564
+,770 / Encoder DIG: Encoder module DIG,-,-,CIP 102.1.26
+,771 / Encoder RSR: Encoder module RSR,,,ModbusTCP 564
+,,,,EtherCAT 3002:1Ah
+,,,,PROFINET 564

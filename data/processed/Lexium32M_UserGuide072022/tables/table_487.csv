@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_CTRL_TNid,Current controller d component integral action,ms,UINT16,CANopen 3011:2h
+,time.,,,
+,,0.13,R/-,Modbus 4356
+,This value is calculated on the basis of the motor,,,
+,parameters.,-,per.,Profibus 4356
+,In increments of 0.01 ms.,327.67,-,CIP 117.1.2
+,,,,ModbusTCP 4356
+,,,,EtherCAT 3011:2h
+,,,,PROFINET 4356
+_CTRL_TNiq,Current controller q component integral action,ms,UINT16,CANopen 3011:4h
+,time.,,,
+,,0.13,R/-,Modbus 4360
+,This value is calculated on the basis of the motor,,,
+,parameters.,-,per.,Profibus 4360
+,In increments of 0.01 ms.,327.67,-,CIP 117.1.4
+,,,,ModbusTCP 4360
+,,,,EtherCAT 3011:4h
+,,,,PROFINET 4360
+_DataError,Error code for detected synchronous errors (DE,-,UINT16,CANopen 301B:1Bh
+,bit).,,,
+,,-,R/-,Modbus 6966
+,Drive Profile Lexium:,,,
+,,-,-,Profibus 6966
+,Manufacturer-specific error code that caused the,,,
+,DataError bit to be set.,-,-,CIP 127.1.27
+,"Usually, this is an error that was detected as a",,,ModbusTCP 6966
+,result to changing of a data value within the,,,
+,process data. The DataError bit relates to MT-,,,EtherCAT 301B:1Bh
+,independent parameters.,,,
+,,,,PROFINET 6966
+_DataErrorInfo,Additional error information of a detected,-,UINT16,CANopen 301B:1Dh
+,DataError (DE bit).,,,
+,,-,R/-,Modbus 6970
+,Drive Profile Lexium:,,,
+,,-,-,Profibus 6970
+,Indicates the parameter of the mapping that,,,
+,caused the DE bit to be set. The DE bit is set if,-,-,CIP 127.1.29
+,MT-independent parameters of the active,,,
+,mapping cause an error in connection with a write,,,ModbusTCP 6970
+,command.,,,
+,,,,EtherCAT 301B:1Dh
+,Example:,,,
+,,,,PROFINET 6970
+,1 = First mapped parameter,,,
+,2 = Second mapped parameter,,,
+,etc.,,,

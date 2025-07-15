@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_EthIPmaskAct4,"Currently used IP address subnet mask, byte 4.",-,UINT16,CANopen 3044:1Ah
+,,-,R/-,Modbus 17460
+,,-,-,Profibus 17460
+,,-,-,CIP 168.1.26
+,,,,ModbusTCP 17460
+,,,,EtherCAT 3044:1Ah
+,,,,PROFINET 17460
+_EthIPmoduleAct1,"Currently used IP address Ethernet module, byte",-,UINT16,CANopen 3044:13h
+,1.,,,
+ConF→CoM-,,0,R/-,Modbus 17446
+,Byte 1 (x.0.0.0) of the IP address of the Ethernet,,,
+iPA1,module.,0,-,Profibus 17446
+,,255,-,CIP 168.1.19
+,,,,ModbusTCP 17446
+,,,,EtherCAT 3044:13h
+,,,,PROFINET 17446
+_EthIPmoduleAct2,"Currently used IP address Ethernet module, byte",-,UINT16,CANopen 3044:14h
+,2.,,,
+ConF→CoM-,,0,R/-,Modbus 17448
+iPA2,,0,-,Profibus 17448
+,,255,-,CIP 168.1.20
+,,,,ModbusTCP 17448
+,,,,EtherCAT 3044:14h
+,,,,PROFINET 17448
+_EthIPmoduleAct3,"Currently used IP address Ethernet module, byte",-,UINT16,CANopen 3044:15h
+,3.,,,
+ConF→CoM-,,0,R/-,Modbus 17450
+iPA3,,0,-,Profibus 17450
+,,255,-,CIP 168.1.21
+,,,,ModbusTCP 17450
+,,,,EtherCAT 3044:15h
+,,,,PROFINET 17450
+_EthIPmoduleAct4,"Currently used IP address Ethernet module, byte",-,UINT16,CANopen 3044:16h
+,4.,,,
+ConF→CoM-,,0,R/-,Modbus 17452
+iPA4,,0,-,Profibus 17452
+,,255,-,CIP 168.1.22
+,,,,ModbusTCP 17452
+,,,,EtherCAT 3044:16h
+,,,,PROFINET 17452

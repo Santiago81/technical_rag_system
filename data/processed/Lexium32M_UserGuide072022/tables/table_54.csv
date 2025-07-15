@@ -1,0 +1,3 @@
+Signal,Value,Function
+CW,0 -> 1,Movement in positive direction
+CCW,0 -> 1,Movement in negative direction

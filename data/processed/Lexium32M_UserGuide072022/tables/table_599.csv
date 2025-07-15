@@ -1,0 +1,63 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IO_AutoEnaConfig,Enabling the power stage as set via IO_,-,UINT16,CANopen 3005:4h
+,AutoEnable even after error.,,,
+ConF→ACG-,,0,R/W,Modbus 1288
+,0 / Off /_oFF: Setting in parameter IO_,,,
+ioEM,AutoEnable is only used after start-up,0,per.,Profibus 1288
+,1 / On /on: Setting in parameter IO_AutoEnable,1,-,CIP 105.1.4
+,is used after start-up and after detected error,,,
+,,,,ModbusTCP 1288
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,EtherCAT 3005:4h
+,,,,PROFINET 1288
+IO_DQ_set,Setting the digital outputs directly.,-,UINT16,CANopen 3008:11h
+,Digital outputs can only be set directly if the signal,-,R/W,Modbus 2082
+,output function has been set to 'Freely Available'.,,,
+,,-,-,Profibus 2082
+,Bit assignments:,,,
+,,-,-,CIP 108.1.17
+,Bit 0: DQ0,,,
+,,,,ModbusTCP 2082
+,Bit 1: DQ1,,,
+,,,,EtherCAT 3008:11h
+,Bit 2: DQ2,,,
+,,,,PROFINET 2082
+IO_,Additional 'Fault Reset' for the signal input,-,UINT16,CANopen 3005:34h
+FaultResOnEnaInp,function 'Enable'.,,,
+,,0,R/W,Modbus 1384
+ConF→ACG-,0 / Off /oFF: No additional 'Fault Reset',,,
+,,0,per.,Profibus 1384
+iEFr,1 / OnFallingEdge /FALL: Additional 'Fault,,,
+,Reset' with falling edge,2,-,CIP 105.1.52
+,2 / OnRisingEdge /riSE: Additional 'Fault,,,ModbusTCP 1384
+,Reset' with rising edge,,,
+,,,,EtherCAT 3005:34h
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,PROFINET 1384
+,Available with firmware version ≥V01.12.,,,
+IO_GEARmethod,Processing mode for operating mode Electronic,-,UINT16,CANopen 3005:17h
+,Gear.,,,
+ConF→ACG-,,1,R/W,Modbus 1326
+,1 / Position Synchronization Immediate /,,,
+ioGM,PoiM: Position synchronization without,1,per.,Profibus 1326
+,compensation movement,,,
+,,3,-,CIP 105.1.23
+,2 / Position Synchronization Compensated /,,,
+,Poco: Position synchronization with,,,ModbusTCP 1326
+,compensation movement,,,
+,,,,EtherCAT 3005:17h
+,3 / Velocity Synchronization /VELo: Velocity,,,
+,synchronization,,,PROFINET 1326
+,Modified settings become active the next time the,,,
+,motor moves.,,,
+IO_I_limit,Current limitation via input.,Arms,UINT16,CANopen 3006:27h
+ConF→i-o-,A current limit can be activated via a digital input.,0.00,R/W,Modbus 1614
+iLiM,In increments of 0.01 Arms.,0.20,per.,Profibus 1614
+,Modified settings become active immediately.,300.00,-,CIP 106.1.39
+,,,,ModbusTCP 1614
+,,,,EtherCAT 3006:27h
+,,,,PROFINET 1614

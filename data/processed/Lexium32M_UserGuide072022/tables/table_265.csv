@@ -1,0 +1,7 @@
+Operating state,"Signal output function ""No fault""(1)","Signal output function ""Active""(2)"
+1 Start,0,0
+2 Not Ready To Switch On,0,0
+3 Switch On Disabled,0,0
+4 Ready To Switch On,1,0
+5 Switched On,1,0
+6 Operation Enabled,1,1

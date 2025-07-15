@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+MON_SW_Limits,Activation of software limit switches.,-,UINT16,CANopen 3006:3h
+,0 / None: Deactivated,0,R/W,Modbus 1542
+,1 / SWLIMP: Activation of software limit switches,0,per.,Profibus 1542
+,positive direction,,,
+,,3,-,CIP 106.1.3
+,2 / SWLIMN: Activation of software limit switches,,,
+,negative direction,,,ModbusTCP 1542
+,3 / SWLIMP+SWLIMN: Activation of software limit,,,EtherCAT 3006:3h
+,switches both directions,,,
+,,,,PROFINET 1542
+,Software limit switches can only be activated if the,,,
+,zero point is valid.,,,
+,Modified settings become active immediately.,,,
+MON_SWLimMode,Behavior when position limit is reached.,-,UINT16,CANopen 3006:47h
+,0 / Standstill Behind Position Limit: Quick Stop,0,R/W,Modbus 1678
+,is triggered at position limit and standstill is,,,
+,reached behind position limit,0,per.,Profibus 1678
+,1 / Standstill At Position Limit: Quick Stop is,1,-,CIP 106.1.71
+,triggered in front of position limit and standstill is,,,
+,reached at position limit,,,ModbusTCP 1678
+,Modified settings become active immediately.,,,EtherCAT 3006:47h
+,Available with firmware version ≥V01.16.,,,PROFINET 1678
+MON_swLimN,Negative position limit for software limit switch.,usr_p,INT32,CANopen 607D:1h
+,See description 'MON_swLimP'.,-,R/W,Modbus 1546
+,Setting can only be modified if power stage is,-2147483648,per.,Profibus 1546
+,disabled.,,,
+,,-,-,CIP 106.1.5
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,ModbusTCP 1546
+,,,,EtherCAT 607D:1h
+,,,,PROFINET 1546
+MON_swLimP,Positive position limit for software limit switch.,usr_p,INT32,CANopen 607D:2h
+,If a user-defined value entered is outside of the,-,R/W,Modbus 1544
+,"permissible range, the limit switch limits are",,,
+,automatically set to the maximum user-defined,2147483647,per.,Profibus 1544
+,value.,,,
+,,-,-,CIP 106.1.4
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1544
+,Modified settings become active the next time the,,,EtherCAT 607D:2h
+,power stage is enabled.,,,
+,,,,PROFINET 1544
+MON_tq_win,"Torque window, permissible deviation.",%,UINT16,CANopen 3006:2Dh
+,The torque window can only be activated in,0.0,R/W,Modbus 1626
+,operating mode Profile Torque.,,,
+,,3.0,per.,Profibus 1626
+,In increments of 0.1 %.,,,
+,,3000.0,-,CIP 106.1.45
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1626
+,,,,EtherCAT 3006:2Dh
+,,,,PROFINET 1626

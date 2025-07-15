@@ -1,0 +1,16 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ESIM_PhaseShift,Encoder simulation: Phase shift for pulse output.,-,INT16,CANopen 3005:33h
+,The generated encoder simulation pulses can be,-32768,R/W,Modbus 1382
+,shifted in units of 1/4096 encoder pulses. The shift,,,
+,results in a position offset at PTO. The index pulse,0,-,Profibus 1382
+,is shifted as well.,,,
+,,32767,expert,CIP 105.1.51
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 1382
+,Available with firmware version ≥V01.10.,,,
+,,,,EtherCAT 3005:33h
+,,,,PROFINET 1382

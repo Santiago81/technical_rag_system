@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IPp_target,Position reference value for operating mode,-,INT32,CANopen 60C1:1h
+,Interpolated Position.,,,
+,,-2147483648,R/W,Modbus 7004
+,Available with firmware version ≥V01.08.,,,
+,,-,-,Profibus 7004
+,,2147483647,-,CIP 127.1.46
+,,,,ModbusTCP 7004
+,,,,EtherCAT 60C1:1h
+,,,,PROFINET 7004
+Iref_PTIFreqMax,Reference current for operating mode Profile,Arms,UINT16,CANopen 3020:4h
+,Torque via PTI interface.,,,
+,,0.00,R/W,Modbus 8200
+,Reference current corresponding to 1.6 million,,,
+,increments per second at the PTI interface for,-,per.,Profibus 8200
+,operating mode Profile Torque.,,,
+,,463.00,-,CIP 132.1.4
+,In increments of 0.01 Arms.,,,
+,,,,ModbusTCP 8200
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3020:4h
+,Available with firmware version ≥V01.20.,,,
+,,,,PROFINET 8200
+JOGactivate,Activation of operating mode Jog.,-,UINT16,CANopen 301B:9h
+,Bit 0: Positive direction of movement,0,R/W,Modbus 6930
+,Bit 1: Negative direction of movement,0,-,Profibus 6930
+,Bit 2: 0=slow 1=fast,7,-,CIP 127.1.9
+,Modified settings become active immediately.,,,ModbusTCP 6930
+,,,,EtherCAT 301B:9h
+,,,,PROFINET 6930
+JOGmethod,Selection of jog method.,-,UINT16,CANopen 3029:3h
+,0 / Continuous Movement /coMo: Jog with,0,R/W,Modbus 10502
+,continuous movement,,,
+,,1,-,Profibus 10502
+,1 / Step Movement /StMo: Jog with step,,,
+,movement,1,-,CIP 141.1.3
+,Modified settings become active immediately.,,,ModbusTCP 10502
+,,,,EtherCAT 3029:3h
+,,,,PROFINET 10502
+JOGstep,Distance for step movement.,usr_p,INT32,CANopen 3029:7h
+,Modified settings become active the next time the,1,R/W,Modbus 10510
+,motor moves.,,,
+,,20,per.,Profibus 10510
+,,2147483647,-,CIP 141.1.7
+,,,,ModbusTCP 10510
+,,,,EtherCAT 3029:7h
+,,,,PROFINET 10510

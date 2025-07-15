@@ -1,0 +1,43 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_v_act_ENC2,Actual velocity of encoder 2 (module).,usr_v,INT32,CANopen 301E:23h
+,,-,R/-,Modbus 7750
+,,-,-,Profibus 7750
+,,-,-,CIP 130.1.35
+,,,,ModbusTCP 7750
+,,,,EtherCAT 301E:23h
+,,,,PROFINET 7750
+_v_dif_usr,Load-dependent velocity deviation.,usr_v,INT32,CANopen 301E:2Ch
+,The load-dependent velocity deviation is the,-2147483648,R/-,Modbus 7768
+,difference between reference velocity and actual,,,
+,velocity.,-,-,Profibus 7768
+,Available with firmware version ≥V01.26.,2147483647,-,CIP 130.1.44
+,,,,ModbusTCP 7768
+,,,,EtherCAT 301E:2Ch
+,,,,PROFINET 7768
+_v_PTI_act,Actual velocity at PTI interface.,Inc/s,INT32,CANopen 3008:6h
+,Determined pulse frequency at position interface,-2147483648,R/-,Modbus 2060
+,PTI.,,,
+,,-,-,Profibus 2060
+,,2147483647,-,CIP 108.1.6
+,,,,ModbusTCP 2060
+,,,,EtherCAT 3008:6h
+,,,,PROFINET 2060
+_v_ref,Reference velocity.,usr_v,INT32,CANopen 301E:1Fh
+Mon,,-,R/-,Modbus 7742
+VrEF,,-,-,Profibus 7742
+,,-,-,CIP 130.1.31
+,,,,ModbusTCP 7742
+,,,,EtherCAT 301E:1Fh
+,,,,PROFINET 7742
+_Vmax_act,Currently effective velocity limitation.,usr_v,UINT32,CANopen 301C:29h
+,Value of the currently effective velocity limitation.,-,R/-,Modbus 7250
+,This is one of the following values (whichever is,,,
+,lowest):,-,-,Profibus 7250
+,- CTRL_v_max,-,-,CIP 128.1.41
+,- M_n_max (only if motor is connected),,,ModbusTCP 7250
+,- Velocity limitation via digital input,,,EtherCAT 301C:29h
+,,,,PROFINET 7250

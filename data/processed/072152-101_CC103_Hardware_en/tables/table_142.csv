@@ -1,0 +1,12 @@
+CC10 - Interface,Unnamed: 0,Unnamed: 1,Unnamed: 2,"M, D, DB, DF"
+0,,,,
+7 synchron/1A. asyn.,PLC I/O bus,,,07
+8,,,,
+15 16 I 2 axes asynchr.,,,,8O15
+23 3 axes asynchr.,,,,1623
+24 ext. interface,,,,24
+39,,,,39
+0,4 bytes EI/EO,,CC10LOAD,
+7 synchron/1A. asyn.,,,,07
+8,,,,
+15 16 O 2 axes asynchr.,,,,8I 1516

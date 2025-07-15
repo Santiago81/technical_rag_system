@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ENCDigSSILinRes,SSI encoder resolution bits (linear).,bit,UINT16,CANopen 3052:Ch
+,This parameter is used to set the number of,8,R/W,Modbus 21016
+,resolution bits of a linear SSI encoder. The total,,,
+,number of resolution bits (ENCDigSSILinRes) and,24,per.,Profibus 21016
+,additional bits (ENCDigSSILinAdd) is limited to 32.,,,
+,,32,-,CIP 182.1.12
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 21016
+,Modified settings become active the next time the,,,EtherCAT 3052:Ch
+,product is powered on.,,,
+,,,,PROFINET 21016
+,Available with firmware version ≥V01.26.,,,
+ENCDigSSIMaxFreq,SSI maximum transfer frequency.,kHz,UINT16,CANopen 3052:5h
+,This parameter is used to set the SSI transfer,200,R/W,Modbus 21002
+,frequency for SSI encoders (singleturn and,,,
+,multiturn).,200,per.,Profibus 21002
+,The SSI transfer frequency depends on the,1000,-,CIP 182.1.5
+,encoder (maximum frequency specified by the,,,
+,encoder manufacturer) and on the length of the,,,ModbusTCP 21002
+,encoder cable.,,,
+,,,,EtherCAT 3052:5h
+,The encoder module supports SSI transfer,,,
+,frequencies of 200 kHz and 1000 kHz. If your SSI,,,PROFINET 21002
+,encoder supports a maximum frequency of 1000,,,
+,"kHz, set the value of this parameter to 1000.",,,
+,If the length of the encoder cable in your system,,,
+,"exceeds 50 m, set the value of this parameter to",,,
+,"200, regardless of the maximum possible",,,
+,frequency specified by the encoder manufacturer.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigSSIResMult,SSI multiturn resolution (rotary).,bit,UINT16,CANopen 3052:2h
+,This parameter is only relevant for SSI encoders,0,R/W,Modbus 20996
+,(singleturn and multiturn). If a singleturn SSI,,,
+,"encoder is used, ENCDigSSIResMult must be set",0,per.,Profibus 20996
+,to 0.,,,
+,,24,-,CIP 182.1.2
+,"Example: If ENCDigSSIResMult is set to 12, the",,,
+,number of turns of the encoder used must be 2^12,,,ModbusTCP 20996
+,= 4096.,,,
+,,,,EtherCAT 3052:2h
+,The sum of ENCDigSSIResMult +,,,
+,ENCDigSSIResSgl must be less than or equal to,,,PROFINET 20996
+,32 bits.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,

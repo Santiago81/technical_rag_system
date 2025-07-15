@@ -1,0 +1,10 @@
+Operating state,HMI
+1 Start,Init
+2 Not Ready To Switch On,nrdy
+3 Switch On Disabled,dis
+4 Ready To Switch On,rdy
+5 Switched On,Son
+6 Operation Enabled,run
+7 Quick Stop Active,Stop
+8 Fault Reaction Active,FLt
+9 Fault,FLt

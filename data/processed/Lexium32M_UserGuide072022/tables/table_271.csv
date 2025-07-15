@@ -1,0 +1,15 @@
+Operating mode to be changed to Motor standstill
+Jog With motor standstill
+Electronic Gear With motor standstill
+(position synchronization)
+Electronic Gear Without motor standstill
+(velocity synchronization)
+Profile Torque Without motor standstill
+Profile Velocity Without motor standstill
+Profile Position Drive profile Drive Profile Lexium:
+With firmware version ≥V01.04 Adjustable via parameter PP_OpmChgType
+Drive profile DS402:
+With motor standstill(1)
+Profile Position With motor standstill
+With firmware version <V01.04
+(1) Parameter PP_OpmChgType must be set to the value 0.

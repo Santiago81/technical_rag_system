@@ -1,0 +1,5 @@
+Pin,Signal,Pair,Meaning
+1,CW(5V),2,Pulse positive 5V
+2,CW,2,"Pulse positive, inverted"
+4,CCW(5V),1,Pulse negative 5V
+5,CCW,1,"Pulse negative, inverted"

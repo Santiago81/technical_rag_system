@@ -1,0 +1,3 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+GEARnum2,"Numerator of gear ratio number 2.Gear ratio = GEARnum2 / GEARdenom2The new gear ratio is applied when the numeratorvalue is supplied.Modified settings become active immediately.","--214748364812147483647","INT32R/Wper.-","CANopen 3026:DhModbus 9754Profibus 9754CIP 138.1.13ModbusTCP 9754EtherCAT 3026:DhPROFINET 9754"
+GEARdenom2,"Denominator of gear ratio number 2.See description GEARnum","-112147483647","INT32R/Wper.-","CANopen 3026:ChModbus 9752Profibus 9752CIP 138.1.12ModbusTCP 9752EtherCAT 3026:ChPROFINET 9752"

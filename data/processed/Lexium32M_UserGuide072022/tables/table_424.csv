@@ -1,0 +1,13 @@
+Unnamed: 0,Signal output function,Unnamed: 1
+Operating state,“No fault”(1),“Active”(2)
+1 Start,0,0
+2 Not Ready To Switch On,0,0
+3 Switch On Disabled,0,0
+4 Ready To Switch On,1,0
+5 Switched On,1,0
+6 Operation Enabled,1,1
+7 Quick Stop Active,0,0
+8 Fault Reaction Active,0,0
+9 Fault,0,0
+(1) The signal output function is factory setting for signal output DQ0,,
+(2) The signal output function is the factory setting for signal output DQ1,,

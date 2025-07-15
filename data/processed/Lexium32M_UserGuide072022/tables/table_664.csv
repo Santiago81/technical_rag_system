@@ -1,0 +1,51 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PTtq_reference,Reference value source for operating mode Profile,-,UINT16,CANopen 301B:38h
+,Torque.,,,
+,,0,R/W,Modbus 7024
+,0 / None: None,,,
+,,1,-,Profibus 7024
+,1 / Parameter 'PTtq_target': Reference value via,,,
+,parameter PTtq_target,3,-,CIP 127.1.56
+,2 / Analog Input: Reference value via analog,,,ModbusTCP 7024
+,input,,,
+,,,,EtherCAT 301B:38h
+,3 / PTI Interface: Reference value via PTI,,,
+,interface,,,PROFINET 7024
+,Modified settings become active immediately.,,,
+,Available with firmware version ≥V01.10.,,,
+PTtq_target,Target torque.,%,INT16,CANopen 6071:0h
+,100.0 % correspond to the continuous stall torque,-3000.0,R/W,Modbus 6944
+,_M_M_0.,,,
+,,0.0,-,Profibus 6944
+,In increments of 0.1 %.,,,
+,,3000.0,-,CIP 127.1.16
+,Modified settings become active immediately.,,,
+,,,,ModbusTCP 6944
+,,,,EtherCAT 6071:0h
+,,,,PROFINET 6944
+PVv_reference,Reference value source for operating mode Profile,-,UINT16,CANopen 301B:39h
+,Velocity.,,,
+,,0,R/W,Modbus 7026
+,0 / None: None,,,
+,,1,-,Profibus 7026
+,1 / Parameter 'PVv_target': Reference value via,,,
+,parameter PVv_target,2,-,CIP 127.1.57
+,2 / Analog Input: Reference value via analog,,,ModbusTCP 7026
+,input,,,
+,,,,EtherCAT 301B:39h
+,Modified settings become active immediately.,,,
+,,,,PROFINET 7026
+,Available with firmware version ≥V01.10.,,,
+PVv_target,Target velocity.,usr_v,INT32,CANopen 60FF:0h
+,The target velocity is limited to the setting in,-,R/W,Modbus 6938
+,CTRL_v_max and RAMP_v_max.,,,
+,,0,-,Profibus 6938
+,Modified settings become active immediately.,,,
+,,-,-,CIP 127.1.13
+,,,,ModbusTCP 6938
+,,,,EtherCAT 60FF:0h
+,,,,PROFINET 6938

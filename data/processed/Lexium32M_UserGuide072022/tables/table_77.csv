@@ -1,0 +1,15 @@
+EMC measures,Objective
+"Connect large surface areas of cable shields, use cable clamps",Reduces emissions.
+and ground straps.,
+Use cable clamps to connect a large surface area of the shields of,Reduces emissions.
+all shielded cables to the mounting plate at the control cabinet,
+entry.,
+Ground shields of digital signal wires at both ends by connecting,Reduces interference affecting
+them to a large surface area or via conductive connector,"the signal wires, reduces"
+housings.,emissions
+Ground the shields of analog signal wires directly at the drive,Reduces ground loops due to
+(signal input); insulate the shield at the other cable end or ground,low-frequency interference.
+"it via a capacitor (for example, 10 nF).",
+Use only shielded motor cables with copper braid and a coverage,Diverts interference currents in
+"of at least 85%, ground a large surface area of the shield at both","a controlled way, reduces"
+ends.,emissions.

@@ -1,0 +1,14 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+IPp_target,Position reference value for operating mode,-,INT32,CANopen 60C1:1h
+,Interpolated Position.,,,
+,,-2147483648,R/W,Modbus 7004
+,Available with firmware version ≥V01.08.,,,
+,,-,-,Profibus 7004
+,,2147483647,-,CIP 127.1.46
+,,,,ModbusTCP 7004
+,,,,EtherCAT 60C1:1h
+,,,,PROFINET 7004

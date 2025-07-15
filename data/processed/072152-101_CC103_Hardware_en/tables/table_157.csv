@@ -1,0 +1,10 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F003- F004","RANGE?MPP.ERROR","Programmedtraversing rangetoo largeMachineparameter error","Displacement > 360° onrotary axesFormat for parameterP300 > 3.3Maximum traversing speed =24 m/min. (with 0.001 mmresolution)! 400.000 < P200[pulses/mm]P300 [mm/s]Rotary axis is operated withrevolution–coded, incrementalencoderOn rotary axis: value forreference position(P230) > 360°On linear axis: value forreference position (P230)outside traversing rangeNumber of axes (P020) > 3On revolution–coded,incremental encoder:P220 – P210 > traversingrange of the encoderRange monitoring P210 orP220 > possible traversingdistance","Enter newdisplacementAdapt parameter",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

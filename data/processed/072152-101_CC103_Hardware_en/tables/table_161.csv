@@ -1,0 +1,10 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"F040*ABS. RAMDual–port RAMRAM on the absolute encoderERRORerror on themodule defectiveabsolute encodermodule in the CC10F042*ANS. ENC. ERR.General error onWatchdog of the absoluteabsolute encoderencoder has respondedmoduleF044EDIT DISABLEDisables editingIF signal edit disable presentF045NO PROGRAMProgram to beWrong program No. selectedoutput does notMemory emptyexist-F046**POS. COD. MARPosition of theNo coded marker has been1 Acoded marker 1streceived within the definedaxistraversing range-F047**POS. COD. MARPosition of theWrong parameter2 Acoded marker 2ndaxisWrong wiring of the encoder-F048**POS COD. MARPosition of theWire discontinuity3 Acoded marker 3rdaxisEncoder defective-F049**POS. CYC. MARPosition of theNo cyclic marker has been1 Acyclic marker 1streceived within a definedaxistraversing range-F050**POS. CYC. MARPosition of theWire discontinuity2 Acyclic marker 2ndaxisEncoder defective-F051**POS. CYC. MARPosition of the3 Acyclic marker 3rdaxis-F052**ENC. FAULT 1 AEncoder fault 1stThe position of the axis doesaxisnot correspond with the-F053**ENC. FAULT 2 AEncoder fault 2ndabsolute position of the codedaxismarker-F054**ENC. FAULT 3 AEncoder fault 3rdEncoder defectiveaxisEncoder connectionincorrectly wired*  Occurs only in conjunction with absolute encoder** Occurs only in conjunction with revolution–coded rotary encoder","Replace controlsystemReplace controlsystemCancel IF signalSelect correctprogram No.Check the parameter”Revolutions”Check the encoderwiringCheck the measuringsystemCheck the measuringsystem wiringCheck the groundand  screenconnectionsCheck the wiring andthe  measuringsystemReplace themeasuring system",,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

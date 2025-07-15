@@ -1,0 +1,8 @@
+Input,Pin(1),RS422(2),5V,24V
+A,Pin 7,Reserved,Reserved,"PULSE(24V)ENC_A(24V)CW(24V)"
+,Pin 8,Reserved,Reserved,"DIR(24V)ENC_B(24V)CCW(24V)"
+B,Pin 1,"PULSE(5V)ENC_A(5V)CW(5V)","PULSE(5V)ENC_A(5V)CW(5V)",Reserved
+,Pin4,"DIR(5V)ENC_B(5V)CCW(5V)","DIR(5V)ENC_B(5V)CCW(5V)",Reserved
+C,Pin 2,"PULSEENC_ACW","PULSEENC_ACW","PULSEENC_ACW"
+Pin 5,"DIRENC_BCCW","DIRENC_BCCW","DIRENC_BCCW",
+"(1) Observe the different pairing in the case of twisted pair:Pin 1 / pin 2 and pin 4 / pin 5 for RS422 and 5Vpin 7 / pin 2 and pin 8 / pin 5 for 24V(2) Due to the input current of the optocoupler in the input circuit, a parallel connection of a driver output to several devices is not permitted.",,,,

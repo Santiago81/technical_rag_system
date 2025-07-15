@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+_TouchProbeStat,"Touch Probe status (DS402).Available with firmware version ≥V01.16.","----","UINT16R/---","CANopen 60B9:0hModbus 7030Profibus 7030CIP 127.1.59ModbusTCP 7030EtherCAT 60B9:0hPROFINET 7030"

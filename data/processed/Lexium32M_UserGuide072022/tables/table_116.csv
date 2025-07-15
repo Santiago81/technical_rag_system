@@ -1,0 +1,5 @@
+Characteristic,Unit,Value,Unnamed: 0,Unnamed: 1
+,,"LXM32•U45,LXM32•U60,LXM32•U90,LXM32•D12,LXM32•D18,LXM32•D30",LXM32•D72,"LXM32•-D85,LXM32•-C10"
+Connection cross section,"mm2(AWG)","0.75 ... 5.3(18 ... 10)","0.75 ... 10(18 ... 8)","1.5 ... 25(14 ... 4)"
+"Tightening torque for terminalscrews","Nm(lb.in)","0.68(6.0)","1.81(16.0)","3.8(33.6)"
+Stripping length,"mm(in)","6 ... 7(0.24 ... 0.28)","8 ... 9(0.31 ... 0.35)","18(0.71)"

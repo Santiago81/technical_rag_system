@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+IO_v_limit,"Velocity limitation via input.A velocity limitation can be activated via a digitalinput.In operating mode Profile Torque, the minimumvelocity is internally limited to 100 RPM.Modified settings become active immediately.","usr_v0102147483647","UINT32R/Wper.-","CANopen 3006:1EhModbus 1596Profibus 1596CIP 106.1.30ModbusTCP 1596EtherCAT 3006:1EhPROFINET 1596"

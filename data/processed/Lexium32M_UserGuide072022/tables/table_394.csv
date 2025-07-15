@@ -1,0 +1,45 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+PosReg1Mode,Selection of comparison criterion for position,-,UINT16,CANopen 300B:4h
+,register channel 1.,,,
+,,0,R/W,Modbus 2824
+,0 / Pact greater equal A: Actual position is,,,
+,greater than or equal to comparison value A for,0,per.,Profibus 2824
+,position register channel 1,,,
+,,5,-,CIP 111.1.4
+,1 / Pact less equal A: Actual position is less than,,,
+,or equal to comparison value A for position,,,ModbusTCP 2824
+,register channel 1,,,
+,,,,EtherCAT 300B:4h
+,2 / Pact in [A-B] (basic): Actual position is in the,,,
+,range A-B including limits (basic),,,PROFINET 2824
+,3 / Pact out [A-B] (basic): Actual position is out of,,,
+,the range A-B excluding limits (basic),,,
+,4 / Pact in [A-B] (extended): Actual position is in,,,
+,the range A-B including limits (extended),,,
+,5 / Pact out [A-B] (extended): Actual position is,,,
+,out of the range A-B excluding limits (extended),,,
+,Modified settings become active immediately.,,,
+PosReg2Mode,Selection of comparison criterion for position,-,UINT16,CANopen 300B:5h
+,register channel 2.,,,
+,,0,R/W,Modbus 2826
+,0 / Pact greater equal A: Actual position is,,,
+,greater than or equal to comparison value A for,0,per.,Profibus 2826
+,position register channel 2,,,
+,,5,-,CIP 111.1.5
+,1 / Pact less equal A: Actual position is less than,,,
+,or equal to comparison value A for position,,,ModbusTCP 2826
+,register channel 2,,,
+,,,,EtherCAT 300B:5h
+,2 / Pact in [A-B] (basic): Actual position is in the,,,
+,range A-B including limits (basic),,,PROFINET 2826
+,3 / Pact out [A-B] (basic): Actual position is out of,,,
+,the range A-B excluding limits (basic),,,
+,4 / Pact in [A-B] (extended): Actual position is in,,,
+,the range A-B including limits (extended),,,
+,5 / Pact out [A-B] (extended): Actual position is,,,
+,out of the range A-B excluding limits (extended),,,
+,Modified settings become active immediately.,,,

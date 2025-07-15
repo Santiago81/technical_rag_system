@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+,"10 / RMAC active or finished: Relativemovement after capture is active or finished11 / Position Window: Position windowSetting for:Bit 11 of the parameter _DCOMstatusBit 10 of the parameter _actionStatusBit 10 of the parameter _DPL_motionStatModified settings become active immediately.",,,

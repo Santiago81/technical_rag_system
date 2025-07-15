@@ -1,0 +1,16 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+5206,0,"Communication error detected inencoderParameter _WarnLatched Bit 16","Communication channel to encoderis subject to interference.",Verify EMC measures.
+5207,1,Function is not supported,"The hardware revision does notsupport the function.",-
+5302,4,"The motor requires a PWMfrequency (16kHz) which the powerstage does not support.","The motor only works with a PWMfrequency of 16 kHz (motornameplate entry). However, thepower stage does not support thisPWM frequency.","Use a motor that works with a PWMfrequency of 8 kHz.Contact your Schneider Electricservice representative."
+5430,4,"System error detected: Nonvolatilememory read errorParameter _SigLatched Bit 29",-,-
+5431,3,"System error: Nonvolatile memorywrite errorParameter _SigLatched Bit 29",-,-
+5432,3,"System error: Nonvolatile memorystate machineParameter _SigLatched Bit 29",-,-
+5433,3,"System error: Nonvolatile memoryaddress errorParameter _SigLatched Bit 29",-,-
+5434,3,"System error: Nonvolatile memoryincorrect data lengthParameter _SigLatched Bit 29",-,-
+5435,4,"System error: Nonvolatile memorynot formattedParameter _SigLatched Bit 29",-,-
+5436,4,"System error: Nonvolatile memoryincompatible structureParameter _SigLatched Bit 29",-,-
+5437,4,"System error detected: Nonvolatilememory checksum error(manufacturer data)Parameter _SigLatched Bit 29",-,-
+5438,3,"System error detected: Nonvolatilememory checksum error (userparameters)Parameter _SigLatched Bit 29",-,-
+5439,3,"System error detected: Nonvolatilememory checksum error (fieldbusparameters)Parameter _SigLatched Bit 29",-,-
+543B,4,"System error detected: No validmanufacturer dataParameter _SigLatched Bit 29",-,-
+543E,3,"System error detected: Nonvolatilememory checksum error (NoInitparameter)Parameter _SigLatched Bit 29",-,-

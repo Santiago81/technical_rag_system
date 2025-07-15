@@ -1,0 +1,5 @@
+Characteristic,Unit,Value
+115/230 Vac single-phase,Vac,"100 -15% ... 120 +10%200 -15% ... 240 +10%"
+208/400/480 Vac three-phase (1),Vac,"200 -15% ... 240 +10%380 -15% ... 480 +10%"
+Frequency,Hz,50 -5% ... 60 +5%
+(1) 208 Vac: With firmware version ≥V01.02 and DOM ≥10.05.2010,,

@@ -1,0 +1,3 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+"_M_T_currentMontMot",Temperature of motor.,"°C---","INT16R/---","CANopen 301C:11hModbus 7202Profibus 7202CIP 128.1.17ModbusTCP 7202EtherCAT 301C:11hPROFINET 7202"
+_M_T_max,Maximum temperature of motor.,"°C---","INT16R/---","CANopen 300D:10hModbus 3360Profibus 3360CIP 113.1.16ModbusTCP 3360EtherCAT 300D:10hPROFINET 3360"

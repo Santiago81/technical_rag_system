@@ -1,0 +1,61 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,2 / No Fault /nFLt: Signals operating states,,,ModbusTCP 1812
+,"Ready To Switch On, Switched On and Operation",,,
+,Enabled,,,EtherCAT 3007:Ah
+,3 / Active /Acti: Signals operating state,,,PROFINET 1812
+,Operation Enabled,,,
+,4 / RMAC Active Or Finished /rMcA: Relative,,,
+,movement after capture active or finished (RMAC),,,
+,5 / In Position Deviation Window /in-P:,,,
+,Position deviation is within window,,,
+,6 / In Velocity Deviation Window /in-V:,,,
+,Velocity deviation is within window,,,
+,7 / Velocity Below Threshold /Vthr: Motor,,,
+,velocity below threshold,,,
+,8 / Current Below Threshold /ithr: Motor,,,
+,current below threshold,,,
+,9 / Halt Acknowledge /hALt: Halt,,,
+,acknowledgement,,,
+,11 / Motion Sequence: Start Acknowledge /,,,
+,dSAc: Motion Sequence: Acknowledgement of,,,
+,start request,,,
+,13 / Motor Standstill /MStd: Motor at a,,,
+,standstill,,,
+,14 / Selected Error /SErr: One of the,,,
+,specified errors of error classes 1 ... 4 is active,,,
+,15 / Valid Reference (ref_ok) /rEFo: Zero,,,
+,point is valid (ref_ok),,,
+,16 / Selected Warning /SWrn: One of the,,,
+,specified errors of error class 0 is active,,,
+,17 / Motion Sequence: Done /MSCo: Motion,,,
+,Sequence: Sequence done,,,
+,18 / Position Register Channel 1 /PrC1:,,,
+,Position register channel 1,,,
+,19 / Position Register Channel 2 /PrC2:,,,
+,Position register channel 2,,,
+,20 / Position Register Channel 3 /PrC3:,,,
+,Position register channel 3,,,
+,21 / Position Register Channel 4 /PrC4:,,,
+,Position register channel 4,,,
+,22 / Motor Moves Positive /MPoS: Motor,,,
+,moves in positive direction,,,
+,23 / Motor Moves Negative /MnEG: Motor,,,
+,moves in negative direction,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+IOfunct_DQ2,Function Output DQ2.,-,UINT16,CANopen 3007:Bh
+ConF→i-o-,1 / Freely Available /nonE: Available as,-,R/W,Modbus 1814
+,required,,,
+do2,,-,per.,Profibus 1814
+,2 / No Fault /nFLt: Signals operating states,,,
+,"Ready To Switch On, Switched On and Operation",-,-,CIP 107.1.11
+,Enabled,,,
+,,,,ModbusTCP 1814
+,3 / Active /Acti: Signals operating state,,,
+,Operation Enabled,,,EtherCAT 3007:Bh

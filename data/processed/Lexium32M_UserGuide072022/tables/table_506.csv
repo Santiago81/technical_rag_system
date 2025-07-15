@@ -1,0 +1,52 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Imax_system,Current limitation of the system.,Arms,UINT16,CANopen 301C:27h
+,This parameter specifies the maximum system,-,R/-,Modbus 7246
+,current. This is the lower value of the maximum,,,
+,motor current and the maximum power stage,-,-,Profibus 7246
+,"current. If no motor is connected, only the",,,
+,maximum power stage current is taken into,-,-,CIP 128.1.39
+,account in this parameter.,,,
+,,,,ModbusTCP 7246
+,In increments of 0.01 Arms.,,,
+,,,,EtherCAT 301C:27h
+,,,,PROFINET 7246
+_Inc_ENC2Raw,Raw increment value of encoder 2.,EncInc,INT32,CANopen 301E:25h
+,This parameter is only needed for commissioning,-,R/-,Modbus 7754
+,of encoder 2 in case of an indeterminable,,,
+,machine encoder resolution.,-,-,Profibus 7754
+,Available with firmware version ≥V01.01.,-,-,CIP 130.1.37
+,,,,ModbusTCP 7754
+,,,,EtherCAT 301E:25h
+,,,,PROFINET 7754
+_InvalidParam,Modbus address of parameter with invalid value.,-,UINT16,CANopen 301C:6h
+,"If a configuration error is detected, the Modbus",-,R/-,Modbus 7180
+,address of the parameter with an invalid value is,,,
+,indicated here.,0,-,Profibus 7180
+,,-,-,CIP 128.1.6
+,,,,ModbusTCP 7180
+,,,,EtherCAT 301C:6h
+,,,,PROFINET 7180
+_IO_act,Physical status of the digital inputs and outputs.,-,UINT16,CANopen 3008:1h
+,Low byte:,-,R/-,Modbus 2050
+,Bit 0: DI0,-,-,Profibus 2050
+,Bit 1: DI1,-,-,CIP 108.1.1
+,Bit 2: DI2,,,ModbusTCP 2050
+,Bit 3: DI3,,,EtherCAT 3008:1h
+,Bit 4: DI4,,,PROFINET 2050
+,Bit 5: DI5,,,
+,High byte:,,,
+,Bit 8: DQ0,,,
+,Bit 9: DQ1,,,
+,Bit 10: DQ2,,,
+_IO_DI_act,Status of digital inputs.,-,UINT16,CANopen 3008:Fh
+Mon,Bit assignments:,-,R/-,Modbus 2078
+diMo,Bit 0: DI0,-,-,Profibus 2078
+,Bit 1: DI1,-,-,CIP 108.1.15
+,Bit 2: DI2,,,ModbusTCP 2078
+,Bit 3: DI3,,,EtherCAT 3008:Fh
+,Bit 4: DI4,,,PROFINET 2078
+,Bit 5: DI5,,,

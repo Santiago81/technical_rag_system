@@ -1,0 +1,46 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_fwNoSlot3,Firmware number of slot 3.,-,UINT32,CANopen 3002:21h
+,Example: PR0912.00,-,R/-,Modbus 578
+,The value is provided as a decimal value: 91200.,-,-,Profibus 578
+,"If no module is installed, the value 0 is returned.",-,-,CIP 102.1.33
+,,,,ModbusTCP 578
+,,,,EtherCAT 3002:21h
+,,,,PROFINET 578
+_fwNoSlot3Boot,Firmware number of slot 3 (Bootloader).,-,UINT32,CANopen 3002:27h
+,Example: PR0912.00,-,R/-,Modbus 590
+,The value is provided as a decimal value: 91200.,-,-,Profibus 590
+,"If no module is installed, the value 0 is returned.",-,-,CIP 102.1.39
+,,,,ModbusTCP 590
+,,,,EtherCAT 3002:27h
+,,,,PROFINET 590
+_fwNoSlot3FPGA,Firmware number of slot 3 (FPGA).,-,UINT32,CANopen 3002:24h
+,Example: PR0912.00,-,R/-,Modbus 584
+,The value is provided as a decimal value: 91200.,-,-,Profibus 584
+,"If no module is installed, the value 0 is returned.",-,-,CIP 102.1.36
+,,,,ModbusTCP 584
+,,,,EtherCAT 3002:24h
+,,,,PROFINET 584
+_fwRevSlot1,Firmware revision of slot 1.,-,UINT16,CANopen 3002:19h
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 562
+,Part XX.YY is contained in parameter,-,-,Profibus 562
+,_fwVerSlot1.,,,
+,,-,-,CIP 102.1.25
+,Part ZZ is used for quality evolution and contained,,,
+,in this parameter.,,,ModbusTCP 562
+,"If no module is installed, the value 0 is returned.",,,EtherCAT 3002:19h
+,Example: V01.23.45,,,PROFINET 562
+,The value is provided as a decimal value: 45,,,
+_fwRevSlot2,Firmware revision of slot 2.,-,UINT16,CANopen 3002:1Eh
+,The version format is XX.YY.ZZ.,-,R/-,Modbus 572
+,Part XX.YY is contained in parameter,-,-,Profibus 572
+,_fwVersSlot2.,,,
+,,-,-,CIP 102.1.30
+,Part ZZ is used for quality evolution and contained,,,
+,in this parameter.,,,ModbusTCP 572
+,"If no module is installed, the value 0 is returned.",,,EtherCAT 3002:1Eh
+,Example: V01.23.45,,,PROFINET 572
+,The value is provided as a decimal value: 45,,,

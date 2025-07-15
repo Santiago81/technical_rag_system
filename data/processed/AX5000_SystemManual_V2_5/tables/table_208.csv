@@ -1,0 +1,5 @@
+Unnamed: 0,Terminal point,Signal
+,PE,Protective conductor
++RB,External brake resistor +,
++RBint,Internal brake resistor +,
+-RB,Brake resistor GND,

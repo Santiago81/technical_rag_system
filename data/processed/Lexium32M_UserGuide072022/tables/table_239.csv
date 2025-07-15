@@ -1,0 +1,2 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+p_PTI_act_set,"Position value at PTI interface.Available with firmware version ≥V01.26.","Inc-2147483648-2147483647","INT32R/W--","CANopen 3008:29hModbus 2130Profibus 2130CIP 108.1.41ModbusTCP 2130EtherCAT 3008:29hPROFINET 2130"

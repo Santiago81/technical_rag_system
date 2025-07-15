@@ -1,0 +1,58 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_Cap1PosRisEdge,Capture input 1 captured position at rising edge,usr_p,INT32,CANopen 60BA:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2634
+,This parameter contains the position captured at,,,
+,the point in time a rising edge was detected.,-,-,Profibus 2634
+,The captured position is recalculated after,-,-,CIP 110.1.37
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2634
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BA:0h
+,,,,PROFINET 2634
+_Cap1CntRise,Capture input 1 event counter at rising edges,-,UINT16,CANopen 300A:2Bh
+,(DS402).,,,
+,,-,R/-,Modbus 2646
+,Counts the capture events at rising edges.,,,
+,,-,-,Profibus 2646
+,The event counter is reset when capture input 1 is,,,
+,activated.,-,-,CIP 110.1.43
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2646
+,,,,EtherCAT 300A:2Bh
+,,,,PROFINET 2646
+_Cap1PosFallEdge,Capture input 1 captured position at falling edge,usr_p,INT32,CANopen 60BB:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2636
+,This parameter contains the position captured at,,,
+,the point in time a falling edge was detected.,-,-,Profibus 2636
+,The captured position is recalculated after,-,-,CIP 110.1.38
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2636
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BB:0h
+,,,,PROFINET 2636
+_Cap1CntFall,Capture input 1 event counter at falling edges,-,UINT16,CANopen 300A:2Ch
+,(DS402).,,,
+,,-,R/-,Modbus 2648
+,Counts the capture events at falling edges.,,,
+,,-,-,Profibus 2648
+,The event counter is reset when capture input 1 is,,,
+,activated.,-,-,CIP 110.1.44
+,Available with firmware version ≥V01.16.,,,ModbusTCP 2648
+,,,,EtherCAT 300A:2Ch
+,,,,PROFINET 2648
+_Cap2PosRisEdge,Capture input 2 captured position at rising edge,usr_p,INT32,CANopen 60BC:0h
+,(DS402).,,,
+,,-,R/-,Modbus 2638
+,This parameter contains the position captured at,,,
+,the point in time a rising edge was detected.,-,-,Profibus 2638
+,The captured position is recalculated after,-,-,CIP 110.1.39
+,"""Position Setting"" or ""Reference Movement"".",,,
+,,,,ModbusTCP 2638
+,Available with firmware version ≥V01.16.,,,
+,,,,EtherCAT 60BC:0h
+,,,,PROFINET 2638

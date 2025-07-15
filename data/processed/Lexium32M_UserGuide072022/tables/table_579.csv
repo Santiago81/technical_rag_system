@@ -1,0 +1,60 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+ErrorResp_,Error response to position deviation motor,-,UINT16,CANopen 3005:3Bh
+PDiffEncM,encoder and machine encoder exceeded.,,,
+,,0,R/W,Modbus 1398
+,1 / Error Class 1: Error class 1,,,
+,,3,per.,Profibus 1398
+,2 / Error Class 2: Error class 2,,,
+,,3,-,CIP 105.1.59
+,3 / Error Class 3: Error class 3,,,
+,,,,ModbusTCP 1398
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3005:3Bh
+,Modified settings become active the next time the,,,PROFINET 1398
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.26.,,,
+ErrorResp_QuasiAbs,Error response to detected error with quasi,-,UINT16,CANopen 3005:3Ah
+,absolute position.,,,
+,,3,R/W,Modbus 1396
+,3 / Error Class 3: Error class 3,,,
+,,3,per.,Profibus 1396
+,4 / Error Class 4: Error class 4,,,
+,,4,-,CIP 105.1.58
+,Setting can only be modified if power stage is,,,
+,disabled.,,,ModbusTCP 1396
+,Modified settings become active the next time the,,,EtherCAT 3005:3Ah
+,power stage is enabled.,,,
+,,,,PROFINET 1396
+,Available with firmware version ≥V01.26.,,,
+ErrorResp_v_dif,Error response to excessively high load-,-,UINT16,CANopen 3005:3Ch
+,dependent velocity deviation.,,,
+,,1,R/W,Modbus 1400
+,1 / Error Class 1: Error class 1,,,
+,,3,per.,Profibus 1400
+,2 / Error Class 2: Error class 2,,,
+,,3,-,CIP 105.1.60
+,3 / Error Class 3: Error class 3,,,
+,,,,ModbusTCP 1400
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3005:3Ch
+,Modified settings become active the next time the,,,PROFINET 1400
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.26.,,,
+ErrResp_HeartB_,CANopen error response to detected Heartbeat or,-,UINT16,CANopen 3041:11h
+LifeG,Life Guarding error.,,,
+,,1,R/W,Modbus 16674
+,1 / Error Class 1: Error class 1,,,
+,,2,per.,Profibus 16674
+,2 / Error Class 2: Error class 2,,,
+,,3,-,CIP 165.1.17
+,3 / Error Class 3: Error class 3,,,
+,,,,ModbusTCP 16674
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 3041:11h
+,Modified settings become active the next time the,,,PROFINET 16674
+,power stage is enabled.,,,
+,Available with firmware version ≥V01.30.,,,

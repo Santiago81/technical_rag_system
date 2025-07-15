@@ -1,0 +1,4 @@
+"Signal diagram for single polling (schematic)CC 10Clock 1Clock 2Clock 12Clock 13Clock 14Clock 24Clock 25Clock 26Clock 1Clock 2Clock pulseoutput(Loop Out)......t1t2t4t0t3t6CC 10Reading in data...(Loop In)MSB 2112102 1LSB 20MSB 2112 102 1LSB 20PowerMSB 211210t5NumberNumberAngleAngleFailureAngleof rev.of rev.positionpositionBitpositionStart of transferof 2nd record(Position)Signal diagram for double polling (schematic)Clock 26Clock 27Clock 28Clock 50Clock 51Clock 52Clock 1Clock 2CC 10Clock output........(Loop Out)t4t3t6CC 10Reading in data(Loop In)....Power0 BitMSB 21121021LSB 20PowerMSB 211210FailureAngleFailuret5NumberNumberBitpositionBitof rev.of rev.AnglepositionStart of transferof 2nd record1st pollingStart of 2nd pollingEnd of 2nd polling(Position)Double pollingDouble pollingt1 ~ 1 mst2 ~ 4 ms15 ms < t3 < 30 mst4 > 35 ms",Unnamed: 0,Unnamed: 1
+,,
+,,
+,,

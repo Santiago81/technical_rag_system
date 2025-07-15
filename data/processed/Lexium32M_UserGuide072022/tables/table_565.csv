@@ -1,0 +1,46 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+DI_3_Debounce,Debounce time of DI3.,-,UINT16,CANopen 3008:23h
+,0 / No: No software debouncing,0,R/W,Modbus 2118
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 2118
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 108.1.35
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 2118
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 3008:23h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 2118
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+DI_4_Debounce,Debounce time of DI4.,-,UINT16,CANopen 3008:24h
+,0 / No: No software debouncing,0,R/W,Modbus 2120
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 2120
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 108.1.36
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 2120
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 3008:24h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 2120
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+DI_5_Debounce,Debounce time of DI5.,-,UINT16,CANopen 3008:25h
+,0 / No: No software debouncing,0,R/W,Modbus 2122
+,1 / 0.25 ms: 0.25 ms,6,per.,Profibus 2122
+,2 / 0.50 ms: 0.50 ms,6,-,CIP 108.1.37
+,3 / 0.75 ms: 0.75 ms,,,ModbusTCP 2122
+,4 / 1.00 ms: 1.00 ms,,,EtherCAT 3008:25h
+,5 / 1.25 ms: 1.25 ms,,,PROFINET 2122
+,6 / 1.50 ms: 1.50 ms,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active immediately.,,,
+DPL_Activate,Activation of Drive Profile Lexium.,-,UINT16,CANopen 301B:8h
+,Value 0: Deactivate Drive Profile Lexium,0,R/W,Modbus 6928
+,Value 1: Activate Drive Profile Lexium,0,-,Profibus 6928
+,The access channel via which the drive profile has,1,-,CIP 127.1.8
+,been activated is the only access channel that can,,,
+,use the drive profile.,,,ModbusTCP 6928
+,Modified settings become active immediately.,,,EtherCAT 301B:8h
+,,,,PROFINET 6928

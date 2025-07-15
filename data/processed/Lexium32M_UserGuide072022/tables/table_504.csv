@@ -1,0 +1,44 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_HMdisREFtoIDX_,Distance from switching point to index pulse.,usr_p,INT32,CANopen 3028:Fh
+usr,,,,
+,Allows you to verify the distance between the,-2147483648,R/-,Modbus 10270
+,index pulse and the switching point and serves as,,,
+,a criterion for determining whether the reference,-,-,Profibus 10270
+,movement with index pulse can be reproduced.,,,
+,,2147483647,-,CIP 140.1.15
+,Available with firmware version ≥V01.03.,,,
+,,,,ModbusTCP 10270
+,,,,EtherCAT 3028:Fh
+,,,,PROFINET 10270
+_hwVersCPU,Hardware version of control board.,-,UINT16,CANopen 3002:12h
+,,-,R/-,Modbus 548
+,,-,-,Profibus 548
+,,-,-,CIP 102.1.18
+,,,,ModbusTCP 548
+,,,,EtherCAT 3002:12h
+,,,,PROFINET 548
+_hwVersPS,Hardware version of power stage.,-,UINT16,CANopen 3002:14h
+,,-,R/-,Modbus 552
+,,-,-,Profibus 552
+,,-,-,CIP 102.1.20
+,,,,ModbusTCP 552
+,,,,EtherCAT 3002:14h
+,,,,PROFINET 552
+_hwVersSlot1,Hardware version of module in slot 1.,-,UINT16,CANopen 3002:16h
+,,-,R/-,Modbus 556
+,,-,-,Profibus 556
+,,-,-,CIP 102.1.22
+,,,,ModbusTCP 556
+,,,,EtherCAT 3002:16h
+,,,,PROFINET 556
+_hwVersSlot2,Hardware version of module in slot 2.,-,UINT16,CANopen 3002:1Bh
+,,-,R/-,Modbus 566
+,,-,-,Profibus 566
+,,-,-,CIP 102.1.27
+,,,,ModbusTCP 566
+,,,,EtherCAT 3002:1Bh
+,,,,PROFINET 566

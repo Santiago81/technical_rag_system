@@ -1,0 +1,19 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_AT_M_load,Constant load torque.,Arms,INT16,CANopen 302F:8h
+,Is determined during Autotuning.,-,R/-,Modbus 12048
+,In increments of 0.01 Arms.,-,-,Profibus 12048
+,,-,-,CIP 147.1.8
+,,,,ModbusTCP 12048
+,,,,EtherCAT 302F:8h
+,,,,PROFINET 12048
+_AT_J,Moment of inertia of the system.,kg cm2,UINT16,CANopen 302F:Ch
+,Is automatically calculated during Autotuning.,0.1,R/-,Modbus 12056
+,In increments of 0.1 kg cm2.,0.1,per.,Profibus 12056
+,,6553.5,-,CIP 147.1.12
+,,,,ModbusTCP 12056
+,,,,EtherCAT 302F:Ch
+,,,,PROFINET 12056

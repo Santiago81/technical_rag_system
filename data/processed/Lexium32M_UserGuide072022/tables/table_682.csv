@@ -1,0 +1,8 @@
+Description,Reference
+"CANopen terminating resistor, 120 Ohm, integrated in RJ45 connector",TCSCAR013M120
+"CANopen connector with PC interface, D9-SUB (female), with switchable terminating resistor and additionalD9-SUB (male) to connect a PC to the bus, PC interface straight, bus cable angled 90°",TSXCANKCDF90TP
+"CANopen connector, D9-SUB (female), with switchable terminating resistor, angled 90°",TSXCANKCDF90T
+"CANopen connector, D9-SUB (female), with switchable terminating resistor, straight",TSXCANKCDF180T
+"Four-port tap, for connection of 4 drop lines to trunk line, 4 x D9-SUB (male) with switchable terminatingresistor",TSXCANTDM4
+"Two-port tap for connection of 2 drop lines to trunk line, with additional commissioning interface, 3 x RJ45(female), with switchable terminating resistor",VW3CANTAP2
+"CANopen adapter cable D9-SUB to RJ45, 3 m (9.84 ft)",TCSCCN4F3M3T

@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+,266 / SSI (linear): SSI (linear),,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+ENC2_usage,Type of usage of encoder 2 (module).,-,UINT16,CANopen 3050:1h
+,0 / None: Undefined,0,R/W,Modbus 20482
+,1 / Motor: Configured as motor encoder,0,per.,Profibus 20482
+,2 / Machine: Configured as machine encoder,2,-,CIP 180.1.1
+,"If the parameter is set to ""Motor"", encoder 1 has",,,ModbusTCP 20482
+,no functionality.,,,
+,,,,EtherCAT 3050:1h
+,Setting can only be modified if power stage is,,,
+,disabled.,,,PROFINET 20482
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+ENCAnaPowSupply,Power supply encoder module ANA (analog,-,UINT16,CANopen 3051:2h
+,interface).,,,
+,,5,R/W,Modbus 20740
+,5 / 5V: 5 V supply voltage,,,
+,,5,per.,Profibus 20740
+,12 / 12V: 12 V supply voltage,,,
+,,12,-,CIP 181.1.2
+,Power supply of the analog encoder only if the,,,
+,encoder is used as a machine encoder supplying,,,ModbusTCP 20740
+,1Vpp encoder signals.,,,
+,,,,EtherCAT 3051:2h
+,This parameter is not used for Hiperface,,,
+,encoders. Hiperface encoders are supplied with,,,PROFINET 20740
+,12 V.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,
+ENCDigABIMaxFreq,ABI maximum frequency.,kHz,UINT16,CANopen 3052:6h
+,The maximum possible ABI frequency is encoder-,1,R/W,Modbus 21004
+,specific (specified by the encoder manufacturer).,,,
+,The encoder module DIG supports a maximum,1000,per.,Profibus 21004
+,ABI frequency of 1 MHz (this is the default and,,,
+,maximum value of ENCDigABIMaxFreq). An ABI,1000,-,CIP 182.1.6
+,frequency of 1 MHz means that there are 4000000,,,
+,encoder increments in 1 second.,,,ModbusTCP 21004
+,Setting can only be modified if power stage is,,,EtherCAT 3052:6h
+,disabled.,,,
+,,,,PROFINET 21004
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+,Available with firmware version ≥V01.01.,,,

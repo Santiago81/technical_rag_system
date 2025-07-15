@@ -1,0 +1,64 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+CTRL_I_max,Current limitation.,Arms,UINT16,CANopen 3011:Ch
+ConF→drC-,"During operation, the actual current limit is one of",0.00,R/W,Modbus 4376
+,the following values (whichever is lowest):,,,
+iMAX,,-,per.,Profibus 4376
+,- CTRL_I_max,,,
+,,463.00,-,CIP 117.1.12
+,- _M_I_max,,,
+,,,,ModbusTCP 4376
+,- _PS_I_max,,,
+,,,,EtherCAT 3011:Ch
+,- Current limitation via analog input (module,,,
+,IOM1),,,PROFINET 4376
+,- Current limitation via digital input,,,
+,Limitations caused by I2t monitoring are also,,,
+,taken into account.,,,
+,Default: _PS_I_max at 8 kHz PWM frequency and,,,
+,230/480 V mains voltage,,,
+,In increments of 0.01 Arms.,,,
+,Modified settings become active immediately.,,,
+CTRL_I_max_fw,Maximum current for field weakening (d,Arms,UINT16,CANopen 3011:Fh
+,component).,,,
+,,0.00,R/W,Modbus 4382
+,This value is only limited by the minimum/,,,
+,maximum parameter range (no limitation of this,0.00,per.,Profibus 4382
+,value by motor/power stage).,,,
+,,300.00,expert,CIP 117.1.15
+,The actually effective field weakening current is,,,
+,the minimum of CTRL_I_max_fw and one half of,,,ModbusTCP 4382
+,the lower value of the nominal current of the,,,
+,power stage and the motor.,,,EtherCAT 3011:Fh
+,In increments of 0.01 A rms.,,,PROFINET 4382
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,
+CTRL_KFAcc,Acceleration feed-forward control.,%,UINT16,CANopen 3011:Ah
+,In increments of 0.1 %.,0.0,R/W,Modbus 4372
+,Modified settings become active immediately.,0.0,per.,Profibus 4372
+,,3000.0,expert,CIP 117.1.10
+,,,,ModbusTCP 4372
+,,,,EtherCAT 3011:Ah
+,,,,PROFINET 4372
+CTRL_ParChgTime,Period of time for control loop parameter set,ms,UINT16,CANopen 3011:14h
+,switching.,,,
+,,0,R/W,Modbus 4392
+,In the case of control loop parameter set,,,
+,"switching, the values of the following parameters",0,per.,Profibus 4392
+,are changed linearly:,,,
+,,2000,-,CIP 117.1.20
+,- CTRL_KPn,,,
+,,,,ModbusTCP 4392
+,- CTRL_TNn,,,
+,,,,EtherCAT 3011:14h
+,- CTRL_KPp,,,
+,,,,PROFINET 4392
+,- CTRL_TAUnref,,,
+,- CTRL_TAUiref,,,
+,- CTRL_KFPp,,,
+,Modified settings become active immediately.,,,

@@ -1,0 +1,35 @@
+{
+  "pdf_path": "data/raw_pdfs/Lexium32M_UserGuide072022.pdf",
+  "pdf_name": "Lexium32M_UserGuide072022.pdf",
+  "start_time": "2025-07-13T16:54:16.265016",
+  "steps": {
+    "pdf_extraction": {
+      "status": "completed",
+      "manual_id": 3
+    },
+    "analysis": {
+      "status": "completed",
+      "document_type": "technical"
+    },
+    "chunking": {
+      "status": "completed",
+      "chunks_created": 3024
+    },
+    "images": {
+      "status": "completed",
+      "total_images": 819,
+      "by_type": {
+        "raster": 147,
+        "technical_diagram": 672
+      }
+    },
+    "tables": {
+      "status": "completed",
+      "total_tables": 702
+    }
+  },
+  "manual_id": 3,
+  "end_time": "2025-07-13T16:55:54.235875",
+  "duration_seconds": 97.970859,
+  "status": "success"
+}

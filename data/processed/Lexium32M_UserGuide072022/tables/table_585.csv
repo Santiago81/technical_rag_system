@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+eSM_v_maxAuto,eSM speed limit for machine operating mode,RPM,UINT16,-
+,Automatic Mode.,,,
+,,0,R/W,
+,This value sets the speed limit for monitoring in,,,
+,machine operating mode Automatic Mode.,0,per.,
+,Value 0: The speed limit is not monitored,8000,-,
+,Value >0: Monitored speed limit,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.01.,,,
+eSM_v_maxSetup,eSM speed limit for machine operating mode,RPM,UINT16,-
+,Setup Mode.,,,
+,,0,R/W,
+,This value sets the speed limit for monitoring in,,,
+,machine operating mode Setup Mode.,0,per.,
+,Firmware version safety module eSM ≥V01.01:,8000,-,
+,Parameter eSM_FuncSwitches Bit 0 = 0: Value =,,,
+,Monitored speed limit for positive and negative,,,
+,directions of movement.,,,
+,Parameter eSM_FuncSwitches Bit 0 = 1: Value =,,,
+,Monitored speed limit for positive direction of,,,
+,movement.,,,
+,Setting can only be modified if power stage is,,,
+,disabled.,,,
+,Available with firmware version ≥V01.01.,,,
+EthIPgate1,"IP address gateway, byte 1.",-,UINT16,CANopen 3044:Fh
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17438
+,product is powered on.,,,
+iPG1,,0,per.,Profibus 17438
+,,255,-,CIP 168.1.15
+,,,,ModbusTCP 17438
+,,,,EtherCAT 3044:Fh
+,,,,PROFINET 17438
+EthIPgate2,"IP address gateway, byte 2.",-,UINT16,CANopen 3044:10h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17440
+,product is powered on.,,,
+iPG2,,0,per.,Profibus 17440
+,,255,-,CIP 168.1.16
+,,,,ModbusTCP 17440
+,,,,EtherCAT 3044:10h
+,,,,PROFINET 17440
+EthIPgate3,"IP address gateway, byte 3.",-,UINT16,CANopen 3044:11h
+ConF→CoM-,Modified settings become active the next time the,0,R/W,Modbus 17442
+,product is powered on.,,,
+iPG3,,0,per.,Profibus 17442
+,,255,-,CIP 168.1.17
+,,,,ModbusTCP 17442
+,,,,EtherCAT 3044:11h
+,,,,PROFINET 17442

@@ -1,0 +1,4 @@
+"Parameter nameHMI menuHMI name",Description,"UnitMinimum valueFactory settingMaximum value","Data typeR/WPersistentExpert","Parameter addressvia fieldbus"
+PosReg3ValueB,"Comparison value B for position register channel3.Available with firmware version ≥V01.04.","usr_p-0-","INT32R/Wper.-","CANopen 300B:13hModbus 2854Profibus 2854CIP 111.1.19ModbusTCP 2854EtherCAT 300B:13hPROFINET 2854"
+PosReg4ValueA,"Comparison value A for position register channel4.Available with firmware version ≥V01.04.","usr_p-0-","INT32R/Wper.-","CANopen 300B:14hModbus 2856Profibus 2856CIP 111.1.20ModbusTCP 2856EtherCAT 300B:14hPROFINET 2856"
+PosReg4ValueB,"Comparison value B for position register channel4.Available with firmware version ≥V01.04.","usr_p-0-","INT32R/Wper.-","CANopen 300B:15hModbus 2858Profibus 2858CIP 111.1.21ModbusTCP 2858EtherCAT 300B:15hPROFINET 2858"

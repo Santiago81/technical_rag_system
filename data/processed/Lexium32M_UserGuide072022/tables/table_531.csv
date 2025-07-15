@@ -1,0 +1,41 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_prgVerDEV,Firmware version of device.,-,UINT16,CANopen 3001:2h
+ConF→inF-,The version format is XX.YY.ZZ.,-,R/-,Modbus 260
+PrV,Part XX.YY is contained in this parameter.,-,-,Profibus 260
+,Part ZZ is contained in parameter _prgRevDEV.,-,-,CIP 101.1.2
+,Example: V01.23.45,,,ModbusTCP 260
+,The value is provided as a decimal value: 123,,,EtherCAT 3001:2h
+,,,,PROFINET 260
+_PS_I_max,Maximum current of power stage.,Arms,UINT16,CANopen 3010:2h
+ConF→inF-,In increments of 0.01 Arms.,-,R/-,Modbus 4100
+PiMA,,-,per.,Profibus 4100
+,,-,-,CIP 116.1.2
+,,,,ModbusTCP 4100
+,,,,EtherCAT 3010:2h
+,,,,PROFINET 4100
+_PS_I_nom,Nominal current of power stage.,Arms,UINT16,CANopen 3010:1h
+ConF→inF-,In increments of 0.01 Arms.,-,R/-,Modbus 4098
+Pino,,-,per.,Profibus 4098
+,,-,-,CIP 116.1.1
+,,,,ModbusTCP 4098
+,,,,EtherCAT 3010:1h
+,,,,PROFINET 4098
+_PS_load,Load of power stage.,%,INT16,CANopen 301C:17h
+Mon,,-,R/-,Modbus 7214
+LdFP,,-,-,Profibus 7214
+,,-,-,CIP 128.1.23
+,,,,ModbusTCP 7214
+,,,,EtherCAT 301C:17h
+,,,,PROFINET 7214
+_PS_maxoverload,Maximum value of overload of power stage.,%,INT16,CANopen 301C:18h
+,Maximum overload of power stage during the last,-,R/-,Modbus 7216
+,10 seconds.,,,
+,,-,-,Profibus 7216
+,,-,-,CIP 128.1.24
+,,,,ModbusTCP 7216
+,,,,EtherCAT 301C:18h
+,,,,PROFINET 7216

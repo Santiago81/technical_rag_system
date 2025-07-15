@@ -1,0 +1,15 @@
+"Errorcode(hex)","Errorclass",Description,Cause,Correctives
+A35D,par.,"Permissible velocity deviationexceededParameter _SigLatched Bit 8",Load or acceleration too high.,Reduce load or acceleration.
+A35E,0,"The selected velocity scaling factorreduces the accuracy of the velocityscaling.",-,"Increase or decrease the value of thenumerator and/or denominator of thescaling factor. If the conditionpersists, contact your SchneiderElectric service representative."
+A35F,0,"The selected ramp scaling factorreduces the accuracy of the rampscaling.",-,"Increase or decrease the value of thenumerator and/or denominator of thescaling factor. If the conditionpersists, contact your SchneiderElectric service representative."
+B100,0,"RS485/Modbus: IndeterminableserviceParameter _WarnLatched Bit 5","Unsupported Modbus service wasreceived.","Verify application on the Modbusmaster."
+B101,1,"Incorrect I/O data configuration.Additional information in the errormemory indicates the Modbusregister address.Parameter _SigLatched Bit 21","The I/O data configuration or theModbus I/O scanning configurationcontains an invalid parameter.","Verify the configuration of the I/Odata."
+B102,1,"Fieldbus module: General errordetectedParameter _SigLatched Bit 21",-,-
+B103,2,"Fieldbus module: Controllingcommunication channel has beenclosedParameter _SigLatched Bit 21",-,-
+B104,2,"Fieldbus module: Internalcommunication error detectedParameter _SigLatched Bit 21",-,-
+B105,2,"Fieldbus module: I/O data timeoutParameter _SigLatched Bit 21",-,-
+B106,2,"Fieldbus module: I/O data mappingerror detectedParameter _SigLatched Bit 21",-,-
+B107,4,"Fieldbus module: Nonvolatilememory error detected in moduleParameter _SigLatched Bit 21",-,-
+B108,1,"Fieldbus module: Active IOC physicallayer does not match the IOCphysical layer of the detectedfieldbus module.Parameter _SigLatched Bit 21","The manufacturer data has beenstored with a physical layer differentfrom the physical layer normally usedby the module.","Contact your Schneider Electricservice representative."
+B120,2,"Cyclic communication: Incorrectcycle timeParameter _SigLatched Bit 21","The drive does not support theconfigured cycle time or thedifference between the measuredcycle time and the configured cycletime is too great.","Change the cycle time in the mastercontroller to a cycle time supportedby the drive or verify synchronizationrequirements."
+B121,2,"Cyclic communication:Synchronization signal missingParameter _SigLatched Bit 21","Two cycles have passed without asynchronization signal having beenreceived.",Analyze the communication.

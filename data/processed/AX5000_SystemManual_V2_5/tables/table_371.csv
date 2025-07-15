@@ -1,0 +1,10 @@
+Cable cross-section,"Three-core non-metallicsheathed cable or con-duit","Three-core non-metallicsheathed cable, stackedon wall","Three-core non-metallicsheathed cable, side byside, horizontal",Unnamed: 0
+[mm2],[AWG],[A],[A],[A]
+1.5,16,12.2,15.2,16.1
+2.5,12,16.5,21.0,22
+4,10,23,28.0,30
+6,10,29,36.0,37
+10,8,40,50.0,52
+16,,53,66.0,70
+25,,67,84.0,88
+35,,83,104.0,114

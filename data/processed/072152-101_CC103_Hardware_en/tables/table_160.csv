@@ -1,0 +1,12 @@
+"CC 10Errornumber","Display(Text)",Significance,Possible causes,Remedy,Unnamed: 0
+"- F0242EDGE/CLOCK2 edge/system2 active counting edges within1 ACLOCKone clock period.(Counting direction not clearlydetectable)- F0282EDGE/CLOCK2 active counting edges within2 Aone clock period.(Counting direction not clearlydetectable)- F0322EDGE/CLOCK3 AF033E2. COR. TAB.LengthE2PROM defectiveLOSTcompensationEmpty E2PROMs have beentable in E2PROMinstalledlostF034ZERO SHIFTZero shift table inEmpty E2PROMs have beenLOSTE2PROM lostinstalledF035NO STORAGENo free storageProgram too long, e.g. 1space is availablekByte is still free, but programfor part programshas a length of 2 kBytesF036I/O TIME OUTInput/outputNo characters are receivedtimeoutwithin 5 seconds after startingread–inF037FAULT DFS HEADFault in DFS headSyntax error in DFS headF038*ABS. SYNC. ERR.SynchronizationData communication absoluteCC 10 – absoluteencoder – CC 10 not takingencoder notplace correctlypossibleF039*ABS. WRITE ERR.Not possible toRAM or busy FF on thewrite to the dual–absolute encoder defectiveport RAM on theabsolute encodermodule in the CC10* Occurs only in conjunction with absolute encoder","Check the measuringsystemCheck the ground andscreen connectionsCheck the measuringsystemCheck the ground andscreen connectionsCheck the measuringsystemCheck the ground andscreen connectionsEnter new lengthcompensation tablesEnter new zero shifttableDelete programs notrequiredStart the data inputdevice accordinglyEdit, define DFS headas described in theprogramminginstructionsPossibly wrongparametersReplace controlsystem",,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

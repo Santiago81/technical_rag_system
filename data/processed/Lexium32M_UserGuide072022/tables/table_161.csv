@@ -1,0 +1,18 @@
+HMI menuI-O-,Description
+i-o-,Configurable inputs/outputs (In Out)
+di0,Function Input DI0
+di1,Function Input DI1
+di2,Function Input DI2
+di3,Function Input DI3
+di4,Function Input DI4
+di5,Function Input DI5
+do0,Function Output DQ0
+do1,Function Output DQ1
+do2,Function Output DQ2
+ithr,Monitoring of current threshold
+tthr,Monitoring of time window
+ilin,Current limitation via input
+gfac,Selection of special gear ratios
+gfil,Activation of jerk limitation
+essc,Encoder Simulation Resolution
+iopi,Selection of type of reference value signal for PTI interface

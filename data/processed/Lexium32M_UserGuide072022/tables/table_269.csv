@@ -1,0 +1,2 @@
+"""Fault Reset""",State transition
+Rising edge,Resetting an error message (T15 and T16)

@@ -1,0 +1,49 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+_M_M_0,Continuous stall torque of motor.,motor_m,UINT16,CANopen 300D:16h
+,A value of 100 % in operating mode Profile Torque,-,R/-,Modbus 3372
+,corresponds to this parameter.,,,
+,,-,-,Profibus 3372
+,Units:,,,
+,,-,-,CIP 113.1.22
+,Rotary motors: Ncm,,,
+,,,,ModbusTCP 3372
+,Linear motors: N,,,
+,,,,EtherCAT 300D:16h
+,,,,PROFINET 3372
+_M_M_max,Maximum torque of motor.,Nm,UINT16,CANopen 300D:9h
+,In increments of 0.1 Nm.,-,R/-,Modbus 3346
+,,-,-,Profibus 3346
+,,-,-,CIP 113.1.9
+,,,,ModbusTCP 3346
+,,,,EtherCAT 300D:9h
+,,,,PROFINET 3346
+_M_M_nom,Nominal torque/force of motor.,motor_m,UINT16,CANopen 300D:8h
+,Units:,-,R/-,Modbus 3344
+,Rotary motors: Ncm,-,-,Profibus 3344
+,Linear motors: N,-,-,CIP 113.1.8
+,,,,ModbusTCP 3344
+,,,,EtherCAT 300D:8h
+,,,,PROFINET 3344
+_M_maxoverload,Maximum value of overload of motor.,%,INT16,CANopen 301C:1Bh
+,Maximum overload of motor during the last 10,-,R/-,Modbus 7222
+,seconds.,,,
+,,-,-,Profibus 7222
+,,-,-,CIP 128.1.27
+,,,,ModbusTCP 7222
+,,,,EtherCAT 301C:1Bh
+,,,,PROFINET 7222
+_M_n_max,Maximum permissible speed of rotation/velocity of,motor_v,UINT16,CANopen 300D:4h
+,motor.,,,
+ConF→inF-,,-,R/-,Modbus 3336
+,Units:,,,
+MnMA,,-,-,Profibus 3336
+,Rotary motors: RPM,,,
+,,-,-,CIP 113.1.4
+,Linear motors: mm/s,,,
+,,,,ModbusTCP 3336
+,,,,EtherCAT 300D:4h
+,,,,PROFINET 3336

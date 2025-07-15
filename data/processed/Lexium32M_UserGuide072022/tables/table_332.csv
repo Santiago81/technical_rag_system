@@ -1,0 +1,54 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+RAMP_v_enable,Activation of the motion profile for velocity.,-,UINT16,CANopen 3006:2Bh
+,0 / Profile Off: Profile off,0,R/W,Modbus 1622
+,1 / Profile On: Profile on,1,per.,Profibus 1622
+,Setting can only be modified if power stage is,1,-,CIP 106.1.43
+,disabled.,,,
+,,,,ModbusTCP 1622
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3006:2Bh
+,,,,PROFINET 1622
+RAMP_v_max,Maximum velocity of the motion profile for velocity.,usr_v,UINT32,CANopen 607F:0h
+ConF→ACG-,If a greater reference velocity is set in one of these,1,R/W,Modbus 1554
+,"operating modes, it is automatically limited to",,,
+nrMP,RAMP_v_max.,13200,per.,Profibus 1554
+,"This way, commissioning at limited velocity is",2147483647,-,CIP 106.1.9
+,easier to perform.,,,
+,,,,ModbusTCP 1554
+,Setting can only be modified if power stage is,,,
+,disabled.,,,EtherCAT 607F:0h
+,Modified settings become active the next time the,,,PROFINET 1554
+,motor moves.,,,
+RAMP_v_acc,Acceleration of the motion profile for velocity.,usr_a,UINT32,CANopen 6083:0h
+,Writing the value 0 has no effect on the parameter.,1,R/W,Modbus 1556
+,Modified settings become active the next time the,600,per.,Profibus 1556
+,motor moves.,,,
+,,2147483647,-,CIP 106.1.10
+,,,,ModbusTCP 1556
+,,,,EtherCAT 6083:0h
+,,,,PROFINET 1556
+RAMP_v_dec,Deceleration of the motion profile for velocity.,usr_a,UINT32,CANopen 6084:0h
+,The minimum value depends on the operating,1,R/W,Modbus 1558
+,mode:,,,
+,,600,per.,Profibus 1558
+,Operating modes with minimum value 1:,,,
+,,2147483647,-,CIP 106.1.11
+,Electronic Gear (velocity synchronization),,,
+,,,,ModbusTCP 1558
+,Profile Velocity,,,
+,,,,EtherCAT 6084:0h
+,Motion Sequence (Move Velocity),,,
+,,,,PROFINET 1558
+,Operating modes with minimum value 120:,,,
+,Jog,,,
+,Profile Position,,,
+,Homing,,,
+,"Motion Sequence (Move Absolute, Move Additive,",,,
+,Move Relative and Reference Movement),,,
+,Writing the value 0 has no effect on the parameter.,,,
+,Modified settings become active the next time the,,,
+,motor moves.,,,

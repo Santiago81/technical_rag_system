@@ -1,0 +1,57 @@
+Parameter name,Description,Unit,Data type,Parameter address
+,,,,via fieldbus
+HMI menu,,Minimum value,R/W,
+HMI name,,Factory setting,Persistent,
+,,Maximum value,Expert,
+HMv_out,Target velocity for moving away from switch.,usr_v,UINT32,CANopen 6099:2h
+,The adjustable value is internally limited to the,1,R/W,Modbus 10250
+,parameter setting in RAMP_v_max.,,,
+,,6,per.,Profibus 10250
+,Modified settings become active the next time the,,,
+,motor moves.,2147483647,-,CIP 140.1.5
+,,,,ModbusTCP 10250
+,,,,EtherCAT 6099:2h
+,,,,PROFINET 10250
+InvertDirOfCount,Inversion of direction of counting at PTI interface.,-,UINT16,CANopen 3008:7h
+,0 / Inversion Off: Inversion of direction of,0,R/W,Modbus 2062
+,counting is off,,,
+,,0,per.,Profibus 2062
+,1 / Inversion On: Inversion of direction of,,,
+,counting is on,1,-,CIP 108.1.7
+,Modified settings become active immediately.,,,ModbusTCP 2062
+,,,,EtherCAT 3008:7h
+,,,,PROFINET 2062
+InvertDirOfMaEnc,Inversion of direction of machine encoder.,-,UINT16,CANopen 3050:8h
+,0 / Inversion Off: Inversion of direction is off,0,R/W,Modbus 20496
+,1 / Inversion On: Inversion of direction is on,0,per.,Profibus 20496
+,Setting can only be modified if power stage is,1,-,CIP 180.1.8
+,disabled.,,,
+,,,,ModbusTCP 20496
+,Modified settings become active immediately.,,,
+,,,,EtherCAT 3050:8h
+,,,,PROFINET 20496
+InvertDirOfMove,Inversion of direction of movement.,-,UINT16,CANopen 3006:Ch
+ConF→ACG-,0 / Inversion Off /oFF: Inversion of direction of,0,R/W,Modbus 1560
+,movement is off,,,
+inMo,,0,per.,Profibus 1560
+,1 / Inversion On /on: Inversion of direction of,,,
+,movement is on,1,-,CIP 106.1.12
+,The limit switch which is reached with a movement,,,ModbusTCP 1560
+,in positive direction must be connected to the,,,
+,positive limit switch input and vice versa.,,,EtherCAT 3006:Ch
+,Setting can only be modified if power stage is,,,PROFINET 1560
+,disabled.,,,
+,Modified settings become active the next time the,,,
+,product is powered on.,,,
+IO_AutoEnable,Enabling the power stage at PowerOn.,-,UINT16,CANopen 3005:6h
+ConF→ACG-,0 / RisingEdge /riSE: A rising edge with the,0,R/W,Modbus 1292
+,"signal input function ""Enable"" enables the power",,,
+ioAE,stage,0,per.,Profibus 1292
+,1 / HighLevel /LEVL: An active signal input,2,-,CIP 105.1.6
+,"with signal input function ""Enable"" enables the",,,
+,power stage,,,ModbusTCP 1292
+,2 / AutoOn /Auto: The power stage is,,,EtherCAT 3005:6h
+,automatically enabled,,,
+,,,,PROFINET 1292
+,Modified settings become active the next time the,,,
+,power stage is enabled.,,,

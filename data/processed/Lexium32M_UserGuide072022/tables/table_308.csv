@@ -1,0 +1,9 @@
+Number of additional PDOs,Minimum cycle,Minimum cycle.1,Minimum cycle.2
+(nPDO),time at 1 Mbit,time at 500 kbit,time at 250 kbit
+0,1 ms,2 ms,3 ms
+1,1 ms,2 ms,3 ms
+2,1 ms,2 ms,4 ms
+3,2 ms,2 ms,4 ms
+4,2 ms,3 ms,5 ms
+5,2 ms,3 ms,5 ms
+6,2 ms,3 ms,6 ms

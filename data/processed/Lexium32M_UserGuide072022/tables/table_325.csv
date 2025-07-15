@@ -1,0 +1,3 @@
+Signal input function,Description
+"""Start Single Data Set""The signal input function mustbe set.","The set data set is started without a sequence via a rising edge.A data set is set via the signal input functions ""Data Set Bit 0"" to""Data Set Bit x""."
+"""Data Set Bit 0"" to ""Data SetBit x""Adjustable for signal inputsDI0 ... DI5","The signal input functions ""Data Set Bit 0"" to ""Data Set Bit x"" areused to set a data set in a bit-coded way.The set data set is immediately confirmed; it does not need to beconfirmed with the signal input function ""Data Set Select""."

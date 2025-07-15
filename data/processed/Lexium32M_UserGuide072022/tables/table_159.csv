@@ -1,0 +1,13 @@
+HMI menuDRC-,Description
+drC-,Device configuration (DRive Configuration)
+nmax,Velocity limitation
+imax,Current limitation
+jer,Jerk limitation of the motion profile for velocity
+pp1,Position controller P gain
+pp2,Position controller P gain
+pn1,Velocity controller P gain
+pn2,Velocity controller P gain
+tin1,Velocity controller integral action time
+tin2,Velocity controller integral action time
+tau1,Filter time constant of the reference velocity value filter
+tau2,Filter time constant of the reference velocity value filter
